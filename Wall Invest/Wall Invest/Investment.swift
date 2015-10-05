@@ -8,6 +8,11 @@
 
 import Foundation
 
-class Investment{
+class Investment {
+    var investedValue:Float?
+    var currentValue:Float?
+    
+    
+    
 
 }

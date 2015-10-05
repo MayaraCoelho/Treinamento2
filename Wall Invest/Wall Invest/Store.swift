@@ -9,5 +9,18 @@
 import Foundation
 
 class Store{
-
+    var properties:[Property]
+    
+    init(){
+    let propertiesInstance = PropertyProperties()
+    self.properties = propertiesInstance.properties
+    }
+    
+    func buyProperty(){
+    }
+    
+    func sellProperty(){
+    }
+    
+    
 }

@@ -10,4 +10,12 @@ import Foundation
 
 class Enterprises{
 
+    var enterprises:[Enterprise]
+    
+
+    init(){
+        let instance = EnterpriseProperties()
+        self.enterprises = instance.enterprises
+    }
+    
 }

@@ -10,4 +10,22 @@ import Foundation
 
 class Property{
 
+    var name:String
+    var value:Float
+    var returningMiniumValue:Float
+    var returningMaximumValue:Float
+    
+    
+    init(pName:String, pValue:Float, pReturningMinimumValue:Float, pReturningMaximumValue:Float){
+        self.name = pName
+        self.value = pValue
+        self.returningMiniumValue = pReturningMinimumValue
+        self.returningMaximumValue = pReturningMaximumValue
+    }
+    
+    
+    func generateReturningValue(){
+    
+    }
+    
 }

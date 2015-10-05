@@ -9,5 +9,13 @@
 import Foundation
 
 class Timer{
-
+    var startGameTime:NSDate
+    var lastUserActivity:NSDate
+    var currentDate:NSDate
+    
+    init(){
+        self.startGameTime = NSDate()
+        self.lastUserActivity = NSDate()
+        self.currentDate = NSDate()
+    }
 }

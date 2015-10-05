@@ -10,15 +10,27 @@ import Foundation
 
 class AppData{
     static let sharedInstance = AppData()
-    var player:Player?
-    var store:Store?
-    var enterprises:Enterprises?
-    var timer:Timer?
     
+    var player:Player
+    var store:Store
+    var enterprises:Enterprises
+    var timer:Timer
+    
+    
+    
+    init(){
+        self.player = Player()
+        self.store = Store()
+        self.enterprises = Enterprises()
+        self.timer = Timer()
+    }
     
     
     func startNewGame(){
-    
+        self.player = Player()
+        self.store = Store()
+        self.enterprises = Enterprises()
+        self.timer = Timer()
     }
 
 }

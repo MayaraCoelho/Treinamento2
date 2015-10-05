@@ -20,7 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        // return true
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
         let homeViewController = HomeViewController()
+
+        
         
         self.window?.rootViewController = homeViewController
         

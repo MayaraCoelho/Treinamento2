@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0D640AA1BC30DC1008E2994 /* PropertyProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D640A91BC30DC1008E2994 /* PropertyProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		B0D640AC1BC30EA4008E2994 /* GoalProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D640AB1BC30EA4008E2994 /* GoalProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		B0D640AE1BC30F2A008E2994 /* InvestmentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D640AD1BC30F2A008E2994 /* InvestmentManager.swift */; settings = {ASSET_TAGS = (); }; };
+		B0D640B01BC31009008E2994 /* LowRiskInvestment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D640AF1BC31009008E2994 /* LowRiskInvestment.swift */; settings = {ASSET_TAGS = (); }; };
+		B0D640B21BC31142008E2994 /* HighRiskInvestment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D640B11BC31142008E2994 /* HighRiskInvestment.swift */; settings = {ASSET_TAGS = (); }; };
+		B0D640B41BC31179008E2994 /* Enterprise.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D640B31BC31179008E2994 /* Enterprise.swift */; settings = {ASSET_TAGS = (); }; };
+		B0D640B61BC3129D008E2994 /* EnterpriseProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D640B51BC3129D008E2994 /* EnterpriseProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		B0EFE6B81BBF28530028CB94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EFE6B71BBF28530028CB94 /* AppDelegate.swift */; };
 		B0EFE6BA1BBF28530028CB94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EFE6B91BBF28530028CB94 /* ViewController.swift */; };
 		B0EFE6BD1BBF28530028CB94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0EFE6BB1BBF28530028CB94 /* Main.storyboard */; };
@@ -28,6 +35,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B0D640A91BC30DC1008E2994 /* PropertyProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyProperties.swift; sourceTree = "<group>"; };
+		B0D640AB1BC30EA4008E2994 /* GoalProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalProperties.swift; sourceTree = "<group>"; };
+		B0D640AD1BC30F2A008E2994 /* InvestmentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentManager.swift; sourceTree = "<group>"; };
+		B0D640AF1BC31009008E2994 /* LowRiskInvestment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowRiskInvestment.swift; sourceTree = "<group>"; };
+		B0D640B11BC31142008E2994 /* HighRiskInvestment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighRiskInvestment.swift; sourceTree = "<group>"; };
+		B0D640B31BC31179008E2994 /* Enterprise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enterprise.swift; sourceTree = "<group>"; };
+		B0D640B51BC3129D008E2994 /* EnterpriseProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterpriseProperties.swift; sourceTree = "<group>"; };
 		B0EFE6B41BBF28530028CB94 /* Wall Invest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wall Invest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0EFE6B71BBF28530028CB94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0EFE6B91BBF28530028CB94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,13 +109,20 @@
 				B0EFE6D41BBF2B720028CB94 /* AppData.swift */,
 				B0EFE6DC1BBF2CA30028CB94 /* Timer.swift */,
 				B0EFE6DA1BBF2C550028CB94 /* Enterprises.swift */,
+				B0D640B51BC3129D008E2994 /* EnterpriseProperties.swift */,
 				B0EFE6D81BBF2C2F0028CB94 /* Store.swift */,
+				B0D640AB1BC30EA4008E2994 /* GoalProperties.swift */,
+				B0D640AD1BC30F2A008E2994 /* InvestmentManager.swift */,
 				B0EFE6D61BBF2B840028CB94 /* Player.swift */,
 				B0EFE6E61BBF30200028CB94 /* Goal.swift */,
 				B0EFE6E81BBF31970028CB94 /* Tip.swift */,
 				B0EFE6E41BBF2FD50028CB94 /* Property.swift */,
+				B0D640A91BC30DC1008E2994 /* PropertyProperties.swift */,
 				B0EFE6E21BBF2F5E0028CB94 /* Manager.swift */,
 				B0EFE6DE1BBF2CFE0028CB94 /* Investment.swift */,
+				B0D640AF1BC31009008E2994 /* LowRiskInvestment.swift */,
+				B0D640B11BC31142008E2994 /* HighRiskInvestment.swift */,
+				B0D640B31BC31179008E2994 /* Enterprise.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -213,13 +234,20 @@
 				B0EFE6C01BBF28530028CB94 /* Wall_Invest.xcdatamodeld in Sources */,
 				B0EFE6BA1BBF28530028CB94 /* ViewController.swift in Sources */,
 				B0EFE6B81BBF28530028CB94 /* AppDelegate.swift in Sources */,
+				B0D640B21BC31142008E2994 /* HighRiskInvestment.swift in Sources */,
+				B0D640B41BC31179008E2994 /* Enterprise.swift in Sources */,
 				B0EFE6E51BBF2FD50028CB94 /* Property.swift in Sources */,
 				B0EFE6D21BBF29980028CB94 /* HomeViewController.swift in Sources */,
 				B0EFE6E71BBF30200028CB94 /* Goal.swift in Sources */,
+				B0D640B01BC31009008E2994 /* LowRiskInvestment.swift in Sources */,
 				B0EFE6DD1BBF2CA30028CB94 /* Timer.swift in Sources */,
 				B0EFE6E31BBF2F5E0028CB94 /* Manager.swift in Sources */,
 				B0EFE6D71BBF2B840028CB94 /* Player.swift in Sources */,
 				B0EFE6D51BBF2B720028CB94 /* AppData.swift in Sources */,
+				B0D640AA1BC30DC1008E2994 /* PropertyProperties.swift in Sources */,
+				B0D640B61BC3129D008E2994 /* EnterpriseProperties.swift in Sources */,
+				B0D640AC1BC30EA4008E2994 /* GoalProperties.swift in Sources */,
+				B0D640AE1BC30F2A008E2994 /* InvestmentManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +397,7 @@
 				B0EFE6CB1BBF28530028CB94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
