@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B065F2021BC86E6C005E7D61 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B065F2011BC86E6C005E7D61 /* Manager.swift */; settings = {ASSET_TAGS = (); }; };
 		B0D640AA1BC30DC1008E2994 /* PropertyProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D640A91BC30DC1008E2994 /* PropertyProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		B0D640AC1BC30EA4008E2994 /* GoalProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D640AB1BC30EA4008E2994 /* GoalProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		B0D640AE1BC30F2A008E2994 /* InvestmentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D640AD1BC30F2A008E2994 /* InvestmentManager.swift */; settings = {ASSET_TAGS = (); }; };
@@ -28,13 +29,13 @@
 		B0EFE6DB1BBF2C550028CB94 /* Enterprises.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EFE6DA1BBF2C550028CB94 /* Enterprises.swift */; settings = {ASSET_TAGS = (); }; };
 		B0EFE6DD1BBF2CA30028CB94 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EFE6DC1BBF2CA30028CB94 /* Timer.swift */; settings = {ASSET_TAGS = (); }; };
 		B0EFE6DF1BBF2CFE0028CB94 /* Investment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EFE6DE1BBF2CFE0028CB94 /* Investment.swift */; settings = {ASSET_TAGS = (); }; };
-		B0EFE6E31BBF2F5E0028CB94 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EFE6E21BBF2F5E0028CB94 /* Manager.swift */; settings = {ASSET_TAGS = (); }; };
 		B0EFE6E51BBF2FD50028CB94 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EFE6E41BBF2FD50028CB94 /* Property.swift */; settings = {ASSET_TAGS = (); }; };
 		B0EFE6E71BBF30200028CB94 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EFE6E61BBF30200028CB94 /* Goal.swift */; settings = {ASSET_TAGS = (); }; };
 		B0EFE6E91BBF31970028CB94 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EFE6E81BBF31970028CB94 /* Tip.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B065F2011BC86E6C005E7D61 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		B0D640A91BC30DC1008E2994 /* PropertyProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyProperties.swift; sourceTree = "<group>"; };
 		B0D640AB1BC30EA4008E2994 /* GoalProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalProperties.swift; sourceTree = "<group>"; };
 		B0D640AD1BC30F2A008E2994 /* InvestmentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentManager.swift; sourceTree = "<group>"; };
@@ -58,7 +59,6 @@
 		B0EFE6DA1BBF2C550028CB94 /* Enterprises.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enterprises.swift; sourceTree = "<group>"; };
 		B0EFE6DC1BBF2CA30028CB94 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		B0EFE6DE1BBF2CFE0028CB94 /* Investment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Investment.swift; sourceTree = "<group>"; };
-		B0EFE6E21BBF2F5E0028CB94 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = ../Manager.swift; sourceTree = "<group>"; };
 		B0EFE6E41BBF2FD50028CB94 /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		B0EFE6E61BBF30200028CB94 /* Goal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 		B0EFE6E81BBF31970028CB94 /* Tip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
@@ -109,6 +109,7 @@
 				B0EFE6D41BBF2B720028CB94 /* AppData.swift */,
 				B0EFE6DC1BBF2CA30028CB94 /* Timer.swift */,
 				B0EFE6DA1BBF2C550028CB94 /* Enterprises.swift */,
+				B065F2011BC86E6C005E7D61 /* Manager.swift */,
 				B0D640B51BC3129D008E2994 /* EnterpriseProperties.swift */,
 				B0EFE6D81BBF2C2F0028CB94 /* Store.swift */,
 				B0D640AB1BC30EA4008E2994 /* GoalProperties.swift */,
@@ -118,7 +119,6 @@
 				B0EFE6E81BBF31970028CB94 /* Tip.swift */,
 				B0EFE6E41BBF2FD50028CB94 /* Property.swift */,
 				B0D640A91BC30DC1008E2994 /* PropertyProperties.swift */,
-				B0EFE6E21BBF2F5E0028CB94 /* Manager.swift */,
 				B0EFE6DE1BBF2CFE0028CB94 /* Investment.swift */,
 				B0D640AF1BC31009008E2994 /* LowRiskInvestment.swift */,
 				B0D640B11BC31142008E2994 /* HighRiskInvestment.swift */,
@@ -231,6 +231,7 @@
 				B0EFE6D91BBF2C2F0028CB94 /* Store.swift in Sources */,
 				B0EFE6DF1BBF2CFE0028CB94 /* Investment.swift in Sources */,
 				B0EFE6E91BBF31970028CB94 /* Tip.swift in Sources */,
+				B065F2021BC86E6C005E7D61 /* Manager.swift in Sources */,
 				B0EFE6C01BBF28530028CB94 /* Wall_Invest.xcdatamodeld in Sources */,
 				B0EFE6BA1BBF28530028CB94 /* ViewController.swift in Sources */,
 				B0EFE6B81BBF28530028CB94 /* AppDelegate.swift in Sources */,
@@ -241,7 +242,6 @@
 				B0EFE6E71BBF30200028CB94 /* Goal.swift in Sources */,
 				B0D640B01BC31009008E2994 /* LowRiskInvestment.swift in Sources */,
 				B0EFE6DD1BBF2CA30028CB94 /* Timer.swift in Sources */,
-				B0EFE6E31BBF2F5E0028CB94 /* Manager.swift in Sources */,
 				B0EFE6D71BBF2B840028CB94 /* Player.swift in Sources */,
 				B0EFE6D51BBF2B720028CB94 /* AppData.swift in Sources */,
 				B0D640AA1BC30DC1008E2994 /* PropertyProperties.swift in Sources */,
