@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B065F2021BC86E6C005E7D61 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B065F2011BC86E6C005E7D61 /* Manager.swift */; settings = {ASSET_TAGS = (); }; };
+		B06664001BCD4941007E8CA8 /* ArrowUp.png in Resources */ = {isa = PBXBuildFile; fileRef = B06663FF1BCD4941007E8CA8 /* ArrowUp.png */; settings = {ASSET_TAGS = (); }; };
+		B06664021BCD499A007E8CA8 /* goalsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B06664011BCD499A007E8CA8 /* goalsIcon.png */; settings = {ASSET_TAGS = (); }; };
+		B06664071BCD4E4D007E8CA8 /* InvestmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06664051BCD4E4D007E8CA8 /* InvestmentTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		B06664081BCD4E4D007E8CA8 /* InvestmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06664061BCD4E4D007E8CA8 /* InvestmentTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		B066640A1BCD5000007E8CA8 /* everestOil.png in Resources */ = {isa = PBXBuildFile; fileRef = B06664091BCD5000007E8CA8 /* everestOil.png */; settings = {ASSET_TAGS = (); }; };
 		B0D640AA1BC30DC1008E2994 /* PropertyProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D640A91BC30DC1008E2994 /* PropertyProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		B0D640AC1BC30EA4008E2994 /* GoalProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D640AB1BC30EA4008E2994 /* GoalProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		B0D640AE1BC30F2A008E2994 /* InvestmentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D640AD1BC30F2A008E2994 /* InvestmentManager.swift */; settings = {ASSET_TAGS = (); }; };
@@ -36,6 +41,11 @@
 
 /* Begin PBXFileReference section */
 		B065F2011BC86E6C005E7D61 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		B06663FF1BCD4941007E8CA8 /* ArrowUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArrowUp.png; sourceTree = "<group>"; };
+		B06664011BCD499A007E8CA8 /* goalsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goalsIcon.png; sourceTree = "<group>"; };
+		B06664051BCD4E4D007E8CA8 /* InvestmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentTableViewCell.swift; sourceTree = "<group>"; };
+		B06664061BCD4E4D007E8CA8 /* InvestmentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvestmentTableViewCell.xib; sourceTree = "<group>"; };
+		B06664091BCD5000007E8CA8 /* everestOil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = everestOil.png; sourceTree = "<group>"; };
 		B0D640A91BC30DC1008E2994 /* PropertyProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyProperties.swift; sourceTree = "<group>"; };
 		B0D640AB1BC30EA4008E2994 /* GoalProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalProperties.swift; sourceTree = "<group>"; };
 		B0D640AD1BC30F2A008E2994 /* InvestmentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentManager.swift; sourceTree = "<group>"; };
@@ -133,6 +143,8 @@
 				B0EFE6BB1BBF28530028CB94 /* Main.storyboard */,
 				B0EFE6C31BBF28530028CB94 /* LaunchScreen.storyboard */,
 				B0EFE6D11BBF29980028CB94 /* HomeViewController.xib */,
+				B06664051BCD4E4D007E8CA8 /* InvestmentTableViewCell.swift */,
+				B06664061BCD4E4D007E8CA8 /* InvestmentTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -148,6 +160,9 @@
 		B0EFE6CF1BBF28B80028CB94 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B06663FF1BCD4941007E8CA8 /* ArrowUp.png */,
+				B06664091BCD5000007E8CA8 /* everestOil.png */,
+				B06664011BCD499A007E8CA8 /* goalsIcon.png */,
 				B0EFE6B91BBF28530028CB94 /* ViewController.swift */,
 				B0EFE6C11BBF28530028CB94 /* Assets.xcassets */,
 				B0EFE6C61BBF28530028CB94 /* Info.plist */,
@@ -213,10 +228,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B06664081BCD4E4D007E8CA8 /* InvestmentTableViewCell.xib in Resources */,
 				B0EFE6C51BBF28530028CB94 /* LaunchScreen.storyboard in Resources */,
+				B06664001BCD4941007E8CA8 /* ArrowUp.png in Resources */,
+				B066640A1BCD5000007E8CA8 /* everestOil.png in Resources */,
 				B0EFE6C21BBF28530028CB94 /* Assets.xcassets in Resources */,
 				B0EFE6BD1BBF28530028CB94 /* Main.storyboard in Resources */,
 				B0EFE6D31BBF29980028CB94 /* HomeViewController.xib in Resources */,
+				B06664021BCD499A007E8CA8 /* goalsIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +252,7 @@
 				B0EFE6E91BBF31970028CB94 /* Tip.swift in Sources */,
 				B065F2021BC86E6C005E7D61 /* Manager.swift in Sources */,
 				B0EFE6C01BBF28530028CB94 /* Wall_Invest.xcdatamodeld in Sources */,
+				B06664071BCD4E4D007E8CA8 /* InvestmentTableViewCell.swift in Sources */,
 				B0EFE6BA1BBF28530028CB94 /* ViewController.swift in Sources */,
 				B0EFE6B81BBF28530028CB94 /* AppDelegate.swift in Sources */,
 				B0D640B21BC31142008E2994 /* HighRiskInvestment.swift in Sources */,

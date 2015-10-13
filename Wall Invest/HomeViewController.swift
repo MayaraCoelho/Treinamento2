@@ -8,11 +8,17 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    var enterprisesInstance = EnterpriseProperties()
+    
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let nib = UINib.init(nibName: "InvestmentTableViewCell", bundle: nil)
+        self.tableView.registerNib(nib, forCellReuseIdentifier: "Investment")
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,7 +26,23 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("Investment") as! InvestmentTableViewCell
+        cell.enterpriseName.text = self.enterprisesInstance.enterprises[indexPath.row].name
+        cell.enterpriseImage.image = UIImage(named: self.enterprisesInstance.enterprises[indexPath.row].imageName)
+        return cell
+    }
+    
+    
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return enterprisesInstance.enterprises.count
+    }
 
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 80
+    }
     /*
     // MARK: - Navigation
 
