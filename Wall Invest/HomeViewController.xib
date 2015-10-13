@@ -78,8 +78,7 @@
                                     <exclude reference="ozD-3e-MVE"/>
                                 </mask>
                             </variation>
-                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                <rect key="frame" x="271" y="-38" width="114" height="106"/>
+                            <variation key="heightClass=regular-widthClass=compact">
                                 <mask key="constraints">
                                     <include reference="kmB-4t-7t9"/>
                                     <include reference="ozD-3e-MVE"/>
@@ -106,12 +105,12 @@
                         </mask>
                         <mask key="constraints">
                             <exclude reference="Zer-Hd-ELg"/>
-                            <exclude reference="9Zd-e2-s5Q"/>
-                            <exclude reference="P1f-WW-C21"/>
-                            <exclude reference="SMy-9s-2ZI"/>
-                            <exclude reference="q0V-Hl-Rbt"/>
                             <exclude reference="8LV-R5-vxz"/>
                             <exclude reference="Qrh-oj-lhU"/>
+                            <exclude reference="SMy-9s-2ZI"/>
+                            <exclude reference="q0V-Hl-Rbt"/>
+                            <exclude reference="9Zd-e2-s5Q"/>
+                            <exclude reference="P1f-WW-C21"/>
                         </mask>
                     </variation>
                     <variation key="heightClass=regular-widthClass=compact">
@@ -122,12 +121,12 @@
                         </mask>
                         <mask key="constraints">
                             <include reference="Zer-Hd-ELg"/>
-                            <include reference="9Zd-e2-s5Q"/>
-                            <include reference="P1f-WW-C21"/>
-                            <include reference="SMy-9s-2ZI"/>
-                            <include reference="q0V-Hl-Rbt"/>
                             <include reference="8LV-R5-vxz"/>
                             <include reference="Qrh-oj-lhU"/>
+                            <include reference="SMy-9s-2ZI"/>
+                            <include reference="q0V-Hl-Rbt"/>
+                            <include reference="9Zd-e2-s5Q"/>
+                            <include reference="P1f-WW-C21"/>
                         </mask>
                     </variation>
                 </view>
@@ -179,8 +178,10 @@
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yAR-Zr-6mh">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                     <animations/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.97254901960784312" green="0.89803921568627454" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="0.97254901960784312" green="0.89803921568627454" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="sectionIndexTrackingBackgroundColor" red="0.97254901960784312" green="0.89803921568627454" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="57b-Pj-wiY"/>
                         <outlet property="delegate" destination="-1" id="DuF-Bo-5kw"/>

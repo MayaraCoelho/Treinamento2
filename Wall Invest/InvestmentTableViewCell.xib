@@ -14,27 +14,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="346" height="79"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Everest Oil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofm-pd-8e3">
-                        <rect key="frame" x="8" y="8" width="156" height="21"/>
-                        <animations/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="21" id="WFG-Fn-mpS"/>
-                            <constraint firstAttribute="width" constant="156" id="g3u-JT-dRb"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SuG-p3-TVt">
-                        <rect key="frame" x="60" y="39" width="52" height="30"/>
-                        <animations/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="30" id="RCj-1k-cXj"/>
-                            <constraint firstAttribute="width" constant="52" id="jeg-KA-MTK"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                        <state key="normal" title="BUY"/>
-                    </button>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OEc-lO-PJc">
                         <rect key="frame" x="278" y="10" width="60" height="60"/>
                         <animations/>
@@ -43,21 +22,29 @@
                             <constraint firstAttribute="height" constant="60" id="rFz-4p-hOf"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Everest Oil" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofm-pd-8e3">
+                        <rect key="frame" x="8" y="29" width="200" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="WFG-Fn-mpS"/>
+                            <constraint firstAttribute="width" constant="200" id="g3u-JT-dRb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <animations/>
                 <color key="backgroundColor" red="0.99444705915207909" green="0.91688846770321641" blue="0.79325834776293014" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
-                    <constraint firstItem="SuG-p3-TVt" firstAttribute="top" secondItem="ofm-pd-8e3" secondAttribute="bottom" constant="10" id="GHr-pv-S3k"/>
-                    <constraint firstItem="ofm-pd-8e3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="KjO-gb-lvd"/>
-                    <constraint firstItem="SuG-p3-TVt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="52" id="Zms-cO-Spu"/>
                     <constraint firstItem="ofm-pd-8e3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="eOm-mY-3ky"/>
                     <constraint firstItem="OEc-lO-PJc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ir1-ra-7Pb"/>
                     <constraint firstItem="OEc-lO-PJc" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="ndP-V4-BwV"/>
+                    <constraint firstItem="ofm-pd-8e3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="vcD-TU-I91"/>
                 </constraints>
             </tableViewCellContentView>
             <animations/>
             <connections>
-                <outlet property="buyButton" destination="SuG-p3-TVt" id="081-65-E4T"/>
                 <outlet property="enterpriseImage" destination="OEc-lO-PJc" id="6IJ-vn-e2w"/>
                 <outlet property="enterpriseName" destination="ofm-pd-8e3" id="Kp3-e2-rz3"/>
             </connections>

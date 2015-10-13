@@ -18,7 +18,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         let nib = UINib.init(nibName: "InvestmentTableViewCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "Investment")
-
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,6 +33,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "High Risk Investments"
+    }
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

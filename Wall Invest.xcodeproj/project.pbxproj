@@ -13,6 +13,9 @@
 		B06664071BCD4E4D007E8CA8 /* InvestmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06664051BCD4E4D007E8CA8 /* InvestmentTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		B06664081BCD4E4D007E8CA8 /* InvestmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06664061BCD4E4D007E8CA8 /* InvestmentTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		B066640A1BCD5000007E8CA8 /* everestOil.png in Resources */ = {isa = PBXBuildFile; fileRef = B06664091BCD5000007E8CA8 /* everestOil.png */; settings = {ASSET_TAGS = (); }; };
+		B066640C1BCD5BD3007E8CA8 /* bugSoftwareInc.png in Resources */ = {isa = PBXBuildFile; fileRef = B066640B1BCD5BD3007E8CA8 /* bugSoftwareInc.png */; settings = {ASSET_TAGS = (); }; };
+		B066640E1BCD5D63007E8CA8 /* bacompany.png in Resources */ = {isa = PBXBuildFile; fileRef = B066640D1BCD5D63007E8CA8 /* bacompany.png */; settings = {ASSET_TAGS = (); }; };
+		B06664101BCD5E09007E8CA8 /* mrAlwaysYoung.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B066640F1BCD5E09007E8CA8 /* mrAlwaysYoung.jpg */; settings = {ASSET_TAGS = (); }; };
 		B0D640AA1BC30DC1008E2994 /* PropertyProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D640A91BC30DC1008E2994 /* PropertyProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		B0D640AC1BC30EA4008E2994 /* GoalProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D640AB1BC30EA4008E2994 /* GoalProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		B0D640AE1BC30F2A008E2994 /* InvestmentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D640AD1BC30F2A008E2994 /* InvestmentManager.swift */; settings = {ASSET_TAGS = (); }; };
@@ -46,6 +49,9 @@
 		B06664051BCD4E4D007E8CA8 /* InvestmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentTableViewCell.swift; sourceTree = "<group>"; };
 		B06664061BCD4E4D007E8CA8 /* InvestmentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvestmentTableViewCell.xib; sourceTree = "<group>"; };
 		B06664091BCD5000007E8CA8 /* everestOil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = everestOil.png; sourceTree = "<group>"; };
+		B066640B1BCD5BD3007E8CA8 /* bugSoftwareInc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bugSoftwareInc.png; sourceTree = "<group>"; };
+		B066640D1BCD5D63007E8CA8 /* bacompany.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bacompany.png; sourceTree = "<group>"; };
+		B066640F1BCD5E09007E8CA8 /* mrAlwaysYoung.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mrAlwaysYoung.jpg; sourceTree = "<group>"; };
 		B0D640A91BC30DC1008E2994 /* PropertyProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyProperties.swift; sourceTree = "<group>"; };
 		B0D640AB1BC30EA4008E2994 /* GoalProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalProperties.swift; sourceTree = "<group>"; };
 		B0D640AD1BC30F2A008E2994 /* InvestmentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentManager.swift; sourceTree = "<group>"; };
@@ -161,7 +167,10 @@
 			isa = PBXGroup;
 			children = (
 				B06663FF1BCD4941007E8CA8 /* ArrowUp.png */,
+				B066640D1BCD5D63007E8CA8 /* bacompany.png */,
+				B066640F1BCD5E09007E8CA8 /* mrAlwaysYoung.jpg */,
 				B06664091BCD5000007E8CA8 /* everestOil.png */,
+				B066640B1BCD5BD3007E8CA8 /* bugSoftwareInc.png */,
 				B06664011BCD499A007E8CA8 /* goalsIcon.png */,
 				B0EFE6B91BBF28530028CB94 /* ViewController.swift */,
 				B0EFE6C11BBF28530028CB94 /* Assets.xcassets */,
@@ -230,8 +239,11 @@
 			files = (
 				B06664081BCD4E4D007E8CA8 /* InvestmentTableViewCell.xib in Resources */,
 				B0EFE6C51BBF28530028CB94 /* LaunchScreen.storyboard in Resources */,
+				B066640E1BCD5D63007E8CA8 /* bacompany.png in Resources */,
+				B066640C1BCD5BD3007E8CA8 /* bugSoftwareInc.png in Resources */,
 				B06664001BCD4941007E8CA8 /* ArrowUp.png in Resources */,
 				B066640A1BCD5000007E8CA8 /* everestOil.png in Resources */,
+				B06664101BCD5E09007E8CA8 /* mrAlwaysYoung.jpg in Resources */,
 				B0EFE6C21BBF28530028CB94 /* Assets.xcassets in Resources */,
 				B0EFE6BD1BBF28530028CB94 /* Main.storyboard in Resources */,
 				B0EFE6D31BBF29980028CB94 /* HomeViewController.xib in Resources */,
