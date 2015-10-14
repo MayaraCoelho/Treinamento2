@@ -12,13 +12,36 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     var enterprisesInstance = EnterpriseProperties()
     
+    @IBOutlet weak var enterpriseDetailsView: UIView!
+    
+    @IBOutlet weak var blurView: UIVisualEffectView!
+    
     @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var enterpriseNameLabel: UILabel!
+    
+    @IBOutlet weak var enterpriseDescriptionLabel: UITextView!
+    
+    @IBOutlet weak var enterpriseMarketValueLabel: UILabel!
+    
+    @IBOutlet weak var invesmentValueSlider: UISlider!
+    
+    @IBOutlet weak var investingValue: UILabel!
+    
+    @IBOutlet weak var investButton: UIButton!
+    
+    @IBOutlet weak var myWalletLabel: UILabel!
+    
+    @IBOutlet weak var myIncomeLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let nib = UINib.init(nibName: "InvestmentTableViewCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "Investment")
-        
+        self.detailsViewClose()
+        self.myWalletLabel.text = "Wallet: $ " + AppData.sharedInstance.player.balance.description
+        self.myIncomeLabel.text = "Income: $ " + AppData.sharedInstance.player.income.description + " / day"
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,8 +51,17 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Investment") as! InvestmentTableViewCell
-        cell.enterpriseName.text = self.enterprisesInstance.enterprises[indexPath.row].name
-        cell.enterpriseImage.image = UIImage(named: self.enterprisesInstance.enterprises[indexPath.row].imageName)
+        
+        let enterprise = self.enterprisesInstance.enterprises[indexPath.row]
+        
+          cell.enterpriseName.text = enterprise.name
+        
+        if ((AppData.sharedInstance.player.doesHaveHighRiskInvestmentInEnterprise(enterprise)) != nil){
+            cell.enterpriseName.text = "# " + enterprise.name
+        }
+        
+      
+        cell.enterpriseImage.image = UIImage(named: enterprise.imageName)
         return cell
     }
     
@@ -46,6 +78,66 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 80
     }
+    
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+
+        
+        let enterprise = self.enterprisesInstance.enterprises[indexPath.row]
+        
+        self.enterpriseNameLabel.text = enterprise.name
+        
+        self.enterpriseDescriptionLabel.text = enterprise.description
+        self.enterpriseMarketValueLabel.text = "Market Value: " + enterprise.description
+        self.detailsViewShow()
+    }
+    
+    @IBAction func closeDetailsButonAct(sender: UIButton) {
+        self.detailsViewClose()
+    }
+
+    
+    func detailsViewShow(){
+        self.enterpriseDetailsView.hidden = false
+        self.enterpriseDetailsView.userInteractionEnabled = true
+        self.blurView.hidden = false
+        self.invesmentValueSlider.value = 0
+        self.investingValue.text = "$ 0"
+    }
+    
+    
+    func detailsViewClose(){
+        self.enterpriseDetailsView.hidden = true
+        self.enterpriseDetailsView.userInteractionEnabled = false
+        self.blurView.hidden = true
+    }
+    
+    
+    @IBAction func sliderValueChange(sender: UISlider) {
+        var str = (AppData.sharedInstance.player.balance * Double(self.invesmentValueSlider.value)).description
+        var strsplit = str.characters.split{$0 == "."}.map(String.init)
+        self.investingValue.text = "$ " + strsplit[0]
+        
+    }
+    
+
+    @IBAction func investButtonAct(sender: UIButton) {
+        let investmentValue = (AppData.sharedInstance.player.balance * Double(self.invesmentValueSlider.value))
+        AppData.sharedInstance.player.balance = AppData.sharedInstance.player.balance - investmentValue
+        let enterprise =  self.enterprisesInstance.enterprises[(self.tableView.indexPathForSelectedRow?.row)!]
+        let investment = HighRiskInvestment(pEnterprise: enterprise, pInvestedValue: investmentValue)
+        
+        AppData.sharedInstance.player.highRiskInvestments.append(investment)
+        
+        self.tableView.deselectRowAtIndexPath(self.tableView.indexPathForSelectedRow!, animated: false)
+        self.detailsViewClose()
+        self.tableView.reloadData()
+    }
+
+    
+    
+    
     /*
     // MARK: - Navigation
 

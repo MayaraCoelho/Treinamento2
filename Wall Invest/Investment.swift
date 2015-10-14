@@ -9,9 +9,13 @@
 import Foundation
 
 class Investment {
-    var investedValue:Float?
-    var currentValue:Float?
+    var investedValue:Double
+    var currentValue:Double
     
+    init(pInvestedValue:Double){
+        self.investedValue = pInvestedValue
+        self.currentValue = self.investedValue
+    }
     
     
 

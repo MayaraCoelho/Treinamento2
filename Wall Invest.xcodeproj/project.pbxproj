@@ -16,6 +16,15 @@
 		B066640C1BCD5BD3007E8CA8 /* bugSoftwareInc.png in Resources */ = {isa = PBXBuildFile; fileRef = B066640B1BCD5BD3007E8CA8 /* bugSoftwareInc.png */; settings = {ASSET_TAGS = (); }; };
 		B066640E1BCD5D63007E8CA8 /* bacompany.png in Resources */ = {isa = PBXBuildFile; fileRef = B066640D1BCD5D63007E8CA8 /* bacompany.png */; settings = {ASSET_TAGS = (); }; };
 		B06664101BCD5E09007E8CA8 /* mrAlwaysYoung.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B066640F1BCD5E09007E8CA8 /* mrAlwaysYoung.jpg */; settings = {ASSET_TAGS = (); }; };
+		B0814DEC1BCE89260034AF8F /* elJuegoZone.png in Resources */ = {isa = PBXBuildFile; fileRef = B0814DEB1BCE89260034AF8F /* elJuegoZone.png */; settings = {ASSET_TAGS = (); }; };
+		B0814DEE1BCE89600034AF8F /* news.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0814DED1BCE89600034AF8F /* news.jpg */; settings = {ASSET_TAGS = (); }; };
+		B0814DF01BCE89B50034AF8F /* bank.gif in Resources */ = {isa = PBXBuildFile; fileRef = B0814DEF1BCE89B50034AF8F /* bank.gif */; settings = {ASSET_TAGS = (); }; };
+		B0814DF21BCE89D50034AF8F /* building.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0814DF11BCE89D50034AF8F /* building.jpg */; settings = {ASSET_TAGS = (); }; };
+		B0814DF41BCE8A100034AF8F /* 14bis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0814DF31BCE8A100034AF8F /* 14bis.jpg */; settings = {ASSET_TAGS = (); }; };
+		B0814DF61BCE8A480034AF8F /* fast.png in Resources */ = {isa = PBXBuildFile; fileRef = B0814DF51BCE8A480034AF8F /* fast.png */; settings = {ASSET_TAGS = (); }; };
+		B0814DF81BCE8DC00034AF8F /* closeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B0814DF71BCE8DC00034AF8F /* closeButton.png */; settings = {ASSET_TAGS = (); }; };
+		B0814DFD1BCE9D7C0034AF8F /* InvestmentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0814DFB1BCE9D7C0034AF8F /* InvestmentDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B0814DFE1BCE9D7C0034AF8F /* InvestmentDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0814DFC1BCE9D7C0034AF8F /* InvestmentDetailViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		B0D640AA1BC30DC1008E2994 /* PropertyProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D640A91BC30DC1008E2994 /* PropertyProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		B0D640AC1BC30EA4008E2994 /* GoalProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D640AB1BC30EA4008E2994 /* GoalProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		B0D640AE1BC30F2A008E2994 /* InvestmentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D640AD1BC30F2A008E2994 /* InvestmentManager.swift */; settings = {ASSET_TAGS = (); }; };
@@ -52,6 +61,15 @@
 		B066640B1BCD5BD3007E8CA8 /* bugSoftwareInc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bugSoftwareInc.png; sourceTree = "<group>"; };
 		B066640D1BCD5D63007E8CA8 /* bacompany.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bacompany.png; sourceTree = "<group>"; };
 		B066640F1BCD5E09007E8CA8 /* mrAlwaysYoung.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mrAlwaysYoung.jpg; sourceTree = "<group>"; };
+		B0814DEB1BCE89260034AF8F /* elJuegoZone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elJuegoZone.png; sourceTree = "<group>"; };
+		B0814DED1BCE89600034AF8F /* news.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = news.jpg; sourceTree = "<group>"; };
+		B0814DEF1BCE89B50034AF8F /* bank.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bank.gif; sourceTree = "<group>"; };
+		B0814DF11BCE89D50034AF8F /* building.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = building.jpg; sourceTree = "<group>"; };
+		B0814DF31BCE8A100034AF8F /* 14bis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 14bis.jpg; sourceTree = "<group>"; };
+		B0814DF51BCE8A480034AF8F /* fast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fast.png; sourceTree = "<group>"; };
+		B0814DF71BCE8DC00034AF8F /* closeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closeButton.png; sourceTree = "<group>"; };
+		B0814DFB1BCE9D7C0034AF8F /* InvestmentDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InvestmentDetailViewController.swift; path = ../InvestmentDetailViewController.swift; sourceTree = "<group>"; };
+		B0814DFC1BCE9D7C0034AF8F /* InvestmentDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InvestmentDetailViewController.xib; path = ../InvestmentDetailViewController.xib; sourceTree = "<group>"; };
 		B0D640A91BC30DC1008E2994 /* PropertyProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyProperties.swift; sourceTree = "<group>"; };
 		B0D640AB1BC30EA4008E2994 /* GoalProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalProperties.swift; sourceTree = "<group>"; };
 		B0D640AD1BC30F2A008E2994 /* InvestmentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentManager.swift; sourceTree = "<group>"; };
@@ -146,6 +164,8 @@
 		B0EFE6CD1BBF288F0028CB94 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B0814DFB1BCE9D7C0034AF8F /* InvestmentDetailViewController.swift */,
+				B0814DFC1BCE9D7C0034AF8F /* InvestmentDetailViewController.xib */,
 				B0EFE6BB1BBF28530028CB94 /* Main.storyboard */,
 				B0EFE6C31BBF28530028CB94 /* LaunchScreen.storyboard */,
 				B0EFE6D11BBF29980028CB94 /* HomeViewController.xib */,
@@ -169,7 +189,14 @@
 				B06663FF1BCD4941007E8CA8 /* ArrowUp.png */,
 				B066640D1BCD5D63007E8CA8 /* bacompany.png */,
 				B066640F1BCD5E09007E8CA8 /* mrAlwaysYoung.jpg */,
+				B0814DF31BCE8A100034AF8F /* 14bis.jpg */,
+				B0814DED1BCE89600034AF8F /* news.jpg */,
+				B0814DEB1BCE89260034AF8F /* elJuegoZone.png */,
+				B0814DF71BCE8DC00034AF8F /* closeButton.png */,
+				B0814DF11BCE89D50034AF8F /* building.jpg */,
 				B06664091BCD5000007E8CA8 /* everestOil.png */,
+				B0814DF51BCE8A480034AF8F /* fast.png */,
+				B0814DEF1BCE89B50034AF8F /* bank.gif */,
 				B066640B1BCD5BD3007E8CA8 /* bugSoftwareInc.png */,
 				B06664011BCD499A007E8CA8 /* goalsIcon.png */,
 				B0EFE6B91BBF28530028CB94 /* ViewController.swift */,
@@ -237,17 +264,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0814DF81BCE8DC00034AF8F /* closeButton.png in Resources */,
 				B06664081BCD4E4D007E8CA8 /* InvestmentTableViewCell.xib in Resources */,
+				B0814DFE1BCE9D7C0034AF8F /* InvestmentDetailViewController.xib in Resources */,
 				B0EFE6C51BBF28530028CB94 /* LaunchScreen.storyboard in Resources */,
 				B066640E1BCD5D63007E8CA8 /* bacompany.png in Resources */,
 				B066640C1BCD5BD3007E8CA8 /* bugSoftwareInc.png in Resources */,
 				B06664001BCD4941007E8CA8 /* ArrowUp.png in Resources */,
 				B066640A1BCD5000007E8CA8 /* everestOil.png in Resources */,
 				B06664101BCD5E09007E8CA8 /* mrAlwaysYoung.jpg in Resources */,
+				B0814DEE1BCE89600034AF8F /* news.jpg in Resources */,
 				B0EFE6C21BBF28530028CB94 /* Assets.xcassets in Resources */,
 				B0EFE6BD1BBF28530028CB94 /* Main.storyboard in Resources */,
+				B0814DEC1BCE89260034AF8F /* elJuegoZone.png in Resources */,
+				B0814DF41BCE8A100034AF8F /* 14bis.jpg in Resources */,
 				B0EFE6D31BBF29980028CB94 /* HomeViewController.xib in Resources */,
+				B0814DF21BCE89D50034AF8F /* building.jpg in Resources */,
+				B0814DF01BCE89B50034AF8F /* bank.gif in Resources */,
 				B06664021BCD499A007E8CA8 /* goalsIcon.png in Resources */,
+				B0814DF61BCE8A480034AF8F /* fast.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +304,7 @@
 				B0EFE6B81BBF28530028CB94 /* AppDelegate.swift in Sources */,
 				B0D640B21BC31142008E2994 /* HighRiskInvestment.swift in Sources */,
 				B0D640B41BC31179008E2994 /* Enterprise.swift in Sources */,
+				B0814DFD1BCE9D7C0034AF8F /* InvestmentDetailViewController.swift in Sources */,
 				B0EFE6E51BBF2FD50028CB94 /* Property.swift in Sources */,
 				B0EFE6D21BBF29980028CB94 /* HomeViewController.swift in Sources */,
 				B0EFE6E71BBF30200028CB94 /* Goal.swift in Sources */,

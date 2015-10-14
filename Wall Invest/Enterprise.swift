@@ -13,12 +13,12 @@ class Enterprise{
 
     var id:Int
     var name:String
-    var value:Float
+    var value:Double
     var playerPercentage:Float
     var description:String
     var imageName:String
 
-    init(pId:Int, pName:String, pValue:Float, pDescription:String, pImageName:String){
+    init(pId:Int, pName:String, pValue:Double, pDescription:String, pImageName:String){
         self.id = pId
         self.name = pName
         self.value = pValue

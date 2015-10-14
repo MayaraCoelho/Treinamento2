@@ -14,12 +14,12 @@ class LowRiskInvestment:Investment{
     var interestRates:Float
     var investmentTerm:NSTimeInterval
     
-     init(pName:String, pInterestRates:Float, pInvestmentTerm:NSTimeInterval) {
+    init(pName:String, pInterestRates:Float, pInvestmentTerm:NSTimeInterval, pInvestedValue:Double) {
         self.name = pName
         self.interestRates = pInterestRates
         self.investmentTerm = pInvestmentTerm
         
-        
+        super.init(pInvestedValue: pInvestedValue)
     }
     
 }

@@ -8,12 +8,13 @@
 
 import Foundation
 
-class HighRiskInvesment:Investment{
+class HighRiskInvestment:Investment{
 
     var enterprise:Enterprise
     
-    init(pEnterprise:Enterprise){
+    init(pEnterprise:Enterprise, pInvestedValue:Double){
     self.enterprise = pEnterprise
+    super.init(pInvestedValue: pInvestedValue)
     }
 
 
