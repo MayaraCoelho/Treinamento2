@@ -54,11 +54,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let enterprise = self.enterprisesInstance.enterprises[indexPath.row]
         
-          cell.enterpriseName.text = enterprise.name
+        cell.enterpriseName.text = enterprise.name
         cell.subtitleLabel.text = ""
         
         if ((AppData.sharedInstance.player.doesHaveHighRiskInvestmentInEnterprise(enterprise))){
-            cell.subtitleLabel.text = "Invested $ "
+            cell.subtitleLabel.text = "Value $ " + (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(enterprise)?.currentValue.description)!
         }
         
         
@@ -117,7 +117,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     @IBAction func sliderValueChange(sender: UISlider) {
-        var str = (AppData.sharedInstance.player.balance * Double(self.invesmentValueSlider.value)).description
+        let str = (AppData.sharedInstance.player.balance * Double(self.invesmentValueSlider.value)).description
         var strsplit = str.characters.split{$0 == "."}.map(String.init)
         self.investingValue.text = "$ " + strsplit[0]
         
@@ -125,15 +125,26 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
 
     @IBAction func investButtonAct(sender: UIButton) {
-        let investmentValue = (AppData.sharedInstance.player.balance * Double(self.invesmentValueSlider.value))
-        AppData.sharedInstance.player.balance = AppData.sharedInstance.player.balance - investmentValue
-        let enterprise =  self.enterprisesInstance.enterprises[(self.tableView.indexPathForSelectedRow?.row)!]
-        let investment = HighRiskInvestment(pEnterprise: enterprise, pInvestedValue: investmentValue)
         
-        AppData.sharedInstance.player.highRiskInvestments.append(investment)
+        let investmentValue = (AppData.sharedInstance.player.balance * Double(self.invesmentValueSlider.value))
+        
+        let enterprise =  self.enterprisesInstance.enterprises[(self.tableView.indexPathForSelectedRow?.row)!]
+        
+        AppData.sharedInstance.investmentManager.applyInHighRiskInvestment(enterprise, pValue: investmentValue)
         
         self.tableView.deselectRowAtIndexPath(self.tableView.indexPathForSelectedRow!, animated: false)
         self.detailsViewClose()
+        self.tableView.reloadData()
+        self.viewDidLoad()
+    }
+    
+    
+    @IBAction func goalsButtonAct(sender: UIButton) {
+        
+        for i:HighRiskInvestment in AppData.sharedInstance.player.highRiskInvestments {
+            AppData.sharedInstance.investmentManager.rescueFromHighRiskInvestment(i.enterprise)
+        }
+        self.viewDidLoad()
         self.tableView.reloadData()
     }
 

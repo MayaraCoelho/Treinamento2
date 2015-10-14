@@ -15,6 +15,7 @@ class AppData{
     var store:Store
     var enterprises:Enterprises
     var timer:Timer
+    var investmentManager:InvestmentManager
     
     
     
@@ -23,6 +24,7 @@ class AppData{
         self.store = Store()
         self.enterprises = Enterprises()
         self.timer = Timer()
+        self.investmentManager = InvestmentManager()
     }
     
     

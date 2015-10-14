@@ -9,11 +9,11 @@
 import Foundation
 
 class Player:NSObject{
+    
     var balance:Double
     var highRiskInvestments:[HighRiskInvestment]
     var lowRiskInvestments:[LowRiskInvestment]
-    var income:Float
-    var manager:Manager
+    var income:Double
     var properties:[Property]
     var goals:[Goal]
     
@@ -22,7 +22,6 @@ class Player:NSObject{
     self.highRiskInvestments = [HighRiskInvestment]()
     self.lowRiskInvestments = [LowRiskInvestment]()
     self.income = 400
-    self.manager = Manager()
     self.properties = [Property]()
     self.goals = [Goal]()
     }
@@ -38,14 +37,24 @@ class Player:NSObject{
     }
     
     
-    func investmentForEnterprise(pEnterprise:Enterprise)->Investment?{
+    func highRiskInvestmentForEnterprise(pEnterprise:Enterprise)->Investment?{
         for hri:HighRiskInvestment in self.highRiskInvestments{
             if (hri.enterprise.id == pEnterprise.id){
                 return hri
             }
         }
         return nil
+    }
     
+    
+    func removeHighRiskInvestmentForEnterprise(pEnterprise:Enterprise){
+        var index = 0
+        for hri:HighRiskInvestment in self.highRiskInvestments{
+            if (hri.enterprise.id == pEnterprise.id){
+                self.highRiskInvestments.removeAtIndex(index)
+            }
+            index++
+        }
     }
     
     

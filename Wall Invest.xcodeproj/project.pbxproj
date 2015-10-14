@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B065F2021BC86E6C005E7D61 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B065F2011BC86E6C005E7D61 /* Manager.swift */; settings = {ASSET_TAGS = (); }; };
 		B06664001BCD4941007E8CA8 /* ArrowUp.png in Resources */ = {isa = PBXBuildFile; fileRef = B06663FF1BCD4941007E8CA8 /* ArrowUp.png */; settings = {ASSET_TAGS = (); }; };
 		B06664021BCD499A007E8CA8 /* goalsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B06664011BCD499A007E8CA8 /* goalsIcon.png */; settings = {ASSET_TAGS = (); }; };
 		B06664071BCD4E4D007E8CA8 /* InvestmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06664051BCD4E4D007E8CA8 /* InvestmentTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
@@ -52,7 +51,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B065F2011BC86E6C005E7D61 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		B06663FF1BCD4941007E8CA8 /* ArrowUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArrowUp.png; sourceTree = "<group>"; };
 		B06664011BCD499A007E8CA8 /* goalsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goalsIcon.png; sourceTree = "<group>"; };
 		B06664051BCD4E4D007E8CA8 /* InvestmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentTableViewCell.swift; sourceTree = "<group>"; };
@@ -143,7 +141,6 @@
 				B0EFE6D41BBF2B720028CB94 /* AppData.swift */,
 				B0EFE6DC1BBF2CA30028CB94 /* Timer.swift */,
 				B0EFE6DA1BBF2C550028CB94 /* Enterprises.swift */,
-				B065F2011BC86E6C005E7D61 /* Manager.swift */,
 				B0D640B51BC3129D008E2994 /* EnterpriseProperties.swift */,
 				B0EFE6D81BBF2C2F0028CB94 /* Store.swift */,
 				B0D640AB1BC30EA4008E2994 /* GoalProperties.swift */,
@@ -238,6 +235,7 @@
 				TargetAttributes = {
 					B0EFE6B31BBF28530028CB94 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 9M8RSS5KWQ;
 					};
 				};
 			};
@@ -297,7 +295,6 @@
 				B0EFE6D91BBF2C2F0028CB94 /* Store.swift in Sources */,
 				B0EFE6DF1BBF2CFE0028CB94 /* Investment.swift in Sources */,
 				B0EFE6E91BBF31970028CB94 /* Tip.swift in Sources */,
-				B065F2021BC86E6C005E7D61 /* Manager.swift in Sources */,
 				B0EFE6C01BBF28530028CB94 /* Wall_Invest.xcdatamodeld in Sources */,
 				B06664071BCD4E4D007E8CA8 /* InvestmentTableViewCell.swift in Sources */,
 				B0EFE6BA1BBF28530028CB94 /* ViewController.swift in Sources */,
@@ -428,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Henrique do Prado Linhares (9M8RSS5KWQ)";
 				INFOPLIST_FILE = "Wall Invest/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "bepid.Wall-Invest";
@@ -439,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Henrique do Prado Linhares (9M8RSS5KWQ)";
 				INFOPLIST_FILE = "Wall Invest/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "bepid.Wall-Invest";
