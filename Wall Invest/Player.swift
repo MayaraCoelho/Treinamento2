@@ -27,16 +27,26 @@ class Player:NSObject{
     self.goals = [Goal]()
     }
 
-    func doesHaveHighRiskInvestmentInEnterprise(pEnterprise:Enterprise)->Investment?{
+    func doesHaveHighRiskInvestmentInEnterprise(pEnterprise:Enterprise)->Bool{
 
+        for hri:HighRiskInvestment in self.highRiskInvestments{
+            if (hri.enterprise.id == pEnterprise.id){
+                return true
+            }
+        }
+        return false
+    }
+    
+    
+    func investmentForEnterprise(pEnterprise:Enterprise)->Investment?{
         for hri:HighRiskInvestment in self.highRiskInvestments{
             if (hri.enterprise.id == pEnterprise.id){
                 return hri
             }
         }
         return nil
-    }
     
+    }
     
     
 }

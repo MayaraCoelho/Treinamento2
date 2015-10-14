@@ -55,10 +55,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let enterprise = self.enterprisesInstance.enterprises[indexPath.row]
         
           cell.enterpriseName.text = enterprise.name
+        cell.subtitleLabel.text = ""
         
-        if ((AppData.sharedInstance.player.doesHaveHighRiskInvestmentInEnterprise(enterprise)) != nil){
-            cell.enterpriseName.text = "# " + enterprise.name
+        if ((AppData.sharedInstance.player.doesHaveHighRiskInvestmentInEnterprise(enterprise))){
+            cell.subtitleLabel.text = "Invested $ "
         }
+        
         
       
         cell.enterpriseImage.image = UIImage(named: enterprise.imageName)
@@ -89,7 +91,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.enterpriseNameLabel.text = enterprise.name
         
         self.enterpriseDescriptionLabel.text = enterprise.description
-        self.enterpriseMarketValueLabel.text = "Market Value: " + enterprise.description
+        self.enterpriseMarketValueLabel.text = "Market Value: " + enterprise.value.description
         self.detailsViewShow()
     }
     
