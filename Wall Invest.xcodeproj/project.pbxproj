@@ -22,8 +22,6 @@
 		B0814DF41BCE8A100034AF8F /* 14bis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0814DF31BCE8A100034AF8F /* 14bis.jpg */; settings = {ASSET_TAGS = (); }; };
 		B0814DF61BCE8A480034AF8F /* fast.png in Resources */ = {isa = PBXBuildFile; fileRef = B0814DF51BCE8A480034AF8F /* fast.png */; settings = {ASSET_TAGS = (); }; };
 		B0814DF81BCE8DC00034AF8F /* closeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B0814DF71BCE8DC00034AF8F /* closeButton.png */; settings = {ASSET_TAGS = (); }; };
-		B0814DFD1BCE9D7C0034AF8F /* InvestmentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0814DFB1BCE9D7C0034AF8F /* InvestmentDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		B0814DFE1BCE9D7C0034AF8F /* InvestmentDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0814DFC1BCE9D7C0034AF8F /* InvestmentDetailViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		B0D640AA1BC30DC1008E2994 /* PropertyProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D640A91BC30DC1008E2994 /* PropertyProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		B0D640AC1BC30EA4008E2994 /* GoalProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D640AB1BC30EA4008E2994 /* GoalProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		B0D640AE1BC30F2A008E2994 /* InvestmentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D640AD1BC30F2A008E2994 /* InvestmentManager.swift */; settings = {ASSET_TAGS = (); }; };
@@ -48,6 +46,8 @@
 		B0EFE6E51BBF2FD50028CB94 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EFE6E41BBF2FD50028CB94 /* Property.swift */; settings = {ASSET_TAGS = (); }; };
 		B0EFE6E71BBF30200028CB94 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EFE6E61BBF30200028CB94 /* Goal.swift */; settings = {ASSET_TAGS = (); }; };
 		B0EFE6E91BBF31970028CB94 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EFE6E81BBF31970028CB94 /* Tip.swift */; settings = {ASSET_TAGS = (); }; };
+		BE92D6051BD0C412007DC863 /* InvestmentNotMadeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE92D6031BD0C412007DC863 /* InvestmentNotMadeVC.swift */; settings = {ASSET_TAGS = (); }; };
+		BE92D6061BD0C412007DC863 /* InvestmentNotMadeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE92D6041BD0C412007DC863 /* InvestmentNotMadeVC.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,8 +66,6 @@
 		B0814DF31BCE8A100034AF8F /* 14bis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 14bis.jpg; sourceTree = "<group>"; };
 		B0814DF51BCE8A480034AF8F /* fast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fast.png; sourceTree = "<group>"; };
 		B0814DF71BCE8DC00034AF8F /* closeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closeButton.png; sourceTree = "<group>"; };
-		B0814DFB1BCE9D7C0034AF8F /* InvestmentDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InvestmentDetailViewController.swift; path = ../InvestmentDetailViewController.swift; sourceTree = "<group>"; };
-		B0814DFC1BCE9D7C0034AF8F /* InvestmentDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InvestmentDetailViewController.xib; path = ../InvestmentDetailViewController.xib; sourceTree = "<group>"; };
 		B0D640A91BC30DC1008E2994 /* PropertyProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyProperties.swift; sourceTree = "<group>"; };
 		B0D640AB1BC30EA4008E2994 /* GoalProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalProperties.swift; sourceTree = "<group>"; };
 		B0D640AD1BC30F2A008E2994 /* InvestmentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentManager.swift; sourceTree = "<group>"; };
@@ -94,6 +92,8 @@
 		B0EFE6E41BBF2FD50028CB94 /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 		B0EFE6E61BBF30200028CB94 /* Goal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
 		B0EFE6E81BBF31970028CB94 /* Tip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
+		BE92D6031BD0C412007DC863 /* InvestmentNotMadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentNotMadeVC.swift; sourceTree = "<group>"; };
+		BE92D6041BD0C412007DC863 /* InvestmentNotMadeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvestmentNotMadeVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,13 +161,11 @@
 		B0EFE6CD1BBF288F0028CB94 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B0814DFB1BCE9D7C0034AF8F /* InvestmentDetailViewController.swift */,
-				B0814DFC1BCE9D7C0034AF8F /* InvestmentDetailViewController.xib */,
 				B0EFE6BB1BBF28530028CB94 /* Main.storyboard */,
 				B0EFE6C31BBF28530028CB94 /* LaunchScreen.storyboard */,
 				B0EFE6D11BBF29980028CB94 /* HomeViewController.xib */,
-				B06664051BCD4E4D007E8CA8 /* InvestmentTableViewCell.swift */,
 				B06664061BCD4E4D007E8CA8 /* InvestmentTableViewCell.xib */,
+				BE92D6041BD0C412007DC863 /* InvestmentNotMadeVC.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -176,6 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				B0EFE6D01BBF29980028CB94 /* HomeViewController.swift */,
+				B06664051BCD4E4D007E8CA8 /* InvestmentTableViewCell.swift */,
+				BE92D6031BD0C412007DC863 /* InvestmentNotMadeVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -264,7 +264,7 @@
 			files = (
 				B0814DF81BCE8DC00034AF8F /* closeButton.png in Resources */,
 				B06664081BCD4E4D007E8CA8 /* InvestmentTableViewCell.xib in Resources */,
-				B0814DFE1BCE9D7C0034AF8F /* InvestmentDetailViewController.xib in Resources */,
+				BE92D6061BD0C412007DC863 /* InvestmentNotMadeVC.xib in Resources */,
 				B0EFE6C51BBF28530028CB94 /* LaunchScreen.storyboard in Resources */,
 				B066640E1BCD5D63007E8CA8 /* bacompany.png in Resources */,
 				B066640C1BCD5BD3007E8CA8 /* bugSoftwareInc.png in Resources */,
@@ -301,7 +301,6 @@
 				B0EFE6B81BBF28530028CB94 /* AppDelegate.swift in Sources */,
 				B0D640B21BC31142008E2994 /* HighRiskInvestment.swift in Sources */,
 				B0D640B41BC31179008E2994 /* Enterprise.swift in Sources */,
-				B0814DFD1BCE9D7C0034AF8F /* InvestmentDetailViewController.swift in Sources */,
 				B0EFE6E51BBF2FD50028CB94 /* Property.swift in Sources */,
 				B0EFE6D21BBF29980028CB94 /* HomeViewController.swift in Sources */,
 				B0EFE6E71BBF30200028CB94 /* Goal.swift in Sources */,
@@ -312,6 +311,7 @@
 				B0D640AA1BC30DC1008E2994 /* PropertyProperties.swift in Sources */,
 				B0D640B61BC3129D008E2994 /* EnterpriseProperties.swift in Sources */,
 				B0D640AC1BC30EA4008E2994 /* GoalProperties.swift in Sources */,
+				BE92D6051BD0C412007DC863 /* InvestmentNotMadeVC.swift in Sources */,
 				B0D640AE1BC30F2A008E2994 /* InvestmentManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

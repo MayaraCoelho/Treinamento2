@@ -9,26 +9,12 @@
 import UIKit
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
-    var enterprisesInstance = EnterpriseProperties()
     
     @IBOutlet weak var enterpriseDetailsView: UIView!
     
     @IBOutlet weak var blurView: UIVisualEffectView!
     
     @IBOutlet weak var tableView: UITableView!
-    
-    @IBOutlet weak var enterpriseNameLabel: UILabel!
-    
-    @IBOutlet weak var enterpriseDescriptionLabel: UITextView!
-    
-    @IBOutlet weak var enterpriseMarketValueLabel: UILabel!
-    
-    @IBOutlet weak var invesmentValueSlider: UISlider!
-    
-    @IBOutlet weak var investingValue: UILabel!
-    
-    @IBOutlet weak var investButton: UIButton!
     
     @IBOutlet weak var myWalletLabel: UILabel!
     
@@ -39,10 +25,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         let nib = UINib.init(nibName: "InvestmentTableViewCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "Investment")
-        self.detailsViewClose()
         self.myWalletLabel.text = "Wallet: $ " + AppData.sharedInstance.player.balance.description
         self.myIncomeLabel.text = "Income: $ " + AppData.sharedInstance.player.income.description + " / day"
+        self.enterpriseDetailsView.hidden = true
+        self.blurView.hidden = true
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -52,7 +40,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Investment") as! InvestmentTableViewCell
         
-        let enterprise = self.enterprisesInstance.enterprises[indexPath.row]
+        let enterprise = AppData.sharedInstance.enterprises.enterprises[indexPath.row]
         
         cell.enterpriseName.text = enterprise.name
         cell.subtitleLabel.text = ""
@@ -61,8 +49,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             cell.subtitleLabel.text = "Value $ " + (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(enterprise)?.currentValue.description)!
         }
         
-        
-      
         cell.enterpriseImage.image = UIImage(named: enterprise.imageName)
         return cell
     }
@@ -73,7 +59,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return enterprisesInstance.enterprises.count
+        return AppData.sharedInstance.enterprises.enterprises.count
     }
 
     
@@ -84,60 +70,20 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
+        let selectedEnterprise = AppData.sharedInstance.enterprises.enterprises[indexPath.row]
+        
+        let investmentNotMadeInstance = InvestmentNotMadeVC(pEnterprise: selectedEnterprise, pHomeViewController: self)
 
-        
-        let enterprise = self.enterprisesInstance.enterprises[indexPath.row]
-        
-        self.enterpriseNameLabel.text = enterprise.name
-        
-        self.enterpriseDescriptionLabel.text = enterprise.description
-        self.enterpriseMarketValueLabel.text = "Market Value: " + enterprise.value.description
-        self.detailsViewShow()
+        self.presentInvestmentNotMadeViewController(investmentNotMadeInstance)
     }
     
-    @IBAction func closeDetailsButonAct(sender: UIButton) {
-        self.detailsViewClose()
-    }
 
-    
-    func detailsViewShow(){
+    func presentInvestmentNotMadeViewController(pViewController:InvestmentNotMadeVC){
+        self.addChildViewController(pViewController)
         self.enterpriseDetailsView.hidden = false
-        self.enterpriseDetailsView.userInteractionEnabled = true
         self.blurView.hidden = false
-        self.invesmentValueSlider.value = 0
-        self.investingValue.text = "$ 0"
+        self.enterpriseDetailsView.addSubview(pViewController.view)
     }
-    
-    
-    func detailsViewClose(){
-        self.enterpriseDetailsView.hidden = true
-        self.enterpriseDetailsView.userInteractionEnabled = false
-        self.blurView.hidden = true
-    }
-    
-    
-    @IBAction func sliderValueChange(sender: UISlider) {
-        let str = (AppData.sharedInstance.player.balance * Double(self.invesmentValueSlider.value)).description
-        var strsplit = str.characters.split{$0 == "."}.map(String.init)
-        self.investingValue.text = "$ " + strsplit[0]
-        
-    }
-    
-
-    @IBAction func investButtonAct(sender: UIButton) {
-        
-        let investmentValue = (AppData.sharedInstance.player.balance * Double(self.invesmentValueSlider.value))
-        
-        let enterprise =  self.enterprisesInstance.enterprises[(self.tableView.indexPathForSelectedRow?.row)!]
-        
-        AppData.sharedInstance.investmentManager.applyInHighRiskInvestment(enterprise, pValue: investmentValue)
-        
-        self.tableView.deselectRowAtIndexPath(self.tableView.indexPathForSelectedRow!, animated: false)
-        self.detailsViewClose()
-        self.tableView.reloadData()
-        self.viewDidLoad()
-    }
-    
     
     @IBAction func goalsButtonAct(sender: UIButton) {
         
