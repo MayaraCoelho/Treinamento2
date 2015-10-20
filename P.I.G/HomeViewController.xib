@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Wall_Invest" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="P_I_G" customModuleProvider="target">
             <connections>
                 <outlet property="blurView" destination="pQH-xO-Kcr" id="IcX-cP-b2i"/>
                 <outlet property="enterpriseDetailsView" destination="Had-2w-Qmy" id="o1L-gb-7O7"/>
@@ -254,21 +254,21 @@
                     <exclude reference="Had-2w-Qmy"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="Hsq-7w-sCC"/>
-                    <exclude reference="T6V-VA-7fD"/>
-                    <exclude reference="jJ7-Hg-E1F"/>
-                    <exclude reference="mZA-5O-IMU"/>
+                    <exclude reference="W1p-m9-faK"/>
+                    <exclude reference="vCo-Tk-aPo"/>
                     <exclude reference="0ra-rC-z5I"/>
                     <exclude reference="Jm3-x3-4DZ"/>
                     <exclude reference="R9A-lx-V5V"/>
                     <exclude reference="W3h-6w-rVm"/>
                     <exclude reference="siU-NC-Usv"/>
+                    <exclude reference="Hsq-7w-sCC"/>
+                    <exclude reference="T6V-VA-7fD"/>
+                    <exclude reference="jJ7-Hg-E1F"/>
+                    <exclude reference="mZA-5O-IMU"/>
                     <exclude reference="2si-g0-sY0"/>
                     <exclude reference="FHq-Uc-YJS"/>
                     <exclude reference="MYa-J4-CAl"/>
                     <exclude reference="TGG-Z8-XEY"/>
-                    <exclude reference="W1p-m9-faK"/>
-                    <exclude reference="vCo-Tk-aPo"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -280,21 +280,21 @@
                     <include reference="Had-2w-Qmy"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="Hsq-7w-sCC"/>
-                    <include reference="T6V-VA-7fD"/>
-                    <include reference="jJ7-Hg-E1F"/>
-                    <include reference="mZA-5O-IMU"/>
+                    <include reference="W1p-m9-faK"/>
+                    <include reference="vCo-Tk-aPo"/>
                     <include reference="0ra-rC-z5I"/>
                     <include reference="Jm3-x3-4DZ"/>
                     <include reference="R9A-lx-V5V"/>
                     <include reference="W3h-6w-rVm"/>
                     <include reference="siU-NC-Usv"/>
+                    <include reference="Hsq-7w-sCC"/>
+                    <include reference="T6V-VA-7fD"/>
+                    <include reference="jJ7-Hg-E1F"/>
+                    <include reference="mZA-5O-IMU"/>
                     <include reference="2si-g0-sY0"/>
                     <include reference="FHq-Uc-YJS"/>
                     <include reference="MYa-J4-CAl"/>
                     <include reference="TGG-Z8-XEY"/>
-                    <include reference="W1p-m9-faK"/>
-                    <include reference="vCo-Tk-aPo"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="510" y="450"/>
