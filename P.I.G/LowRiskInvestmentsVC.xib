@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8191"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LowRiskInvestmentsVC" customModule="P_I_G" customModuleProvider="target">
@@ -11,7 +11,7 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="LRI" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -33,32 +33,63 @@
                         </mask>
                     </variation>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Low Risk Investments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pss-6U-jqX">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="165" id="Vfz-fZ-aTf"/>
+                        <constraint firstAttribute="height" constant="21" id="lIQ-u2-4IE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Vfz-fZ-aTf"/>
+                            <exclude reference="lIQ-u2-4IE"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Vfz-fZ-aTf"/>
+                            <include reference="lIQ-u2-4IE"/>
+                        </mask>
+                    </variation>
+                </label>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="S76-Ua-UqD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="QU8-Wh-6jp"/>
                 <constraint firstAttribute="trailing" secondItem="S76-Ua-UqD" secondAttribute="trailing" constant="5" id="WD6-00-M9L"/>
+                <constraint firstItem="Pss-6U-jqX" firstAttribute="top" secondItem="S76-Ua-UqD" secondAttribute="bottom" constant="23" id="fIB-Tg-T8G"/>
+                <constraint firstItem="Pss-6U-jqX" firstAttribute="centerX" secondItem="S76-Ua-UqD" secondAttribute="centerX" id="hGm-wc-H4v"/>
                 <constraint firstItem="S76-Ua-UqD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="uxe-cx-4P4"/>
             </constraints>
             <variation key="default">
                 <mask key="subviews">
                     <exclude reference="S76-Ua-UqD"/>
+                    <exclude reference="Pss-6U-jqX"/>
                 </mask>
                 <mask key="constraints">
                     <exclude reference="QU8-Wh-6jp"/>
                     <exclude reference="WD6-00-M9L"/>
                     <exclude reference="uxe-cx-4P4"/>
+                    <exclude reference="fIB-Tg-T8G"/>
+                    <exclude reference="hGm-wc-H4v"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="subviews">
                     <include reference="S76-Ua-UqD"/>
+                    <include reference="Pss-6U-jqX"/>
                 </mask>
                 <mask key="constraints">
                     <include reference="QU8-Wh-6jp"/>
                     <include reference="WD6-00-M9L"/>
                     <include reference="uxe-cx-4P4"/>
+                    <include reference="fIB-Tg-T8G"/>
+                    <include reference="hGm-wc-H4v"/>
                 </mask>
             </variation>
         </view>

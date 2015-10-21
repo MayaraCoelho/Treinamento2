@@ -13,7 +13,7 @@ class AppData{
     
     var player:Player
     var store:Store
-    var enterprises:Enterprises
+    var enterprises:[Enterprise]
     var timer:Timer
     var investmentManager:InvestmentManager
     
@@ -22,7 +22,7 @@ class AppData{
     init(){
         self.player = Player()
         self.store = Store()
-        self.enterprises = Enterprises()
+        self.enterprises = EnterpriseProperties.init().enterprises
         self.timer = Timer()
         self.investmentManager = InvestmentManager()
     }
@@ -31,7 +31,7 @@ class AppData{
     func startNewGame(){
         self.player = Player()
         self.store = Store()
-        self.enterprises = Enterprises()
+        self.enterprises = EnterpriseProperties.init().enterprises
         self.timer = Timer()
     }
 

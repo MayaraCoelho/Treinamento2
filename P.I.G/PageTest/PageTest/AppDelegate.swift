@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  P.I.G
+//  PageTest
 //
-//  Created by Henrique do Prado Linhares on 20/10/15.
+//  Created by Henrique do Prado Linhares on 21/10/15.
 //  Copyright © 2015 Henrique do Prado Linhares. All rights reserved.
 //
 
@@ -16,17 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
-        /*
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        let homeViewController = HighRiskInvestmentsVC()
-        self.window?.rootViewController = homeViewController
-        self.window?.makeKeyAndVisible()*/
-        
-        PlayerDAO.sharedInstance.readPlayer()
-        
-        application.statusBarHidden = true
-        
         return true
     }
 

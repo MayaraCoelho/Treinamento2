@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Player:NSObject{
+class Player:NSObject, NSCoding{
     
     var balance:Double
     var highRiskInvestments:[HighRiskInvestment]
@@ -57,5 +57,46 @@ class Player:NSObject{
         }
     }
     
+    
+    
+    
+    
+    
+    //NSCoding Methods 
+    required convenience init?(coder decoder: NSCoder) {
+        self.init()
+        
+        
+        guard let dBalance = decoder.decodeObjectForKey("balance") as? Double
+            else {return nil }
+        self.balance = dBalance
+    
+       
+        guard let dHighRiskInvestments = decoder.decodeObjectForKey("HighRiskInvestments") as? [HighRiskInvestment]
+            else {return nil }
+        self.highRiskInvestments = dHighRiskInvestments
+        
+        
+        guard let dLowRiskInvestments = decoder.decodeObjectForKey("LowRiskInvestments") as? [LowRiskInvestment]
+            else {return nil }
+        self.lowRiskInvestments = dLowRiskInvestments
+        
+        
+        guard let dIncome = decoder.decodeObjectForKey("income") as? Double
+            else {return nil }
+        self.income = dIncome
+        
+
+        
+        
+        
+    }
+    
+    func encodeWithCoder(coder: NSCoder) {
+        coder.encodeObject(self.balance, forKey: "balance")
+        coder.encodeObject(self.highRiskInvestments, forKey: "HighRiskInvestments")
+        coder.encodeObject(self.lowRiskInvestments, forKey: "LowRiskInvestments")
+        coder.encodeObject(self.income, forKey: "income")
+    }
     
 }

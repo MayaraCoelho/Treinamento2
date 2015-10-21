@@ -17,6 +17,7 @@ class PropertiesVC: UIViewController {
         let topbarVC = TopBarViewController()
         self.addChildViewController(topbarVC)
         self.topBarContainerView.addSubview(topbarVC.view)
+        self.restorationIdentifier = "PropertiesVC"
         
         // Do any additional setup after loading the view.
     }

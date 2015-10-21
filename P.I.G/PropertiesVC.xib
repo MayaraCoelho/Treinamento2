@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8191"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PropertiesVC" customModule="P_I_G" customModuleProvider="target">
@@ -33,32 +33,63 @@
                         </mask>
                     </variation>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Properties" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZP8-lq-1uQ">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="Cxw-gY-Nd1"/>
+                        <constraint firstAttribute="height" constant="21" id="D9A-50-xJB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Cxw-gY-Nd1"/>
+                            <exclude reference="D9A-50-xJB"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Cxw-gY-Nd1"/>
+                            <include reference="D9A-50-xJB"/>
+                        </mask>
+                    </variation>
+                </label>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="ZP8-lq-1uQ" firstAttribute="top" secondItem="jxt-0f-8q3" secondAttribute="bottom" constant="25" id="Juy-xN-kz1"/>
                 <constraint firstItem="jxt-0f-8q3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="Um6-EN-ViB"/>
+                <constraint firstItem="ZP8-lq-1uQ" firstAttribute="centerX" secondItem="jxt-0f-8q3" secondAttribute="centerX" id="VmL-qs-Bk7"/>
                 <constraint firstItem="jxt-0f-8q3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="Zeb-rR-cf7"/>
                 <constraint firstAttribute="trailing" secondItem="jxt-0f-8q3" secondAttribute="trailing" constant="5" id="ysk-Q2-HML"/>
             </constraints>
             <variation key="default">
                 <mask key="subviews">
                     <exclude reference="jxt-0f-8q3"/>
+                    <exclude reference="ZP8-lq-1uQ"/>
                 </mask>
                 <mask key="constraints">
                     <exclude reference="Um6-EN-ViB"/>
                     <exclude reference="Zeb-rR-cf7"/>
                     <exclude reference="ysk-Q2-HML"/>
+                    <exclude reference="Juy-xN-kz1"/>
+                    <exclude reference="VmL-qs-Bk7"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="subviews">
                     <include reference="jxt-0f-8q3"/>
+                    <include reference="ZP8-lq-1uQ"/>
                 </mask>
                 <mask key="constraints">
                     <include reference="Um6-EN-ViB"/>
                     <include reference="Zeb-rR-cf7"/>
                     <include reference="ysk-Q2-HML"/>
+                    <include reference="Juy-xN-kz1"/>
+                    <include reference="VmL-qs-Bk7"/>
                 </mask>
             </variation>
         </view>

@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B041E5E41BD82A6000D2B44E /* Database.plist in Resources */ = {isa = PBXBuildFile; fileRef = B041E5E31BD82A6000D2B44E /* Database.plist */; settings = {ASSET_TAGS = (); }; };
+		B05616561BD822B7004E3B7D /* PlayerDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05616551BD822B7004E3B7D /* PlayerDAO.swift */; settings = {ASSET_TAGS = (); }; };
+		B05616581BD822ED004E3B7D /* PListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05616571BD822ED004E3B7D /* PListManager.swift */; settings = {ASSET_TAGS = (); }; };
 		B0C846811BD7F0B20092F8EC /* TopBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C8467F1BD7F0B20092F8EC /* TopBarViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B0C846821BD7F0B20092F8EC /* TopBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0C846801BD7F0B20092F8EC /* TopBarViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		B0C846851BD7FC610092F8EC /* LowRiskInvestmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C846831BD7FC610092F8EC /* LowRiskInvestmentsVC.swift */; settings = {ASSET_TAGS = (); }; };
 		B0C846861BD7FC610092F8EC /* LowRiskInvestmentsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0C846841BD7FC610092F8EC /* LowRiskInvestmentsVC.xib */; settings = {ASSET_TAGS = (); }; };
 		B0C846891BD7FD4F0092F8EC /* PropertiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C846871BD7FD4F0092F8EC /* PropertiesVC.swift */; settings = {ASSET_TAGS = (); }; };
 		B0C8468A1BD7FD4F0092F8EC /* PropertiesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0C846881BD7FD4F0092F8EC /* PropertiesVC.xib */; settings = {ASSET_TAGS = (); }; };
+		B0C846B41BD80A1C0092F8EC /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C846B31BD80A1C0092F8EC /* PageViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B0F794B21BD6BE8000BC69ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794B11BD6BE8000BC69ED /* AppDelegate.swift */; };
 		B0F794B91BD6BE8000BC69ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0F794B81BD6BE8000BC69ED /* Assets.xcassets */; };
 		B0F794CA1BD6BF3100BC69ED /* HighRiskInvestmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794C71BD6BF3100BC69ED /* HighRiskInvestmentsVC.swift */; settings = {ASSET_TAGS = (); }; };
@@ -25,7 +29,6 @@
 		B0F794D61BD6BF4E00BC69ED /* InvestmentNotMadeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F794D11BD6BF4E00BC69ED /* InvestmentNotMadeVC.xib */; settings = {ASSET_TAGS = (); }; };
 		B0F794E71BD6BF5600BC69ED /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794D71BD6BF5600BC69ED /* AppData.swift */; settings = {ASSET_TAGS = (); }; };
 		B0F794E81BD6BF5600BC69ED /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794D81BD6BF5600BC69ED /* Timer.swift */; settings = {ASSET_TAGS = (); }; };
-		B0F794E91BD6BF5600BC69ED /* Enterprises.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794D91BD6BF5600BC69ED /* Enterprises.swift */; settings = {ASSET_TAGS = (); }; };
 		B0F794EA1BD6BF5600BC69ED /* EnterpriseProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794DA1BD6BF5600BC69ED /* EnterpriseProperties.swift */; settings = {ASSET_TAGS = (); }; };
 		B0F794EB1BD6BF5600BC69ED /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794DB1BD6BF5600BC69ED /* Store.swift */; settings = {ASSET_TAGS = (); }; };
 		B0F794EC1BD6BF5600BC69ED /* GoalProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794DC1BD6BF5600BC69ED /* GoalProperties.swift */; settings = {ASSET_TAGS = (); }; };
@@ -55,12 +58,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B041E5E31BD82A6000D2B44E /* Database.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Database.plist; sourceTree = "<group>"; };
+		B05616551BD822B7004E3B7D /* PlayerDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDAO.swift; sourceTree = "<group>"; };
+		B05616571BD822ED004E3B7D /* PListManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PListManager.swift; sourceTree = "<group>"; };
 		B0C8467F1BD7F0B20092F8EC /* TopBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarViewController.swift; sourceTree = "<group>"; };
 		B0C846801BD7F0B20092F8EC /* TopBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopBarViewController.xib; sourceTree = "<group>"; };
 		B0C846831BD7FC610092F8EC /* LowRiskInvestmentsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowRiskInvestmentsVC.swift; sourceTree = "<group>"; };
 		B0C846841BD7FC610092F8EC /* LowRiskInvestmentsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LowRiskInvestmentsVC.xib; sourceTree = "<group>"; };
 		B0C846871BD7FD4F0092F8EC /* PropertiesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesVC.swift; sourceTree = "<group>"; };
 		B0C846881BD7FD4F0092F8EC /* PropertiesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertiesVC.xib; sourceTree = "<group>"; };
+		B0C846B31BD80A1C0092F8EC /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		B0F794AE1BD6BE8000BC69ED /* P.I.G.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P.I.G.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F794B11BD6BE8000BC69ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0F794B81BD6BE8000BC69ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,7 +82,6 @@
 		B0F794D11BD6BF4E00BC69ED /* InvestmentNotMadeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvestmentNotMadeVC.xib; sourceTree = "<group>"; };
 		B0F794D71BD6BF5600BC69ED /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		B0F794D81BD6BF5600BC69ED /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
-		B0F794D91BD6BF5600BC69ED /* Enterprises.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enterprises.swift; sourceTree = "<group>"; };
 		B0F794DA1BD6BF5600BC69ED /* EnterpriseProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterpriseProperties.swift; sourceTree = "<group>"; };
 		B0F794DB1BD6BF5600BC69ED /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		B0F794DC1BD6BF5600BC69ED /* GoalProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalProperties.swift; sourceTree = "<group>"; };
@@ -115,6 +121,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B05616541BD822A9004E3B7D /* DAOs */ = {
+			isa = PBXGroup;
+			children = (
+				B05616571BD822ED004E3B7D /* PListManager.swift */,
+				B05616551BD822B7004E3B7D /* PlayerDAO.swift */,
+			);
+			name = DAOs;
+			sourceTree = "<group>";
+		};
 		B0F794A51BD6BE8000BC69ED = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				B0F794B11BD6BE8000BC69ED /* AppDelegate.swift */,
+				B041E5E31BD82A6000D2B44E /* Database.plist */,
 				B0F794C51BD6BEE200BC69ED /* Controller */,
 				B0F794C41BD6BEDD00BC69ED /* View */,
 				B0F794C31BD6BED300BC69ED /* Model */,
@@ -148,9 +164,9 @@
 		B0F794C31BD6BED300BC69ED /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B05616541BD822A9004E3B7D /* DAOs */,
 				B0F794D71BD6BF5600BC69ED /* AppData.swift */,
 				B0F794D81BD6BF5600BC69ED /* Timer.swift */,
-				B0F794D91BD6BF5600BC69ED /* Enterprises.swift */,
 				B0F794DA1BD6BF5600BC69ED /* EnterpriseProperties.swift */,
 				B0F794DB1BD6BF5600BC69ED /* Store.swift */,
 				B0F794DC1BD6BF5600BC69ED /* GoalProperties.swift */,
@@ -172,10 +188,10 @@
 			isa = PBXGroup;
 			children = (
 				B0F794CD1BD6BF4E00BC69ED /* Main.storyboard */,
-				B0C846841BD7FC610092F8EC /* LowRiskInvestmentsVC.xib */,
 				B0C846881BD7FD4F0092F8EC /* PropertiesVC.xib */,
 				B0F794CE1BD6BF4E00BC69ED /* LaunchScreen.storyboard */,
 				B0F794CF1BD6BF4E00BC69ED /* HighRiskInvestmentsVC.xib */,
+				B0C846841BD7FC610092F8EC /* LowRiskInvestmentsVC.xib */,
 				B0F794D01BD6BF4E00BC69ED /* InvestmentTableViewCell.xib */,
 				B0F794D11BD6BF4E00BC69ED /* InvestmentNotMadeVC.xib */,
 				B0C846801BD7F0B20092F8EC /* TopBarViewController.xib */,
@@ -186,6 +202,7 @@
 		B0F794C51BD6BEE200BC69ED /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B0C846B31BD80A1C0092F8EC /* PageViewController.swift */,
 				B0F794C71BD6BF3100BC69ED /* HighRiskInvestmentsVC.swift */,
 				B0C846871BD7FD4F0092F8EC /* PropertiesVC.swift */,
 				B0F794C81BD6BF3100BC69ED /* InvestmentTableViewCell.swift */,
@@ -288,6 +305,7 @@
 				B0F7950D1BD6BF6400BC69ED /* fast.png in Resources */,
 				B0C846821BD7F0B20092F8EC /* TopBarViewController.xib in Resources */,
 				B0F7950C1BD6BF6400BC69ED /* everestOil.png in Resources */,
+				B041E5E41BD82A6000D2B44E /* Database.plist in Resources */,
 				B0C8468A1BD7FD4F0092F8EC /* PropertiesVC.xib in Resources */,
 				B0F794D51BD6BF4E00BC69ED /* InvestmentTableViewCell.xib in Resources */,
 				B0F794D21BD6BF4E00BC69ED /* Main.storyboard in Resources */,
@@ -306,9 +324,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0F794F11BD6BF5600BC69ED /* Property.swift in Sources */,
-				B0F794E91BD6BF5600BC69ED /* Enterprises.swift in Sources */,
 				B0F794B21BD6BE8000BC69ED /* AppDelegate.swift in Sources */,
 				B0F794CB1BD6BF3100BC69ED /* InvestmentTableViewCell.swift in Sources */,
+				B05616561BD822B7004E3B7D /* PlayerDAO.swift in Sources */,
 				B0F794F01BD6BF5600BC69ED /* Tip.swift in Sources */,
 				B0F794F21BD6BF5600BC69ED /* PropertyProperties.swift in Sources */,
 				B0F794EB1BD6BF5600BC69ED /* Store.swift in Sources */,
@@ -316,10 +334,12 @@
 				B0F794F61BD6BF5600BC69ED /* Enterprise.swift in Sources */,
 				B0F794EE1BD6BF5600BC69ED /* Player.swift in Sources */,
 				B0F794EA1BD6BF5600BC69ED /* EnterpriseProperties.swift in Sources */,
+				B05616581BD822ED004E3B7D /* PListManager.swift in Sources */,
 				B0C846811BD7F0B20092F8EC /* TopBarViewController.swift in Sources */,
 				B0F794CC1BD6BF3100BC69ED /* InvestmentNotMadeVC.swift in Sources */,
 				B0C846851BD7FC610092F8EC /* LowRiskInvestmentsVC.swift in Sources */,
 				B0F794F41BD6BF5600BC69ED /* LowRiskInvestment.swift in Sources */,
+				B0C846B41BD80A1C0092F8EC /* PageViewController.swift in Sources */,
 				B0F794E81BD6BF5600BC69ED /* Timer.swift in Sources */,
 				B0F794EF1BD6BF5600BC69ED /* Goal.swift in Sources */,
 				B0F794F31BD6BF5600BC69ED /* Investment.swift in Sources */,

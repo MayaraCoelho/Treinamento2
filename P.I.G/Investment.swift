@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Investment {
+class Investment:NSObject {
     var investedValue:Double
     var currentValue:Double
     

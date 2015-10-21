@@ -1,6 +1,6 @@
 //
-//  LowRiskInvestmentsVC.swift
-//  P.I.G
+//  FirstViewController.swift
+//  PageTest
 //
 //  Created by Henrique do Prado Linhares on 21/10/15.
 //  Copyright © 2015 Henrique do Prado Linhares. All rights reserved.
@@ -8,16 +8,11 @@
 
 import UIKit
 
-class LowRiskInvestmentsVC: UIViewController {
+class FirstViewController: UIViewController {
 
-    @IBOutlet weak var topBarContainverView: UIView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let topBarVC = TopBarViewController()
-        self.addChildViewController(topBarVC)
-        self.topBarContainverView.addSubview(topBarVC.view)
-         self.restorationIdentifier = "LowRiskInvestmentVC"
+
         // Do any additional setup after loading the view.
     }
 

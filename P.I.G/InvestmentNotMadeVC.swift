@@ -44,7 +44,7 @@ class InvestmentNotMadeVC: UIViewController {
         
         self.enterpriseName.text = self.enterprise.name
         
-        self.enterpriseDescription.text = self.enterprise.description
+        self.enterpriseDescription.text = self.enterprise.descript
         
         self.enterpriseValueLabel.text = self.enterprise.value.description
         
@@ -76,6 +76,7 @@ class InvestmentNotMadeVC: UIViewController {
         let investmentValue = (AppData.sharedInstance.player.balance * Double(self.investmentValueSlider.value))
         AppData.sharedInstance.investmentManager.applyInHighRiskInvestment(self.enterprise, pValue: investmentValue)
         self.closePopUpScreen()
+        PlayerDAO.sharedInstance.savePlayer()
     }
     
 

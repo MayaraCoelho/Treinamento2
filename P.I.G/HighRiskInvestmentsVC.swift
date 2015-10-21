@@ -29,6 +29,9 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
         let topBarVC = TopBarViewController()
         self.addChildViewController(topBarVC)
         self.topBarViewContainer.addSubview(topBarVC.view)
+        self.restorationIdentifier = "HighRiskInvestmentVC"
+        
+        
         
     }
     
@@ -41,7 +44,7 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Investment") as! InvestmentTableViewCell
         
-        let enterprise = AppData.sharedInstance.enterprises.enterprises[indexPath.row]
+        let enterprise = AppData.sharedInstance.enterprises[indexPath.row]
         
         cell.enterpriseName.text = enterprise.name
         cell.subtitleLabel.text = ""
@@ -61,7 +64,7 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return AppData.sharedInstance.enterprises.enterprises.count
+        return AppData.sharedInstance.enterprises.count
     }
 
     
@@ -72,11 +75,13 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        let selectedEnterprise = AppData.sharedInstance.enterprises.enterprises[indexPath.row]
+        let selectedEnterprise = AppData.sharedInstance.enterprises[indexPath.row]
         
         let investmentNotMadeInstance = InvestmentNotMadeVC(pEnterprise: selectedEnterprise, pHomeViewController: self)
 
         self.presentInvestmentNotMadeViewController(investmentNotMadeInstance)
+        
+        
     }
     
 
