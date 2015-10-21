@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0C846811BD7F0B20092F8EC /* TopBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C8467F1BD7F0B20092F8EC /* TopBarViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B0C846821BD7F0B20092F8EC /* TopBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0C846801BD7F0B20092F8EC /* TopBarViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		B0C846851BD7FC610092F8EC /* LowRiskInvestmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C846831BD7FC610092F8EC /* LowRiskInvestmentsVC.swift */; settings = {ASSET_TAGS = (); }; };
+		B0C846861BD7FC610092F8EC /* LowRiskInvestmentsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0C846841BD7FC610092F8EC /* LowRiskInvestmentsVC.xib */; settings = {ASSET_TAGS = (); }; };
+		B0C846891BD7FD4F0092F8EC /* PropertiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C846871BD7FD4F0092F8EC /* PropertiesVC.swift */; settings = {ASSET_TAGS = (); }; };
+		B0C8468A1BD7FD4F0092F8EC /* PropertiesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0C846881BD7FD4F0092F8EC /* PropertiesVC.xib */; settings = {ASSET_TAGS = (); }; };
 		B0F794B21BD6BE8000BC69ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794B11BD6BE8000BC69ED /* AppDelegate.swift */; };
 		B0F794B91BD6BE8000BC69ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0F794B81BD6BE8000BC69ED /* Assets.xcassets */; };
-		B0F794CA1BD6BF3100BC69ED /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794C71BD6BF3100BC69ED /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B0F794CA1BD6BF3100BC69ED /* HighRiskInvestmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794C71BD6BF3100BC69ED /* HighRiskInvestmentsVC.swift */; settings = {ASSET_TAGS = (); }; };
 		B0F794CB1BD6BF3100BC69ED /* InvestmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794C81BD6BF3100BC69ED /* InvestmentTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		B0F794CC1BD6BF3100BC69ED /* InvestmentNotMadeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794C91BD6BF3100BC69ED /* InvestmentNotMadeVC.swift */; settings = {ASSET_TAGS = (); }; };
 		B0F794D21BD6BF4E00BC69ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F794CD1BD6BF4E00BC69ED /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
 		B0F794D31BD6BF4E00BC69ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F794CE1BD6BF4E00BC69ED /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
-		B0F794D41BD6BF4E00BC69ED /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F794CF1BD6BF4E00BC69ED /* HomeViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		B0F794D41BD6BF4E00BC69ED /* HighRiskInvestmentsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F794CF1BD6BF4E00BC69ED /* HighRiskInvestmentsVC.xib */; settings = {ASSET_TAGS = (); }; };
 		B0F794D51BD6BF4E00BC69ED /* InvestmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F794D01BD6BF4E00BC69ED /* InvestmentTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		B0F794D61BD6BF4E00BC69ED /* InvestmentNotMadeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F794D11BD6BF4E00BC69ED /* InvestmentNotMadeVC.xib */; settings = {ASSET_TAGS = (); }; };
 		B0F794E71BD6BF5600BC69ED /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794D71BD6BF5600BC69ED /* AppData.swift */; settings = {ASSET_TAGS = (); }; };
@@ -49,16 +55,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B0C8467F1BD7F0B20092F8EC /* TopBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarViewController.swift; sourceTree = "<group>"; };
+		B0C846801BD7F0B20092F8EC /* TopBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopBarViewController.xib; sourceTree = "<group>"; };
+		B0C846831BD7FC610092F8EC /* LowRiskInvestmentsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowRiskInvestmentsVC.swift; sourceTree = "<group>"; };
+		B0C846841BD7FC610092F8EC /* LowRiskInvestmentsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LowRiskInvestmentsVC.xib; sourceTree = "<group>"; };
+		B0C846871BD7FD4F0092F8EC /* PropertiesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesVC.swift; sourceTree = "<group>"; };
+		B0C846881BD7FD4F0092F8EC /* PropertiesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertiesVC.xib; sourceTree = "<group>"; };
 		B0F794AE1BD6BE8000BC69ED /* P.I.G.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P.I.G.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F794B11BD6BE8000BC69ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0F794B81BD6BE8000BC69ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0F794BD1BD6BE8000BC69ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0F794C71BD6BF3100BC69ED /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B0F794C71BD6BF3100BC69ED /* HighRiskInvestmentsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighRiskInvestmentsVC.swift; sourceTree = "<group>"; };
 		B0F794C81BD6BF3100BC69ED /* InvestmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentTableViewCell.swift; sourceTree = "<group>"; };
 		B0F794C91BD6BF3100BC69ED /* InvestmentNotMadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentNotMadeVC.swift; sourceTree = "<group>"; };
 		B0F794CD1BD6BF4E00BC69ED /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B0F794CE1BD6BF4E00BC69ED /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B0F794CF1BD6BF4E00BC69ED /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		B0F794CF1BD6BF4E00BC69ED /* HighRiskInvestmentsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HighRiskInvestmentsVC.xib; sourceTree = "<group>"; };
 		B0F794D01BD6BF4E00BC69ED /* InvestmentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvestmentTableViewCell.xib; sourceTree = "<group>"; };
 		B0F794D11BD6BF4E00BC69ED /* InvestmentNotMadeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvestmentNotMadeVC.xib; sourceTree = "<group>"; };
 		B0F794D71BD6BF5600BC69ED /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
@@ -160,10 +172,13 @@
 			isa = PBXGroup;
 			children = (
 				B0F794CD1BD6BF4E00BC69ED /* Main.storyboard */,
+				B0C846841BD7FC610092F8EC /* LowRiskInvestmentsVC.xib */,
+				B0C846881BD7FD4F0092F8EC /* PropertiesVC.xib */,
 				B0F794CE1BD6BF4E00BC69ED /* LaunchScreen.storyboard */,
-				B0F794CF1BD6BF4E00BC69ED /* HomeViewController.xib */,
+				B0F794CF1BD6BF4E00BC69ED /* HighRiskInvestmentsVC.xib */,
 				B0F794D01BD6BF4E00BC69ED /* InvestmentTableViewCell.xib */,
 				B0F794D11BD6BF4E00BC69ED /* InvestmentNotMadeVC.xib */,
+				B0C846801BD7F0B20092F8EC /* TopBarViewController.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -171,9 +186,12 @@
 		B0F794C51BD6BEE200BC69ED /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B0F794C71BD6BF3100BC69ED /* HomeViewController.swift */,
+				B0F794C71BD6BF3100BC69ED /* HighRiskInvestmentsVC.swift */,
+				B0C846871BD7FD4F0092F8EC /* PropertiesVC.swift */,
 				B0F794C81BD6BF3100BC69ED /* InvestmentTableViewCell.swift */,
 				B0F794C91BD6BF3100BC69ED /* InvestmentNotMadeVC.swift */,
+				B0C846831BD7FC610092F8EC /* LowRiskInvestmentsVC.swift */,
+				B0C8467F1BD7F0B20092F8EC /* TopBarViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -257,6 +275,7 @@
 			files = (
 				B0F794D61BD6BF4E00BC69ED /* InvestmentNotMadeVC.xib in Resources */,
 				B0F7950A1BD6BF6400BC69ED /* closeButton.png in Resources */,
+				B0C846861BD7FC610092F8EC /* LowRiskInvestmentsVC.xib in Resources */,
 				B0F7950F1BD6BF6400BC69ED /* bugSoftwareInc.png in Resources */,
 				B0F795081BD6BF6400BC69ED /* news.jpg in Resources */,
 				B0F7950B1BD6BF6400BC69ED /* building.jpg in Resources */,
@@ -267,12 +286,14 @@
 				B0F795041BD6BF6400BC69ED /* ArrowUp.png in Resources */,
 				B0F794B91BD6BE8000BC69ED /* Assets.xcassets in Resources */,
 				B0F7950D1BD6BF6400BC69ED /* fast.png in Resources */,
+				B0C846821BD7F0B20092F8EC /* TopBarViewController.xib in Resources */,
 				B0F7950C1BD6BF6400BC69ED /* everestOil.png in Resources */,
+				B0C8468A1BD7FD4F0092F8EC /* PropertiesVC.xib in Resources */,
 				B0F794D51BD6BF4E00BC69ED /* InvestmentTableViewCell.xib in Resources */,
 				B0F794D21BD6BF4E00BC69ED /* Main.storyboard in Resources */,
 				B0F795101BD6BF6400BC69ED /* goalsIcon.png in Resources */,
 				B0F795091BD6BF6400BC69ED /* elJuegoZone.png in Resources */,
-				B0F794D41BD6BF4E00BC69ED /* HomeViewController.xib in Resources */,
+				B0F794D41BD6BF4E00BC69ED /* HighRiskInvestmentsVC.xib in Resources */,
 				B0F795061BD6BF6400BC69ED /* mrAlwaysYoung.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,15 +316,18 @@
 				B0F794F61BD6BF5600BC69ED /* Enterprise.swift in Sources */,
 				B0F794EE1BD6BF5600BC69ED /* Player.swift in Sources */,
 				B0F794EA1BD6BF5600BC69ED /* EnterpriseProperties.swift in Sources */,
+				B0C846811BD7F0B20092F8EC /* TopBarViewController.swift in Sources */,
 				B0F794CC1BD6BF3100BC69ED /* InvestmentNotMadeVC.swift in Sources */,
+				B0C846851BD7FC610092F8EC /* LowRiskInvestmentsVC.swift in Sources */,
 				B0F794F41BD6BF5600BC69ED /* LowRiskInvestment.swift in Sources */,
 				B0F794E81BD6BF5600BC69ED /* Timer.swift in Sources */,
 				B0F794EF1BD6BF5600BC69ED /* Goal.swift in Sources */,
 				B0F794F31BD6BF5600BC69ED /* Investment.swift in Sources */,
 				B0F794ED1BD6BF5600BC69ED /* InvestmentManager.swift in Sources */,
-				B0F794CA1BD6BF3100BC69ED /* HomeViewController.swift in Sources */,
+				B0F794CA1BD6BF3100BC69ED /* HighRiskInvestmentsVC.swift in Sources */,
 				B0F794E71BD6BF5600BC69ED /* AppData.swift in Sources */,
 				B0F794EC1BD6BF5600BC69ED /* GoalProperties.swift in Sources */,
+				B0C846891BD7FD4F0092F8EC /* PropertiesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +456,7 @@
 				B0F794C21BD6BE8000BC69ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

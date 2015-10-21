@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopBarViewController" customModule="P_I_G" customModuleProvider="target">
+            <connections>
+                <outlet property="incomeLabel" destination="KzP-Np-sw7" id="yUS-U2-zGg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="walletLabel" destination="l5I-un-avO" id="m19-92-3oS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArrowUp.png" translatesAutoresizingMaskIntoConstraints="NO" id="UOp-Jg-iBn">
+                    <rect key="frame" x="0.0" y="0.0" width="53" height="75"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="53" id="6qv-ZK-2mh"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Income: $ VALUE / Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzP-Np-sw7">
+                    <rect key="frame" x="61" y="44" width="259" height="22"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="259" id="4A1-Zv-30i"/>
+                        <constraint firstAttribute="height" constant="21" id="oNa-uJ-K1V"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Wallet : $ VALUE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5I-un-avO">
+                    <rect key="frame" x="61" y="8" width="220" height="22"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="220" id="Bgy-L4-buU"/>
+                        <constraint firstAttribute="height" constant="21" id="loB-6I-Hxc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.47501151922247881" green="0.81639382696669083" blue="0.94387727192083271" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="l5I-un-avO" firstAttribute="leading" secondItem="UOp-Jg-iBn" secondAttribute="trailing" constant="8" id="2Cp-LA-3mW"/>
+                <constraint firstItem="KzP-Np-sw7" firstAttribute="leading" secondItem="UOp-Jg-iBn" secondAttribute="trailing" constant="8" id="4V8-dA-mQN"/>
+                <constraint firstItem="l5I-un-avO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="79c-mf-ALL"/>
+                <constraint firstItem="UOp-Jg-iBn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QdH-0X-6Cy"/>
+                <constraint firstAttribute="bottom" secondItem="UOp-Jg-iBn" secondAttribute="bottom" id="Uoj-DB-9dM"/>
+                <constraint firstAttribute="bottom" secondItem="KzP-Np-sw7" secondAttribute="bottom" constant="10" id="caF-4F-XTU"/>
+                <constraint firstItem="UOp-Jg-iBn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vIi-Ca-idv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="753" y="625.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ArrowUp.png" width="88" height="130"/>
+    </resources>
+</document>

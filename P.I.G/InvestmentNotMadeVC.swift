@@ -24,10 +24,10 @@ class InvestmentNotMadeVC: UIViewController {
     
     
     var enterprise:Enterprise
-    var homeViewController:HomeViewController
+    var homeViewController:HighRiskInvestmentsVC
     
 
-    init(pEnterprise:Enterprise, pHomeViewController:HomeViewController) {
+    init(pEnterprise:Enterprise, pHomeViewController:HighRiskInvestmentsVC) {
         self.enterprise = pEnterprise
         self.homeViewController = pHomeViewController
         super.init(nibName: nil, bundle: nil)
@@ -65,6 +65,10 @@ class InvestmentNotMadeVC: UIViewController {
         let str = (AppData.sharedInstance.player.balance * Double(self.investmentValueSlider.value)).description
         var strsplit = str.characters.split{$0 == "."}.map(String.init)
         self.investmentValueLabel.text = "$ " + strsplit[0]
+        
+        let value = (AppData.sharedInstance.player.balance * Double(self.investmentValueSlider.value))
+        
+        self.investmentValueLabel.text = NSString(format:"$ %.2f",value) as String
         
     }
     

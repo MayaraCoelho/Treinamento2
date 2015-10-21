@@ -19,11 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
-        let homeViewController = HomeViewController()
+        let homeViewController = HighRiskInvestmentsVC()
         
         self.window?.rootViewController = homeViewController
         
         self.window?.makeKeyAndVisible()
+        
+        application.statusBarHidden = true
         
         return true
     }

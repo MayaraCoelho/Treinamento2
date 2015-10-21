@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var enterpriseDetailsView: UIView!
     
@@ -16,19 +16,20 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var tableView: UITableView!
     
-    @IBOutlet weak var myWalletLabel: UILabel!
+    @IBOutlet weak var topBarViewContainer: UIView!
     
-    @IBOutlet weak var myIncomeLabel: UILabel!
-    
+    @IBOutlet weak var pageControl: UIPageControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let nib = UINib.init(nibName: "InvestmentTableViewCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "Investment")
-        self.myWalletLabel.text = "Wallet: $ " + AppData.sharedInstance.player.balance.description
-        self.myIncomeLabel.text = "Income: $ " + AppData.sharedInstance.player.income.description + " / day"
         self.enterpriseDetailsView.hidden = true
         self.blurView.hidden = true
+        let topBarVC = TopBarViewController()
+        self.addChildViewController(topBarVC)
+        self.topBarViewContainer.addSubview(topBarVC.view)
+        
     }
     
 
@@ -46,7 +47,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.subtitleLabel.text = ""
         
         if ((AppData.sharedInstance.player.doesHaveHighRiskInvestmentInEnterprise(enterprise))){
-            cell.subtitleLabel.text = "Value $ " + (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(enterprise)?.currentValue.description)!
+            
+            cell.subtitleLabel.text = NSString(format: "Value: %.2f ", (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(enterprise)?.currentValue)!) as String
         }
         
         cell.enterpriseImage.image = UIImage(named: enterprise.imageName)
@@ -85,15 +87,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.enterpriseDetailsView.addSubview(pViewController.view)
     }
     
-    @IBAction func goalsButtonAct(sender: UIButton) {
-        
-        for i:HighRiskInvestment in AppData.sharedInstance.player.highRiskInvestments {
-            AppData.sharedInstance.investmentManager.rescueFromHighRiskInvestment(i.enterprise)
-        }
-        self.viewDidLoad()
-        self.tableView.reloadData()
-    }
-
     
     
     
