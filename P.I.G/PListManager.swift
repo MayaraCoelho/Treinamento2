@@ -10,7 +10,7 @@ import Foundation
 
 class PListManager{
     
-        static let sharedInstance = PListManager()
+    static let sharedInstance = PListManager()
     
     func readPlist(namePlist: String, key: String) -> AnyObject{
         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
@@ -67,6 +67,16 @@ class PListManager{
         }
     }
     
+    
+    func databaseExists()->Bool{
+        let ans = self.readPlist("Database", key: "databaseExists") as! Bool
+        
+        if (ans == true){
+        return true
+        }
+        return false
+
+    }
     
     
     

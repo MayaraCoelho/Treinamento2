@@ -15,8 +15,8 @@ class GoalProperties{
     init(){
         
         self.goals = [Goal]()
-        var t = Tip(paramID: 1, paramDescription: "Tip description 01", paramImageName: "null")
-        var g = Goal(paramID: 1, paramDescription: "Description 01", paramTip: t)
+        let t = Tip(paramID: 1, paramDescription: "Tip description 01", paramImageName: "null")
+        let g = Goal(paramID: 1, paramDescription: "Description 01", paramTip: t)
         self.goals.append(g)
     
     

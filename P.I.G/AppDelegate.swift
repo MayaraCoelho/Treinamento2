@@ -23,7 +23,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = homeViewController
         self.window?.makeKeyAndVisible()*/
         
-        PlayerDAO.sharedInstance.readPlayer()
+        if (PListManager.sharedInstance.databaseExists()){ // If Database exists
+            //read database
+            PlayerDAO.sharedInstance.readPlayer()
+        } else {
+            // if database dont exists, create a new database
+            PlayerDAO.sharedInstance.savePlayer()
+            PListManager.sharedInstance.writePlist("Database", key: "databaseExists", data: true)
+        }
+        
+        
         
         application.statusBarHidden = true
         
