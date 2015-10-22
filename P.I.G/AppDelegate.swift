@@ -23,6 +23,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = homeViewController
         self.window?.makeKeyAndVisible()*/
         
+        let tabBarController = UITabBarController()
+        let highRiskInvestmentsVC = HighRiskInvestmentsVC()
+        let lowRiskInvestmentsVC = LowRiskInvestmentsVC()
+        let propertiesVC = PropertiesVC()
+        
+        
+        let controllers = [highRiskInvestmentsVC, lowRiskInvestmentsVC, propertiesVC]
+        tabBarController.viewControllers = controllers
+        window?.rootViewController = tabBarController
+        
+        highRiskInvestmentsVC.tabBarItem = UITabBarItem(
+            title: "High Risk",
+            image: nil,
+            tag: 1)
+        lowRiskInvestmentsVC.tabBarItem = UITabBarItem(
+            title: "Low Risk",
+            image: nil,
+            tag:2)
+        
+        propertiesVC.tabBarItem = UITabBarItem(
+            title: "Properties",
+            image: nil,
+            tag:3)
+        
+        
+        
+        
         if (PListManager.sharedInstance.databaseExists()){ // If Database exists
             //read database
             PlayerDAO.sharedInstance.readPlayer()

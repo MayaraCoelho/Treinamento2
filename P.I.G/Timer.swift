@@ -18,4 +18,7 @@ class Timer{
         self.lastUserActivity = NSDate()
         self.currentDate = NSDate()
     }
+    
+    
+    
 }

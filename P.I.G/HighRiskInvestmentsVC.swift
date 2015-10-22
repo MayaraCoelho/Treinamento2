@@ -30,9 +30,6 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
         self.addChildViewController(topBarVC)
         self.topBarViewContainer.addSubview(topBarVC.view)
         self.restorationIdentifier = "HighRiskInvestmentVC"
-        
-        
-        
     }
     
 
@@ -77,11 +74,21 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
         
         let selectedEnterprise = AppData.sharedInstance.enterprises[indexPath.row]
         
+        if (AppData.sharedInstance.player.doesHaveHighRiskInvestmentInEnterprise(selectedEnterprise)){
+
+            let selectedInvestment = (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(selectedEnterprise) as! HighRiskInvestment)
+            
+            let investmentMadeInstance = InvestmentMadeVC(pInvestment: selectedInvestment, pHomeViewController: self)
+            
+            self.presentInvestmentMadeViewController(investmentMadeInstance)
+            
+        } else {
+        
         let investmentNotMadeInstance = InvestmentNotMadeVC(pEnterprise: selectedEnterprise, pHomeViewController: self)
 
         self.presentInvestmentNotMadeViewController(investmentNotMadeInstance)
         
-        
+        }
     }
     
 
@@ -91,6 +98,15 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
         self.blurView.hidden = false
         self.enterpriseDetailsView.addSubview(pViewController.view)
     }
+    
+    
+    func presentInvestmentMadeViewController(pViewController:InvestmentMadeVC){
+        self.addChildViewController(pViewController)
+        self.enterpriseDetailsView.hidden = false
+        self.blurView.hidden = false
+        self.enterpriseDetailsView.addSubview(pViewController.view)
+    }
+    
     
     
     

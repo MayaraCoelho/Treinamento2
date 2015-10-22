@@ -95,6 +95,7 @@ class InvestmentNotMadeVC: UIViewController {
         self.homeViewController.viewDidLoad()
         self.homeViewController.tableView.reloadData()
         self.view.removeFromSuperview()
+        self.removeFromParentViewController()
     }
     
 

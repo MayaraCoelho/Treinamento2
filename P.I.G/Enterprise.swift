@@ -14,6 +14,7 @@ class Enterprise:NSObject, NSCoding {
     var id:Int
     var name:String
     var value:Double
+    var lastValue:Double
     var playerPercentage:Float
     var descript:String
     var imageName:String
@@ -22,11 +23,24 @@ class Enterprise:NSObject, NSCoding {
         self.id = pId
         self.name = pName
         self.value = pValue
+        self.lastValue = pValue
         self.playerPercentage = 0
         self.descript = pDescription
         self.imageName = pImageName
     }
 
+    
+    init(pId:Int, pName:String, pValue:Double, pLastValue:Double, pDescription:String, pImageName:String){
+        self.id = pId
+        self.name = pName
+        self.value = pValue
+        self.lastValue = pLastValue
+        self.playerPercentage = 0
+        self.descript = pDescription
+        self.imageName = pImageName
+    }
+
+    
    
     //NSCoding Methods
     required convenience init?(coder decoder: NSCoder) {
@@ -40,6 +54,8 @@ class Enterprise:NSObject, NSCoding {
         guard let dValue = decoder.decodeObjectForKey("value") as? Double
             else {return nil }
         
+        guard let dLastValue = decoder.decodeObjectForKey("lastValue") as? Double
+            else {return nil }
         
         guard let dPlayerPercentage = decoder.decodeObjectForKey("playerPercentage") as? Float
             else {return nil }
@@ -50,7 +66,7 @@ class Enterprise:NSObject, NSCoding {
         guard let dImageName = decoder.decodeObjectForKey("imageName") as? String
             else {return nil }
         
-        self.init(pId:dID, pName:dName, pValue:dValue, pDescription:dDescript, pImageName:dImageName)
+        self.init(pId:dID, pName:dName, pValue:dValue, pLastValue:dLastValue, pDescription:dDescript, pImageName:dImageName)
         self.playerPercentage = dPlayerPercentage
         
     }
@@ -59,6 +75,7 @@ class Enterprise:NSObject, NSCoding {
         coder.encodeObject(self.id, forKey: "id")
         coder.encodeObject(self.name, forKey: "name")
         coder.encodeObject(self.value, forKey: "value")
+        coder.encodeObject(self.lastValue, forKey: "lastValue")
         coder.encodeObject(self.playerPercentage, forKey: "playerPercentage")
         coder.encodeObject(self.descript, forKey: "descript")
         coder.encodeObject(self.imageName, forKey: "imageName")
