@@ -30,6 +30,7 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
         self.addChildViewController(topBarVC)
         self.topBarViewContainer.addSubview(topBarVC.view)
         self.restorationIdentifier = "HighRiskInvestmentVC"
+        
     }
     
 

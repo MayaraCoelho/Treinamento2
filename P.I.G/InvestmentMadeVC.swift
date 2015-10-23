@@ -18,7 +18,18 @@ class InvestmentMadeVC: UIViewController {
     
     @IBOutlet weak var investedValueLabel: UILabel!
     
+    @IBOutlet weak var investMoreLabel: UILabel!
 
+    @IBOutlet weak var investButton: UIButton!
+    
+    @IBOutlet weak var investSlider: UISlider!
+    
+    @IBOutlet weak var rescueLabel: UILabel!
+    
+    @IBOutlet weak var rescueButton: UIButton!
+    
+    @IBOutlet weak var rescueSlider: UISlider!
+    
     var homeViewController:HighRiskInvestmentsVC
     var investment:HighRiskInvestment
     
@@ -27,8 +38,16 @@ class InvestmentMadeVC: UIViewController {
 
         self.enterpriseNameLabel.text = self.investment.enterprise.name
         self.enterpriseDescriptionLabel.text = self.investment.enterprise.descript
-        self.enterpriseValueLabel.text = self.investment.enterprise.value.description
+        self.enterpriseValueLabel.text = NSString(format: "Market Value: %.2f",self.investment.enterprise.value) as String
         self.investedValueLabel.text = NSString(format: "Investment Value: %.2f",self.investment.currentValue) as String
+        
+        self.investMoreLabel.text = "Invest more: $ 0"
+        self.investButton.enabled = false
+        self.investSlider.value = 0
+        
+        self.rescueLabel.text = "Rescue: $ 0"
+        self.rescueButton.enabled = false
+        self.rescueSlider.value = 0
         
         // Do any additional setup after loading the view.
     }
@@ -44,11 +63,72 @@ class InvestmentMadeVC: UIViewController {
     }
     
     
+    @IBAction func investmentSliderValueChanged(sender: UISlider) {
+        //If the player wants and have money to invest
+        if ((AppData.sharedInstance.player.balance * Double(self.investSlider.value)) > 0){
+            self.investButton.enabled = true
+        } else {
+            self.investButton.enabled = false
+        }
+        
+        let value = (AppData.sharedInstance.player.balance * Double(self.investSlider.value))
+        self.investMoreLabel.text = NSString(format:"Invest More: $ %.2f",value) as String
+    }
+    
+    @IBAction func investButtonAct(sender: UIButton) {
+        let investmentValue = (AppData.sharedInstance.player.balance * Double(self.investSlider.value))
+        AppData.sharedInstance.investmentManager.applyInHighRiskInvestment(self.investment.enterprise, pValue: investmentValue)
+        self.closePopUpScreen()
+        PlayerDAO.sharedInstance.savePlayer()
+    }
+    
+    
+    @IBAction func rescueSliderValueChanged(sender: UISlider) {
+        if (self.rescueSlider.value > 0){
+            self.rescueButton.enabled = true
+        } else {
+            self.investButton.enabled = false
+        }
+        
+        let value = self.investment.currentValue * Double(self.rescueSlider.value)
+        self.rescueLabel.text = NSString(format: "Rescue: $ %.2f", value) as String
+    }
+    
+    
+    @IBAction func rescueButtonAct(sender: UIButton) {
+        
+        if (self.rescueSlider.value == 0){
+            return
+        } else {
+            
+            if (rescueSlider.value == 1){
+                AppData.sharedInstance.investmentManager.rescueFromHighRiskInvestment(self.investment.enterprise)
+            } else {
+        
+                let rescueValue = self.investment.currentValue * Double(self.rescueSlider.value)
+        
+                AppData.sharedInstance.investmentManager.rescueFromHighRiskInvestment(self.investment.enterprise, pValue: rescueValue)
+            }
+        
+            self.closePopUpScreen()
+            PlayerDAO.sharedInstance.savePlayer()
+            
+        }
+    }
+    
+    
+    
     @IBAction func closeViewButtonAct(sender: UIButton) {
         self.closePopUpScreen()
     }
 
-    
+    func closePopUpScreen(){
+        self.homeViewController.enterpriseDetailsView.hidden = true
+        self.homeViewController.blurView.hidden = true
+        self.homeViewController.viewDidLoad()
+        self.homeViewController.tableView.reloadData()
+        self.view.removeFromSuperview()
+    }
     
     
     
@@ -59,13 +139,7 @@ class InvestmentMadeVC: UIViewController {
     }
     
 
-    func closePopUpScreen(){
-        self.homeViewController.enterpriseDetailsView.hidden = true
-        self.homeViewController.blurView.hidden = true
-        self.homeViewController.viewDidLoad()
-        self.homeViewController.tableView.reloadData()
-        self.view.removeFromSuperview()
-    }
+
     
     
     /*

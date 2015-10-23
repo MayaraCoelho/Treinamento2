@@ -16,9 +16,14 @@ class TopBarViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.walletLabel.text = NSString(format: "Wallet: $ %.2f", AppData.sharedInstance.player.balance) as String
         self.incomeLabel.text = NSString(format: "Income: $ %.2f / day", AppData.sharedInstance.player.income) as String
-        self.updateTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateViewValues", userInfo: nil, repeats: true)
+        
+        print(AppData.sharedInstance.player.balance)
+        print(AppData.sharedInstance.player.income)
+        
+        self.updateTimer = NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: "updateViewValues", userInfo: nil, repeats: true)
     }
 
     func updateViewValues(){

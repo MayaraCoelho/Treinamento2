@@ -49,7 +49,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         
-        
         if (PListManager.sharedInstance.databaseExists()){ // If Database exists
             //read database
             PlayerDAO.sharedInstance.readPlayer()
@@ -59,6 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             PListManager.sharedInstance.writePlist("Database", key: "databaseExists", data: true)
         }
         
+
         
         
         application.statusBarHidden = true

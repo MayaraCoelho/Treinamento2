@@ -56,15 +56,12 @@ class InvestmentNotMadeVC: UIViewController {
     }
     
     @IBAction func sliderValueChanged(sender: UISlider) {
-        if (self.investmentValueSlider.value > 0){
+        //If the player wants and have money to invest
+        if ((AppData.sharedInstance.player.balance * Double(self.investmentValueSlider.value)) > 0){
             self.investmentButton.enabled = true
         } else {
             self.investmentButton.enabled = false
         }
-        
-        let str = (AppData.sharedInstance.player.balance * Double(self.investmentValueSlider.value)).description
-        var strsplit = str.characters.split{$0 == "."}.map(String.init)
-        self.investmentValueLabel.text = "$ " + strsplit[0]
         
         let value = (AppData.sharedInstance.player.balance * Double(self.investmentValueSlider.value))
         

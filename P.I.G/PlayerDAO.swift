@@ -23,6 +23,7 @@ class PlayerDAO{
     
     func readPlayer(){
         
+        print("reading player")
         
        let read = PListManager.sharedInstance.readPlist("Database", key: "player")
        
