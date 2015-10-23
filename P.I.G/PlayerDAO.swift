@@ -16,22 +16,14 @@ class PlayerDAO{
         print("saving player")
         let playerData : NSData = NSKeyedArchiver.archivedDataWithRootObject(AppData.sharedInstance.player)
         PListManager.sharedInstance.writePlist("Database", key: "player", data: playerData)
-        print("player saved")
     }
     
-    
-    
+        
     func readPlayer(){
-        
         print("reading player")
-        
-       let read = PListManager.sharedInstance.readPlist("Database", key: "player")
-       
+        let read = PListManager.sharedInstance.readPlist("Database", key: "player")
         let data = read as! NSData
-        
         AppData.sharedInstance.player = NSKeyedUnarchiver.unarchiveObjectWithData(data) as! Player
-
     }
-
 
 }

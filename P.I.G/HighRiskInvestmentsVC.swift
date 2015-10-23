@@ -18,7 +18,6 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
     
     @IBOutlet weak var topBarViewContainer: UIView!
     
-    @IBOutlet weak var pageControl: UIPageControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +29,8 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
         self.addChildViewController(topBarVC)
         self.topBarViewContainer.addSubview(topBarVC.view)
         self.restorationIdentifier = "HighRiskInvestmentVC"
+        
+        
         
     }
     

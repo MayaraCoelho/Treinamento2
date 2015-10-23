@@ -51,8 +51,7 @@ class Player:NSObject, NSCoding{
         var index = 0
         for hri:HighRiskInvestment in self.highRiskInvestments{
             if (hri.enterprise.id == pEnterprise.id){
-                let investment = self.highRiskInvestments.removeAtIndex(index)
-                print("removing \(investment.enterprise.name) from investments")
+                self.highRiskInvestments.removeAtIndex(index)
             }
             index++
         }
