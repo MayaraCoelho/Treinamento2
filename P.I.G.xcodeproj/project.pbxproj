@@ -17,15 +17,17 @@
 		B0C846891BD7FD4F0092F8EC /* PropertiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C846871BD7FD4F0092F8EC /* PropertiesVC.swift */; };
 		B0C8468A1BD7FD4F0092F8EC /* PropertiesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0C846881BD7FD4F0092F8EC /* PropertiesVC.xib */; };
 		B0C846B41BD80A1C0092F8EC /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C846B31BD80A1C0092F8EC /* PageViewController.swift */; };
+		B0DF04E81BDAABAF0022DCB9 /* ColorBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DF04E71BDAABAF0022DCB9 /* ColorBarViewController.swift */; };
+		B0DF04EA1BDAABB70022DCB9 /* ColorBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0DF04E91BDAABB70022DCB9 /* ColorBarViewController.xib */; };
 		B0F794B21BD6BE8000BC69ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794B11BD6BE8000BC69ED /* AppDelegate.swift */; };
 		B0F794B91BD6BE8000BC69ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0F794B81BD6BE8000BC69ED /* Assets.xcassets */; };
 		B0F794CA1BD6BF3100BC69ED /* HighRiskInvestmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794C71BD6BF3100BC69ED /* HighRiskInvestmentsVC.swift */; };
-		B0F794CB1BD6BF3100BC69ED /* InvestmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794C81BD6BF3100BC69ED /* InvestmentTableViewCell.swift */; };
+		B0F794CB1BD6BF3100BC69ED /* HRInvestmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794C81BD6BF3100BC69ED /* HRInvestmentTableViewCell.swift */; };
 		B0F794CC1BD6BF3100BC69ED /* InvestmentNotMadeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794C91BD6BF3100BC69ED /* InvestmentNotMadeVC.swift */; };
 		B0F794D21BD6BF4E00BC69ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F794CD1BD6BF4E00BC69ED /* Main.storyboard */; };
 		B0F794D31BD6BF4E00BC69ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F794CE1BD6BF4E00BC69ED /* LaunchScreen.storyboard */; };
 		B0F794D41BD6BF4E00BC69ED /* HighRiskInvestmentsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F794CF1BD6BF4E00BC69ED /* HighRiskInvestmentsVC.xib */; };
-		B0F794D51BD6BF4E00BC69ED /* InvestmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F794D01BD6BF4E00BC69ED /* InvestmentTableViewCell.xib */; };
+		B0F794D51BD6BF4E00BC69ED /* HRInvestmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F794D01BD6BF4E00BC69ED /* HRInvestmentTableViewCell.xib */; };
 		B0F794D61BD6BF4E00BC69ED /* InvestmentNotMadeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F794D11BD6BF4E00BC69ED /* InvestmentNotMadeVC.xib */; };
 		B0F794E71BD6BF5600BC69ED /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794D71BD6BF5600BC69ED /* AppData.swift */; };
 		B0F794E81BD6BF5600BC69ED /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794D81BD6BF5600BC69ED /* Timer.swift */; };
@@ -71,17 +73,19 @@
 		B0C846871BD7FD4F0092F8EC /* PropertiesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesVC.swift; sourceTree = "<group>"; };
 		B0C846881BD7FD4F0092F8EC /* PropertiesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertiesVC.xib; sourceTree = "<group>"; };
 		B0C846B31BD80A1C0092F8EC /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		B0DF04E71BDAABAF0022DCB9 /* ColorBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorBarViewController.swift; sourceTree = "<group>"; };
+		B0DF04E91BDAABB70022DCB9 /* ColorBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorBarViewController.xib; sourceTree = "<group>"; };
 		B0F794AE1BD6BE8000BC69ED /* P.I.G.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P.I.G.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F794B11BD6BE8000BC69ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0F794B81BD6BE8000BC69ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0F794BD1BD6BE8000BC69ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0F794C71BD6BF3100BC69ED /* HighRiskInvestmentsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighRiskInvestmentsVC.swift; sourceTree = "<group>"; };
-		B0F794C81BD6BF3100BC69ED /* InvestmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentTableViewCell.swift; sourceTree = "<group>"; };
+		B0F794C81BD6BF3100BC69ED /* HRInvestmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HRInvestmentTableViewCell.swift; sourceTree = "<group>"; };
 		B0F794C91BD6BF3100BC69ED /* InvestmentNotMadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentNotMadeVC.swift; sourceTree = "<group>"; };
 		B0F794CD1BD6BF4E00BC69ED /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B0F794CE1BD6BF4E00BC69ED /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0F794CF1BD6BF4E00BC69ED /* HighRiskInvestmentsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HighRiskInvestmentsVC.xib; sourceTree = "<group>"; };
-		B0F794D01BD6BF4E00BC69ED /* InvestmentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvestmentTableViewCell.xib; sourceTree = "<group>"; };
+		B0F794D01BD6BF4E00BC69ED /* HRInvestmentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HRInvestmentTableViewCell.xib; sourceTree = "<group>"; };
 		B0F794D11BD6BF4E00BC69ED /* InvestmentNotMadeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvestmentNotMadeVC.xib; sourceTree = "<group>"; };
 		B0F794D71BD6BF5600BC69ED /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		B0F794D81BD6BF5600BC69ED /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
@@ -199,9 +203,10 @@
 				B0F794CE1BD6BF4E00BC69ED /* LaunchScreen.storyboard */,
 				B0F794CF1BD6BF4E00BC69ED /* HighRiskInvestmentsVC.xib */,
 				B0C846841BD7FC610092F8EC /* LowRiskInvestmentsVC.xib */,
-				B0F794D01BD6BF4E00BC69ED /* InvestmentTableViewCell.xib */,
+				B0F794D01BD6BF4E00BC69ED /* HRInvestmentTableViewCell.xib */,
 				BE6A891B1BD94ECD006DFEAD /* InvestmentMadeVC.xib */,
 				B0F794D11BD6BF4E00BC69ED /* InvestmentNotMadeVC.xib */,
+				B0DF04E91BDAABB70022DCB9 /* ColorBarViewController.xib */,
 				B0C846801BD7F0B20092F8EC /* TopBarViewController.xib */,
 			);
 			name = View;
@@ -213,10 +218,11 @@
 				B0C846B31BD80A1C0092F8EC /* PageViewController.swift */,
 				B0F794C71BD6BF3100BC69ED /* HighRiskInvestmentsVC.swift */,
 				B0C846871BD7FD4F0092F8EC /* PropertiesVC.swift */,
-				B0F794C81BD6BF3100BC69ED /* InvestmentTableViewCell.swift */,
+				B0F794C81BD6BF3100BC69ED /* HRInvestmentTableViewCell.swift */,
 				B0F794C91BD6BF3100BC69ED /* InvestmentNotMadeVC.swift */,
 				BE6A891A1BD94ECD006DFEAD /* InvestmentMadeVC.swift */,
 				B0C846831BD7FC610092F8EC /* LowRiskInvestmentsVC.swift */,
+				B0DF04E71BDAABAF0022DCB9 /* ColorBarViewController.swift */,
 				B0C8467F1BD7F0B20092F8EC /* TopBarViewController.swift */,
 			);
 			name = Controller;
@@ -317,9 +323,10 @@
 				B0F7950C1BD6BF6400BC69ED /* everestOil.png in Resources */,
 				B041E5E41BD82A6000D2B44E /* Database.plist in Resources */,
 				B0C8468A1BD7FD4F0092F8EC /* PropertiesVC.xib in Resources */,
-				B0F794D51BD6BF4E00BC69ED /* InvestmentTableViewCell.xib in Resources */,
+				B0F794D51BD6BF4E00BC69ED /* HRInvestmentTableViewCell.xib in Resources */,
 				BE6A891D1BD94ECD006DFEAD /* InvestmentMadeVC.xib in Resources */,
 				B0F794D21BD6BF4E00BC69ED /* Main.storyboard in Resources */,
+				B0DF04EA1BDAABB70022DCB9 /* ColorBarViewController.xib in Resources */,
 				B0F795101BD6BF6400BC69ED /* goalsIcon.png in Resources */,
 				B0F795091BD6BF6400BC69ED /* elJuegoZone.png in Resources */,
 				B0F794D41BD6BF4E00BC69ED /* HighRiskInvestmentsVC.xib in Resources */,
@@ -337,13 +344,14 @@
 				B0F794F11BD6BF5600BC69ED /* Property.swift in Sources */,
 				B0F794B21BD6BE8000BC69ED /* AppDelegate.swift in Sources */,
 				BE6A891C1BD94ECD006DFEAD /* InvestmentMadeVC.swift in Sources */,
-				B0F794CB1BD6BF3100BC69ED /* InvestmentTableViewCell.swift in Sources */,
+				B0F794CB1BD6BF3100BC69ED /* HRInvestmentTableViewCell.swift in Sources */,
 				B05616561BD822B7004E3B7D /* PlayerDAO.swift in Sources */,
 				B0F794F01BD6BF5600BC69ED /* Tip.swift in Sources */,
 				B0F794F21BD6BF5600BC69ED /* PropertyProperties.swift in Sources */,
 				B0F794EB1BD6BF5600BC69ED /* Store.swift in Sources */,
 				B0F794F51BD6BF5600BC69ED /* HighRiskInvestment.swift in Sources */,
 				B0F794F61BD6BF5600BC69ED /* Enterprise.swift in Sources */,
+				B0DF04E81BDAABAF0022DCB9 /* ColorBarViewController.swift in Sources */,
 				B0F794EE1BD6BF5600BC69ED /* Player.swift in Sources */,
 				B0F794EA1BD6BF5600BC69ED /* EnterpriseProperties.swift in Sources */,
 				B05616581BD822ED004E3B7D /* PListManager.swift in Sources */,

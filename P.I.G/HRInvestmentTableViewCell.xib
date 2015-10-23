@@ -23,7 +23,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Everest Oil" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofm-pd-8e3">
-                        <rect key="frame" x="8" y="20" width="200" height="21"/>
+                        <rect key="frame" x="8" y="13" width="200" height="21"/>
                         <animations/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="WFG-Fn-mpS"/>
@@ -33,34 +33,32 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invested: $ 5631" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2w-kt-PEj">
-                        <rect key="frame" x="8" y="49" width="172" height="21"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ts-Wo-THe">
+                        <rect key="frame" x="8" y="42" width="200" height="28"/>
                         <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="172" id="cm5-PK-2Lt"/>
-                            <constraint firstAttribute="height" constant="21" id="jop-w4-f8l"/>
+                            <constraint firstAttribute="height" constant="28" id="E0e-c1-Aoo"/>
+                            <constraint firstAttribute="width" constant="200" id="hPQ-iw-j3d"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    </view>
                 </subviews>
                 <animations/>
                 <color key="backgroundColor" red="0.99444705915207909" green="0.91688846770321641" blue="0.79325834776293014" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
-                    <constraint firstItem="ofm-pd-8e3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="12" id="FtT-6f-GzG"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="L2w-kt-PEj" secondAttribute="bottom" constant="2" id="GvQ-Om-FgS"/>
+                    <constraint firstItem="ofm-pd-8e3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="FtT-6f-GzG"/>
+                    <constraint firstItem="8ts-Wo-THe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="TnX-OL-Tbp"/>
                     <constraint firstItem="ofm-pd-8e3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="eOm-mY-3ky"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="8ts-Wo-THe" secondAttribute="bottom" constant="1.5" id="io5-Wf-F6C"/>
                     <constraint firstItem="OEc-lO-PJc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ir1-ra-7Pb"/>
                     <constraint firstItem="OEc-lO-PJc" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="ndP-V4-BwV"/>
-                    <constraint firstItem="L2w-kt-PEj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="qk6-gh-R2d"/>
                 </constraints>
             </tableViewCellContentView>
             <animations/>
             <connections>
+                <outlet property="containerView" destination="8ts-Wo-THe" id="Uag-r5-PXm"/>
                 <outlet property="enterpriseImage" destination="OEc-lO-PJc" id="6IJ-vn-e2w"/>
                 <outlet property="enterpriseName" destination="ofm-pd-8e3" id="Kp3-e2-rz3"/>
-                <outlet property="subtitleLabel" destination="L2w-kt-PEj" id="4pV-Y6-6Gv"/>
             </connections>
             <point key="canvasLocation" x="876" y="556"/>
         </tableViewCell>

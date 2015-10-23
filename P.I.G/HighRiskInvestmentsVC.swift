@@ -22,7 +22,7 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let nib = UINib.init(nibName: "InvestmentTableViewCell", bundle: nil)
+        let nib = UINib.init(nibName: "HRInvestmentTableViewCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "Investment")
         self.enterpriseDetailsView.hidden = true
         self.blurView.hidden = true
@@ -45,11 +45,24 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
         let enterprise = AppData.sharedInstance.enterprises[indexPath.row]
         
         cell.enterpriseName.text = enterprise.name
-        cell.subtitleLabel.text = ""
+        //cell.subtitleLabel.text = ""
+        cell.containerView.hidden = true
+        
         
         if ((AppData.sharedInstance.player.doesHaveHighRiskInvestmentInEnterprise(enterprise))){
+            let investment = AppData.sharedInstance.player.highRiskInvestmentForEnterprise(enterprise)
             
-            cell.subtitleLabel.text = NSString(format: "Value: %.2f ", (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(enterprise)?.currentValue)!) as String
+            cell.containerView.hidden = false
+            let colorBarVC = ColorBarViewController()
+        
+            colorBarVC.view.frame = CGRectMake(0, 0, CGFloat(200), CGFloat(28))
+            self.addChildViewController(colorBarVC)
+            
+            cell.containerView.addSubview(colorBarVC.view)
+            
+            colorBarVC.drawBar(Float((investment?.currentValue)!) / Float((investment?.investedValue)!))
+            
+            colorBarVC.textLabel.text = NSString(format: "Value: %.2f ", (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(enterprise)?.currentValue)!) as String
         }
         
         cell.enterpriseImage.image = UIImage(named: enterprise.imageName)

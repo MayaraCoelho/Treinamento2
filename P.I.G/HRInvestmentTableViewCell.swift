@@ -14,7 +14,7 @@ class InvestmentTableViewCell: UITableViewCell {
     
     @IBOutlet weak var enterpriseImage: UIImageView!
     
-    @IBOutlet weak var subtitleLabel: UILabel!
+    @IBOutlet weak var containerView: UIView!
 
     
     override func awakeFromNib() {
