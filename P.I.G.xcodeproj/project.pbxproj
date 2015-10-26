@@ -13,7 +13,6 @@
 		B0C846811BD7F0B20092F8EC /* TopBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C8467F1BD7F0B20092F8EC /* TopBarViewController.swift */; };
 		B0C846821BD7F0B20092F8EC /* TopBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0C846801BD7F0B20092F8EC /* TopBarViewController.xib */; };
 		B0C846851BD7FC610092F8EC /* LowRiskInvestmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C846831BD7FC610092F8EC /* LowRiskInvestmentsVC.swift */; };
-		B0C846861BD7FC610092F8EC /* LowRiskInvestmentsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0C846841BD7FC610092F8EC /* LowRiskInvestmentsVC.xib */; };
 		B0C846891BD7FD4F0092F8EC /* PropertiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C846871BD7FD4F0092F8EC /* PropertiesVC.swift */; };
 		B0C8468A1BD7FD4F0092F8EC /* PropertiesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0C846881BD7FD4F0092F8EC /* PropertiesVC.xib */; };
 		B0C846B41BD80A1C0092F8EC /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C846B31BD80A1C0092F8EC /* PageViewController.swift */; };
@@ -60,6 +59,7 @@
 		BE6A89191BD94BE0006DFEAD /* EnterpriseValueUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A89181BD94BE0006DFEAD /* EnterpriseValueUpdater.swift */; };
 		BE6A891C1BD94ECD006DFEAD /* InvestmentMadeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A891A1BD94ECD006DFEAD /* InvestmentMadeVC.swift */; };
 		BE6A891D1BD94ECD006DFEAD /* InvestmentMadeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE6A891B1BD94ECD006DFEAD /* InvestmentMadeVC.xib */; };
+		F30E78611BDE9EA400F6E833 /* LowRiskInvestmentsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F30E78601BDE9EA400F6E833 /* LowRiskInvestmentsVC.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,7 +69,6 @@
 		B0C8467F1BD7F0B20092F8EC /* TopBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarViewController.swift; sourceTree = "<group>"; };
 		B0C846801BD7F0B20092F8EC /* TopBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopBarViewController.xib; sourceTree = "<group>"; };
 		B0C846831BD7FC610092F8EC /* LowRiskInvestmentsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowRiskInvestmentsVC.swift; sourceTree = "<group>"; };
-		B0C846841BD7FC610092F8EC /* LowRiskInvestmentsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LowRiskInvestmentsVC.xib; sourceTree = "<group>"; };
 		B0C846871BD7FD4F0092F8EC /* PropertiesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesVC.swift; sourceTree = "<group>"; };
 		B0C846881BD7FD4F0092F8EC /* PropertiesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertiesVC.xib; sourceTree = "<group>"; };
 		B0C846B31BD80A1C0092F8EC /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +117,7 @@
 		BE6A89181BD94BE0006DFEAD /* EnterpriseValueUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterpriseValueUpdater.swift; sourceTree = "<group>"; };
 		BE6A891A1BD94ECD006DFEAD /* InvestmentMadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentMadeVC.swift; sourceTree = "<group>"; };
 		BE6A891B1BD94ECD006DFEAD /* InvestmentMadeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvestmentMadeVC.xib; sourceTree = "<group>"; };
+		F30E78601BDE9EA400F6E833 /* LowRiskInvestmentsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LowRiskInvestmentsVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,9 +202,9 @@
 				B0C846881BD7FD4F0092F8EC /* PropertiesVC.xib */,
 				B0F794CE1BD6BF4E00BC69ED /* LaunchScreen.storyboard */,
 				B0F794CF1BD6BF4E00BC69ED /* HighRiskInvestmentsVC.xib */,
-				B0C846841BD7FC610092F8EC /* LowRiskInvestmentsVC.xib */,
 				B0F794D01BD6BF4E00BC69ED /* HRInvestmentTableViewCell.xib */,
 				BE6A891B1BD94ECD006DFEAD /* InvestmentMadeVC.xib */,
+				F30E78601BDE9EA400F6E833 /* LowRiskInvestmentsVC.xib */,
 				B0F794D11BD6BF4E00BC69ED /* InvestmentNotMadeVC.xib */,
 				B0DF04E91BDAABB70022DCB9 /* ColorBarViewController.xib */,
 				B0C846801BD7F0B20092F8EC /* TopBarViewController.xib */,
@@ -308,8 +308,8 @@
 			files = (
 				B0F794D61BD6BF4E00BC69ED /* InvestmentNotMadeVC.xib in Resources */,
 				B0F7950A1BD6BF6400BC69ED /* closeButton.png in Resources */,
-				B0C846861BD7FC610092F8EC /* LowRiskInvestmentsVC.xib in Resources */,
 				B0F7950F1BD6BF6400BC69ED /* bugSoftwareInc.png in Resources */,
+				F30E78611BDE9EA400F6E833 /* LowRiskInvestmentsVC.xib in Resources */,
 				B0F795081BD6BF6400BC69ED /* news.jpg in Resources */,
 				B0F7950B1BD6BF6400BC69ED /* building.jpg in Resources */,
 				B0F795071BD6BF6400BC69ED /* 14bis.jpg in Resources */,
