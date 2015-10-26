@@ -22,7 +22,7 @@ class InvestmentManager{
             investment.investedValue = investment.investedValue + pValue
             AppData.sharedInstance.player.highRiskInvestments.append(investment)
         } else {
-            let investment = HighRiskInvestment(pEnterprise: pEnterprise, pInvestedValue: pValue)
+            let investment = HighRiskInvestment(pEnterpriseID: pEnterprise.id, pInvestedValue: pValue)
             AppData.sharedInstance.player.highRiskInvestments.append(investment)
         }
     }

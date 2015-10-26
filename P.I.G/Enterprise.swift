@@ -13,7 +13,7 @@ class Enterprise:NSObject, NSCoding {
 
     var id:Int
     var name:String
-    var value:Double
+    var stockValue:Double
     var lastValue:Double
     var playerPercentage:Float
     var descript:String
@@ -22,7 +22,7 @@ class Enterprise:NSObject, NSCoding {
     init(pId:Int, pName:String, pValue:Double, pDescription:String, pImageName:String){
         self.id = pId
         self.name = pName
-        self.value = pValue
+        self.stockValue = pValue
         self.lastValue = pValue
         self.playerPercentage = 0
         self.descript = pDescription
@@ -33,7 +33,7 @@ class Enterprise:NSObject, NSCoding {
     init(pId:Int, pName:String, pValue:Double, pLastValue:Double, pDescription:String, pImageName:String){
         self.id = pId
         self.name = pName
-        self.value = pValue
+        self.stockValue = pValue
         self.lastValue = pLastValue
         self.playerPercentage = 0
         self.descript = pDescription
@@ -74,7 +74,7 @@ class Enterprise:NSObject, NSCoding {
     func encodeWithCoder(coder: NSCoder) {
         coder.encodeObject(self.id, forKey: "id")
         coder.encodeObject(self.name, forKey: "name")
-        coder.encodeObject(self.value, forKey: "value")
+        coder.encodeObject(self.stockValue, forKey: "value")
         coder.encodeObject(self.lastValue, forKey: "lastValue")
         coder.encodeObject(self.playerPercentage, forKey: "playerPercentage")
         coder.encodeObject(self.descript, forKey: "descript")

@@ -29,7 +29,7 @@ class Player:NSObject, NSCoding{
     func doesHaveHighRiskInvestmentInEnterprise(pEnterprise:Enterprise)->Bool{
 
         for hri:HighRiskInvestment in self.highRiskInvestments{
-            if (hri.enterprise.id == pEnterprise.id){
+            if (hri.enterpriseID == pEnterprise.id){
                 return true
             }
         }
@@ -39,7 +39,7 @@ class Player:NSObject, NSCoding{
     
     func highRiskInvestmentForEnterprise(pEnterprise:Enterprise)->Investment?{
         for hri:HighRiskInvestment in self.highRiskInvestments{
-            if (hri.enterprise.id == pEnterprise.id){
+            if (hri.enterpriseID == pEnterprise.id){
                 return hri
             }
         }
@@ -50,7 +50,7 @@ class Player:NSObject, NSCoding{
     func removeHighRiskInvestmentForEnterprise(pEnterprise:Enterprise){
         var index = 0
         for hri:HighRiskInvestment in self.highRiskInvestments{
-            if (hri.enterprise.id == pEnterprise.id){
+            if (hri.enterpriseID == pEnterprise.id){
                 self.highRiskInvestments.removeAtIndex(index)
             }
             index++

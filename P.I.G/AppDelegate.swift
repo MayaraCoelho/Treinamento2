@@ -62,7 +62,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 
         
-        
+        AppData.sharedInstance.timer.startUpdates()
         application.statusBarHidden = true
         
         return true

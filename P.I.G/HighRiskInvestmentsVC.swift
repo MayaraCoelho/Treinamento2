@@ -31,6 +31,8 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
         self.restorationIdentifier = "HighRiskInvestmentVC"
         
         
+           
+        
         
     }
     
@@ -85,6 +87,8 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     
+    
+    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         let selectedEnterprise = AppData.sharedInstance.enterprises[indexPath.row]
@@ -123,7 +127,10 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     
-    
+    func update(){
+        self.viewDidLoad()
+        self.tableView.reloadData()
+    }
     
     
     /*

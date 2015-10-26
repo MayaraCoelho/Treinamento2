@@ -10,16 +10,15 @@ import Foundation
 
 class HighRiskInvestment:Investment, NSCoding {
 
-    var enterprise:Enterprise
+    var enterpriseID:Int
+    var lastEnterpriseValue:Double
     
-    init(pEnterprise:Enterprise, pInvestedValue:Double){
-    self.enterprise = pEnterprise
-    super.init(pInvestedValue: pInvestedValue)
+    init(pEnterpriseID:Int, pInvestedValue:Double){
+        self.enterpriseID = pEnterpriseID
+        self.lastEnterpriseValue = (AppData.sharedInstance.enterpriseByID(pEnterpriseID)?.stockValue)!
+        super.init(pInvestedValue: pInvestedValue)
     }
 
-    
-    
-    
     
     //NSCoding Methods
     @objc required convenience init?(coder decoder: NSCoder) {
@@ -32,22 +31,30 @@ class HighRiskInvestment:Investment, NSCoding {
             else {return nil }
         
  
-        guard let dEnterprise = decoder.decodeObjectForKey("enterprise") as? Enterprise
+        guard let dEnterpriseID = decoder.decodeObjectForKey("enterpriseID") as? Int
             else {return nil }
         
-        self.init(pEnterprise: dEnterprise, pInvestedValue:dInvestedValue)
-        self.currentValue = dCurrentValue
-    
+        guard let dLastEnterpriseValue = decoder.decodeObjectForKey("lastEnterpriseValue") as? Double
+            else {return nil }
         
+        self.init(pEnterpriseID: dEnterpriseID, pInvestedValue:dInvestedValue)
+        self.currentValue = dCurrentValue
+        self.lastEnterpriseValue = dLastEnterpriseValue
     }
     
     @objc func encodeWithCoder(coder: NSCoder) {
         coder.encodeObject(self.investedValue, forKey: "investedValue")
         coder.encodeObject(self.currentValue, forKey: "currentValue")
-        coder.encodeObject(self.enterprise, forKey: "enterprise")
+        coder.encodeObject(self.enterpriseID, forKey: "enterpriseID")
+        coder.encodeObject(self.lastEnterpriseValue, forKey: "lastEnterpriseValue")
 
     }
-
     
+    func update(){
+        let enterprise = AppData.sharedInstance.enterpriseByID(self.enterpriseID)
+        let ratio = (enterprise?.stockValue)! / self.lastEnterpriseValue
+        self.currentValue = self.currentValue * ratio
+        self.lastEnterpriseValue = (enterprise?.stockValue)!
+    }
     
 }

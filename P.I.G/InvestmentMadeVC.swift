@@ -32,13 +32,14 @@ class InvestmentMadeVC: UIViewController {
     
     var homeViewController:HighRiskInvestmentsVC
     var investment:HighRiskInvestment
+    let enterprise:Enterprise
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.enterpriseNameLabel.text = self.investment.enterprise.name
-        self.enterpriseDescriptionLabel.text = self.investment.enterprise.descript
-        self.enterpriseValueLabel.text = NSString(format: "Stock Value: %.2f",self.investment.enterprise.value) as String
+        self.enterpriseNameLabel.text = self.enterprise.name
+        self.enterpriseDescriptionLabel.text = self.enterprise.descript
+        self.enterpriseValueLabel.text = NSString(format: "Stock Value: %.2f",self.enterprise.stockValue) as String
         self.investedValueLabel.text = NSString(format: "Investment Value: %.2f",self.investment.currentValue) as String
         
         self.investMoreLabel.text = "Invest more: $ 0"
@@ -55,6 +56,7 @@ class InvestmentMadeVC: UIViewController {
     init(pInvestment:HighRiskInvestment,  pHomeViewController:HighRiskInvestmentsVC) {
         self.investment = pInvestment
         self.homeViewController = pHomeViewController
+        self.enterprise = AppData.sharedInstance.enterpriseByID(pInvestment.enterpriseID)!
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -77,7 +79,7 @@ class InvestmentMadeVC: UIViewController {
     
     @IBAction func investButtonAct(sender: UIButton) {
         let investmentValue = (AppData.sharedInstance.player.balance * Double(self.investSlider.value))
-        AppData.sharedInstance.investmentManager.applyInHighRiskInvestment(self.investment.enterprise, pValue: investmentValue)
+        AppData.sharedInstance.investmentManager.applyInHighRiskInvestment(self.enterprise, pValue: investmentValue)
         self.closePopUpScreen()
         PlayerDAO.sharedInstance.savePlayer()
     }
@@ -102,12 +104,12 @@ class InvestmentMadeVC: UIViewController {
         } else {
             
             if (rescueSlider.value == 1){
-                AppData.sharedInstance.investmentManager.rescueFromHighRiskInvestment(self.investment.enterprise)
+                AppData.sharedInstance.investmentManager.rescueFromHighRiskInvestment(self.enterprise)
             } else {
         
                 let rescueValue = self.investment.currentValue * Double(self.rescueSlider.value)
         
-                AppData.sharedInstance.investmentManager.rescueFromHighRiskInvestment(self.investment.enterprise, pValue: rescueValue)
+                AppData.sharedInstance.investmentManager.rescueFromHighRiskInvestment(self.enterprise, pValue: rescueValue)
             }
         
             self.closePopUpScreen()

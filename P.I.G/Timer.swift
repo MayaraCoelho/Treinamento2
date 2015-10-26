@@ -8,16 +8,48 @@
 
 import Foundation
 
-class Timer{
+class Timer:NSObject {
     var startGameTime:NSDate
     var lastUserActivity:NSDate
     var currentDate:NSDate
     
-    init(){
+    var timer = NSTimer()
+    
+    
+    override init(){
         self.startGameTime = NSDate()
         self.lastUserActivity = NSDate()
         self.currentDate = NSDate()
+        
+ 
     }
+    
+    func startUpdates(){
+        NSTimer.scheduledTimerWithTimeInterval(8, target: self, selector: "updateEnterprises", userInfo: "nil", repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateHRInvestments", userInfo: "nil", repeats: true)
+    }
+    
+    func updateEnterprises(){
+    EnterpriseValueUpdater().updateAllEnterprises()
+    
+    }
+    
+    
+    
+    
+    
+    func updateHRInvestments(){
+        
+        
+        
+        for hri:HighRiskInvestment in AppData.sharedInstance.player.highRiskInvestments {
+            print("updating HRI")
+            hri.update()
+        }
+    }
+    
+    
+    
     
     
     

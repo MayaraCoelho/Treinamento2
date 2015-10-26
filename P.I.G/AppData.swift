@@ -35,4 +35,15 @@ class AppData{
         self.timer = Timer()
     }
 
+    
+    func enterpriseByID(pID:Int)->Enterprise?{
+        for e:Enterprise in self.enterprises{
+            if (e.id == pID){
+            return e
+            }
+        }
+        return nil
+    }
+    
+    
 }

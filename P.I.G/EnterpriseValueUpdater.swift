@@ -138,9 +138,9 @@ class EnterpriseValueUpdater{
         number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
         sum = sum + Double(number!)
     
-        AppData.sharedInstance.enterprises[0].value = sum
+        AppData.sharedInstance.enterprises[0].stockValue = sum * 1.20
         
-        print("Everest Oil Update finished")
+        print("Everest Oil Update finished. Value:\(sum) ")
         
     }
     
@@ -180,9 +180,9 @@ class EnterpriseValueUpdater{
         number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
         sum = sum + Double(number!)
         
-        AppData.sharedInstance.enterprises[1].value = sum
+        AppData.sharedInstance.enterprises[1].stockValue = sum * 1.20
         
-        print("Bug Software Inc Update finished")
+        print("Bug Software Inc Update finished. Value:\(sum) ")
         
     }
     
@@ -222,9 +222,9 @@ class EnterpriseValueUpdater{
         number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
         sum = sum + Double(number!)
         
-        AppData.sharedInstance.enterprises[2].value = sum
+        AppData.sharedInstance.enterprises[2].stockValue = sum * 1.20
         
-        print("Bacompany House Update finished")
+        print("Bacompany House Update finished. Value:\(sum) ")
         
     
     }
@@ -265,9 +265,9 @@ class EnterpriseValueUpdater{
         number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
         sum = sum + Double(number!)
         
-        AppData.sharedInstance.enterprises[3].value = sum
+        AppData.sharedInstance.enterprises[3].stockValue = sum * 0.8
         
-        print("Mr Always Young Update finished")
+        print("Mr Always Young Update finished. Value:\(sum) ")
     
     }
     

@@ -46,7 +46,7 @@ class InvestmentNotMadeVC: UIViewController {
         
         self.enterpriseDescription.text = self.enterprise.descript
         
-        self.enterpriseValueLabel.text = NSString(format: "Stock Value: %.2f",self.enterprise.value) as String
+        self.enterpriseValueLabel.text = NSString(format: "Stock Value: %.2f",self.enterprise.stockValue) as String
         
         self.investmentValueLabel.text = "$ 0"
         

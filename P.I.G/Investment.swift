@@ -9,6 +9,7 @@
 import Foundation
 
 class Investment:NSObject {
+    
     var investedValue:Double
     var currentValue:Double
     
