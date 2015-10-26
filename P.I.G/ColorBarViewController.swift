@@ -11,48 +11,32 @@ import UIKit
 class ColorBarViewController: UIViewController {
     
 
-    @IBOutlet weak var greenViewWidthConstraint: NSLayoutConstraint!
-    
-    @IBOutlet weak var redViewWidthConstraint: NSLayoutConstraint!
-    
-    @IBOutlet weak var middleBarView: UIView!
+    @IBOutlet weak var barView: UIView!
+
+    @IBOutlet weak var viewWitdhConstraint: NSLayoutConstraint!
 
     @IBOutlet weak var textLabel: UILabel!
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // self.view.bounds = CGRectMake(0, 0, 200, 28)
-        self.greenViewWidthConstraint.constant = CGFloat(0)
-        self.redViewWidthConstraint.constant = CGFloat(0)
-        self.middleBarView.hidden = true
+        self.viewWitdhConstraint.constant = CGFloat(0)
         // Do any additional setup after loading the view.
-       
     }
     
-
-
-    
     func drawBar(pNumber:Float){
-        if (pNumber > 1){ // Green Value
+        if (pNumber > 1){
+            barView.backgroundColor = UIColor.greenColor()
             if (pNumber >= 2){
-            self.greenViewWidthConstraint.constant = CGFloat(100)
+                self.viewWitdhConstraint.constant = CGFloat(200)
             } else {
-                self.greenViewWidthConstraint.constant = CGFloat(((pNumber-1)*100))
+                self.viewWitdhConstraint.constant = CGFloat((pNumber - 1) * 200)
             }
-            self.redViewWidthConstraint.constant = CGFloat(0)
-            
-        } else if (pNumber < 1){ // Red Value
-            self.greenViewWidthConstraint.constant = CGFloat(0)
-            self.redViewWidthConstraint.constant = CGFloat(pNumber * 100)
-            
-            
-        }else { // None
-            self.greenViewWidthConstraint.constant = CGFloat(0)
-            self.redViewWidthConstraint.constant = CGFloat(0)
+        } else if (pNumber < 1){
+            let inversepNumber = 1 - pNumber
+            barView.backgroundColor = UIColor.redColor()
+            self.viewWitdhConstraint.constant = CGFloat((inversepNumber * 200))
         }
-           
-        
     }
     
     

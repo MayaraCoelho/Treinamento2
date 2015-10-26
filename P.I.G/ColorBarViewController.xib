@@ -6,11 +6,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ColorBarViewController" customModule="P_I_G" customModuleProvider="target">
             <connections>
-                <outlet property="greenViewWidthConstraint" destination="Jog-tl-2Kh" id="krd-yF-V8V"/>
-                <outlet property="middleBarView" destination="m2P-sf-ag4" id="FxX-by-wFK"/>
-                <outlet property="redViewWidthConstraint" destination="u7t-YS-9Kr" id="cGI-ba-GK6"/>
+                <outlet property="barView" destination="dVd-kF-ClV" id="Rj0-Wt-d3U"/>
                 <outlet property="textLabel" destination="tLd-x5-hTY" id="gek-Ep-AHZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewWitdhConstraint" destination="0OY-js-7H3" id="BoU-dr-ehP"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -18,28 +17,12 @@
             <rect key="frame" x="0.0" y="0.0" width="200" height="60"/>
             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m2P-sf-ag4">
-                    <rect key="frame" x="100" y="0.0" width="1" height="60"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dVd-kF-ClV">
+                    <rect key="frame" x="0.0" y="0.0" width="52" height="60"/>
                     <animations/>
-                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="1" id="kga-qL-xkf"/>
-                    </constraints>
-                </view>
-                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wOx-lz-asT">
-                    <rect key="frame" x="100" y="0.0" width="56" height="60"/>
-                    <animations/>
-                    <color key="backgroundColor" red="0.69184923458645664" green="1" blue="0.6367473357177561" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="56" id="Jog-tl-2Kh"/>
-                    </constraints>
-                </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ska-vt-ypx">
-                    <rect key="frame" x="51" y="0.0" width="50" height="60"/>
-                    <animations/>
-                    <color key="backgroundColor" red="1" green="0.57090048764109913" blue="0.56363401234780275" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="u7t-YS-9Kr"/>
+                        <constraint firstAttribute="width" constant="52" id="0OY-js-7H3"/>
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLd-x5-hTY">
@@ -58,21 +41,13 @@
             <color key="backgroundColor" red="0.93337680755425534" green="0.86059055054443512" blue="0.65505457530334232" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="tLd-x5-hTY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1wP-gK-M7f"/>
-                <constraint firstItem="m2P-sf-ag4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3vm-by-aYT"/>
                 <constraint firstItem="tLd-x5-hTY" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="4dn-7N-XQi"/>
-                <constraint firstAttribute="bottom" secondItem="m2P-sf-ag4" secondAttribute="bottom" id="IKG-lG-wl7"/>
-                <constraint firstAttribute="bottom" secondItem="wOx-lz-asT" secondAttribute="bottom" id="KLY-ou-xXK"/>
-                <constraint firstItem="m2P-sf-ag4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NZe-0k-FmS"/>
-                <constraint firstItem="m2P-sf-ag4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VNf-Er-tgK"/>
-                <constraint firstItem="Ska-vt-ypx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="YTn-e2-028"/>
-                <constraint firstAttribute="bottom" secondItem="Ska-vt-ypx" secondAttribute="bottom" id="ZwS-zg-vWI"/>
-                <constraint firstAttribute="bottom" secondItem="m2P-sf-ag4" secondAttribute="bottom" id="fA8-Xa-dgG"/>
-                <constraint firstItem="wOx-lz-asT" firstAttribute="leading" secondItem="Ska-vt-ypx" secondAttribute="trailing" id="fLH-se-OGX"/>
-                <constraint firstItem="wOx-lz-asT" firstAttribute="leading" secondItem="m2P-sf-ag4" secondAttribute="trailing" id="hca-dt-lCQ"/>
-                <constraint firstItem="wOx-lz-asT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lFM-FF-TDQ"/>
+                <constraint firstAttribute="bottom" secondItem="dVd-kF-ClV" secondAttribute="bottom" id="kbo-1j-bgP"/>
+                <constraint firstItem="dVd-kF-ClV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sRu-dt-t1Z"/>
+                <constraint firstItem="dVd-kF-ClV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vPv-eg-QF2"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="1307" y="649"/>
+            <point key="canvasLocation" x="951" y="605"/>
         </view>
     </objects>
 </document>
