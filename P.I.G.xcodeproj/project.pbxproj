@@ -60,6 +60,9 @@
 		BE6A891C1BD94ECD006DFEAD /* InvestmentMadeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A891A1BD94ECD006DFEAD /* InvestmentMadeVC.swift */; };
 		BE6A891D1BD94ECD006DFEAD /* InvestmentMadeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE6A891B1BD94ECD006DFEAD /* InvestmentMadeVC.xib */; };
 		F30E78611BDE9EA400F6E833 /* LowRiskInvestmentsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F30E78601BDE9EA400F6E833 /* LowRiskInvestmentsVC.xib */; settings = {ASSET_TAGS = (); }; };
+		F30E78631BDEA04200F6E833 /* CertificateOfDeposit.png in Resources */ = {isa = PBXBuildFile; fileRef = F30E78621BDEA04200F6E833 /* CertificateOfDeposit.png */; settings = {ASSET_TAGS = (); }; };
+		F30E78651BDEA11000F6E833 /* InvestButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F30E78641BDEA11000F6E833 /* InvestButton.png */; settings = {ASSET_TAGS = (); }; };
+		F30E78671BDEA11900F6E833 /* SavingAccount.png in Resources */ = {isa = PBXBuildFile; fileRef = F30E78661BDEA11900F6E833 /* SavingAccount.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +121,9 @@
 		BE6A891A1BD94ECD006DFEAD /* InvestmentMadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentMadeVC.swift; sourceTree = "<group>"; };
 		BE6A891B1BD94ECD006DFEAD /* InvestmentMadeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvestmentMadeVC.xib; sourceTree = "<group>"; };
 		F30E78601BDE9EA400F6E833 /* LowRiskInvestmentsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LowRiskInvestmentsVC.xib; sourceTree = "<group>"; };
+		F30E78621BDEA04200F6E833 /* CertificateOfDeposit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CertificateOfDeposit.png; sourceTree = "<group>"; };
+		F30E78641BDEA11000F6E833 /* InvestButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InvestButton.png; sourceTree = "<group>"; };
+		F30E78661BDEA11900F6E833 /* SavingAccount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SavingAccount.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,8 +237,11 @@
 		B0F794C61BD6BF0B00BC69ED /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				F30E78621BDEA04200F6E833 /* CertificateOfDeposit.png */,
+				F30E78641BDEA11000F6E833 /* InvestButton.png */,
 				B0F794F71BD6BF6400BC69ED /* ArrowUp.png */,
 				B0F794F81BD6BF6400BC69ED /* bacompany.png */,
+				F30E78661BDEA11900F6E833 /* SavingAccount.png */,
 				B0F794F91BD6BF6400BC69ED /* mrAlwaysYoung.jpg */,
 				B0F794FA1BD6BF6400BC69ED /* 14bis.jpg */,
 				B0F794FB1BD6BF6400BC69ED /* news.jpg */,
@@ -307,6 +316,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0F794D61BD6BF4E00BC69ED /* InvestmentNotMadeVC.xib in Resources */,
+				F30E78671BDEA11900F6E833 /* SavingAccount.png in Resources */,
+				F30E78631BDEA04200F6E833 /* CertificateOfDeposit.png in Resources */,
 				B0F7950A1BD6BF6400BC69ED /* closeButton.png in Resources */,
 				B0F7950F1BD6BF6400BC69ED /* bugSoftwareInc.png in Resources */,
 				F30E78611BDE9EA400F6E833 /* LowRiskInvestmentsVC.xib in Resources */,
@@ -321,6 +332,7 @@
 				B0F7950D1BD6BF6400BC69ED /* fast.png in Resources */,
 				B0C846821BD7F0B20092F8EC /* TopBarViewController.xib in Resources */,
 				B0F7950C1BD6BF6400BC69ED /* everestOil.png in Resources */,
+				F30E78651BDEA11000F6E833 /* InvestButton.png in Resources */,
 				B041E5E41BD82A6000D2B44E /* Database.plist in Resources */,
 				B0C8468A1BD7FD4F0092F8EC /* PropertiesVC.xib in Resources */,
 				B0F794D51BD6BF4E00BC69ED /* HRInvestmentTableViewCell.xib in Resources */,
