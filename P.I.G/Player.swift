@@ -37,7 +37,7 @@ class Player:NSObject, NSCoding{
     }
     
     
-    func highRiskInvestmentForEnterprise(pEnterprise:Enterprise)->Investment?{
+    func highRiskInvestmentForEnterprise(pEnterprise:Enterprise)->HighRiskInvestment?{
         for hri:HighRiskInvestment in self.highRiskInvestments{
             if (hri.enterpriseID == pEnterprise.id){
                 return hri

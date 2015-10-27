@@ -102,6 +102,17 @@ class EnterpriseValueUpdater{
 
     
     
+    
+    private func httpRequest(stringUrl:String)->Double?{
+    
+        let url:NSURL = NSURL(string: stringUrl)!
+        let data:NSData = NSData(contentsOfURL: url)!
+        let number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
+        return Double(number!)
+    
+    }
+    
+    
     private func updateEverestOil(){
         
         print("Everest Oil Update Started")
@@ -109,40 +120,29 @@ class EnterpriseValueUpdater{
         var sum:Double = 0;
         
         //Exxon Mobil Corporation
-        var url:NSURL = NSURL(string: "http://finance.yahoo.com/d/quotes.csv?s=XOM+&f=b")!
-        var data:NSData = NSData(contentsOfURL: url)!
-        var number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
-        sum = Double(number!)
+        sum = httpRequest("http://finance.yahoo.com/d/quotes.csv?s=XOM+&f=b")!
         
         //General Electric Company
-        url = NSURL(string: "http://finance.yahoo.com/d/quotes.csv?s=GE+&f=b")!
-        data = NSData(contentsOfURL: url)!
-        number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
-        sum = sum + Double(number!)
+        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=GE+&f=b")!
         
         //Chevron Company
-        url = NSURL(string: "http://finance.yahoo.com/d/quotes.csv?s=CVX+&f=b")!
-        data = NSData(contentsOfURL: url)!
-        number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
-        sum = sum + Double(number!)
+        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=CVX+&f=b")!
         
         //PetroChina Company
-        url = NSURL(string: "http://finance.yahoo.com/d/quotes.csv?s=PTR+&f=b")!
-        data = NSData(contentsOfURL: url)!
-        number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
-        sum = sum + Double(number!)
+        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=PTR+&f=b")!
         
         //British Petroil
-        url = NSURL(string: "http://finance.yahoo.com/d/quotes.csv?s=BP+&f=b")!
-        data = NSData(contentsOfURL: url)!
-        number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
-        sum = sum + Double(number!)
+        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=BP+&f=b")!
     
-        AppData.sharedInstance.enterprises[0].stockValue = sum * 1.20
+        AppData.sharedInstance.enterprises[0].stockValue = sum
         
         print("Everest Oil Update finished. Value:\(sum) ")
         
+        if (AppData.sharedInstance.player.doesHaveHighRiskInvestmentInEnterprise(AppData.sharedInstance.enterpriseByID(1)!)){
+            AppData.sharedInstance.player.highRiskInvestmentForEnterprise(AppData.sharedInstance.enterpriseByID(1)!)?.update()
+        }
     }
+    
     
     private func updateBugSoftwareInc(){
         
@@ -151,36 +151,21 @@ class EnterpriseValueUpdater{
         var sum:Double = 0;
         
         //Apple
-        var url:NSURL = NSURL(string: "http://finance.yahoo.com/d/quotes.csv?s=AAPL+&f=b")!
-        var data:NSData = NSData(contentsOfURL: url)!
-        var number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
-        sum = Double(number!)
+        sum = httpRequest("http://finance.yahoo.com/d/quotes.csv?s=AAPL+&f=b")!
         
         //Google
-        url = NSURL(string: "http://finance.yahoo.com/d/quotes.csv?s=GOOG+&f=b")!
-        data = NSData(contentsOfURL: url)!
-        number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
-        sum = sum + Double(number!)
+        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=GOOG+&f=b")!
         
         //Microsoft
-        url = NSURL(string: "http://finance.yahoo.com/d/quotes.csv?s=MSFT+&f=b")!
-        data = NSData(contentsOfURL: url)!
-        number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
-        sum = sum + Double(number!)
+        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=MSFT+&f=b")!
         
         //Facebook
-        url = NSURL(string: "http://finance.yahoo.com/d/quotes.csv?s=FB+&f=b")!
-        data = NSData(contentsOfURL: url)!
-        number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
-        sum = sum + Double(number!)
+        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=FB+&f=b")!
         
         //Oracle
-        url = NSURL(string: "http://finance.yahoo.com/d/quotes.csv?s=ORCL+&f=b")!
-        data = NSData(contentsOfURL: url)!
-        number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
-        sum = sum + Double(number!)
+        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=ORCL+&f=b")!
         
-        AppData.sharedInstance.enterprises[1].stockValue = sum * 1.20
+        AppData.sharedInstance.enterprises[1].stockValue = sum
         
         print("Bug Software Inc Update finished. Value:\(sum) ")
         
@@ -193,40 +178,23 @@ class EnterpriseValueUpdater{
         var sum:Double = 0;
         
         //Kraft Heinz Company
-        var url:NSURL = NSURL(string: "http://finance.yahoo.com/d/quotes.csv?s=KHC+&f=b")!
-        var data:NSData = NSData(contentsOfURL: url)!
-        var number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
-        sum = Double(number!)
+        sum = httpRequest("http://finance.yahoo.com/d/quotes.csv?s=KHC+&f=b")!
         
         //Mondelez International
-        url = NSURL(string: "http://finance.yahoo.com/d/quotes.csv?s=MDLZ+&f=b")!
-        data = NSData(contentsOfURL: url)!
-        number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
-        sum = sum + Double(number!)
+        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=MDLZ+&f=b")!
         
         //Monster Beverage
-        url = NSURL(string: "http://finance.yahoo.com/d/quotes.csv?s=MNST+&f=b")!
-        data = NSData(contentsOfURL: url)!
-        number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
-        sum = sum + Double(number!)
+        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=MNST+&f=b")!
         
         //Pilgrim Pride Corporation
-        url = NSURL(string: "http://finance.yahoo.com/d/quotes.csv?s=PPC+&f=b")!
-        data = NSData(contentsOfURL: url)!
-        number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
-        sum = sum + Double(number!)
+        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=PPC+&f=b")!
         
         //Blue Buffalo Products
-        url = NSURL(string: "http://finance.yahoo.com/d/quotes.csv?s=BUFF+&f=b")!
-        data = NSData(contentsOfURL: url)!
-        number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
-        sum = sum + Double(number!)
+        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=BUFF+&f=b")!
         
-        AppData.sharedInstance.enterprises[2].stockValue = sum * 1.20
+        AppData.sharedInstance.enterprises[2].stockValue = sum
         
         print("Bacompany House Update finished. Value:\(sum) ")
-        
-    
     }
     
     private func updateMrAlwaysYoung(){
@@ -236,36 +204,21 @@ class EnterpriseValueUpdater{
         var sum:Double = 0;
         
         //Abercrombie & Fitch Company
-        var url:NSURL = NSURL(string: "http://finance.yahoo.com/d/quotes.csv?s=ANF+&f=b")!
-        var data:NSData = NSData(contentsOfURL: url)!
-        var number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
-        sum = Double(number!)
+        sum = httpRequest("http://finance.yahoo.com/d/quotes.csv?s=ANF+&f=b")!
         
         //Ross Stores
-        url = NSURL(string: "http://finance.yahoo.com/d/quotes.csv?s=ROST+&f=b")!
-        data = NSData(contentsOfURL: url)!
-        number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
-        sum = sum + Double(number!)
+        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=ROST+&f=b")!
         
         //L Brands
-        url = NSURL(string: "http://finance.yahoo.com/d/quotes.csv?s=LB+&f=b")!
-        data = NSData(contentsOfURL: url)!
-        number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
-        sum = sum + Double(number!)
+        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=LB+&f=b")!
         
         //Gap inc
-        url = NSURL(string: "http://finance.yahoo.com/d/quotes.csv?s=GPS+&f=b")!
-        data = NSData(contentsOfURL: url)!
-        number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
-        sum = sum + Double(number!)
+        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=GPS+&f=b")!
         
         //Urban Outfiters
-        url = NSURL(string: "http://finance.yahoo.com/d/quotes.csv?s=URBN+&f=b")!
-        data = NSData(contentsOfURL: url)!
-        number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
-        sum = sum + Double(number!)
+        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=URBN+&f=b")!
         
-        AppData.sharedInstance.enterprises[3].stockValue = sum * 0.8
+        AppData.sharedInstance.enterprises[3].stockValue = sum 
         
         print("Mr Always Young Update finished. Value:\(sum) ")
     
@@ -294,8 +247,6 @@ class EnterpriseValueUpdater{
     private func updateFastexSA(){
     
     }
-
-
 
 
 }

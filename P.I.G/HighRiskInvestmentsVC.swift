@@ -31,9 +31,6 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
         self.restorationIdentifier = "HighRiskInvestmentVC"
         
         
-           
-        
-        
     }
     
 
@@ -95,7 +92,7 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
         
         if (AppData.sharedInstance.player.doesHaveHighRiskInvestmentInEnterprise(selectedEnterprise)){
 
-            let selectedInvestment = (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(selectedEnterprise) as! HighRiskInvestment)
+            let selectedInvestment = (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(selectedEnterprise))!
             
             let investmentMadeInstance = InvestmentMadeVC(pInvestment: selectedInvestment, pHomeViewController: self)
             

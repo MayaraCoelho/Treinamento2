@@ -16,7 +16,7 @@ class InvestmentManager{
         
         //Checks if player does already have an investment in that Enterprise
         if (AppData.sharedInstance.player.doesHaveHighRiskInvestmentInEnterprise(pEnterprise)){
-            let investment = AppData.sharedInstance.player.highRiskInvestmentForEnterprise(pEnterprise) as! HighRiskInvestment
+            let investment = (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(pEnterprise))!
             AppData.sharedInstance.player.removeHighRiskInvestmentForEnterprise(pEnterprise)
             investment.currentValue = investment.currentValue + pValue
             investment.investedValue = investment.investedValue + pValue
@@ -41,7 +41,7 @@ class InvestmentManager{
     func rescueFromHighRiskInvestment(pEnterprise:Enterprise, pValue:Double){
         if (AppData.sharedInstance.player.doesHaveHighRiskInvestmentInEnterprise(pEnterprise)){
             
-            let investment = AppData.sharedInstance.player.highRiskInvestmentForEnterprise(pEnterprise) as! HighRiskInvestment
+            let investment = (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(pEnterprise))!
             
             if (pValue <= investment.currentValue){
                 AppData.sharedInstance.player.removeHighRiskInvestmentForEnterprise(pEnterprise)
