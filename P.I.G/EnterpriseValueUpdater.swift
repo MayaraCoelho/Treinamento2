@@ -105,12 +105,12 @@ class EnterpriseValueUpdater{
     
     private func requestEnterpriseValue(enterpriseCode:String)->Double?{
         
-        let url:NSURL = NSURL(string: "http://marketdata.websol.barchart.com/getQuote.json?key=9562e60e190ec0e2e5e43aacfc0ce789&symbols="+enterpriseCode)!
+        let url:NSURL = NSURL(string: "http://marketdata.websol.barchart.com/getQuote.csv?key=c0b2e90ce6b858ef2a80ecc9f277149fnasda&symbols="+enterpriseCode+"&mode=R")!
         let data:NSData = NSData(contentsOfURL: url)!
         let str = NSString(data: data, encoding:NSUTF8StringEncoding)
-        let strSplit = str?.componentsSeparatedByString(",")
-        let valueStr = strSplit![8].componentsSeparatedByString(":")
-        return (Double(valueStr[1])! * Double(valueStr[1])!)
+        let strSplitted = str?.componentsSeparatedByString(",")
+        let num = strSplitted![22].stringByReplacingOccurrencesOfString("\"", withString: "") as NSString
+        return Double(num.floatValue)
     }
     
     
