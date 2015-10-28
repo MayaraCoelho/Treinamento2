@@ -59,10 +59,10 @@
 		BE6A89191BD94BE0006DFEAD /* EnterpriseValueUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A89181BD94BE0006DFEAD /* EnterpriseValueUpdater.swift */; };
 		BE6A891C1BD94ECD006DFEAD /* InvestmentMadeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A891A1BD94ECD006DFEAD /* InvestmentMadeVC.swift */; };
 		BE6A891D1BD94ECD006DFEAD /* InvestmentMadeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE6A891B1BD94ECD006DFEAD /* InvestmentMadeVC.xib */; };
-		F30E78611BDE9EA400F6E833 /* LowRiskInvestmentsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F30E78601BDE9EA400F6E833 /* LowRiskInvestmentsVC.xib */; settings = {ASSET_TAGS = (); }; };
 		F30E78631BDEA04200F6E833 /* CertificateOfDeposit.png in Resources */ = {isa = PBXBuildFile; fileRef = F30E78621BDEA04200F6E833 /* CertificateOfDeposit.png */; settings = {ASSET_TAGS = (); }; };
 		F30E78651BDEA11000F6E833 /* InvestButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F30E78641BDEA11000F6E833 /* InvestButton.png */; settings = {ASSET_TAGS = (); }; };
 		F30E78671BDEA11900F6E833 /* SavingAccount.png in Resources */ = {isa = PBXBuildFile; fileRef = F30E78661BDEA11900F6E833 /* SavingAccount.png */; settings = {ASSET_TAGS = (); }; };
+		F3E020BA1BE15131001C28E1 /* LowRiskInvestmentsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3E020B91BE15131001C28E1 /* LowRiskInvestmentsVC.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,10 +120,10 @@
 		BE6A89181BD94BE0006DFEAD /* EnterpriseValueUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterpriseValueUpdater.swift; sourceTree = "<group>"; };
 		BE6A891A1BD94ECD006DFEAD /* InvestmentMadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentMadeVC.swift; sourceTree = "<group>"; };
 		BE6A891B1BD94ECD006DFEAD /* InvestmentMadeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvestmentMadeVC.xib; sourceTree = "<group>"; };
-		F30E78601BDE9EA400F6E833 /* LowRiskInvestmentsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LowRiskInvestmentsVC.xib; sourceTree = "<group>"; };
 		F30E78621BDEA04200F6E833 /* CertificateOfDeposit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CertificateOfDeposit.png; sourceTree = "<group>"; };
 		F30E78641BDEA11000F6E833 /* InvestButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InvestButton.png; sourceTree = "<group>"; };
 		F30E78661BDEA11900F6E833 /* SavingAccount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SavingAccount.png; sourceTree = "<group>"; };
+		F3E020B91BE15131001C28E1 /* LowRiskInvestmentsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LowRiskInvestmentsVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,8 +210,8 @@
 				B0F794CF1BD6BF4E00BC69ED /* HighRiskInvestmentsVC.xib */,
 				B0F794D01BD6BF4E00BC69ED /* HRInvestmentTableViewCell.xib */,
 				BE6A891B1BD94ECD006DFEAD /* InvestmentMadeVC.xib */,
-				F30E78601BDE9EA400F6E833 /* LowRiskInvestmentsVC.xib */,
 				B0F794D11BD6BF4E00BC69ED /* InvestmentNotMadeVC.xib */,
+				F3E020B91BE15131001C28E1 /* LowRiskInvestmentsVC.xib */,
 				B0DF04E91BDAABB70022DCB9 /* ColorBarViewController.xib */,
 				B0C846801BD7F0B20092F8EC /* TopBarViewController.xib */,
 			);
@@ -320,11 +320,11 @@
 				F30E78631BDEA04200F6E833 /* CertificateOfDeposit.png in Resources */,
 				B0F7950A1BD6BF6400BC69ED /* closeButton.png in Resources */,
 				B0F7950F1BD6BF6400BC69ED /* bugSoftwareInc.png in Resources */,
-				F30E78611BDE9EA400F6E833 /* LowRiskInvestmentsVC.xib in Resources */,
 				B0F795081BD6BF6400BC69ED /* news.jpg in Resources */,
 				B0F7950B1BD6BF6400BC69ED /* building.jpg in Resources */,
 				B0F795071BD6BF6400BC69ED /* 14bis.jpg in Resources */,
 				B0F794D31BD6BF4E00BC69ED /* LaunchScreen.storyboard in Resources */,
+				F3E020BA1BE15131001C28E1 /* LowRiskInvestmentsVC.xib in Resources */,
 				B0F795051BD6BF6400BC69ED /* bacompany.png in Resources */,
 				B0F7950E1BD6BF6400BC69ED /* bank.gif in Resources */,
 				B0F795041BD6BF6400BC69ED /* ArrowUp.png in Resources */,

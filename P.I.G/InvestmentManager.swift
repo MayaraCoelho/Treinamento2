@@ -11,12 +11,12 @@ import Foundation
 class InvestmentManager{
     
     func applyInHighRiskInvestment(pEnterprise:Enterprise, pValue:Double){
-
+        
         AppData.sharedInstance.player.balance = AppData.sharedInstance.player.balance - pValue
         
         //Checks if player does already have an investment in that Enterprise
         if (AppData.sharedInstance.player.doesHaveHighRiskInvestmentInEnterprise(pEnterprise)){
-            let investment = (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(pEnterprise))!
+            let investment = AppData.sharedInstance.player.highRiskInvestmentForEnterprise(pEnterprise)!
             AppData.sharedInstance.player.removeHighRiskInvestmentForEnterprise(pEnterprise)
             investment.currentValue = investment.currentValue + pValue
             investment.investedValue = investment.investedValue + pValue
@@ -36,12 +36,12 @@ class InvestmentManager{
             
         }
     }
-
+    
     
     func rescueFromHighRiskInvestment(pEnterprise:Enterprise, pValue:Double){
         if (AppData.sharedInstance.player.doesHaveHighRiskInvestmentInEnterprise(pEnterprise)){
             
-            let investment = (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(pEnterprise))!
+            let investment = AppData.sharedInstance.player.highRiskInvestmentForEnterprise(pEnterprise)!
             
             if (pValue <= investment.currentValue){
                 AppData.sharedInstance.player.removeHighRiskInvestmentForEnterprise(pEnterprise)
@@ -54,7 +54,18 @@ class InvestmentManager{
             }
             
         }
+        
+    }
     
+    
+    // Investment Saving Account
+    
+    func applyInSavingAccount(pValue:Double)
+    {
+        AppData.sharedInstance.player.balance = AppData.sharedInstance.player.balance - pValue
+        
+        AppData.sharedInstance.player.savingAccount = AppData.sharedInstance.player.savingAccount + pValue
+        PlayerDAO.sharedInstance.savePlayer()
     }
     
     

@@ -10,20 +10,13 @@ import UIKit
 
 class LowRiskInvestmentsVC: UIViewController {
     
-    @IBOutlet weak var savingAccount: UIImageView!
-    @IBOutlet weak var minSavingAccount: UILabel!
-    @IBOutlet weak var maxSavingAccount: UILabel!
+    
     @IBOutlet weak var inSavingAccount: UILabel!
-    @IBOutlet weak var investSavingButton: UIButton!
     @IBOutlet weak var savingSlider: UISlider!
     @IBOutlet weak var savingInvestButton: UIButton!
     @IBOutlet weak var valueInvestSaving: UILabel!
     
-    @IBOutlet weak var certificateOfDeposit: UIImageView!
-    @IBOutlet weak var minCertificate: UILabel!
     @IBOutlet weak var inCertificate: UILabel!
-    @IBOutlet weak var maxCertificate: UILabel!
-    @IBOutlet weak var investCertificatrButton: UIButton!
     @IBOutlet weak var certificateSlider: UISlider!
     @IBOutlet weak var certificateInvestButton: UIButton!
     @IBOutlet weak var valueInvestCertificate: UILabel!
@@ -37,12 +30,7 @@ class LowRiskInvestmentsVC: UIViewController {
         self.topBarContainverView.addSubview(topBarVC.view)
         self.restorationIdentifier = "LowRiskInvestmentVC"
         
-        self.minSavingAccount.text = " $ 0"
-        self.maxSavingAccount.text = " $ 1000"
         self.savingInvestButton.enabled = false
-        
-        self.minCertificate.text = " $ 0"
-        self.maxCertificate.text = " $ 1000"
         self.certificateInvestButton.enabled = false
         
         // Do any additional setup after loading the view.
@@ -55,22 +43,29 @@ class LowRiskInvestmentsVC: UIViewController {
     
     @IBAction func sliderSaving(sender: AnyObject)
     {
-        if (self.savingSlider.value > 0)
+        if ((AppData.sharedInstance.player.balance * Double(self.savingSlider.value)) > 0)
         {
-            self.investSavingButton.enabled = true
+            self.savingInvestButton.enabled = true
         }
         else
         {
-            self.investSavingButton.enabled = false
+            self.savingInvestButton.enabled = false
         }
         
-        //        self.valueInvestSaving.text =
+        let value = (AppData.sharedInstance.player.balance * Double(self.savingSlider.value))
+        self.valueInvestSaving.text = NSString(format: "$ %.2f", value) as String
+    }
+    
+    
+    @IBAction func investButtonSaving(sender: UIButton) {
+        let investmentValue = (AppData.sharedInstance.player.balance * Double(self.savingSlider.value))
+        AppData.sharedInstance.investmentManager.applyInSavingAccount(investmentValue)
         
     }
     
+    
     @IBAction func sliderCertificate(sender: AnyObject) {
         
-        //        self.valueInvestSaving.text = NSString(format: "$ %.2f ", args: CVarArgType...)
         
     }
     

@@ -13,6 +13,7 @@ class Player:NSObject, NSCoding{
     var balance:Double
     var highRiskInvestments:[HighRiskInvestment]
     var lowRiskInvestments:[LowRiskInvestment]
+    var savingAccount:Double
     var income:Double
     var properties:[Property]
     var goals:[Goal]
@@ -21,6 +22,7 @@ class Player:NSObject, NSCoding{
     self.balance = 1000
     self.highRiskInvestments = [HighRiskInvestment]()
     self.lowRiskInvestments = [LowRiskInvestment]()
+    self.savingAccount = 0
     self.income = 400
     self.properties = [Property]()
     self.goals = [Goal]()
@@ -62,7 +64,7 @@ class Player:NSObject, NSCoding{
     
     
     
-    //NSCoding Methods 
+    //NSCoding Methods
     required convenience init?(coder decoder: NSCoder) {
         self.init()
         
@@ -70,8 +72,8 @@ class Player:NSObject, NSCoding{
         guard let dBalance = decoder.decodeObjectForKey("balance") as? Double
             else {return nil }
         self.balance = dBalance
-    
-       
+        
+        
         guard let dHighRiskInvestments = decoder.decodeObjectForKey("HighRiskInvestments") as? [HighRiskInvestment]
             else {return nil }
         self.highRiskInvestments = dHighRiskInvestments
@@ -82,11 +84,16 @@ class Player:NSObject, NSCoding{
         self.lowRiskInvestments = dLowRiskInvestments
         
         
+        guard let dSavingAccount = decoder.decodeObjectForKey("savingAccount") as? Double
+            else {return nil }
+        self.savingAccount = dSavingAccount
+        
+        
         guard let dIncome = decoder.decodeObjectForKey("income") as? Double
             else {return nil }
         self.income = dIncome
         
-
+        
         
         
         
@@ -96,6 +103,7 @@ class Player:NSObject, NSCoding{
         coder.encodeObject(self.balance, forKey: "balance")
         coder.encodeObject(self.highRiskInvestments, forKey: "HighRiskInvestments")
         coder.encodeObject(self.lowRiskInvestments, forKey: "LowRiskInvestments")
+        coder.encodeObject(self.savingAccount, forKey: "savingAccount")
         coder.encodeObject(self.income, forKey: "income")
     }
     
