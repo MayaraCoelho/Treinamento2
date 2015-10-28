@@ -63,7 +63,7 @@ class EnterpriseValueUpdater{
                 //This is run on the main queue, after the previous code in outer block
             })
         })
-       
+        
         
         dispatch_async(backgroundQueue, {
             // This is run on the background queue
@@ -99,17 +99,18 @@ class EnterpriseValueUpdater{
         })
         
     }
-
     
     
     
-    private func httpRequest(stringUrl:String)->Double?{
     
-        let url:NSURL = NSURL(string: stringUrl)!
+    private func requestEnterpriseValue(enterpriseCode:String)->Double?{
+        
+        let url:NSURL = NSURL(string: "http://marketdata.websol.barchart.com/getQuote.json?key=9562e60e190ec0e2e5e43aacfc0ce789&symbols="+enterpriseCode)!
         let data:NSData = NSData(contentsOfURL: url)!
-        let number = NSString(data: data, encoding:NSUTF8StringEncoding)?.floatValue
-        return Double(number!)
-    
+        let str = NSString(data: data, encoding:NSUTF8StringEncoding)
+        let strSplit = str?.componentsSeparatedByString(",")
+        let valueStr = strSplit![8].componentsSeparatedByString(":")
+        return (Double(valueStr[1])! * Double(valueStr[1])!)
     }
     
     
@@ -120,20 +121,17 @@ class EnterpriseValueUpdater{
         var sum:Double = 0;
         
         //Exxon Mobil Corporation
-        sum = httpRequest("http://finance.yahoo.com/d/quotes.csv?s=XOM+&f=b")!
-        
-        //General Electric Company
-        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=GE+&f=b")!
+        sum = requestEnterpriseValue("XOM")!
         
         //Chevron Company
-        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=CVX+&f=b")!
+        sum = sum + 3*requestEnterpriseValue("CVX")!
         
         //PetroChina Company
-        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=PTR+&f=b")!
+        sum = sum + 5*requestEnterpriseValue("PTR")!
         
         //British Petroil
-        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=BP+&f=b")!
-    
+        sum = sum + requestEnterpriseValue("BP")!
+        
         AppData.sharedInstance.enterprises[0].stockValue = sum
         
         print("Everest Oil Update finished. Value:\(sum) ")
@@ -151,23 +149,27 @@ class EnterpriseValueUpdater{
         var sum:Double = 0;
         
         //Apple
-        sum = httpRequest("http://finance.yahoo.com/d/quotes.csv?s=AAPL+&f=b")!
+        sum = 2*requestEnterpriseValue("AAPL")!
         
         //Google
-        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=GOOG+&f=b")!
+        sum = sum + 5*requestEnterpriseValue("GOOG")!
         
         //Microsoft
-        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=MSFT+&f=b")!
+        sum = sum + 3*requestEnterpriseValue("MSFT")!
         
         //Facebook
-        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=FB+&f=b")!
+        sum = sum + requestEnterpriseValue("FB")!
         
         //Oracle
-        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=ORCL+&f=b")!
+        sum = sum + 10*requestEnterpriseValue("ORCL")!
         
         AppData.sharedInstance.enterprises[1].stockValue = sum
         
         print("Bug Software Inc Update finished. Value:\(sum) ")
+        
+        if (AppData.sharedInstance.player.doesHaveHighRiskInvestmentInEnterprise(AppData.sharedInstance.enterpriseByID(2)!)){
+            AppData.sharedInstance.player.highRiskInvestmentForEnterprise(AppData.sharedInstance.enterpriseByID(2)!)?.update()
+        }
         
     }
     
@@ -178,23 +180,24 @@ class EnterpriseValueUpdater{
         var sum:Double = 0;
         
         //Kraft Heinz Company
-        sum = httpRequest("http://finance.yahoo.com/d/quotes.csv?s=KHC+&f=b")!
+        sum = 9*requestEnterpriseValue("KHC")!
         
         //Mondelez International
-        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=MDLZ+&f=b")!
+        sum = sum + 4*requestEnterpriseValue("MDLZ")!
         
         //Monster Beverage
-        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=MNST+&f=b")!
+        sum = sum + 4*requestEnterpriseValue("MNST")!
         
         //Pilgrim Pride Corporation
-        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=PPC+&f=b")!
-        
-        //Blue Buffalo Products
-        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=BUFF+&f=b")!
+        sum = sum + 2*requestEnterpriseValue("PPC")!
         
         AppData.sharedInstance.enterprises[2].stockValue = sum
         
         print("Bacompany House Update finished. Value:\(sum) ")
+        
+        if (AppData.sharedInstance.player.doesHaveHighRiskInvestmentInEnterprise(AppData.sharedInstance.enterpriseByID(3)!)){
+            AppData.sharedInstance.player.highRiskInvestmentForEnterprise(AppData.sharedInstance.enterpriseByID(3)!)?.update()
+        }
     }
     
     private func updateMrAlwaysYoung(){
@@ -204,49 +207,49 @@ class EnterpriseValueUpdater{
         var sum:Double = 0;
         
         //Abercrombie & Fitch Company
-        sum = httpRequest("http://finance.yahoo.com/d/quotes.csv?s=ANF+&f=b")!
-        
-        //Ross Stores
-        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=ROST+&f=b")!
+        sum = requestEnterpriseValue("ANF")!
         
         //L Brands
-        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=LB+&f=b")!
+        sum = sum + 4*requestEnterpriseValue("LB")!
         
         //Gap inc
-        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=GPS+&f=b")!
+        sum = sum + 10*requestEnterpriseValue("GPS")!
         
         //Urban Outfiters
-        sum = sum + httpRequest("http://finance.yahoo.com/d/quotes.csv?s=URBN+&f=b")!
+        sum = sum + 5*requestEnterpriseValue("URBN")!
         
-        AppData.sharedInstance.enterprises[3].stockValue = sum 
+        AppData.sharedInstance.enterprises[3].stockValue = sum
         
         print("Mr Always Young Update finished. Value:\(sum) ")
-    
+        
+        if (AppData.sharedInstance.player.doesHaveHighRiskInvestmentInEnterprise(AppData.sharedInstance.enterpriseByID(4)!)){
+            AppData.sharedInstance.player.highRiskInvestmentForEnterprise(AppData.sharedInstance.enterpriseByID(4)!)?.update()
+        }
     }
     
     private func updateElJuegoZone(){
-    
+        
     }
     
     private func updateTimeNewsCentral(){
-    
+        
     }
     
     private func updateBandC(){
-    
+        
     }
     
     private func updatePhilipHollandBuildings(){
-    
+        
     }
     
     private func updateDumontAircrafts(){
-    
+        
     }
     
     private func updateFastexSA(){
-    
+        
     }
-
-
+    
+    
 }

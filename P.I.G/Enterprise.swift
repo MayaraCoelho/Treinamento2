@@ -18,7 +18,19 @@ class Enterprise:NSObject, NSCoding {
     var playerPercentage:Float
     var descript:String
     var imageName:String
-
+    
+    
+    init(pId:Int, pName:String, pDescription:String, pImageName:String){
+        self.id = pId
+        self.name = pName
+        self.stockValue = 0
+        self.lastValue = 0
+        self.playerPercentage = 0
+        self.descript = pDescription
+        self.imageName = pImageName
+    }
+    
+    
     init(pId:Int, pName:String, pValue:Double, pDescription:String, pImageName:String){
         self.id = pId
         self.name = pName
