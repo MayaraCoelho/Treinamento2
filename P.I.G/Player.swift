@@ -14,6 +14,7 @@ class Player:NSObject, NSCoding{
     var highRiskInvestments:[HighRiskInvestment]
     var lowRiskInvestments:[LowRiskInvestment]
     var savingAccount:Double
+    var cdb: Double
     var income:Double
     var properties:[Property]
     var goals:[Goal]
@@ -23,6 +24,7 @@ class Player:NSObject, NSCoding{
     self.highRiskInvestments = [HighRiskInvestment]()
     self.lowRiskInvestments = [LowRiskInvestment]()
     self.savingAccount = 0
+    self.cdb = 0
     self.income = 400
     self.properties = [Property]()
     self.goals = [Goal]()
@@ -88,6 +90,10 @@ class Player:NSObject, NSCoding{
             else {return nil }
         self.savingAccount = dSavingAccount
         
+        guard let dCDB = decoder.decodeObjectForKey("cdb") as? Double
+            else{return nil}
+        self.cdb = dCDB
+        
         
         guard let dIncome = decoder.decodeObjectForKey("income") as? Double
             else {return nil }
@@ -104,6 +110,7 @@ class Player:NSObject, NSCoding{
         coder.encodeObject(self.highRiskInvestments, forKey: "HighRiskInvestments")
         coder.encodeObject(self.lowRiskInvestments, forKey: "LowRiskInvestments")
         coder.encodeObject(self.savingAccount, forKey: "savingAccount")
+        coder.encodeObject(self.cdb, forKey: "cdb")
         coder.encodeObject(self.income, forKey: "income")
     }
     

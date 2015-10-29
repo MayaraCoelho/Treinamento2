@@ -64,11 +64,26 @@ class LowRiskInvestmentsVC: UIViewController {
     }
     
     
-    @IBAction func sliderCertificate(sender: AnyObject) {
+    @IBAction func sliderCertificate(sender: AnyObject)
+    {
+        if((AppData.sharedInstance.player.balance * Double(self.certificateSlider.value)) > 0)
+        {
+            self.certificateInvestButton.enabled = true
+        }
+        else
+        {
+            self.certificateInvestButton.enabled = false
+        }
         
-        
+        let value = (AppData.sharedInstance.player.balance * Double(self.certificateSlider.value))
+        self.valueInvestCertificate.text = NSString(format: "$ %.2f", value) as String
     }
     
+    @IBAction func investButtonCertificate(sender: AnyObject)
+    {
+        let investmentValue = (AppData.sharedInstance.player.balance * Double(self.certificateSlider.value))
+        AppData.sharedInstance.investmentManager.applyInCDB(investmentValue)
+    }
     
     
     

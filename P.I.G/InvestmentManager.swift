@@ -68,6 +68,16 @@ class InvestmentManager{
         PlayerDAO.sharedInstance.savePlayer()
     }
     
+    // Investment CDB
+    
+    func applyInCDB(pValue:Double)
+    {
+        AppData.sharedInstance.player.balance = AppData.sharedInstance.player.balance - pValue
+        
+        AppData.sharedInstance.player.cdb = AppData.sharedInstance.player.cdb + pValue
+        PlayerDAO.sharedInstance.savePlayer()
+    }
+    
     
     
 }
