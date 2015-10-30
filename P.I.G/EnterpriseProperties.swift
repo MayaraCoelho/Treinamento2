@@ -54,7 +54,7 @@ class EnterpriseProperties{
         self.enterprises.append(ent9)
         
         let ent10desc = "Startup created by retired postman George, it offers an unique service that takes your order anywhere in the world in 24 hours."
-        let ent10 = Enterprise(pId: 10, pName: "Fastex S/A", pDescription: ent10desc, pImageName: "fast.png")
+        let ent10 = Enterprise(pId: 10, pName: "Fastex SA", pDescription: ent10desc, pImageName: "fast.png")
         self.enterprises.append(ent10)
         
         

@@ -28,6 +28,7 @@ class Enterprise:NSObject, NSCoding {
         self.playerPercentage = 0
         self.descript = pDescription
         self.imageName = pImageName
+
     }
     
     
@@ -39,6 +40,7 @@ class Enterprise:NSObject, NSCoding {
         self.playerPercentage = 0
         self.descript = pDescription
         self.imageName = pImageName
+
     }
 
     
@@ -50,6 +52,7 @@ class Enterprise:NSObject, NSCoding {
         self.playerPercentage = 0
         self.descript = pDescription
         self.imageName = pImageName
+
     }
 
     
@@ -78,6 +81,8 @@ class Enterprise:NSObject, NSCoding {
         guard let dImageName = decoder.decodeObjectForKey("imageName") as? String
             else {return nil }
         
+        
+        
         self.init(pId:dID, pName:dName, pValue:dValue, pLastValue:dLastValue, pDescription:dDescript, pImageName:dImageName)
         self.playerPercentage = dPlayerPercentage
         
@@ -91,9 +96,24 @@ class Enterprise:NSObject, NSCoding {
         coder.encodeObject(self.playerPercentage, forKey: "playerPercentage")
         coder.encodeObject(self.descript, forKey: "descript")
         coder.encodeObject(self.imageName, forKey: "imageName")
-
-        
     }
     
+    func update(){
+        
+        print("\(self.name) Update started. ")
+        
+        let sufix = (self.name.stringByReplacingOccurrencesOfString(" ", withString: ""))+".php"
+        
+        let requestedValue = EnterpriseValueUpdater().requestEnterpriseValue(sufix)!
+        
+        if (requestedValue > 0){
+            self.lastValue = self.stockValue
+            self.stockValue = requestedValue
+            if (AppData.sharedInstance.player.doesHaveHighRiskInvestmentInEnterprise(self)){
+                AppData.sharedInstance.player.highRiskInvestmentForEnterprise(self)?.update()
+            }
+        }
+        print("\(self.name) Update finished. Value:\(self.stockValue) ")
+    }
     
 }
