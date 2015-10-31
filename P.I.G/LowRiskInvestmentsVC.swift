@@ -57,7 +57,8 @@ class LowRiskInvestmentsVC: UIViewController {
     }
     
     
-    @IBAction func investButtonSaving(sender: UIButton) {
+    @IBAction func investButtonSaving(sender: UIButton)
+    {
         let investmentValue = (AppData.sharedInstance.player.balance * Double(self.savingSlider.value))
         AppData.sharedInstance.investmentManager.applyInSavingAccount(investmentValue)
         
@@ -81,8 +82,10 @@ class LowRiskInvestmentsVC: UIViewController {
     
     @IBAction func investButtonCertificate(sender: AnyObject)
     {
+         print(" invest button")
         let investmentValue = (AppData.sharedInstance.player.balance * Double(self.certificateSlider.value))
         AppData.sharedInstance.investmentManager.applyInCDB(investmentValue)
+       
     }
     
     

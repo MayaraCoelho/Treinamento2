@@ -102,6 +102,9 @@
                     <variation key="widthClass=compact" fixedFrame="YES">
                         <rect key="frame" x="159" y="561" width="92" height="31"/>
                     </variation>
+                    <connections>
+                        <action selector="investButtonCertificate:" destination="-1" eventType="touchUpInside" id="BqR-kb-C66"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDT-Ff-ls6">
                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
