@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B03FBC701BEA54B700CEEC67 /* EnterprisesDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03FBC6F1BEA54B700CEEC67 /* EnterprisesDAO.swift */; };
 		B041E5E41BD82A6000D2B44E /* Database.plist in Resources */ = {isa = PBXBuildFile; fileRef = B041E5E31BD82A6000D2B44E /* Database.plist */; };
 		B05616561BD822B7004E3B7D /* PlayerDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05616551BD822B7004E3B7D /* PlayerDAO.swift */; };
 		B05616581BD822ED004E3B7D /* PListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05616571BD822ED004E3B7D /* PListManager.swift */; };
@@ -59,13 +60,14 @@
 		BE6A89191BD94BE0006DFEAD /* EnterpriseValueUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A89181BD94BE0006DFEAD /* EnterpriseValueUpdater.swift */; };
 		BE6A891C1BD94ECD006DFEAD /* InvestmentMadeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A891A1BD94ECD006DFEAD /* InvestmentMadeVC.swift */; };
 		BE6A891D1BD94ECD006DFEAD /* InvestmentMadeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE6A891B1BD94ECD006DFEAD /* InvestmentMadeVC.xib */; };
-		F30E78631BDEA04200F6E833 /* CertificateOfDeposit.png in Resources */ = {isa = PBXBuildFile; fileRef = F30E78621BDEA04200F6E833 /* CertificateOfDeposit.png */; settings = {ASSET_TAGS = (); }; };
-		F30E78651BDEA11000F6E833 /* InvestButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F30E78641BDEA11000F6E833 /* InvestButton.png */; settings = {ASSET_TAGS = (); }; };
-		F30E78671BDEA11900F6E833 /* SavingAccount.png in Resources */ = {isa = PBXBuildFile; fileRef = F30E78661BDEA11900F6E833 /* SavingAccount.png */; settings = {ASSET_TAGS = (); }; };
-		F3E020BA1BE15131001C28E1 /* LowRiskInvestmentsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3E020B91BE15131001C28E1 /* LowRiskInvestmentsVC.xib */; settings = {ASSET_TAGS = (); }; };
+		F30E78631BDEA04200F6E833 /* CertificateOfDeposit.png in Resources */ = {isa = PBXBuildFile; fileRef = F30E78621BDEA04200F6E833 /* CertificateOfDeposit.png */; };
+		F30E78651BDEA11000F6E833 /* InvestButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F30E78641BDEA11000F6E833 /* InvestButton.png */; };
+		F30E78671BDEA11900F6E833 /* SavingAccount.png in Resources */ = {isa = PBXBuildFile; fileRef = F30E78661BDEA11900F6E833 /* SavingAccount.png */; };
+		F3E020BA1BE15131001C28E1 /* LowRiskInvestmentsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3E020B91BE15131001C28E1 /* LowRiskInvestmentsVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B03FBC6F1BEA54B700CEEC67 /* EnterprisesDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterprisesDAO.swift; sourceTree = "<group>"; };
 		B041E5E31BD82A6000D2B44E /* Database.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Database.plist; sourceTree = "<group>"; };
 		B05616551BD822B7004E3B7D /* PlayerDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDAO.swift; sourceTree = "<group>"; };
 		B05616571BD822ED004E3B7D /* PListManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PListManager.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			children = (
 				B05616571BD822ED004E3B7D /* PListManager.swift */,
 				B05616551BD822B7004E3B7D /* PlayerDAO.swift */,
+				B03FBC6F1BEA54B700CEEC67 /* EnterprisesDAO.swift */,
 			);
 			name = DAOs;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				B05616561BD822B7004E3B7D /* PlayerDAO.swift in Sources */,
 				B0F794F01BD6BF5600BC69ED /* Tip.swift in Sources */,
 				B0F794F21BD6BF5600BC69ED /* PropertyProperties.swift in Sources */,
+				B03FBC701BEA54B700CEEC67 /* EnterprisesDAO.swift in Sources */,
 				B0F794EB1BD6BF5600BC69ED /* Store.swift in Sources */,
 				B0F794F51BD6BF5600BC69ED /* HighRiskInvestment.swift in Sources */,
 				B0F794F61BD6BF5600BC69ED /* Enterprise.swift in Sources */,

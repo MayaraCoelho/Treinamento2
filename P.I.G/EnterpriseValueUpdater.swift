@@ -31,7 +31,7 @@ class EnterpriseValueUpdater{
     
     func requestEnterpriseValue(enterpriseSufix:String)->Double?{
         
-        let url:NSURL = NSURL(string: "http://www.pigmasterserver.16mb.com/"+enterpriseSufix)!
+        let url:NSURL = NSURL(string: "http://www.pig.16mb.com/Enterprises/"+enterpriseSufix)!
         let data:NSData = NSData(contentsOfURL: url)!
         let str = NSString(data: data, encoding:NSUTF8StringEncoding)! as NSString
         return Double(str.floatValue)

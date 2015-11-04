@@ -54,13 +54,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if (PListManager.sharedInstance.databaseExists()){ // If Database exists
             //read database
             PlayerDAO.sharedInstance.readPlayer()
+            EnterprisesDAO.sharedInstance.readEnterprises()
         } else {
             // if database dont exists, create a new database
             PlayerDAO.sharedInstance.savePlayer()
+            EnterprisesDAO.sharedInstance.saveEnterprises()
             PListManager.sharedInstance.writePlist("Database", key: "databaseExists", data: true)
         }
         
-
         
         AppData.sharedInstance.timer.startUpdates()
         application.statusBarHidden = true

@@ -113,6 +113,7 @@ class Enterprise:NSObject, NSCoding {
                 AppData.sharedInstance.player.highRiskInvestmentForEnterprise(self)?.update()
             }
         }
+        EnterprisesDAO.sharedInstance.saveEnterprises()
         print("\(self.name) Update finished. Value:\(self.stockValue) ")
     }
     
