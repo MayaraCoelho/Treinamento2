@@ -25,9 +25,7 @@ class EnterpriseValueUpdater{
             })
         }
     }
-    
-    
-    
+     
     
     func requestEnterpriseValue(enterpriseSufix:String)->Double?{
         

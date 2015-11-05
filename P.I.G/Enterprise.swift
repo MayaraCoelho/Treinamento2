@@ -19,7 +19,7 @@ class Enterprise:NSObject, NSCoding {
     var descript:String
     var imageName:String
     
-    
+    //Used in EnterpriseProperties, to make the first init of an Enterprise
     init(pId:Int, pName:String, pDescription:String, pImageName:String){
         self.id = pId
         self.name = pName
@@ -30,20 +30,8 @@ class Enterprise:NSObject, NSCoding {
         self.imageName = pImageName
 
     }
-    
-    
-    init(pId:Int, pName:String, pValue:Double, pDescription:String, pImageName:String){
-        self.id = pId
-        self.name = pName
-        self.stockValue = pValue
-        self.lastValue = pValue
-        self.playerPercentage = 0
-        self.descript = pDescription
-        self.imageName = pImageName
 
-    }
-
-    
+    //Used in NSCoding init, to init from a encoded state
     init(pId:Int, pName:String, pValue:Double, pLastValue:Double, pDescription:String, pImageName:String){
         self.id = pId
         self.name = pName
@@ -52,10 +40,8 @@ class Enterprise:NSObject, NSCoding {
         self.playerPercentage = 0
         self.descript = pDescription
         self.imageName = pImageName
-
     }
 
-    
    
     //NSCoding Methods
     required convenience init?(coder decoder: NSCoder) {
@@ -113,8 +99,8 @@ class Enterprise:NSObject, NSCoding {
                 AppData.sharedInstance.player.highRiskInvestmentForEnterprise(self)?.update()
             }
         }
-        EnterprisesDAO.sharedInstance.saveEnterprises()
         print("\(self.name) Update finished. Value:\(self.stockValue) ")
+        EnterprisesDAO.sharedInstance.saveEnterprises()
     }
     
 }
