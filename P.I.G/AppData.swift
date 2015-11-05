@@ -16,6 +16,7 @@ class AppData{
     var enterprises:[Enterprise]
     var timer:Timer
     var investmentManager:InvestmentManager
+    var properties: [Property]
     
     
     
@@ -25,6 +26,7 @@ class AppData{
         self.enterprises = EnterpriseProperties.init().enterprises
         self.timer = Timer()
         self.investmentManager = InvestmentManager()
+        self.properties = PropertyProperties.init().properties
     }
     
     

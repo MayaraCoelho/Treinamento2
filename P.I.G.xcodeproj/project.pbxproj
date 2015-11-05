@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09D81EBD1BEBD06D00AB7719 /* PropertiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D81EBB1BEBD06D00AB7719 /* PropertiesTableViewCell.swift */; };
+		09D81EBE1BEBD06D00AB7719 /* PropertiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D81EBC1BEBD06D00AB7719 /* PropertiesTableViewCell.xib */; };
 		B03FBC701BEA54B700CEEC67 /* EnterprisesDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03FBC6F1BEA54B700CEEC67 /* EnterprisesDAO.swift */; };
 		B041E5E41BD82A6000D2B44E /* Database.plist in Resources */ = {isa = PBXBuildFile; fileRef = B041E5E31BD82A6000D2B44E /* Database.plist */; };
 		B05616561BD822B7004E3B7D /* PlayerDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05616551BD822B7004E3B7D /* PlayerDAO.swift */; };
@@ -68,6 +70,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09D81EBB1BEBD06D00AB7719 /* PropertiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesTableViewCell.swift; sourceTree = "<group>"; };
+		09D81EBC1BEBD06D00AB7719 /* PropertiesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertiesTableViewCell.xib; sourceTree = "<group>"; };
 		B03FBC6F1BEA54B700CEEC67 /* EnterprisesDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterprisesDAO.swift; sourceTree = "<group>"; };
 		B041E5E31BD82A6000D2B44E /* Database.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Database.plist; sourceTree = "<group>"; };
 		B05616551BD822B7004E3B7D /* PlayerDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDAO.swift; sourceTree = "<group>"; };
@@ -217,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				B0C846871BD7FD4F0092F8EC /* PropertiesVC.swift */,
+				09D81EBB1BEBD06D00AB7719 /* PropertiesTableViewCell.swift */,
 			);
 			name = Properties;
 			sourceTree = "<group>";
@@ -246,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				B0C846881BD7FD4F0092F8EC /* PropertiesVC.xib */,
+				09D81EBC1BEBD06D00AB7719 /* PropertiesTableViewCell.xib */,
 			);
 			name = Properties;
 			sourceTree = "<group>";
@@ -409,6 +415,7 @@
 				B0B766C41BEB9C7C0045528D /* LRInvestmentTableViewCell.xib in Resources */,
 				B0F795081BD6BF6400BC69ED /* news.jpg in Resources */,
 				B0F7950B1BD6BF6400BC69ED /* building.jpg in Resources */,
+				09D81EBE1BEBD06D00AB7719 /* PropertiesTableViewCell.xib in Resources */,
 				B0F795071BD6BF6400BC69ED /* 14bis.jpg in Resources */,
 				B0F794D31BD6BF4E00BC69ED /* LaunchScreen.storyboard in Resources */,
 				F3E020BA1BE15131001C28E1 /* LowRiskInvestmentsVC.xib in Resources */,
@@ -454,6 +461,7 @@
 				B0DF04E81BDAABAF0022DCB9 /* ColorBarViewController.swift in Sources */,
 				B0F794EE1BD6BF5600BC69ED /* Player.swift in Sources */,
 				B0F794EA1BD6BF5600BC69ED /* EnterpriseProperties.swift in Sources */,
+				09D81EBD1BEBD06D00AB7719 /* PropertiesTableViewCell.swift in Sources */,
 				B05616581BD822ED004E3B7D /* PListManager.swift in Sources */,
 				B0C846811BD7F0B20092F8EC /* TopBarViewController.swift in Sources */,
 				B0F794CC1BD6BF3100BC69ED /* InvestmentNotMadeVC.swift in Sources */,
