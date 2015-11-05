@@ -1,22 +1,15 @@
 //
-//  InvestmentTableViewCell.swift
-//  Wall Invest
+//  LRInvestmentTableViewCell.swift
+//  P.I.G
 //
-//  Created by Henrique do Prado Linhares on 13/10/15.
+//  Created by Henrique do Prado Linhares on 05/11/15.
 //  Copyright © 2015 Henrique do Prado Linhares. All rights reserved.
 //
 
 import UIKit
 
-class HRInvestmentTableViewCell: UITableViewCell {
+class LRInvestmentTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var enterpriseName: UILabel!
-    
-    @IBOutlet weak var enterpriseImage: UIImageView!
-    
-    @IBOutlet weak var containerView: UIView!
-
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -8,84 +8,62 @@
 
 import UIKit
 
-class LowRiskInvestmentsVC: UIViewController {
+class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
-    @IBOutlet weak var inSavingAccount: UILabel!
-    @IBOutlet weak var savingSlider: UISlider!
-    @IBOutlet weak var savingInvestButton: UIButton!
-    @IBOutlet weak var valueInvestSaving: UILabel!
-    
-    @IBOutlet weak var inCertificate: UILabel!
-    @IBOutlet weak var certificateSlider: UISlider!
-    @IBOutlet weak var certificateInvestButton: UIButton!
-    @IBOutlet weak var valueInvestCertificate: UILabel!
+
+    @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var topBarContainverView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let nib = UINib.init(nibName: "LRInvestmentTableViewCell", bundle: nil)
+        self.tableView.registerNib(nib, forCellReuseIdentifier: "LRICell")
+        
+        
         let topBarVC = TopBarViewController()
         self.addChildViewController(topBarVC)
         self.topBarContainverView.addSubview(topBarVC.view)
         self.restorationIdentifier = "LowRiskInvestmentVC"
         
-        self.savingInvestButton.enabled = false
-        self.certificateInvestButton.enabled = false
         
         // Do any additional setup after loading the view.
     }
     
+    
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("LRICell") as! LRInvestmentTableViewCell
+        cell.textLabel?.text = "Hello world!"
+        return cell
+    }
+    
+    
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Low Risk Investments"
+    }
+    
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 80
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func sliderSaving(sender: AnyObject)
-    {
-        if ((AppData.sharedInstance.player.balance * Double(self.savingSlider.value)) > 0)
-        {
-            self.savingInvestButton.enabled = true
-        }
-        else
-        {
-            self.savingInvestButton.enabled = false
-        }
-        
-        let value = (AppData.sharedInstance.player.balance * Double(self.savingSlider.value))
-        self.valueInvestSaving.text = NSString(format: "$ %.2f", value) as String
-    }
-    
-    
-    @IBAction func investButtonSaving(sender: UIButton)
-    {
-        let investmentValue = (AppData.sharedInstance.player.balance * Double(self.savingSlider.value))
-        AppData.sharedInstance.investmentManager.applyInSavingAccount(investmentValue)
-        
-    }
-    
-    
-    @IBAction func sliderCertificate(sender: AnyObject)
-    {
-        if((AppData.sharedInstance.player.balance * Double(self.certificateSlider.value)) > 0)
-        {
-            self.certificateInvestButton.enabled = true
-        }
-        else
-        {
-            self.certificateInvestButton.enabled = false
-        }
-        
-        let value = (AppData.sharedInstance.player.balance * Double(self.certificateSlider.value))
-        self.valueInvestCertificate.text = NSString(format: "$ %.2f", value) as String
-    }
-    
-    @IBAction func investButtonCertificate(sender: AnyObject)
-    {
-         print(" invest button")
-        let investmentValue = (AppData.sharedInstance.player.balance * Double(self.certificateSlider.value))
-        AppData.sharedInstance.investmentManager.applyInCDB(investmentValue)
-       
     }
     
     

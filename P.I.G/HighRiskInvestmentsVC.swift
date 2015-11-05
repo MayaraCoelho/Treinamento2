@@ -22,7 +22,7 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         let nib = UINib.init(nibName: "HRInvestmentTableViewCell", bundle: nil)
-        self.tableView.registerNib(nib, forCellReuseIdentifier: "Investment")
+        self.tableView.registerNib(nib, forCellReuseIdentifier: "HRICell")
         self.enterpriseDetailsView.hidden = true
         self.blurView.hidden = true
         let topBarVC = TopBarViewController()
@@ -40,7 +40,7 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Investment") as! InvestmentTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("HRICell") as! HRInvestmentTableViewCell
         
         let enterprise = AppData.sharedInstance.enterprises[indexPath.row]
         
