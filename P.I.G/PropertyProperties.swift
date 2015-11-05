@@ -15,7 +15,7 @@ class PropertyProperties{
         
         self.properties = [Property]()
         
-        let p = Property(pName: "Casa", pValue: 100000, pReturningMinimumValue: 800, pReturningMaximumValue: 1187)
+        let p = Property(pName: "Casa", pValue: 100000, pReturningMinimumValue: 800, pReturningMaximumValue: 1187, pImage: "")
         properties.append(p)
     }
 
