@@ -145,6 +145,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		096FFA491BEC02A800232C22 /* EnterpriseImages */ = {
+			isa = PBXGroup;
+			children = (
+				B0F795011BD6BF6400BC69ED /* bank.gif */,
+				B0F794F81BD6BF6400BC69ED /* bacompany.png */,
+				B0F794F91BD6BF6400BC69ED /* mrAlwaysYoung.jpg */,
+				B0F794FA1BD6BF6400BC69ED /* 14bis.jpg */,
+				B0F794FB1BD6BF6400BC69ED /* news.jpg */,
+				B0F794FC1BD6BF6400BC69ED /* elJuegoZone.png */,
+				B0F794FE1BD6BF6400BC69ED /* building.jpg */,
+				B0F794FF1BD6BF6400BC69ED /* everestOil.png */,
+			);
+			name = EnterpriseImages;
+			sourceTree = "<group>";
+		};
 		B05616541BD822A9004E3B7D /* DAOs */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,20 +344,13 @@
 		B0F794C61BD6BF0B00BC69ED /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				096FFA491BEC02A800232C22 /* EnterpriseImages */,
 				F30E78621BDEA04200F6E833 /* CertificateOfDeposit.png */,
 				F30E78641BDEA11000F6E833 /* InvestButton.png */,
 				B0F794F71BD6BF6400BC69ED /* ArrowUp.png */,
-				B0F794F81BD6BF6400BC69ED /* bacompany.png */,
 				F30E78661BDEA11900F6E833 /* SavingAccount.png */,
-				B0F794F91BD6BF6400BC69ED /* mrAlwaysYoung.jpg */,
-				B0F794FA1BD6BF6400BC69ED /* 14bis.jpg */,
-				B0F794FB1BD6BF6400BC69ED /* news.jpg */,
-				B0F794FC1BD6BF6400BC69ED /* elJuegoZone.png */,
 				B0F794FD1BD6BF6400BC69ED /* closeButton.png */,
-				B0F794FE1BD6BF6400BC69ED /* building.jpg */,
-				B0F794FF1BD6BF6400BC69ED /* everestOil.png */,
 				B0F795001BD6BF6400BC69ED /* fast.png */,
-				B0F795011BD6BF6400BC69ED /* bank.gif */,
 				B0F795021BD6BF6400BC69ED /* bugSoftwareInc.png */,
 				B0F795031BD6BF6400BC69ED /* goalsIcon.png */,
 			);

@@ -2,37 +2,51 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" restorationIdentifier="PropertiesCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="PropertiesCell" rowHeight="75" id="KGk-i7-Jjw" customClass="PropertiesTableViewCell" customModule="P_I_G" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="295" height="75"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="PropertiesCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="PropertiesCell" rowHeight="146" id="KGk-i7-Jjw" customClass="PropertiesTableViewCell" customModule="P_I_G" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="446" height="146"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="295" height="74.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="446" height="145.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ybG-5t-HTo">
-                        <rect key="frame" x="169" y="16" width="107" height="43"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ybG-5t-HTo">
+                        <rect key="frame" x="299" y="16" width="110" height="110"/>
                         <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="110" id="lGx-E3-P1F"/>
+                        </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="PropertyCell" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZy-VF-Ehd">
-                        <rect key="frame" x="32" y="27" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="PropertyCell" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZy-VF-Ehd">
+                        <rect key="frame" x="24" y="16" width="241" height="53.5"/>
                         <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="53.5" id="td5-G4-TwP"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <animations/>
+                <constraints>
+                    <constraint firstItem="ybG-5t-HTo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="Iws-F2-OSM"/>
+                    <constraint firstItem="ybG-5t-HTo" firstAttribute="leading" secondItem="gZy-VF-Ehd" secondAttribute="trailing" constant="34" id="NzB-NE-61L"/>
+                    <constraint firstItem="gZy-VF-Ehd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="SUa-2S-3sh"/>
+                    <constraint firstItem="gZy-VF-Ehd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="Uy8-eF-Gmc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ybG-5t-HTo" secondAttribute="trailing" constant="29" id="rYZ-UN-JPA"/>
+                </constraints>
             </tableViewCellContentView>
             <animations/>
             <connections>
                 <outlet property="propertyImage" destination="ybG-5t-HTo" id="WCM-dy-5IX"/>
                 <outlet property="propertyName" destination="gZy-VF-Ehd" id="l0O-qw-26g"/>
             </connections>
-            <point key="canvasLocation" x="131.5" y="-188.5"/>
+            <point key="canvasLocation" x="207" y="-153"/>
         </tableViewCell>
     </objects>
 </document>

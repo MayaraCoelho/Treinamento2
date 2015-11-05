@@ -23,9 +23,6 @@
                     <variation key="widthClass=compact" fixedFrame="YES">
                         <rect key="frame" x="0.0" y="78" width="400" height="522"/>
                     </variation>
-                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                        <rect key="frame" x="50" y="131" width="300" height="380"/>
-                    </variation>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="S0y-ZX-uiU"/>
                         <outlet property="delegate" destination="-1" id="3eW-qz-0bh"/>
@@ -67,13 +64,13 @@
                     <exclude reference="jxt-0f-8q3"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="8Ic-9J-NDY"/>
-                    <exclude reference="M7h-xZ-voM"/>
-                    <exclude reference="XZl-1c-9Hm"/>
                     <exclude reference="2WA-z3-tOs"/>
                     <exclude reference="8H7-2H-gjb"/>
                     <exclude reference="ISV-t1-NuP"/>
                     <exclude reference="WTR-le-8yI"/>
+                    <exclude reference="8Ic-9J-NDY"/>
+                    <exclude reference="M7h-xZ-voM"/>
+                    <exclude reference="XZl-1c-9Hm"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
@@ -86,13 +83,13 @@
                     <include reference="jxt-0f-8q3"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="8Ic-9J-NDY"/>
-                    <include reference="M7h-xZ-voM"/>
-                    <include reference="XZl-1c-9Hm"/>
                     <include reference="2WA-z3-tOs"/>
                     <include reference="8H7-2H-gjb"/>
                     <include reference="ISV-t1-NuP"/>
                     <include reference="WTR-le-8yI"/>
+                    <include reference="8Ic-9J-NDY"/>
+                    <include reference="M7h-xZ-voM"/>
+                    <include reference="XZl-1c-9Hm"/>
                 </mask>
             </variation>
         </view>
