@@ -10,6 +10,11 @@ import UIKit
 
 class LRInvestmentTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var LowRiskInvestName: UILabel!
+    
+    @IBOutlet weak var LowRiskInvestValue: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

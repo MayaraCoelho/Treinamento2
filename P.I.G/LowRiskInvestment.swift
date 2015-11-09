@@ -18,7 +18,6 @@ class LowRiskInvestment:Investment{
         self.name = pName
         self.interestRates = pInterestRates
         self.investmentTerm = pInvestmentTerm
-        
         super.init(pInvestedValue: pInvestedValue)
     }
     

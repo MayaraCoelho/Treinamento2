@@ -71,6 +71,9 @@
 		F30E78651BDEA11000F6E833 /* InvestButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F30E78641BDEA11000F6E833 /* InvestButton.png */; };
 		F30E78671BDEA11900F6E833 /* SavingAccount.png in Resources */ = {isa = PBXBuildFile; fileRef = F30E78661BDEA11900F6E833 /* SavingAccount.png */; };
 		F3E020BA1BE15131001C28E1 /* LowRiskInvestmentsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3E020B91BE15131001C28E1 /* LowRiskInvestmentsVC.xib */; };
+		F3EE36741BF1111D0011A655 /* LRIDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EE36721BF1111D0011A655 /* LRIDetails.swift */; settings = {ASSET_TAGS = (); }; };
+		F3EE36751BF1111D0011A655 /* LRIDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3EE36731BF1111D0011A655 /* LRIDetails.xib */; settings = {ASSET_TAGS = (); }; };
+		F3EE36771BF11E310011A655 /* LRIProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EE36761BF11E310011A655 /* LRIProperties.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +143,9 @@
 		F30E78641BDEA11000F6E833 /* InvestButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InvestButton.png; sourceTree = "<group>"; };
 		F30E78661BDEA11900F6E833 /* SavingAccount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SavingAccount.png; sourceTree = "<group>"; };
 		F3E020B91BE15131001C28E1 /* LowRiskInvestmentsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LowRiskInvestmentsVC.xib; sourceTree = "<group>"; };
+		F3EE36721BF1111D0011A655 /* LRIDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRIDetails.swift; sourceTree = "<group>"; };
+		F3EE36731BF1111D0011A655 /* LRIDetails.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LRIDetails.xib; sourceTree = "<group>"; };
+		F3EE36761BF11E310011A655 /* LRIProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRIProperties.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +200,7 @@
 				B0F794E31BD6BF5600BC69ED /* Investment.swift */,
 				B0F794DD1BD6BF5600BC69ED /* InvestmentManager.swift */,
 				B0F794E41BD6BF5600BC69ED /* LowRiskInvestment.swift */,
+				F3EE36761BF11E310011A655 /* LRIProperties.swift */,
 				B0F794E51BD6BF5600BC69ED /* HighRiskInvestment.swift */,
 			);
 			name = Investments;
@@ -236,6 +243,7 @@
 			children = (
 				B0C846831BD7FC610092F8EC /* LowRiskInvestmentsVC.swift */,
 				B0B766C11BEB9C7C0045528D /* LRInvestmentTableViewCell.swift */,
+				F3EE36721BF1111D0011A655 /* LRIDetails.swift */,
 			);
 			name = LowRiskInvestment;
 			sourceTree = "<group>";
@@ -268,6 +276,7 @@
 			children = (
 				F3E020B91BE15131001C28E1 /* LowRiskInvestmentsVC.xib */,
 				B0B766C21BEB9C7C0045528D /* LRInvestmentTableViewCell.xib */,
+				F3EE36731BF1111D0011A655 /* LRIDetails.xib */,
 			);
 			name = LowRiskInvestment;
 			sourceTree = "<group>";
@@ -445,6 +454,7 @@
 				B0F795041BD6BF6400BC69ED /* ArrowUp.png in Resources */,
 				B0F794B91BD6BE8000BC69ED /* Assets.xcassets in Resources */,
 				B0F7950D1BD6BF6400BC69ED /* fast.png in Resources */,
+				F3EE36751BF1111D0011A655 /* LRIDetails.xib in Resources */,
 				B0C846821BD7F0B20092F8EC /* TopBarViewController.xib in Resources */,
 				B0F7950C1BD6BF6400BC69ED /* everestOil.png in Resources */,
 				F30E78651BDEA11000F6E833 /* InvestButton.png in Resources */,
@@ -481,12 +491,14 @@
 				B0F794F51BD6BF5600BC69ED /* HighRiskInvestment.swift in Sources */,
 				096FFA4C1BEC084400232C22 /* BuyPropertyViewController.swift in Sources */,
 				B0F794F61BD6BF5600BC69ED /* Enterprise.swift in Sources */,
+				F3EE36771BF11E310011A655 /* LRIProperties.swift in Sources */,
 				B0DF04E81BDAABAF0022DCB9 /* ColorBarViewController.swift in Sources */,
 				B0F794EE1BD6BF5600BC69ED /* Player.swift in Sources */,
 				B0F794EA1BD6BF5600BC69ED /* EnterpriseProperties.swift in Sources */,
 				09D81EBD1BEBD06D00AB7719 /* PropertiesTableViewCell.swift in Sources */,
 				B05616581BD822ED004E3B7D /* PListManager.swift in Sources */,
 				B0C846811BD7F0B20092F8EC /* TopBarViewController.swift in Sources */,
+				F3EE36741BF1111D0011A655 /* LRIDetails.swift in Sources */,
 				B0F794CC1BD6BF3100BC69ED /* InvestmentNotMadeVC.swift in Sources */,
 				B0C846851BD7FC610092F8EC /* LowRiskInvestmentsVC.swift in Sources */,
 				B0F794F41BD6BF5600BC69ED /* LowRiskInvestment.swift in Sources */,

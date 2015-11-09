@@ -16,6 +16,12 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet weak var topBarContainverView: UIView!
     
+    @IBOutlet weak var popWindowView: UIView!
+    
+    var lowRiskInvestments = LRIProperties().arrayLRI
+        
+    @IBOutlet weak var blurView: UIVisualEffectView!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         let nib = UINib.init(nibName: "LRInvestmentTableViewCell", bundle: nil)
@@ -27,6 +33,8 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
         self.topBarContainverView.addSubview(topBarVC.view)
         self.restorationIdentifier = "LowRiskInvestmentVC"
         
+        self.blurView.hidden = true
+        self.popWindowView.hidden = true
         
         // Do any additional setup after loading the view.
     }
@@ -35,7 +43,7 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("LRICell") as! LRInvestmentTableViewCell
-        cell.textLabel?.text = "Hello world!"
+        cell.LowRiskInvestName.text = self.lowRiskInvestments[indexPath.row].name
         return cell
     }
     
@@ -46,7 +54,7 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return self.lowRiskInvestments.count
     }
     
     
@@ -55,10 +63,15 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     
-    
-    
-    
-    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.popWindowView.hidden = false
+        self.blurView.hidden = false
+        let popVC = LRIDetails(pSuperViewController: self)
+        self.addChildViewController(popVC)
+        self.popWindowView.addSubview(popVC.view)
+        
+        
+    }
     
     
     override func didReceiveMemoryWarning() {
