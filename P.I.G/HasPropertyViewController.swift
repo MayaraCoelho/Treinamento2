@@ -1,21 +1,15 @@
 //
-//  BuyPropertyViewController.swift
+//  HasPropertyViewController.swift
 //  P.I.G
 //
-//  Created by Maria Carolina Santos on 05/11/15.
+//  Created by Maria Carolina Santos on 09/11/15.
 //  Copyright © 2015 Henrique do Prado Linhares. All rights reserved.
 //
 
 import UIKit
 
-class BuyPropertyViewController: UIViewController {
+class HasPropertyViewController: UIViewController {
 
-    @IBOutlet weak var propertyName: UILabel!
-    @IBOutlet weak var propertyValue: UILabel!
-    @IBOutlet weak var propertyReturn: UILabel!
-    @IBOutlet weak var buyButton: UIButton!
-    @IBOutlet weak var dismissButton: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

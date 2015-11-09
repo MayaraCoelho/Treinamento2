@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		093DE7C81BF0A45B0028345F /* HasPropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093DE7C61BF0A45B0028345F /* HasPropertyViewController.swift */; };
+		093DE7C91BF0A45B0028345F /* HasPropertyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 093DE7C71BF0A45B0028345F /* HasPropertyViewController.xib */; };
 		096FFA4C1BEC084400232C22 /* BuyPropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096FFA4A1BEC084400232C22 /* BuyPropertyViewController.swift */; };
 		096FFA4D1BEC084400232C22 /* BuyPropertyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 096FFA4B1BEC084400232C22 /* BuyPropertyViewController.xib */; };
 		09D81EBD1BEBD06D00AB7719 /* PropertiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D81EBB1BEBD06D00AB7719 /* PropertiesTableViewCell.swift */; };
@@ -72,6 +74,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		093DE7C61BF0A45B0028345F /* HasPropertyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HasPropertyViewController.swift; sourceTree = "<group>"; };
+		093DE7C71BF0A45B0028345F /* HasPropertyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HasPropertyViewController.xib; sourceTree = "<group>"; };
 		096FFA4A1BEC084400232C22 /* BuyPropertyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyPropertyViewController.swift; sourceTree = "<group>"; };
 		096FFA4B1BEC084400232C22 /* BuyPropertyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyPropertyViewController.xib; sourceTree = "<group>"; };
 		09D81EBB1BEBD06D00AB7719 /* PropertiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesTableViewCell.swift; sourceTree = "<group>"; };
@@ -242,6 +246,7 @@
 				B0C846871BD7FD4F0092F8EC /* PropertiesVC.swift */,
 				09D81EBB1BEBD06D00AB7719 /* PropertiesTableViewCell.swift */,
 				096FFA4A1BEC084400232C22 /* BuyPropertyViewController.swift */,
+				093DE7C61BF0A45B0028345F /* HasPropertyViewController.swift */,
 			);
 			name = Properties;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 				B0C846881BD7FD4F0092F8EC /* PropertiesVC.xib */,
 				09D81EBC1BEBD06D00AB7719 /* PropertiesTableViewCell.xib */,
 				096FFA4B1BEC084400232C22 /* BuyPropertyViewController.xib */,
+				093DE7C71BF0A45B0028345F /* HasPropertyViewController.xib */,
 			);
 			name = Properties;
 			sourceTree = "<group>";
@@ -435,6 +441,7 @@
 				F3E020BA1BE15131001C28E1 /* LowRiskInvestmentsVC.xib in Resources */,
 				B0F795051BD6BF6400BC69ED /* bacompany.png in Resources */,
 				B0F7950E1BD6BF6400BC69ED /* bank.gif in Resources */,
+				093DE7C91BF0A45B0028345F /* HasPropertyViewController.xib in Resources */,
 				B0F795041BD6BF6400BC69ED /* ArrowUp.png in Resources */,
 				B0F794B91BD6BE8000BC69ED /* Assets.xcassets in Resources */,
 				B0F7950D1BD6BF6400BC69ED /* fast.png in Resources */,
@@ -488,6 +495,7 @@
 				B0F794EF1BD6BF5600BC69ED /* Goal.swift in Sources */,
 				B0F794F31BD6BF5600BC69ED /* Investment.swift in Sources */,
 				B0F794ED1BD6BF5600BC69ED /* InvestmentManager.swift in Sources */,
+				093DE7C81BF0A45B0028345F /* HasPropertyViewController.swift in Sources */,
 				B0F794CA1BD6BF3100BC69ED /* HighRiskInvestmentsVC.swift in Sources */,
 				BE6A89191BD94BE0006DFEAD /* EnterpriseValueUpdater.swift in Sources */,
 				B0F794E71BD6BF5600BC69ED /* AppData.swift in Sources */,

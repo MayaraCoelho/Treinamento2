@@ -18,6 +18,7 @@ class Player:NSObject, NSCoding{
     var income:Double
     var properties:[Property]
     var goals:[Goal]
+
     
     override init(){
     self.balance = 1000
@@ -60,9 +61,6 @@ class Player:NSObject, NSCoding{
             index++
         }
     }
-    
-    
-    
     
     
     

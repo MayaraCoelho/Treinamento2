@@ -83,26 +83,26 @@ class PropertiesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
     
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-//        let selectedEnterprise = AppData.sharedInstance.properties[indexPath.row]
-        
-//        if (AppData.sharedInstance.player.doesHaveHighRiskInvestmentInEnterprise(selectedEnterprise)){
+////        
+//        let selectedProperty = AppData.sharedInstance.properties[indexPath.row]
+////
+////        if (AppData.sharedInstance.store.buyProperty(selectedProperty)){
 //            
-//            let selectedInvestment = (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(selectedEnterprise))!
+//            let selectedInvestment = (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(selectedProperty))!
 //            
-//            let investmentMadeInstance = InvestmentMadeVC(pInvestment: selectedInvestment, pHomeViewController: self)
-//            
-//            self.presentInvestmentMadeViewController(investmentMadeInstance)
-//            
-//        } else {
-//            
-//            let investmentNotMadeInstance = InvestmentNotMadeVC(pEnterprise: selectedEnterprise, pHomeViewController: self)
+//            let buypropInstance = InvestmentMadeVC(pInvestment: selectedInvestment, pHomeViewController: self)
+////
+//            self.presentBuyPropertyController(buypropInstance)
+////
+////        } else {
+////            
+//            let investmentNotMadeInstance = InvestmentNotMadeVC(pEnterprise: selectedProperty, pHomeViewController: self)
 //            
 //            self.presentInvestmentNotMadeViewController(investmentNotMadeInstance)
-//            
+//        
 //        }
     }
-//
+
 //    
 //    func presentInvestmentNotMadeViewController(pViewController:InvestmentNotMadeVC){
 //        self.addChildViewController(pViewController)
@@ -112,13 +112,13 @@ class PropertiesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
 //    }
 //    
 //    
-//    func presentInvestmentMadeViewController(pViewController:InvestmentMadeVC){
-//        self.addChildViewController(pViewController)
+    func presentBuyPropertyController(pViewController:BuyPropertyViewController){
+        self.addChildViewController(pViewController)
 //        self.enterpriseDetailsView.hidden = false
 //        self.blurView.hidden = false
 //        self.enterpriseDetailsView.addSubview(pViewController.view)
-//    }
-//    
+    }
+    
     
     func update(){
         self.viewDidLoad()
