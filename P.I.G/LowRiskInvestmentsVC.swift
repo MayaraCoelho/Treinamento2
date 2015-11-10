@@ -66,7 +66,7 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.popWindowView.hidden = false
         self.blurView.hidden = false
-        let popVC = LRIDetails(pSuperViewController: self)
+        let popVC = LRIDetails(pSuperViewController: self, pLowRiskInvestment: self.lowRiskInvestments[indexPath.row])
         self.addChildViewController(popVC)
         self.popWindowView.addSubview(popVC.view)
         self.tableView.deselectRowAtIndexPath(indexPath, animated: false)

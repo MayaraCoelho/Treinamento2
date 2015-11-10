@@ -11,7 +11,8 @@ import UIKit
 class LRIDetails: UIViewController {
 
     
-    @IBOutlet weak var lowRisckName: UILabel!
+   
+    @IBOutlet weak var lowRiskInvestmentName: UILabel!
     
     @IBOutlet weak var amountInvestedValue: UILabel!
     
@@ -25,16 +26,28 @@ class LRIDetails: UIViewController {
     
     var superViewController:LowRiskInvestmentsVC
     
+    var lowRiskInvestment:LowRiskInvestment
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.lowRiskInvestmentName.text = self.lowRiskInvestment.name
+        self.amountInvestedValue.text = self.lowRiskInvestment.currentValue.description
         // Do any additional setup after loading the view.
     }
     
-    init(pSuperViewController:LowRiskInvestmentsVC) {
+    init(pSuperViewController:LowRiskInvestmentsVC, pLowRiskInvestment:LowRiskInvestment) {
         self.superViewController = pSuperViewController
+        self.lowRiskInvestment = pLowRiskInvestment
         super.init(nibName: nil, bundle: nil)
     }
+    
+    @IBAction func investmentSliderChanged(sender: UISlider) {
+       
+    
+    }
+    
+    
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

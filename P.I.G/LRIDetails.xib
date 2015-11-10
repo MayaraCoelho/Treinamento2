@@ -9,7 +9,7 @@
                 <outlet property="amountInvestedValue" destination="ock-FL-hiu" id="kOO-1y-lcQ"/>
                 <outlet property="investmentSlider" destination="xrU-2l-4xO" id="vks-fd-Tka"/>
                 <outlet property="investmentValue" destination="Jgg-wH-SV7" id="yF7-2u-twi"/>
-                <outlet property="lowRisckName" destination="cSZ-ku-TYj" id="FTp-q6-xlG"/>
+                <outlet property="lowRiskInvestmentName" destination="cSZ-ku-TYj" id="E8e-vo-ppu"/>
                 <outlet property="rescueSlider" destination="06d-6B-fZV" id="fnR-O2-w75"/>
                 <outlet property="rescueValue" destination="hxw-Cj-ocT" id="Fyw-q1-tpW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -51,6 +51,9 @@
                 <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xrU-2l-4xO">
                     <rect key="frame" x="13" y="175" width="259" height="31"/>
                     <animations/>
+                    <connections>
+                        <action selector="investmentSliderChanged:" destination="-1" eventType="valueChanged" id="2hZ-m7-D5H"/>
+                    </connections>
                 </slider>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rescue Value: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1MW-aO-CvA">
                     <rect key="frame" x="15" y="235" width="140" height="22"/>
@@ -90,7 +93,7 @@
             <animations/>
             <color key="backgroundColor" red="0.97647058819999999" green="0.89411764709999997" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="518" y="491"/>
+            <point key="canvasLocation" x="520" y="492"/>
         </view>
     </objects>
     <resources>
