@@ -9,27 +9,34 @@
 import Foundation
 
 class Timer:NSObject {
-    var startGameTime:NSDate
-    var lastUserActivity:NSDate
-    var currentDate:NSDate
+    
+    var lastIterationDate:NSDate?
+    
+    
+    var lastEnterpriseUpdate:NSDate?
+    
     
     var timer = NSTimer()
     
     
-    override init(){
-        self.startGameTime = NSDate()
-        self.lastUserActivity = NSDate()
-        self.currentDate = NSDate()
-    }
-    
-    
     func startUpdates(){
-        NSTimer.scheduledTimerWithTimeInterval(600, target: self, selector: "updateEnterprises", userInfo: "nil", repeats: true)
+        self.updateEnterprises()
+        NSTimer.scheduledTimerWithTimeInterval(60, target: self, selector: "updateEnterprises", userInfo: "nil", repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateLocalInterests", userInfo: "nil", repeats: true)
     }
     
     
     func updateEnterprises(){
-    EnterpriseValueUpdater().updateAllEnterprises()
+        EnterpriseValueUpdater().updateAllEnterprises()
+        self.lastEnterpriseUpdate = NSDate()
+        print("passou aqui @#@#@#")
+    }
+    
+    
+    func updateLocalInterests(){
+        
+        
+        self.lastIterationDate = NSDate()
     }
     
     

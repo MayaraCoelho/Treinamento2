@@ -17,6 +17,8 @@
 		B041E5E41BD82A6000D2B44E /* Database.plist in Resources */ = {isa = PBXBuildFile; fileRef = B041E5E31BD82A6000D2B44E /* Database.plist */; };
 		B05616561BD822B7004E3B7D /* PlayerDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05616551BD822B7004E3B7D /* PlayerDAO.swift */; };
 		B05616581BD822ED004E3B7D /* PListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05616571BD822ED004E3B7D /* PListManager.swift */; };
+		B06D6C561BF22C0F00B5C8EA /* DeveloperInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06D6C541BF22C0F00B5C8EA /* DeveloperInfoVC.swift */; };
+		B06D6C571BF22C0F00B5C8EA /* DeveloperInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06D6C551BF22C0F00B5C8EA /* DeveloperInfoVC.xib */; };
 		B0B766C31BEB9C7C0045528D /* LRInvestmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B766C11BEB9C7C0045528D /* LRInvestmentTableViewCell.swift */; };
 		B0B766C41BEB9C7C0045528D /* LRInvestmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0B766C21BEB9C7C0045528D /* LRInvestmentTableViewCell.xib */; };
 		B0C846811BD7F0B20092F8EC /* TopBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C8467F1BD7F0B20092F8EC /* TopBarViewController.swift */; };
@@ -71,9 +73,9 @@
 		F30E78651BDEA11000F6E833 /* InvestButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F30E78641BDEA11000F6E833 /* InvestButton.png */; };
 		F30E78671BDEA11900F6E833 /* SavingAccount.png in Resources */ = {isa = PBXBuildFile; fileRef = F30E78661BDEA11900F6E833 /* SavingAccount.png */; };
 		F3E020BA1BE15131001C28E1 /* LowRiskInvestmentsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3E020B91BE15131001C28E1 /* LowRiskInvestmentsVC.xib */; };
-		F3EE36741BF1111D0011A655 /* LRIDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EE36721BF1111D0011A655 /* LRIDetails.swift */; settings = {ASSET_TAGS = (); }; };
-		F3EE36751BF1111D0011A655 /* LRIDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3EE36731BF1111D0011A655 /* LRIDetails.xib */; settings = {ASSET_TAGS = (); }; };
-		F3EE36771BF11E310011A655 /* LRIProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EE36761BF11E310011A655 /* LRIProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		F3EE36741BF1111D0011A655 /* LRIDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EE36721BF1111D0011A655 /* LRIDetails.swift */; };
+		F3EE36751BF1111D0011A655 /* LRIDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3EE36731BF1111D0011A655 /* LRIDetails.xib */; };
+		F3EE36771BF11E310011A655 /* LRIProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EE36761BF11E310011A655 /* LRIProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +89,8 @@
 		B041E5E31BD82A6000D2B44E /* Database.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Database.plist; sourceTree = "<group>"; };
 		B05616551BD822B7004E3B7D /* PlayerDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDAO.swift; sourceTree = "<group>"; };
 		B05616571BD822ED004E3B7D /* PListManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PListManager.swift; sourceTree = "<group>"; };
+		B06D6C541BF22C0F00B5C8EA /* DeveloperInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeveloperInfoVC.swift; sourceTree = "<group>"; };
+		B06D6C551BF22C0F00B5C8EA /* DeveloperInfoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeveloperInfoVC.xib; sourceTree = "<group>"; };
 		B0B766C11BEB9C7C0045528D /* LRInvestmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRInvestmentTableViewCell.swift; sourceTree = "<group>"; };
 		B0B766C21BEB9C7C0045528D /* LRInvestmentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LRInvestmentTableViewCell.xib; sourceTree = "<group>"; };
 		B0C8467F1BD7F0B20092F8EC /* TopBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarViewController.swift; sourceTree = "<group>"; };
@@ -344,6 +348,7 @@
 				B0F794CE1BD6BF4E00BC69ED /* LaunchScreen.storyboard */,
 				B0F794CD1BD6BF4E00BC69ED /* Main.storyboard */,
 				B0C846801BD7F0B20092F8EC /* TopBarViewController.xib */,
+				B06D6C551BF22C0F00B5C8EA /* DeveloperInfoVC.xib */,
 				B0B766CC1BEBA3D40045528D /* HighRiskInvestment */,
 				B0B766CD1BEBA5970045528D /* LowRiskInvestment */,
 				B0B766CE1BEBA5C50045528D /* Properties */,
@@ -355,6 +360,7 @@
 			isa = PBXGroup;
 			children = (
 				B0C8467F1BD7F0B20092F8EC /* TopBarViewController.swift */,
+				B06D6C541BF22C0F00B5C8EA /* DeveloperInfoVC.swift */,
 				B0B766C91BEBA2900045528D /* HighRiskInvestment */,
 				B0B766CA1BEBA2B50045528D /* LowRiskInvestment */,
 				B0B766CB1BEBA2EF0045528D /* Properties */,
@@ -455,6 +461,7 @@
 				B0F794B91BD6BE8000BC69ED /* Assets.xcassets in Resources */,
 				B0F7950D1BD6BF6400BC69ED /* fast.png in Resources */,
 				F3EE36751BF1111D0011A655 /* LRIDetails.xib in Resources */,
+				B06D6C571BF22C0F00B5C8EA /* DeveloperInfoVC.xib in Resources */,
 				B0C846821BD7F0B20092F8EC /* TopBarViewController.xib in Resources */,
 				B0F7950C1BD6BF6400BC69ED /* everestOil.png in Resources */,
 				F30E78651BDEA11000F6E833 /* InvestButton.png in Resources */,
@@ -501,6 +508,7 @@
 				F3EE36741BF1111D0011A655 /* LRIDetails.swift in Sources */,
 				B0F794CC1BD6BF3100BC69ED /* InvestmentNotMadeVC.swift in Sources */,
 				B0C846851BD7FC610092F8EC /* LowRiskInvestmentsVC.swift in Sources */,
+				B06D6C561BF22C0F00B5C8EA /* DeveloperInfoVC.swift in Sources */,
 				B0F794F41BD6BF5600BC69ED /* LowRiskInvestment.swift in Sources */,
 				B0B766C31BEB9C7C0045528D /* LRInvestmentTableViewCell.swift in Sources */,
 				B0F794E81BD6BF5600BC69ED /* Timer.swift in Sources */,

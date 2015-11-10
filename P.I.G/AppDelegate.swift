@@ -16,22 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-    
 
-   
-        /*
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        let homeViewController = HighRiskInvestmentsVC()
-        self.window?.rootViewController = homeViewController
-        self.window?.makeKeyAndVisible()*/
         
         let tabBarController = UITabBarController()
         let highRiskInvestmentsVC = HighRiskInvestmentsVC()
         let lowRiskInvestmentsVC = LowRiskInvestmentsVC()
         let propertiesVC = PropertiesVC()
+        let devInfoVC = DeveloperInfoVC()
         
-        
-        let controllers = [highRiskInvestmentsVC, lowRiskInvestmentsVC, propertiesVC]
+        let controllers = [highRiskInvestmentsVC, lowRiskInvestmentsVC, propertiesVC, devInfoVC]
         tabBarController.viewControllers = controllers
         window?.rootViewController = tabBarController
         
@@ -49,6 +42,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             image: nil,
             tag:3)
         
+
+        devInfoVC.tabBarItem = UITabBarItem(
+            title: "Developer Info",
+            image: nil,
+            tag:4)
         
         
         if (PListManager.sharedInstance.databaseExists()){ // If Database exists
@@ -66,7 +64,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AppData.sharedInstance.timer.startUpdates()
         application.statusBarHidden = true
         
-        EnterpriseValueUpdater().updateAllEnterprises()
+        //EnterpriseValueUpdater().updateAllEnterprises()
         
         return true
     }
