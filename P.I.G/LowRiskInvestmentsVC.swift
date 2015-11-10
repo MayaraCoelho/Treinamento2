@@ -69,8 +69,7 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
         let popVC = LRIDetails(pSuperViewController: self)
         self.addChildViewController(popVC)
         self.popWindowView.addSubview(popVC.view)
-        
-        
+        self.tableView.deselectRowAtIndexPath(indexPath, animated: false)
     }
     
     

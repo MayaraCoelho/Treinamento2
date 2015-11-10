@@ -63,9 +63,10 @@ class InvestmentManager{
     func applyInSavingAccount(pValue:Double)
     {
         AppData.sharedInstance.player.balance = AppData.sharedInstance.player.balance - pValue
+        let index = AppData.sharedInstance.player.lowRiskInvestmentIndexByID(1)
+        AppData.sharedInstance.player.lowRiskInvestments[index].currentValue = AppData.sharedInstance.player.lowRiskInvestments[index].currentValue + pValue
+        AppData.sharedInstance.player.lowRiskInvestments[index].investedValue = AppData.sharedInstance.player.lowRiskInvestments[index].investedValue + pValue
         
-        AppData.sharedInstance.player.savingAccount = AppData.sharedInstance.player.savingAccount + pValue
-        PlayerDAO.sharedInstance.savePlayer()
     }
     
     // Investment CDB
@@ -73,9 +74,11 @@ class InvestmentManager{
     func applyInCDB(pValue:Double)
     {
         AppData.sharedInstance.player.balance = AppData.sharedInstance.player.balance - pValue
+        let index = AppData.sharedInstance.player.lowRiskInvestmentIndexByID(1)
+        AppData.sharedInstance.player.lowRiskInvestments[index].currentValue = AppData.sharedInstance.player.lowRiskInvestments[index].currentValue + pValue
+        AppData.sharedInstance.player.lowRiskInvestments[index].investedValue = AppData.sharedInstance.player.lowRiskInvestments[index].investedValue + pValue
         
-        AppData.sharedInstance.player.cdb = AppData.sharedInstance.player.cdb + pValue
-        PlayerDAO.sharedInstance.savePlayer()
+
     }
     
     

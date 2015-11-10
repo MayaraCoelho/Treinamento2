@@ -8,17 +8,61 @@
 
 import Foundation
 
-class LowRiskInvestment:Investment{
+class LowRiskInvestment:Investment, NSCoding{
 
+    var id:Int
     var name:String
     var interestRates:Float
     var investmentTerm:NSTimeInterval
     
-    init(pName:String, pInterestRates:Float, pInvestmentTerm:NSTimeInterval, pInvestedValue:Double) {
+    init(pID:Int, pName:String, pInterestRates:Float, pInvestmentTerm:NSTimeInterval, pInvestedValue:Double) {
+        self.id = pID
         self.name = pName
         self.interestRates = pInterestRates
         self.investmentTerm = pInvestmentTerm
         super.init(pInvestedValue: pInvestedValue)
     }
+    
+    
+    //NSCoding Methods
+    @objc required convenience init?(coder decoder: NSCoder) {
+        
+        guard let dInvestedValue = decoder.decodeObjectForKey("investedValue") as? Double
+            else {return nil }
+        
+        
+        guard let dCurrentValue = decoder.decodeObjectForKey("currentValue") as? Double
+            else {return nil }
+        
+        
+        guard let dID = decoder.decodeObjectForKey("LRI-ID") as? Int
+            else {return nil }
+        
+        guard let dName = decoder.decodeObjectForKey("name") as? String
+            else {return nil }
+        
+        guard let dInterestRates = decoder.decodeObjectForKey("interestRates") as? Float
+            else {return nil }
+        
+        guard let dInvestmentTerm = decoder.decodeObjectForKey("investmentTerm") as? NSTimeInterval
+            else {return nil }
+        
+    
+        self.init(pID: dID, pName: dName, pInterestRates:dInterestRates, pInvestmentTerm:dInvestmentTerm, pInvestedValue:0)
+        self.currentValue = dCurrentValue
+        self.investedValue = dInvestedValue
+    
+    }
+    
+    @objc func encodeWithCoder(coder: NSCoder) {
+        coder.encodeObject(self.investedValue, forKey: "investedValue")
+        coder.encodeObject(self.currentValue, forKey: "currentValue")
+        coder.encodeObject(self.id, forKey: "LRI-ID")
+        coder.encodeObject(self.name, forKey: "name")
+        coder.encodeObject(self.interestRates, forKey: "interestRates")
+        coder.encodeObject(self.investmentTerm, forKey: "investmentTerm")
+        
+    }
+    
     
 }
