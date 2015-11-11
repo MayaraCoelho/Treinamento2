@@ -65,6 +65,8 @@ class InvestmentManager{
         let index = AppData.sharedInstance.player.lowRiskInvestmentIndexByID(1)
         AppData.sharedInstance.player.lowRiskInvestments[index].currentValue = AppData.sharedInstance.player.lowRiskInvestments[index].currentValue + pValue
         AppData.sharedInstance.player.lowRiskInvestments[index].investedValue = AppData.sharedInstance.player.lowRiskInvestments[index].investedValue + pValue
+        print("done")
+        print(AppData.sharedInstance.player.lowRiskInvestments[index].currentValue)
     }
     
     func rescueFromSavingAccount(pValue:Double){

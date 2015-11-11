@@ -17,8 +17,6 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var topBarContainverView: UIView!
     
     @IBOutlet weak var popWindowView: UIView!
-    
-    var lowRiskInvestments = LRIProperties().arrayLRI
         
     @IBOutlet weak var blurView: UIVisualEffectView!
         
@@ -43,7 +41,8 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("LRICell") as! LRInvestmentTableViewCell
-        cell.LowRiskInvestName.text = self.lowRiskInvestments[indexPath.row].name
+        cell.LowRiskInvestName.text = AppData.sharedInstance.player.lowRiskInvestments[indexPath.row].name
+        cell.LowRiskInvestValue.text = NSString(format: "Investment Value : %.2f ",AppData.sharedInstance.player.lowRiskInvestments[indexPath.row].currentValue) as String
         return cell
     }
     
@@ -54,7 +53,7 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.lowRiskInvestments.count
+        return AppData.sharedInstance.player.lowRiskInvestments.count
     }
     
     
@@ -66,7 +65,7 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.popWindowView.hidden = false
         self.blurView.hidden = false
-        let popVC = LRIDetails(pSuperViewController: self, pLowRiskInvestment: self.lowRiskInvestments[indexPath.row])
+        let popVC = LRIDetails(pSuperViewController: self, pLowRiskInvestment: AppData.sharedInstance.player.lowRiskInvestments[indexPath.row])
         self.addChildViewController(popVC)
         self.popWindowView.addSubview(popVC.view)
         self.tableView.deselectRowAtIndexPath(indexPath, animated: false)

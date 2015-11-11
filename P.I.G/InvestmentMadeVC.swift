@@ -66,14 +66,16 @@ class InvestmentMadeVC: UIViewController {
     
     
     @IBAction func investmentSliderValueChanged(sender: UISlider) {
+        
+        let value = (AppData.sharedInstance.player.balance * Double(self.investSlider.value))
+        
         //If the player wants and have money to invest
-        if ((AppData.sharedInstance.player.balance * Double(self.investSlider.value)) > 0){
+        if (value > 0){
             self.investButton.enabled = true
         } else {
             self.investButton.enabled = false
         }
         
-        let value = (AppData.sharedInstance.player.balance * Double(self.investSlider.value))
         self.investMoreLabel.text = NSString(format:"Invest More: $ %.2f",value) as String
     }
     
