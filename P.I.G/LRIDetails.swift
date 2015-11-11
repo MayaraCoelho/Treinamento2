@@ -70,7 +70,7 @@ class LRIDetails: UIViewController {
         } else if (lowRiskInvestment.id == 2){
             AppData.sharedInstance.investmentManager.applyInCDB(value)
         }
-        PlayerDAO.sharedInstance.savePlayer()
+       // PlayerDAO.sharedInstance.savePlayer()
         self.closePopView()
     }
     
@@ -94,7 +94,7 @@ class LRIDetails: UIViewController {
         } else if (lowRiskInvestment.id == 2){
             AppData.sharedInstance.investmentManager.rescueFromCDB(value)
         }
-        PlayerDAO.sharedInstance.savePlayer()
+      //  PlayerDAO.sharedInstance.savePlayer()
         self.closePopView()
     }
     

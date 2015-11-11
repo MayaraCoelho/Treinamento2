@@ -114,7 +114,7 @@
             <animations/>
             <color key="backgroundColor" red="0.97647058819999999" green="0.89411764709999997" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="520" y="492"/>
+            <point key="canvasLocation" x="588" y="519"/>
         </view>
     </objects>
     <resources>

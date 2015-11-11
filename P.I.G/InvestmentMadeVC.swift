@@ -83,7 +83,7 @@ class InvestmentMadeVC: UIViewController {
         let investmentValue = (AppData.sharedInstance.player.balance * Double(self.investSlider.value))
         AppData.sharedInstance.investmentManager.applyInHighRiskInvestment(self.enterprise, pValue: investmentValue)
         self.closePopUpScreen()
-        PlayerDAO.sharedInstance.savePlayer()
+      //  PlayerDAO.sharedInstance.savePlayer()
     }
     
     
@@ -115,7 +115,7 @@ class InvestmentMadeVC: UIViewController {
             }
         
             self.closePopUpScreen()
-            PlayerDAO.sharedInstance.savePlayer()
+          //  PlayerDAO.sharedInstance.savePlayer()
             
         }
     }

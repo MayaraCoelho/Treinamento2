@@ -51,7 +51,7 @@ class Timer:NSObject, NSCoding {
         
         
         self.lastLocalUpdate = now
-        TimerDAO.sharedInstance.saveTimer()
+       // TimerDAO.sharedInstance.saveTimer()
     }
     
     

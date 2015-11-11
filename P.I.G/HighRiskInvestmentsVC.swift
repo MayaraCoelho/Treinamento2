@@ -130,10 +130,6 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     
-    override func viewWillDisappear(animated: Bool) {
-        TimerDAO.sharedInstance.saveTimer()
-    }
-    
     /*
     // MARK: - Navigation
 

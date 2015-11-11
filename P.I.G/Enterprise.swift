@@ -100,7 +100,7 @@ class Enterprise:NSObject, NSCoding {
             }
         }
         print("\(self.name) Update finished. Value:\(self.stockValue) ")
-        EnterprisesDAO.sharedInstance.saveEnterprises()
+       // EnterprisesDAO.sharedInstance.saveEnterprises()
     }
     
 }
