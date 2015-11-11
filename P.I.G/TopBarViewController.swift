@@ -20,7 +20,6 @@ class TopBarViewController: UIViewController {
         self.walletLabel.text = NSString(format: "Wallet: $ %.2f", AppData.sharedInstance.player.balance) as String
         self.incomeLabel.text = NSString(format: "Income: $ %.2f / day", AppData.sharedInstance.player.income) as String
         
-        
         self.updateTimer = NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: "updateViewValues", userInfo: nil, repeats: true)
     }
 
@@ -34,9 +33,10 @@ class TopBarViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    /*
     override func viewWillDisappear(animated: Bool) {
         self.updateTimer.invalidate()
-    }
+    }*/
 
     /*
     // MARK: - Navigation

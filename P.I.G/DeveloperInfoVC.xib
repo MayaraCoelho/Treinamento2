@@ -115,21 +115,18 @@
                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                             <animations/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="337" id="mZ1-D8-VRd"/>
-                                <constraint firstAttribute="height" constant="40" id="tSj-tL-CGe"/>
+                                <constraint firstAttribute="height" constant="60" id="tSj-tL-CGe"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                             <variation key="default">
                                 <mask key="constraints">
-                                    <exclude reference="mZ1-D8-VRd"/>
                                     <exclude reference="tSj-tL-CGe"/>
                                 </mask>
                             </variation>
                             <variation key="heightClass=regular-widthClass=compact">
                                 <mask key="constraints">
-                                    <include reference="mZ1-D8-VRd"/>
                                     <include reference="tSj-tL-CGe"/>
                                 </mask>
                             </variation>
@@ -143,7 +140,9 @@
                         <constraint firstAttribute="height" constant="200" id="DIu-Ki-4Fa"/>
                         <constraint firstItem="9kt-a3-fVb" firstAttribute="top" secondItem="03y-aG-ls9" secondAttribute="bottom" constant="8" id="MZD-Bq-D5u"/>
                         <constraint firstItem="9kt-a3-fVb" firstAttribute="centerX" secondItem="g3P-8L-eAr" secondAttribute="centerX" id="OzH-Te-wnm"/>
+                        <constraint firstItem="e7N-ie-KfB" firstAttribute="leading" secondItem="g3P-8L-eAr" secondAttribute="leading" id="Z7S-51-GdZ"/>
                         <constraint firstItem="03y-aG-ls9" firstAttribute="centerX" secondItem="g3P-8L-eAr" secondAttribute="centerX" id="cOc-2p-Mi1"/>
+                        <constraint firstAttribute="trailing" secondItem="e7N-ie-KfB" secondAttribute="trailing" id="qzR-fI-XOi"/>
                         <constraint firstItem="e7N-ie-KfB" firstAttribute="top" secondItem="9kt-a3-fVb" secondAttribute="bottom" constant="14" id="s4b-4k-OY7"/>
                     </constraints>
                     <variation key="default">
@@ -154,11 +153,13 @@
                         </mask>
                         <mask key="constraints">
                             <exclude reference="DIu-Ki-4Fa"/>
-                            <exclude reference="22L-2g-Fh1"/>
-                            <exclude reference="cOc-2p-Mi1"/>
                             <exclude reference="MZD-Bq-D5u"/>
                             <exclude reference="OzH-Te-wnm"/>
+                            <exclude reference="22L-2g-Fh1"/>
+                            <exclude reference="cOc-2p-Mi1"/>
                             <exclude reference="42j-Mp-mU2"/>
+                            <exclude reference="Z7S-51-GdZ"/>
+                            <exclude reference="qzR-fI-XOi"/>
                             <exclude reference="s4b-4k-OY7"/>
                         </mask>
                     </variation>
@@ -170,11 +171,13 @@
                         </mask>
                         <mask key="constraints">
                             <include reference="DIu-Ki-4Fa"/>
-                            <include reference="22L-2g-Fh1"/>
-                            <include reference="cOc-2p-Mi1"/>
                             <include reference="MZD-Bq-D5u"/>
                             <include reference="OzH-Te-wnm"/>
+                            <include reference="22L-2g-Fh1"/>
+                            <include reference="cOc-2p-Mi1"/>
                             <include reference="42j-Mp-mU2"/>
+                            <include reference="Z7S-51-GdZ"/>
+                            <include reference="qzR-fI-XOi"/>
                             <include reference="s4b-4k-OY7"/>
                         </mask>
                     </variation>

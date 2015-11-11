@@ -53,6 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             //read database
             PlayerDAO.sharedInstance.readPlayer()
             EnterprisesDAO.sharedInstance.readEnterprises()
+            TimerDAO.sharedInstance.readTimer()
         } else {
             // if database dont exists, create a new database
             PlayerDAO.sharedInstance.savePlayer()

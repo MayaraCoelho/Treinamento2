@@ -70,6 +70,12 @@ class Player:NSObject, NSCoding{
         return -1
     }
     
+    func incomePerSecond()->Double{
+        let incomePerHour = self.income / 24
+        let incomePerMinute = incomePerHour / 60
+        let incomePerSecond = incomePerMinute / 60
+        return incomePerSecond
+    }
     
     
     //NSCoding Methods
@@ -99,8 +105,7 @@ class Player:NSObject, NSCoding{
         
         
         
-        
-        
+    
     }
     
     func encodeWithCoder(coder: NSCoder) {

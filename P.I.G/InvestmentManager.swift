@@ -58,27 +58,46 @@ class InvestmentManager{
     }
     
     
-    // Investment Saving Account
-    
+    //  Saving Account
     func applyInSavingAccount(pValue:Double)
     {
         AppData.sharedInstance.player.balance = AppData.sharedInstance.player.balance - pValue
         let index = AppData.sharedInstance.player.lowRiskInvestmentIndexByID(1)
         AppData.sharedInstance.player.lowRiskInvestments[index].currentValue = AppData.sharedInstance.player.lowRiskInvestments[index].currentValue + pValue
         AppData.sharedInstance.player.lowRiskInvestments[index].investedValue = AppData.sharedInstance.player.lowRiskInvestments[index].investedValue + pValue
-        
     }
     
-    // Investment CDB
+    func rescueFromSavingAccount(pValue:Double){
+        let index = AppData.sharedInstance.player.lowRiskInvestmentIndexByID(1)
+        if (pValue <= AppData.sharedInstance.player.lowRiskInvestments[index].currentValue){
+            AppData.sharedInstance.player.balance = AppData.sharedInstance.player.balance + pValue
+            AppData.sharedInstance.player.lowRiskInvestments[index].currentValue = AppData.sharedInstance.player.lowRiskInvestments[index].currentValue - pValue
+            AppData.sharedInstance.player.lowRiskInvestments[index].investedValue = AppData.sharedInstance.player.lowRiskInvestments[index].currentValue
+        }
     
+    }
+    
+    
+    
+    
+    //  CDB
     func applyInCDB(pValue:Double)
     {
         AppData.sharedInstance.player.balance = AppData.sharedInstance.player.balance - pValue
-        let index = AppData.sharedInstance.player.lowRiskInvestmentIndexByID(1)
+        let index = AppData.sharedInstance.player.lowRiskInvestmentIndexByID(2)
         AppData.sharedInstance.player.lowRiskInvestments[index].currentValue = AppData.sharedInstance.player.lowRiskInvestments[index].currentValue + pValue
         AppData.sharedInstance.player.lowRiskInvestments[index].investedValue = AppData.sharedInstance.player.lowRiskInvestments[index].investedValue + pValue
+    }
+    
+    
+    func rescueFromCDB(pValue:Double){
+        let index = AppData.sharedInstance.player.lowRiskInvestmentIndexByID(2)
+        if (pValue <= AppData.sharedInstance.player.lowRiskInvestments[index].currentValue){
+            AppData.sharedInstance.player.balance = AppData.sharedInstance.player.balance + pValue
+            AppData.sharedInstance.player.lowRiskInvestments[index].currentValue = AppData.sharedInstance.player.lowRiskInvestments[index].currentValue - pValue
+            AppData.sharedInstance.player.lowRiskInvestments[index].investedValue = AppData.sharedInstance.player.lowRiskInvestments[index].currentValue
+        }
         
-
     }
     
     

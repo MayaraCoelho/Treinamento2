@@ -8,9 +8,9 @@
 
 import Foundation
 
-class Timer:NSObject {
+class Timer:NSObject, NSCoding {
     
-    var lastIterationDate:NSDate?
+    var lastLocalUpdate:NSDate?
     
     
     var lastEnterpriseUpdate:NSDate?
@@ -19,25 +19,66 @@ class Timer:NSObject {
     var timer = NSTimer()
     
     
+    
+    
     func startUpdates(){
         self.updateEnterprises()
         NSTimer.scheduledTimerWithTimeInterval(60, target: self, selector: "updateEnterprises", userInfo: "nil", repeats: true)
-        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateLocalInterests", userInfo: "nil", repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "localUpdate", userInfo: "nil", repeats: true)
     }
     
     
     func updateEnterprises(){
         EnterpriseValueUpdater().updateAllEnterprises()
         self.lastEnterpriseUpdate = NSDate()
-        print("passou aqui @#@#@#")
     }
     
     
-    func updateLocalInterests(){
+    func localUpdate(){
+        let now = NSDate()
+        
+        if (self.lastLocalUpdate != nil){
+            let timeInterval = now.timeIntervalSinceDate(self.lastLocalUpdate!)
+            print(">>>>>> Time interval:" + timeInterval.description)
+            AppData.sharedInstance.player.balance = AppData.sharedInstance.player.balance + (AppData.sharedInstance.player.incomePerSecond() * timeInterval)
+        
+        }
         
         
-        self.lastIterationDate = NSDate()
+        
+        
+        
+        
+        
+        self.lastLocalUpdate = now
+        TimerDAO.sharedInstance.saveTimer()
     }
+    
+    
+    
+    
+    //NSCoding Methods
+    required convenience init?(coder decoder: NSCoder) {
+        
+        guard let dLastLocalUpdate = decoder.decodeObjectForKey("lastLocalUpdate") as? NSDate
+            else {return nil }
+        
+        guard let dLastEnterpriseUpdate = decoder.decodeObjectForKey("lastEnterpriseUpdate") as? NSDate
+            else {return nil }
+        
+        self.init()
+        self.lastLocalUpdate = dLastLocalUpdate
+        self.lastEnterpriseUpdate = dLastEnterpriseUpdate
+    }
+    
+    func encodeWithCoder(coder: NSCoder) {
+        coder.encodeObject(self.lastLocalUpdate, forKey: "lastLocalUpdate")
+        coder.encodeObject(self.lastEnterpriseUpdate, forKey: "lastEnterpriseUpdate")
+    }
+    
+    
+    
+    
     
     
 }

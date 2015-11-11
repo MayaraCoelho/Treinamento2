@@ -21,6 +21,7 @@
 		B06D6C571BF22C0F00B5C8EA /* DeveloperInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06D6C551BF22C0F00B5C8EA /* DeveloperInfoVC.xib */; };
 		B0B766C31BEB9C7C0045528D /* LRInvestmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B766C11BEB9C7C0045528D /* LRInvestmentTableViewCell.swift */; };
 		B0B766C41BEB9C7C0045528D /* LRInvestmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0B766C21BEB9C7C0045528D /* LRInvestmentTableViewCell.xib */; };
+		B0C3AAB81BF35CBC00D8CA03 /* TimerDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C3AAB71BF35CBC00D8CA03 /* TimerDAO.swift */; };
 		B0C846811BD7F0B20092F8EC /* TopBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C8467F1BD7F0B20092F8EC /* TopBarViewController.swift */; };
 		B0C846821BD7F0B20092F8EC /* TopBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0C846801BD7F0B20092F8EC /* TopBarViewController.xib */; };
 		B0C846851BD7FC610092F8EC /* LowRiskInvestmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C846831BD7FC610092F8EC /* LowRiskInvestmentsVC.swift */; };
@@ -93,6 +94,7 @@
 		B06D6C551BF22C0F00B5C8EA /* DeveloperInfoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeveloperInfoVC.xib; sourceTree = "<group>"; };
 		B0B766C11BEB9C7C0045528D /* LRInvestmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRInvestmentTableViewCell.swift; sourceTree = "<group>"; };
 		B0B766C21BEB9C7C0045528D /* LRInvestmentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LRInvestmentTableViewCell.xib; sourceTree = "<group>"; };
+		B0C3AAB71BF35CBC00D8CA03 /* TimerDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerDAO.swift; sourceTree = "<group>"; };
 		B0C8467F1BD7F0B20092F8EC /* TopBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarViewController.swift; sourceTree = "<group>"; };
 		B0C846801BD7F0B20092F8EC /* TopBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopBarViewController.xib; sourceTree = "<group>"; };
 		B0C846831BD7FC610092F8EC /* LowRiskInvestmentsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LowRiskInvestmentsVC.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				B05616571BD822ED004E3B7D /* PListManager.swift */,
 				B05616551BD822B7004E3B7D /* PlayerDAO.swift */,
 				B03FBC6F1BEA54B700CEEC67 /* EnterprisesDAO.swift */,
+				B0C3AAB71BF35CBC00D8CA03 /* TimerDAO.swift */,
 			);
 			name = DAOs;
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 				B0F794F61BD6BF5600BC69ED /* Enterprise.swift in Sources */,
 				F3EE36771BF11E310011A655 /* LRIProperties.swift in Sources */,
 				B0DF04E81BDAABAF0022DCB9 /* ColorBarViewController.swift in Sources */,
+				B0C3AAB81BF35CBC00D8CA03 /* TimerDAO.swift in Sources */,
 				B0F794EE1BD6BF5600BC69ED /* Player.swift in Sources */,
 				B0F794EA1BD6BF5600BC69ED /* EnterpriseProperties.swift in Sources */,
 				09D81EBD1BEBD06D00AB7719 /* PropertiesTableViewCell.swift in Sources */,
