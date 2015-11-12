@@ -39,7 +39,7 @@ class Timer:NSObject, NSCoding {
             AppData.sharedInstance.player.balance = AppData.sharedInstance.player.balance + (AppData.sharedInstance.player.incomePerSecond() * timeInterval)
             
             for(var count=0; count < AppData.sharedInstance.player.lowRiskInvestments.count; count++){
-               AppData.sharedInstance.player.lowRiskInvestments[count].currentValue = AppData.sharedInstance.player.lowRiskInvestments[count].currentValue * Double(AppData.sharedInstance.player.lowRiskInvestments[count].interestRatePerSecond())
+               AppData.sharedInstance.player.lowRiskInvestments[count].currentValue = AppData.sharedInstance.player.lowRiskInvestments[count].currentValue * Double(AppData.sharedInstance.player.lowRiskInvestments[count].interestRatePerSecond()) * Double(timeInterval)
             }
             
             
