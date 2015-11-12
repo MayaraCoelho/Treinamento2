@@ -12,11 +12,13 @@ class Store{
     var properties:[Property]
     
     init(){
-    let propertiesInstance = PropertyProperties()
-    self.properties = propertiesInstance.properties
+        let propertiesInstance = PropertyProperties()
+        self.properties = propertiesInstance.properties
     }
     
     func buyProperty(){
+        //check if player has properties
+
     }
     
     func sellProperty(){

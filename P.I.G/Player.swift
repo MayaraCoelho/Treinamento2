@@ -69,6 +69,11 @@ class Player:NSObject, NSCoding{
         }
         return -1
     }
+//    
+//    func propertiesIndexByID(pID:Int)->Int{
+//        var count = 0
+//        for prp:Property in self.
+//    }
     
     func incomePerSecond()->Double{
         let incomePerHour = self.income / 24
