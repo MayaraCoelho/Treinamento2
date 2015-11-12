@@ -46,7 +46,7 @@ class EnterpriseProperties{
         self.enterprises.append(ent7)
         
         let ent8desc = "It was founded by engineer Philip Holland in England, and is responsible for the largest buildings of the contemporary world."
-        let ent8 = Enterprise(pId: 8, pName: "Philip Holland Buildings", pDescription: ent8desc, pImageName: "Philip Holland Buildings")
+        let ent8 = Enterprise(pId: 8, pName: "Philip Holland Buildings", pDescription: ent8desc, pImageName: "PhilipHollandBuildings.png")
         self.enterprises.append(ent8)
         
         let ent9desc = "Founded in Argentina in 1990, manufactures aircraft of all sizes and are famous for their excellent performance."
