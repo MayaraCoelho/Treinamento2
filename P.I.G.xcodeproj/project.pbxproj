@@ -15,6 +15,16 @@
 		09D81EBE1BEBD06D00AB7719 /* PropertiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D81EBC1BEBD06D00AB7719 /* PropertiesTableViewCell.xib */; };
 		B03FBC701BEA54B700CEEC67 /* EnterprisesDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03FBC6F1BEA54B700CEEC67 /* EnterprisesDAO.swift */; };
 		B041E5E41BD82A6000D2B44E /* Database.plist in Resources */ = {isa = PBXBuildFile; fileRef = B041E5E31BD82A6000D2B44E /* Database.plist */; };
+		B0537BE91BF4B235004AF676 /* EverestOil.png in Resources */ = {isa = PBXBuildFile; fileRef = B0537BE81BF4B235004AF676 /* EverestOil.png */; };
+		B0537BED1BF4B2B6004AF676 /* BacompanyHouse.png in Resources */ = {isa = PBXBuildFile; fileRef = B0537BEC1BF4B2B6004AF676 /* BacompanyHouse.png */; };
+		B0537BEF1BF4B580004AF676 /* BugSoftwareInc.png in Resources */ = {isa = PBXBuildFile; fileRef = B0537BEE1BF4B580004AF676 /* BugSoftwareInc.png */; };
+		B0537BF11BF4B5B7004AF676 /* MrAlwaysYoung.png in Resources */ = {isa = PBXBuildFile; fileRef = B0537BF01BF4B5B7004AF676 /* MrAlwaysYoung.png */; };
+		B0537BF31BF4B5CA004AF676 /* ElJuegoZone.png in Resources */ = {isa = PBXBuildFile; fileRef = B0537BF21BF4B5CA004AF676 /* ElJuegoZone.png */; };
+		B0537BF51BF4B5DE004AF676 /* TimeNewsCentral.png in Resources */ = {isa = PBXBuildFile; fileRef = B0537BF41BF4B5DE004AF676 /* TimeNewsCentral.png */; };
+		B0537BF71BF4B5F7004AF676 /* B&C.png in Resources */ = {isa = PBXBuildFile; fileRef = B0537BF61BF4B5F7004AF676 /* B&C.png */; };
+		B0537BF91BF4B607004AF676 /* PhilipHollandBuildings.png in Resources */ = {isa = PBXBuildFile; fileRef = B0537BF81BF4B607004AF676 /* PhilipHollandBuildings.png */; };
+		B0537BFB1BF4B624004AF676 /* DumontAircrafts.png in Resources */ = {isa = PBXBuildFile; fileRef = B0537BFA1BF4B624004AF676 /* DumontAircrafts.png */; };
+		B0537BFD1BF4B636004AF676 /* FastexSA.png in Resources */ = {isa = PBXBuildFile; fileRef = B0537BFC1BF4B636004AF676 /* FastexSA.png */; };
 		B05616561BD822B7004E3B7D /* PlayerDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05616551BD822B7004E3B7D /* PlayerDAO.swift */; };
 		B05616581BD822ED004E3B7D /* PListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05616571BD822ED004E3B7D /* PListManager.swift */; };
 		B06D6C561BF22C0F00B5C8EA /* DeveloperInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06D6C541BF22C0F00B5C8EA /* DeveloperInfoVC.swift */; };
@@ -55,17 +65,8 @@
 		B0F794F51BD6BF5600BC69ED /* HighRiskInvestment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794E51BD6BF5600BC69ED /* HighRiskInvestment.swift */; };
 		B0F794F61BD6BF5600BC69ED /* Enterprise.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794E61BD6BF5600BC69ED /* Enterprise.swift */; };
 		B0F795041BD6BF6400BC69ED /* ArrowUp.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F794F71BD6BF6400BC69ED /* ArrowUp.png */; };
-		B0F795051BD6BF6400BC69ED /* bacompany.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F794F81BD6BF6400BC69ED /* bacompany.png */; };
-		B0F795061BD6BF6400BC69ED /* mrAlwaysYoung.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0F794F91BD6BF6400BC69ED /* mrAlwaysYoung.jpg */; };
-		B0F795071BD6BF6400BC69ED /* 14bis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0F794FA1BD6BF6400BC69ED /* 14bis.jpg */; };
-		B0F795081BD6BF6400BC69ED /* news.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0F794FB1BD6BF6400BC69ED /* news.jpg */; };
-		B0F795091BD6BF6400BC69ED /* elJuegoZone.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F794FC1BD6BF6400BC69ED /* elJuegoZone.png */; };
 		B0F7950A1BD6BF6400BC69ED /* closeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F794FD1BD6BF6400BC69ED /* closeButton.png */; };
-		B0F7950B1BD6BF6400BC69ED /* building.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0F794FE1BD6BF6400BC69ED /* building.jpg */; };
-		B0F7950C1BD6BF6400BC69ED /* everestOil.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F794FF1BD6BF6400BC69ED /* everestOil.png */; };
 		B0F7950D1BD6BF6400BC69ED /* fast.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F795001BD6BF6400BC69ED /* fast.png */; };
-		B0F7950E1BD6BF6400BC69ED /* bank.gif in Resources */ = {isa = PBXBuildFile; fileRef = B0F795011BD6BF6400BC69ED /* bank.gif */; };
-		B0F7950F1BD6BF6400BC69ED /* bugSoftwareInc.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F795021BD6BF6400BC69ED /* bugSoftwareInc.png */; };
 		B0F795101BD6BF6400BC69ED /* goalsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F795031BD6BF6400BC69ED /* goalsIcon.png */; };
 		BE6A89191BD94BE0006DFEAD /* EnterpriseValueUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A89181BD94BE0006DFEAD /* EnterpriseValueUpdater.swift */; };
 		BE6A891C1BD94ECD006DFEAD /* InvestmentMadeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A891A1BD94ECD006DFEAD /* InvestmentMadeVC.swift */; };
@@ -88,6 +89,16 @@
 		09D81EBC1BEBD06D00AB7719 /* PropertiesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertiesTableViewCell.xib; sourceTree = "<group>"; };
 		B03FBC6F1BEA54B700CEEC67 /* EnterprisesDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterprisesDAO.swift; sourceTree = "<group>"; };
 		B041E5E31BD82A6000D2B44E /* Database.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Database.plist; sourceTree = "<group>"; };
+		B0537BE81BF4B235004AF676 /* EverestOil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EverestOil.png; sourceTree = "<group>"; };
+		B0537BEC1BF4B2B6004AF676 /* BacompanyHouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BacompanyHouse.png; sourceTree = "<group>"; };
+		B0537BEE1BF4B580004AF676 /* BugSoftwareInc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BugSoftwareInc.png; sourceTree = "<group>"; };
+		B0537BF01BF4B5B7004AF676 /* MrAlwaysYoung.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MrAlwaysYoung.png; sourceTree = "<group>"; };
+		B0537BF21BF4B5CA004AF676 /* ElJuegoZone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ElJuegoZone.png; sourceTree = "<group>"; };
+		B0537BF41BF4B5DE004AF676 /* TimeNewsCentral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimeNewsCentral.png; sourceTree = "<group>"; };
+		B0537BF61BF4B5F7004AF676 /* B&C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "B&C.png"; sourceTree = "<group>"; };
+		B0537BF81BF4B607004AF676 /* PhilipHollandBuildings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PhilipHollandBuildings.png; sourceTree = "<group>"; };
+		B0537BFA1BF4B624004AF676 /* DumontAircrafts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DumontAircrafts.png; sourceTree = "<group>"; };
+		B0537BFC1BF4B636004AF676 /* FastexSA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FastexSA.png; sourceTree = "<group>"; };
 		B05616551BD822B7004E3B7D /* PlayerDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDAO.swift; sourceTree = "<group>"; };
 		B05616571BD822ED004E3B7D /* PListManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PListManager.swift; sourceTree = "<group>"; };
 		B06D6C541BF22C0F00B5C8EA /* DeveloperInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeveloperInfoVC.swift; sourceTree = "<group>"; };
@@ -130,17 +141,8 @@
 		B0F794E51BD6BF5600BC69ED /* HighRiskInvestment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighRiskInvestment.swift; sourceTree = "<group>"; };
 		B0F794E61BD6BF5600BC69ED /* Enterprise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enterprise.swift; sourceTree = "<group>"; };
 		B0F794F71BD6BF6400BC69ED /* ArrowUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArrowUp.png; sourceTree = "<group>"; };
-		B0F794F81BD6BF6400BC69ED /* bacompany.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bacompany.png; sourceTree = "<group>"; };
-		B0F794F91BD6BF6400BC69ED /* mrAlwaysYoung.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mrAlwaysYoung.jpg; sourceTree = "<group>"; };
-		B0F794FA1BD6BF6400BC69ED /* 14bis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 14bis.jpg; sourceTree = "<group>"; };
-		B0F794FB1BD6BF6400BC69ED /* news.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = news.jpg; sourceTree = "<group>"; };
-		B0F794FC1BD6BF6400BC69ED /* elJuegoZone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elJuegoZone.png; sourceTree = "<group>"; };
 		B0F794FD1BD6BF6400BC69ED /* closeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closeButton.png; sourceTree = "<group>"; };
-		B0F794FE1BD6BF6400BC69ED /* building.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = building.jpg; sourceTree = "<group>"; };
-		B0F794FF1BD6BF6400BC69ED /* everestOil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = everestOil.png; sourceTree = "<group>"; };
 		B0F795001BD6BF6400BC69ED /* fast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fast.png; sourceTree = "<group>"; };
-		B0F795011BD6BF6400BC69ED /* bank.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bank.gif; sourceTree = "<group>"; };
-		B0F795021BD6BF6400BC69ED /* bugSoftwareInc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bugSoftwareInc.png; sourceTree = "<group>"; };
 		B0F795031BD6BF6400BC69ED /* goalsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goalsIcon.png; sourceTree = "<group>"; };
 		BE6A89181BD94BE0006DFEAD /* EnterpriseValueUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterpriseValueUpdater.swift; sourceTree = "<group>"; };
 		BE6A891A1BD94ECD006DFEAD /* InvestmentMadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentMadeVC.swift; sourceTree = "<group>"; };
@@ -168,14 +170,16 @@
 		096FFA491BEC02A800232C22 /* EnterpriseImages */ = {
 			isa = PBXGroup;
 			children = (
-				B0F795011BD6BF6400BC69ED /* bank.gif */,
-				B0F794F81BD6BF6400BC69ED /* bacompany.png */,
-				B0F794F91BD6BF6400BC69ED /* mrAlwaysYoung.jpg */,
-				B0F794FA1BD6BF6400BC69ED /* 14bis.jpg */,
-				B0F794FB1BD6BF6400BC69ED /* news.jpg */,
-				B0F794FC1BD6BF6400BC69ED /* elJuegoZone.png */,
-				B0F794FE1BD6BF6400BC69ED /* building.jpg */,
-				B0F794FF1BD6BF6400BC69ED /* everestOil.png */,
+				B0537BE81BF4B235004AF676 /* EverestOil.png */,
+				B0537BEE1BF4B580004AF676 /* BugSoftwareInc.png */,
+				B0537BEC1BF4B2B6004AF676 /* BacompanyHouse.png */,
+				B0537BF01BF4B5B7004AF676 /* MrAlwaysYoung.png */,
+				B0537BF21BF4B5CA004AF676 /* ElJuegoZone.png */,
+				B0537BF41BF4B5DE004AF676 /* TimeNewsCentral.png */,
+				B0537BF61BF4B5F7004AF676 /* B&C.png */,
+				B0537BF81BF4B607004AF676 /* PhilipHollandBuildings.png */,
+				B0537BFA1BF4B624004AF676 /* DumontAircrafts.png */,
+				B0537BFC1BF4B636004AF676 /* FastexSA.png */,
 			);
 			name = EnterpriseImages;
 			sourceTree = "<group>";
@@ -381,7 +385,6 @@
 				F30E78661BDEA11900F6E833 /* SavingAccount.png */,
 				B0F794FD1BD6BF6400BC69ED /* closeButton.png */,
 				B0F795001BD6BF6400BC69ED /* fast.png */,
-				B0F795021BD6BF6400BC69ED /* bugSoftwareInc.png */,
 				B0F795031BD6BF6400BC69ED /* goalsIcon.png */,
 			);
 			name = SupportingFiles;
@@ -447,38 +450,39 @@
 			files = (
 				B0F794D61BD6BF4E00BC69ED /* InvestmentNotMadeVC.xib in Resources */,
 				F30E78671BDEA11900F6E833 /* SavingAccount.png in Resources */,
+				B0537BF71BF4B5F7004AF676 /* B&C.png in Resources */,
 				F30E78631BDEA04200F6E833 /* CertificateOfDeposit.png in Resources */,
 				B0F7950A1BD6BF6400BC69ED /* closeButton.png in Resources */,
-				B0F7950F1BD6BF6400BC69ED /* bugSoftwareInc.png in Resources */,
 				B0B766C41BEB9C7C0045528D /* LRInvestmentTableViewCell.xib in Resources */,
-				B0F795081BD6BF6400BC69ED /* news.jpg in Resources */,
-				B0F7950B1BD6BF6400BC69ED /* building.jpg in Resources */,
 				09D81EBE1BEBD06D00AB7719 /* PropertiesTableViewCell.xib in Resources */,
-				B0F795071BD6BF6400BC69ED /* 14bis.jpg in Resources */,
 				B0F794D31BD6BF4E00BC69ED /* LaunchScreen.storyboard in Resources */,
 				F3E020BA1BE15131001C28E1 /* LowRiskInvestmentsVC.xib in Resources */,
-				B0F795051BD6BF6400BC69ED /* bacompany.png in Resources */,
-				B0F7950E1BD6BF6400BC69ED /* bank.gif in Resources */,
+				B0537BE91BF4B235004AF676 /* EverestOil.png in Resources */,
+				B0537BEF1BF4B580004AF676 /* BugSoftwareInc.png in Resources */,
+				B0537BF31BF4B5CA004AF676 /* ElJuegoZone.png in Resources */,
 				093DE7C91BF0A45B0028345F /* HasPropertyViewController.xib in Resources */,
+				B0537BF11BF4B5B7004AF676 /* MrAlwaysYoung.png in Resources */,
 				B0F795041BD6BF6400BC69ED /* ArrowUp.png in Resources */,
 				B0F794B91BD6BE8000BC69ED /* Assets.xcassets in Resources */,
+				B0537BF51BF4B5DE004AF676 /* TimeNewsCentral.png in Resources */,
 				B0F7950D1BD6BF6400BC69ED /* fast.png in Resources */,
 				F3EE36751BF1111D0011A655 /* LRIDetails.xib in Resources */,
+				B0537BFD1BF4B636004AF676 /* FastexSA.png in Resources */,
 				B06D6C571BF22C0F00B5C8EA /* DeveloperInfoVC.xib in Resources */,
 				B0C846821BD7F0B20092F8EC /* TopBarViewController.xib in Resources */,
-				B0F7950C1BD6BF6400BC69ED /* everestOil.png in Resources */,
 				F30E78651BDEA11000F6E833 /* InvestButton.png in Resources */,
+				B0537BFB1BF4B624004AF676 /* DumontAircrafts.png in Resources */,
 				B041E5E41BD82A6000D2B44E /* Database.plist in Resources */,
 				B0C8468A1BD7FD4F0092F8EC /* PropertiesVC.xib in Resources */,
 				B0F794D51BD6BF4E00BC69ED /* HRInvestmentTableViewCell.xib in Resources */,
 				096FFA4D1BEC084400232C22 /* BuyPropertyViewController.xib in Resources */,
 				BE6A891D1BD94ECD006DFEAD /* InvestmentMadeVC.xib in Resources */,
+				B0537BF91BF4B607004AF676 /* PhilipHollandBuildings.png in Resources */,
 				B0F794D21BD6BF4E00BC69ED /* Main.storyboard in Resources */,
 				B0DF04EA1BDAABB70022DCB9 /* ColorBarViewController.xib in Resources */,
 				B0F795101BD6BF6400BC69ED /* goalsIcon.png in Resources */,
-				B0F795091BD6BF6400BC69ED /* elJuegoZone.png in Resources */,
 				B0F794D41BD6BF4E00BC69ED /* HighRiskInvestmentsVC.xib in Resources */,
-				B0F795061BD6BF6400BC69ED /* mrAlwaysYoung.jpg in Resources */,
+				B0537BED1BF4B2B6004AF676 /* BacompanyHouse.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

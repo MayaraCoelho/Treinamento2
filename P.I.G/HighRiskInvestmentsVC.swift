@@ -65,7 +65,7 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
             colorBarVC.textLabel.text = NSString(format: "W/L: %.2f ", (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(enterprise)?.currentValue)! - (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(enterprise)?.investedValue)!) as String
         }
         
-        cell.enterpriseImage.image = UIImage(named: enterprise.imageName)
+        cell.enterpriseImage.image = enterprise.icon()
         return cell
     }
     

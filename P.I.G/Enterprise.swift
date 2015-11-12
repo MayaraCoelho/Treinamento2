@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 class Enterprise:NSObject, NSCoding {
@@ -42,6 +43,10 @@ class Enterprise:NSObject, NSCoding {
         self.imageName = pImageName
     }
 
+    func icon()->UIImage?{
+        return UIImage(named: self.imageName)
+    }
+    
    
     //NSCoding Methods
     required convenience init?(coder decoder: NSCoder) {

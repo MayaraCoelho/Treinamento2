@@ -51,7 +51,9 @@ class Timer:NSObject, NSCoding {
         
         
         self.lastLocalUpdate = now
-       // TimerDAO.sharedInstance.saveTimer()
+        
+        // APAGAR ESTA LINHA ---- FIX ME
+        TimerDAO.sharedInstance.saveTimer()
     }
     
     

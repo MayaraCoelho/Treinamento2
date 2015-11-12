@@ -58,6 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // if database dont exists, create a new database
             PlayerDAO.sharedInstance.savePlayer()
             EnterprisesDAO.sharedInstance.saveEnterprises()
+            TimerDAO.sharedInstance.saveTimer()
             PListManager.sharedInstance.writePlist("Database", key: "databaseExists", data: true)
         }
         
