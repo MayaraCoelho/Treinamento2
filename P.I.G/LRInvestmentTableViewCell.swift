@@ -14,6 +14,7 @@ class LRInvestmentTableViewCell: UITableViewCell {
     
     @IBOutlet weak var LowRiskInvestValue: UILabel!
     
+    @IBOutlet weak var lowRiskInvestImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -27,6 +27,12 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oIP-Md-qxC">
+                        <rect key="frame" x="231" y="4" width="71" height="74"/>
+                        <variation key="widthClass=compact" fixedFrame="YES">
+                            <rect key="frame" x="241" y="4" width="71" height="74"/>
+                        </variation>
+                    </imageView>
                 </subviews>
                 <animations/>
                 <color key="backgroundColor" red="0.97647058819999999" green="0.89411764709999997" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -35,6 +41,7 @@
             <connections>
                 <outlet property="LowRiskInvestName" destination="BXQ-ax-NZj" id="572-RB-D7D"/>
                 <outlet property="LowRiskInvestValue" destination="knh-Zf-n8U" id="j7Q-jw-ql7"/>
+                <outlet property="lowRiskInvestImage" destination="oIP-Md-qxC" id="4pJ-aA-eUj"/>
             </connections>
             <point key="canvasLocation" x="280" y="278"/>
         </tableViewCell>

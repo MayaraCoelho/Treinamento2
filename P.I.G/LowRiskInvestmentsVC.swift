@@ -41,8 +41,10 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("LRICell") as! LRInvestmentTableViewCell
+    
         cell.LowRiskInvestName.text = AppData.sharedInstance.player.lowRiskInvestments[indexPath.row].name
         cell.LowRiskInvestValue.text = NSString(format: "Investment Value : %.2f ",AppData.sharedInstance.player.lowRiskInvestments[indexPath.row].currentValue) as String
+        cell.lowRiskInvestImage.image = AppData.sharedInstance.player.lowRiskInvestments[indexPath.row].icones()
         return cell
     }
     

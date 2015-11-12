@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class LowRiskInvestment:Investment, NSCoding{
 
@@ -14,13 +15,21 @@ class LowRiskInvestment:Investment, NSCoding{
     var name:String
     var interestRates:Float
     var investmentTerm:NSTimeInterval
+    var imageName: String
     
-    init(pID:Int, pName:String, pInterestRates:Float, pInvestmentTerm:NSTimeInterval, pInvestedValue:Double) {
+    
+    init(pID:Int, pName:String, pInterestRates:Float, pInvestmentTerm:NSTimeInterval, pInvestedValue:Double, pImageName: String) {
         self.id = pID
         self.name = pName
         self.interestRates = pInterestRates
         self.investmentTerm = pInvestmentTerm
+        self.imageName = pImageName
         super.init(pInvestedValue: pInvestedValue)
+    }
+    
+    func icones()->UIImage?
+    {
+        return UIImage(named: self.imageName)
     }
     
     
@@ -46,9 +55,12 @@ class LowRiskInvestment:Investment, NSCoding{
         
         guard let dInvestmentTerm = decoder.decodeObjectForKey("investmentTerm") as? NSTimeInterval
             else {return nil }
+        guard let dImageName =
+            decoder.decodeObjectForKey("imageName") as? String
+            else {return nil}
         
     
-        self.init(pID: dID, pName: dName, pInterestRates:dInterestRates, pInvestmentTerm:dInvestmentTerm, pInvestedValue:0)
+        self.init(pID: dID, pName: dName, pInterestRates:dInterestRates, pInvestmentTerm:dInvestmentTerm, pInvestedValue:0, pImageName: dImageName)
         self.currentValue = dCurrentValue
         self.investedValue = dInvestedValue
     
@@ -61,6 +73,7 @@ class LowRiskInvestment:Investment, NSCoding{
         coder.encodeObject(self.name, forKey: "name")
         coder.encodeObject(self.interestRates, forKey: "interestRates")
         coder.encodeObject(self.investmentTerm, forKey: "investmentTerm")
+        coder.encodeObject(self.imageName, forKey: "imageName")
         
     }
     

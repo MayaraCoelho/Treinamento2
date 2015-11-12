@@ -47,6 +47,7 @@ class Enterprise:NSObject, NSCoding {
         return UIImage(named: self.imageName)
     }
     
+    
    
     //NSCoding Methods
     required convenience init?(coder decoder: NSCoder) {
