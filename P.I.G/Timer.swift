@@ -33,13 +33,39 @@ class Timer:NSObject, NSCoding {
     func localUpdate(){
         let now = NSDate()
         
+      
+        
+        
         if (self.lastLocalUpdate != nil){
-            let timeInterval = now.timeIntervalSinceDate(self.lastLocalUpdate!)
-            print(">>>>>> Time interval:" + timeInterval.description)
+            var timeInterval = now.timeIntervalSinceDate(self.lastLocalUpdate!)
+            
+            
+            if (timeInterval < 1){
+                timeInterval = 1
+            } else if (timeInterval < 1.5){
+                timeInterval = 1
+            }
+            
+            
+            
+           // print(">>>>>> Time interval:" + timeInterval.description)
             AppData.sharedInstance.player.balance = AppData.sharedInstance.player.balance + (AppData.sharedInstance.player.incomePerSecond() * timeInterval)
             
+            
+            
             for(var count=0; count < AppData.sharedInstance.player.lowRiskInvestments.count; count++){
-               AppData.sharedInstance.player.lowRiskInvestments[count].currentValue = AppData.sharedInstance.player.lowRiskInvestments[count].currentValue * Double(AppData.sharedInstance.player.lowRiskInvestments[count].interestRatePerSecond()) * Double(timeInterval)
+            
+                let integerTimeInterval:Int = Int(timeInterval)
+                print("Time interval integer value: \(integerTimeInterval)")
+                var k:Int
+                
+                for k=integerTimeInterval; k > 0; k-- {
+                print("@#$@#@$@#@$@#@$#@ PASSANDO PELO FOR $@#@$@#@$@#$@#@$@$%@$%$@@#@$#@")
+                AppData.sharedInstance.player.lowRiskInvestments[count].currentValue = AppData.sharedInstance.player.lowRiskInvestments[count].currentValue * Double(AppData.sharedInstance.player.lowRiskInvestments[count].interestRatePerSecond())
+                }
+                
+                
+                print("\(AppData.sharedInstance.player.lowRiskInvestments[count].name) -=- \(AppData.sharedInstance.player.lowRiskInvestments[count].currentValue)")
             }
             
             

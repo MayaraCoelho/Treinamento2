@@ -16,8 +16,12 @@ class LRInvestmentTableViewCell: UITableViewCell {
     
     @IBOutlet weak var lowRiskInvestImage: UIImageView!
     
+    @IBOutlet weak var backgroundImageView: UIImageView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.backgroundImageView.image = UIImage(named: "barImage.png")
         // Initialization code
     }
 
