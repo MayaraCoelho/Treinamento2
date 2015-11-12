@@ -25,6 +25,9 @@
 		B0537BF91BF4B607004AF676 /* PhilipHollandBuildings.png in Resources */ = {isa = PBXBuildFile; fileRef = B0537BF81BF4B607004AF676 /* PhilipHollandBuildings.png */; };
 		B0537BFB1BF4B624004AF676 /* DumontAircrafts.png in Resources */ = {isa = PBXBuildFile; fileRef = B0537BFA1BF4B624004AF676 /* DumontAircrafts.png */; };
 		B0537BFD1BF4B636004AF676 /* FastexSA.png in Resources */ = {isa = PBXBuildFile; fileRef = B0537BFC1BF4B636004AF676 /* FastexSA.png */; };
+		B0537C031BF4DB3E004AF676 /* HRInvestmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0537C021BF4DB3E004AF676 /* HRInvestmentTableViewCell.swift */; };
+		B0537C051BF4DB46004AF676 /* HRInvestmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0537C041BF4DB46004AF676 /* HRInvestmentTableViewCell.xib */; };
+		B0537C071BF4DB7D004AF676 /* barImage.png in Resources */ = {isa = PBXBuildFile; fileRef = B0537C061BF4DB7D004AF676 /* barImage.png */; };
 		B05616561BD822B7004E3B7D /* PlayerDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05616551BD822B7004E3B7D /* PlayerDAO.swift */; };
 		B05616581BD822ED004E3B7D /* PListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05616571BD822ED004E3B7D /* PListManager.swift */; };
 		B06D6C561BF22C0F00B5C8EA /* DeveloperInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06D6C541BF22C0F00B5C8EA /* DeveloperInfoVC.swift */; };
@@ -42,12 +45,10 @@
 		B0F794B21BD6BE8000BC69ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794B11BD6BE8000BC69ED /* AppDelegate.swift */; };
 		B0F794B91BD6BE8000BC69ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0F794B81BD6BE8000BC69ED /* Assets.xcassets */; };
 		B0F794CA1BD6BF3100BC69ED /* HighRiskInvestmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794C71BD6BF3100BC69ED /* HighRiskInvestmentsVC.swift */; };
-		B0F794CB1BD6BF3100BC69ED /* HRInvestmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794C81BD6BF3100BC69ED /* HRInvestmentTableViewCell.swift */; };
 		B0F794CC1BD6BF3100BC69ED /* InvestmentNotMadeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794C91BD6BF3100BC69ED /* InvestmentNotMadeVC.swift */; };
 		B0F794D21BD6BF4E00BC69ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F794CD1BD6BF4E00BC69ED /* Main.storyboard */; };
 		B0F794D31BD6BF4E00BC69ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F794CE1BD6BF4E00BC69ED /* LaunchScreen.storyboard */; };
 		B0F794D41BD6BF4E00BC69ED /* HighRiskInvestmentsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F794CF1BD6BF4E00BC69ED /* HighRiskInvestmentsVC.xib */; };
-		B0F794D51BD6BF4E00BC69ED /* HRInvestmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F794D01BD6BF4E00BC69ED /* HRInvestmentTableViewCell.xib */; };
 		B0F794D61BD6BF4E00BC69ED /* InvestmentNotMadeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F794D11BD6BF4E00BC69ED /* InvestmentNotMadeVC.xib */; };
 		B0F794E71BD6BF5600BC69ED /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794D71BD6BF5600BC69ED /* AppData.swift */; };
 		B0F794E81BD6BF5600BC69ED /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794D81BD6BF5600BC69ED /* Timer.swift */; };
@@ -96,6 +97,9 @@
 		B0537BF81BF4B607004AF676 /* PhilipHollandBuildings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PhilipHollandBuildings.png; sourceTree = "<group>"; };
 		B0537BFA1BF4B624004AF676 /* DumontAircrafts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DumontAircrafts.png; sourceTree = "<group>"; };
 		B0537BFC1BF4B636004AF676 /* FastexSA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FastexSA.png; sourceTree = "<group>"; };
+		B0537C021BF4DB3E004AF676 /* HRInvestmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HRInvestmentTableViewCell.swift; sourceTree = "<group>"; };
+		B0537C041BF4DB46004AF676 /* HRInvestmentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HRInvestmentTableViewCell.xib; sourceTree = "<group>"; };
+		B0537C061BF4DB7D004AF676 /* barImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barImage.png; sourceTree = "<group>"; };
 		B05616551BD822B7004E3B7D /* PlayerDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDAO.swift; sourceTree = "<group>"; };
 		B05616571BD822ED004E3B7D /* PListManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PListManager.swift; sourceTree = "<group>"; };
 		B06D6C541BF22C0F00B5C8EA /* DeveloperInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeveloperInfoVC.swift; sourceTree = "<group>"; };
@@ -115,12 +119,10 @@
 		B0F794B81BD6BE8000BC69ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0F794BD1BD6BE8000BC69ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0F794C71BD6BF3100BC69ED /* HighRiskInvestmentsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighRiskInvestmentsVC.swift; sourceTree = "<group>"; };
-		B0F794C81BD6BF3100BC69ED /* HRInvestmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HRInvestmentTableViewCell.swift; sourceTree = "<group>"; };
 		B0F794C91BD6BF3100BC69ED /* InvestmentNotMadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentNotMadeVC.swift; sourceTree = "<group>"; };
 		B0F794CD1BD6BF4E00BC69ED /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B0F794CE1BD6BF4E00BC69ED /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0F794CF1BD6BF4E00BC69ED /* HighRiskInvestmentsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HighRiskInvestmentsVC.xib; sourceTree = "<group>"; };
-		B0F794D01BD6BF4E00BC69ED /* HRInvestmentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HRInvestmentTableViewCell.xib; sourceTree = "<group>"; };
 		B0F794D11BD6BF4E00BC69ED /* InvestmentNotMadeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvestmentNotMadeVC.xib; sourceTree = "<group>"; };
 		B0F794D71BD6BF5600BC69ED /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		B0F794D81BD6BF5600BC69ED /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
@@ -235,7 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				B0F794C71BD6BF3100BC69ED /* HighRiskInvestmentsVC.swift */,
-				B0F794C81BD6BF3100BC69ED /* HRInvestmentTableViewCell.swift */,
+				B0537C021BF4DB3E004AF676 /* HRInvestmentTableViewCell.swift */,
 				B0F794C91BD6BF3100BC69ED /* InvestmentNotMadeVC.swift */,
 				BE6A891A1BD94ECD006DFEAD /* InvestmentMadeVC.swift */,
 				B0DF04E71BDAABAF0022DCB9 /* ColorBarViewController.swift */,
@@ -268,7 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				B0F794CF1BD6BF4E00BC69ED /* HighRiskInvestmentsVC.xib */,
-				B0F794D01BD6BF4E00BC69ED /* HRInvestmentTableViewCell.xib */,
+				B0537C041BF4DB46004AF676 /* HRInvestmentTableViewCell.xib */,
 				BE6A891B1BD94ECD006DFEAD /* InvestmentMadeVC.xib */,
 				B0F794D11BD6BF4E00BC69ED /* InvestmentNotMadeVC.xib */,
 				B0DF04E91BDAABB70022DCB9 /* ColorBarViewController.xib */,
@@ -372,6 +374,7 @@
 		B0F794C61BD6BF0B00BC69ED /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				B0537C061BF4DB7D004AF676 /* barImage.png */,
 				F37BFDD31BF4D67400DA188A /* LowRisk */,
 				096FFA491BEC02A800232C22 /* EnterpriseImages */,
 				B0F794F71BD6BF6400BC69ED /* ArrowUp.png */,
@@ -463,6 +466,7 @@
 				B0F794B91BD6BE8000BC69ED /* Assets.xcassets in Resources */,
 				B0537BF51BF4B5DE004AF676 /* TimeNewsCentral.png in Resources */,
 				B0F7950D1BD6BF6400BC69ED /* fast.png in Resources */,
+				B0537C071BF4DB7D004AF676 /* barImage.png in Resources */,
 				F3EE36751BF1111D0011A655 /* LRIDetails.xib in Resources */,
 				B0537BFD1BF4B636004AF676 /* FastexSA.png in Resources */,
 				B06D6C571BF22C0F00B5C8EA /* DeveloperInfoVC.xib in Resources */,
@@ -470,8 +474,8 @@
 				B0537BFB1BF4B624004AF676 /* DumontAircrafts.png in Resources */,
 				B041E5E41BD82A6000D2B44E /* Database.plist in Resources */,
 				B0C8468A1BD7FD4F0092F8EC /* PropertiesVC.xib in Resources */,
-				B0F794D51BD6BF4E00BC69ED /* HRInvestmentTableViewCell.xib in Resources */,
 				096FFA4D1BEC084400232C22 /* BuyPropertyViewController.xib in Resources */,
+				B0537C051BF4DB46004AF676 /* HRInvestmentTableViewCell.xib in Resources */,
 				BE6A891D1BD94ECD006DFEAD /* InvestmentMadeVC.xib in Resources */,
 				B0537BF91BF4B607004AF676 /* PhilipHollandBuildings.png in Resources */,
 				B0F794D21BD6BF4E00BC69ED /* Main.storyboard in Resources */,
@@ -492,8 +496,8 @@
 				B0F794F11BD6BF5600BC69ED /* Property.swift in Sources */,
 				B0F794B21BD6BE8000BC69ED /* AppDelegate.swift in Sources */,
 				BE6A891C1BD94ECD006DFEAD /* InvestmentMadeVC.swift in Sources */,
-				B0F794CB1BD6BF3100BC69ED /* HRInvestmentTableViewCell.swift in Sources */,
 				B05616561BD822B7004E3B7D /* PlayerDAO.swift in Sources */,
+				B0537C031BF4DB3E004AF676 /* HRInvestmentTableViewCell.swift in Sources */,
 				B0F794F01BD6BF5600BC69ED /* Tip.swift in Sources */,
 				B0F794F21BD6BF5600BC69ED /* PropertyProperties.swift in Sources */,
 				B03FBC701BEA54B700CEEC67 /* EnterprisesDAO.swift in Sources */,

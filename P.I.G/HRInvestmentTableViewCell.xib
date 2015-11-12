@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -14,16 +14,20 @@
                 <rect key="frame" x="0.0" y="0.0" width="346" height="80"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jjz-iq-0oY">
+                        <rect key="frame" x="8" y="8" width="310" height="64"/>
+                        <animations/>
+                    </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OEc-lO-PJc">
-                        <rect key="frame" x="278" y="10" width="60" height="60"/>
+                        <rect key="frame" x="268" y="5" width="70" height="70"/>
                         <animations/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="60" id="hFI-8g-7J9"/>
-                            <constraint firstAttribute="height" constant="60" id="rFz-4p-hOf"/>
+                            <constraint firstAttribute="width" constant="70" id="hFI-8g-7J9"/>
+                            <constraint firstAttribute="height" constant="70" id="rFz-4p-hOf"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Everest Oil" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofm-pd-8e3">
-                        <rect key="frame" x="8" y="13" width="200" height="21"/>
+                        <rect key="frame" x="23" y="13" width="200" height="21"/>
                         <animations/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="WFG-Fn-mpS"/>
@@ -34,7 +38,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ts-Wo-THe">
-                        <rect key="frame" x="8" y="42" width="200" height="28"/>
+                        <rect key="frame" x="23" y="42" width="200" height="28"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -47,8 +51,12 @@
                 <color key="backgroundColor" red="0.99444705915207909" green="0.91688846770321641" blue="0.79325834776293014" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="ofm-pd-8e3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="FtT-6f-GzG"/>
-                    <constraint firstItem="8ts-Wo-THe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="TnX-OL-Tbp"/>
-                    <constraint firstItem="ofm-pd-8e3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="eOm-mY-3ky"/>
+                    <constraint firstItem="Jjz-iq-0oY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="GQS-I6-eoh"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Jjz-iq-0oY" secondAttribute="bottom" id="I2d-o1-91K"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Jjz-iq-0oY" secondAttribute="trailing" constant="20" id="R1c-I0-tfI"/>
+                    <constraint firstItem="8ts-Wo-THe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="TnX-OL-Tbp"/>
+                    <constraint firstItem="Jjz-iq-0oY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="ddR-Vy-UG6"/>
+                    <constraint firstItem="ofm-pd-8e3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="eOm-mY-3ky"/>
                     <constraint firstAttribute="bottomMargin" secondItem="8ts-Wo-THe" secondAttribute="bottom" constant="1.5" id="io5-Wf-F6C"/>
                     <constraint firstItem="OEc-lO-PJc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ir1-ra-7Pb"/>
                     <constraint firstItem="OEc-lO-PJc" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="ndP-V4-BwV"/>
@@ -56,6 +64,7 @@
             </tableViewCellContentView>
             <animations/>
             <connections>
+                <outlet property="backgroundImageView" destination="Jjz-iq-0oY" id="ACF-Tg-eHV"/>
                 <outlet property="containerView" destination="8ts-Wo-THe" id="Uag-r5-PXm"/>
                 <outlet property="enterpriseImage" destination="OEc-lO-PJc" id="6IJ-vn-e2w"/>
                 <outlet property="enterpriseName" destination="ofm-pd-8e3" id="Kp3-e2-rz3"/>

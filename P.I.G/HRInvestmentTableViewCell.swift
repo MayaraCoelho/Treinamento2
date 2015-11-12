@@ -15,10 +15,16 @@ class HRInvestmentTableViewCell: UITableViewCell {
     @IBOutlet weak var enterpriseImage: UIImageView!
     
     @IBOutlet weak var containerView: UIView!
+    
+    @IBOutlet weak var backgroundImageView: UIImageView!
+
 
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        self.backgroundImageView.image = UIImage(named: "barImage.png")
+        
         // Initialization code
     }
 
