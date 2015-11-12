@@ -1,3 +1,4 @@
+
 //
 //  TopBarViewController.swift
 //  P.I.G
@@ -12,6 +13,11 @@ class TopBarViewController: UIViewController {
 
     @IBOutlet weak var walletLabel: UILabel!
     @IBOutlet weak var incomeLabel: UILabel!
+    @IBOutlet weak var goalsButton: UIButton!
+    
+    let goalsView = GoalsVC(nibName:"GoalsVC", bundle:nil)
+    
+    
     var updateTimer = NSTimer()
     
     override func viewDidLoad() {
@@ -32,6 +38,14 @@ class TopBarViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func goalsButton(sender: UIButton) {
+        
+        presentViewController(goalsView, animated: false, completion: nil)
+    }
+    
+    
+    
     
     /*
     override func viewWillDisappear(animated: Bool) {

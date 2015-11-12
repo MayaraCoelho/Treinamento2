@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopBarViewController" customModule="P_I_G" customModuleProvider="target">
             <connections>
+                <outlet property="goalsButton" destination="mme-Az-jYW" id="zrc-M4-YUv"/>
                 <outlet property="incomeLabel" destination="KzP-Np-sw7" id="yUS-U2-zGg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="walletLabel" destination="l5I-un-avO" id="m19-92-3oS"/>
@@ -51,6 +52,9 @@
                     <state key="normal" title="Task">
                         <color key="titleColor" red="0.57236756658539345" green="0.48297201626386244" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="goalsButton:" destination="-1" eventType="touchUpInside" id="Fc9-iE-zNL"/>
+                    </connections>
                 </button>
             </subviews>
             <animations/>
@@ -65,7 +69,7 @@
                 <constraint firstItem="UOp-Jg-iBn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vIi-Ca-idv"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="753" y="625.5"/>
+            <point key="canvasLocation" x="799" y="625.5"/>
         </view>
     </objects>
     <resources>

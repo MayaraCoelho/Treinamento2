@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeveloperInfoVC" customModule="P_I_G" customModuleProvider="target">
@@ -153,10 +153,10 @@
                         </mask>
                         <mask key="constraints">
                             <exclude reference="DIu-Ki-4Fa"/>
-                            <exclude reference="MZD-Bq-D5u"/>
-                            <exclude reference="OzH-Te-wnm"/>
                             <exclude reference="22L-2g-Fh1"/>
                             <exclude reference="cOc-2p-Mi1"/>
+                            <exclude reference="MZD-Bq-D5u"/>
+                            <exclude reference="OzH-Te-wnm"/>
                             <exclude reference="42j-Mp-mU2"/>
                             <exclude reference="Z7S-51-GdZ"/>
                             <exclude reference="qzR-fI-XOi"/>
@@ -171,10 +171,10 @@
                         </mask>
                         <mask key="constraints">
                             <include reference="DIu-Ki-4Fa"/>
-                            <include reference="MZD-Bq-D5u"/>
-                            <include reference="OzH-Te-wnm"/>
                             <include reference="22L-2g-Fh1"/>
                             <include reference="cOc-2p-Mi1"/>
+                            <include reference="MZD-Bq-D5u"/>
+                            <include reference="OzH-Te-wnm"/>
                             <include reference="42j-Mp-mU2"/>
                             <include reference="Z7S-51-GdZ"/>
                             <include reference="qzR-fI-XOi"/>
