@@ -90,17 +90,13 @@ class Enterprise:NSObject, NSCoding {
         coder.encodeObject(self.imageName, forKey: "imageName")
     }
     
-    func update(){
+    func updateStockValue(pNewStockValue:Double){
         
-        print("\(self.name) Update started. ")
+        let newValue = pNewStockValue
         
-        let sufix = (self.name.stringByReplacingOccurrencesOfString(" ", withString: ""))+".php"
-        
-        let requestedValue = EnterpriseValueUpdater().requestEnterpriseValue(sufix)!
-        
-        if (requestedValue > 0){
+        if (newValue > 0){
             self.lastValue = self.stockValue
-            self.stockValue = requestedValue
+            self.stockValue = newValue
             if (AppData.sharedInstance.player.doesHaveHighRiskInvestmentInEnterprise(self)){
                 AppData.sharedInstance.player.highRiskInvestmentForEnterprise(self)?.update()
             }

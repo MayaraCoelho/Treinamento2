@@ -72,8 +72,8 @@
 		BE6A89191BD94BE0006DFEAD /* EnterpriseValueUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A89181BD94BE0006DFEAD /* EnterpriseValueUpdater.swift */; };
 		BE6A891C1BD94ECD006DFEAD /* InvestmentMadeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A891A1BD94ECD006DFEAD /* InvestmentMadeVC.swift */; };
 		BE6A891D1BD94ECD006DFEAD /* InvestmentMadeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE6A891B1BD94ECD006DFEAD /* InvestmentMadeVC.xib */; };
-		F37BFDDA1BF50B0900DA188A /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37BFDD81BF50B0900DA188A /* GoalsVC.swift */; settings = {ASSET_TAGS = (); }; };
-		F37BFDDB1BF50B0900DA188A /* GoalsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F37BFDD91BF50B0900DA188A /* GoalsVC.xib */; settings = {ASSET_TAGS = (); }; };
+		F37BFDDA1BF50B0900DA188A /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37BFDD81BF50B0900DA188A /* GoalsVC.swift */; };
+		F37BFDDB1BF50B0900DA188A /* GoalsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F37BFDD91BF50B0900DA188A /* GoalsVC.xib */; };
 		F3E020BA1BE15131001C28E1 /* LowRiskInvestmentsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3E020B91BE15131001C28E1 /* LowRiskInvestmentsVC.xib */; };
 		F3EE36741BF1111D0011A655 /* LRIDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EE36721BF1111D0011A655 /* LRIDetails.swift */; };
 		F3EE36751BF1111D0011A655 /* LRIDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3EE36731BF1111D0011A655 /* LRIDetails.xib */; };
@@ -437,7 +437,7 @@
 				TargetAttributes = {
 					B0F794AD1BD6BE8000BC69ED = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = 56F6M7MT84;
+						DevelopmentTeam = 9M8RSS5KWQ;
 					};
 				};
 			};

@@ -18,6 +18,9 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
     
     @IBOutlet weak var topBarViewContainer: UIView!
     
+    override func viewWillAppear(animated: Bool) {
+        self.tableView.reloadData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
