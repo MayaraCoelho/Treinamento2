@@ -14,11 +14,19 @@ class DeveloperInfoVC: UIViewController {
     
     @IBOutlet weak var enterprisesTimeUntilNextUpdate: UILabel!
     
+    var timer = NSTimer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateScreen", userInfo: "nil", repeats: true)
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateScreen", userInfo: "nil", repeats: true)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        self.timer.invalidate()
     }
     
     

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopBarViewController" customModule="P_I_G" customModuleProvider="target">
@@ -17,15 +17,15 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArrowUp.png" translatesAutoresizingMaskIntoConstraints="NO" id="UOp-Jg-iBn">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UOp-Jg-iBn">
                     <rect key="frame" x="0.0" y="0.0" width="53" height="75"/>
                     <animations/>
                     <constraints>
                         <constraint firstAttribute="width" constant="53" id="6qv-ZK-2mh"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Income: $ VALUE / Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzP-Np-sw7">
-                    <rect key="frame" x="61" y="44" width="259" height="22"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Income: $ VALUE / Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzP-Np-sw7">
+                    <rect key="frame" x="53" y="44" width="259" height="21"/>
                     <animations/>
                     <constraints>
                         <constraint firstAttribute="width" constant="259" id="4A1-Zv-30i"/>
@@ -36,7 +36,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet : $ VALUE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5I-un-avO">
-                    <rect key="frame" x="61" y="8" width="220" height="21"/>
+                    <rect key="frame" x="53" y="8" width="220" height="21"/>
                     <animations/>
                     <constraints>
                         <constraint firstAttribute="width" constant="220" id="Bgy-L4-buU"/>
@@ -46,8 +46,13 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mme-Az-jYW">
-                    <rect key="frame" x="280" y="6" width="32" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mme-Az-jYW">
+                    <rect key="frame" x="10" y="23" width="32" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="dMY-lc-2kT"/>
+                        <constraint firstAttribute="height" constant="30" id="gzV-AO-Uyh"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <state key="normal" title="Task">
                         <color key="titleColor" red="0.57236756658539345" green="0.48297201626386244" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -60,19 +65,18 @@
             <animations/>
             <color key="backgroundColor" red="0.47501151922247881" green="0.81639382696669083" blue="0.94387727192083271" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="l5I-un-avO" firstAttribute="leading" secondItem="UOp-Jg-iBn" secondAttribute="trailing" constant="8" id="2Cp-LA-3mW"/>
-                <constraint firstItem="KzP-Np-sw7" firstAttribute="leading" secondItem="UOp-Jg-iBn" secondAttribute="trailing" constant="8" id="4V8-dA-mQN"/>
+                <constraint firstItem="l5I-un-avO" firstAttribute="leading" secondItem="UOp-Jg-iBn" secondAttribute="trailing" id="2Cp-LA-3mW"/>
+                <constraint firstItem="KzP-Np-sw7" firstAttribute="leading" secondItem="UOp-Jg-iBn" secondAttribute="trailing" id="4V8-dA-mQN"/>
                 <constraint firstItem="l5I-un-avO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="79c-mf-ALL"/>
+                <constraint firstItem="mme-Az-jYW" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="KjD-zw-gaV"/>
                 <constraint firstItem="UOp-Jg-iBn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QdH-0X-6Cy"/>
                 <constraint firstAttribute="bottom" secondItem="UOp-Jg-iBn" secondAttribute="bottom" id="Uoj-DB-9dM"/>
                 <constraint firstAttribute="bottom" secondItem="KzP-Np-sw7" secondAttribute="bottom" constant="10" id="caF-4F-XTU"/>
+                <constraint firstItem="mme-Az-jYW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="ce6-X2-1fD"/>
                 <constraint firstItem="UOp-Jg-iBn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vIi-Ca-idv"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="799" y="625.5"/>
+            <point key="canvasLocation" x="794" y="628.5"/>
         </view>
     </objects>
-    <resources>
-        <image name="ArrowUp.png" width="88" height="130"/>
-    </resources>
 </document>

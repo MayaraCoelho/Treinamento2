@@ -7,9 +7,11 @@
 //
 
 import Foundation
+import UIKit
 
 class Property{
 
+    var id:Int
     var name:String
     var value:Float
     var returningMiniumValue:Float
@@ -17,7 +19,8 @@ class Property{
     var imageName:String
     
     
-    init(pName:String, pValue:Float, pReturningMinimumValue:Float, pReturningMaximumValue:Float, pImage:String){
+    init(pID:Int, pName:String, pValue:Float, pReturningMinimumValue:Float, pReturningMaximumValue:Float, pImage:String){
+        self.id = pID
         self.name = pName
         self.value = pValue
         self.returningMiniumValue = pReturningMinimumValue
@@ -28,6 +31,11 @@ class Property{
     
     func generateReturningValue(){
     
+    }
+    
+    
+    func icon()->UIImage?{
+        return UIImage(named: self.imageName)
     }
     
 }

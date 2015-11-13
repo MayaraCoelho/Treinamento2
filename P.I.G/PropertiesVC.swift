@@ -60,8 +60,8 @@ class PropertiesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
 //            
 //            colorBarVC.textLabel.text = NSString(format: "W/L: %.2f ", (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(enterprise)?.currentValue)! - (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(enterprise)?.investedValue)!) as String
         
-    
-        cell.propertyImage.image = UIImage(named: property.imageName)
+
+        cell.propertyImage.image = AppData.sharedInstance.properties[indexPath.row].icon()
         return cell
     }
     
@@ -76,31 +76,14 @@ class PropertiesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
     
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 80
+        return 90
     }
     
     
     
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-////        
-//        let selectedProperty = AppData.sharedInstance.properties[indexPath.row]
-////
-////        if (AppData.sharedInstance.store.buyProperty(selectedProperty)){
-//            
-//            let selectedInvestment = (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(selectedProperty))!
-//            
-//            let buypropInstance = InvestmentMadeVC(pInvestment: selectedInvestment, pHomeViewController: self)
-////
-//            self.presentBuyPropertyController(buypropInstance)
-////
-////        } else {
-////            
-//            let investmentNotMadeInstance = InvestmentNotMadeVC(pEnterprise: selectedProperty, pHomeViewController: self)
-//            
-//            self.presentInvestmentNotMadeViewController(investmentNotMadeInstance)
-//        
-//        }
+        self.tableView.deselectRowAtIndexPath(indexPath, animated: false)
     }
 
 //    

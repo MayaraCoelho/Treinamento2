@@ -33,7 +33,8 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
         self.topBarViewContainer.addSubview(topBarVC.view)
         self.restorationIdentifier = "HighRiskInvestmentVC"
         
-        
+        self.enterpriseDetailsView.backgroundColor = UIColor(white: 0.0, alpha: 0.0)
+        self.enterpriseDetailsView.opaque = false
     }
     
 
@@ -83,7 +84,7 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
 
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 80
+        return 90
     }
     
     

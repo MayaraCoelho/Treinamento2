@@ -16,10 +16,11 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Qa-cD-ftw">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Qa-cD-ftw">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                     <animations/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.97647058823529409" green="0.9137254901960784" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="0.97647058823529409" green="0.90980392156862744" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
                     <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                         <rect key="frame" x="0.0" y="78" width="400" height="522"/>
                     </variation>
@@ -48,15 +49,15 @@
                 </view>
             </subviews>
             <animations/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.97647058823529409" green="0.9137254901960784" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="3Qa-cD-ftw" firstAttribute="top" secondItem="jxt-0f-8q3" secondAttribute="bottom" constant="20" id="2WA-z3-tOs"/>
                 <constraint firstItem="3Qa-cD-ftw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="8H7-2H-gjb"/>
-                <constraint firstAttribute="trailing" secondItem="jxt-0f-8q3" secondAttribute="trailing" constant="5" id="8Ic-9J-NDY"/>
+                <constraint firstAttribute="trailing" secondItem="jxt-0f-8q3" secondAttribute="trailing" id="8Ic-9J-NDY"/>
                 <constraint firstAttribute="trailing" secondItem="3Qa-cD-ftw" secondAttribute="trailing" constant="10" id="ISV-t1-NuP"/>
-                <constraint firstItem="jxt-0f-8q3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="M7h-xZ-voM"/>
+                <constraint firstItem="jxt-0f-8q3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="M7h-xZ-voM"/>
                 <constraint firstAttribute="bottom" secondItem="3Qa-cD-ftw" secondAttribute="bottom" constant="50" id="WTR-le-8yI"/>
-                <constraint firstItem="jxt-0f-8q3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="XZl-1c-9Hm"/>
+                <constraint firstItem="jxt-0f-8q3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XZl-1c-9Hm"/>
             </constraints>
             <variation key="default">
                 <mask key="subviews">

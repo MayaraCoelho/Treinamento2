@@ -34,7 +34,8 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
         self.blurView.hidden = true
         self.popWindowView.hidden = true
         
-        // Do any additional setup after loading the view.
+        self.popWindowView.backgroundColor = UIColor(white: 0.0, alpha: 0.0)
+        self.popWindowView.opaque = false
     }
     
     
@@ -44,7 +45,7 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
     
         cell.LowRiskInvestName.text = AppData.sharedInstance.player.lowRiskInvestments[indexPath.row].name
         cell.LowRiskInvestValue.text = NSString(format: "Value : %.2f ",AppData.sharedInstance.player.lowRiskInvestments[indexPath.row].currentValue) as String
-        cell.lowRiskInvestImage.image = AppData.sharedInstance.player.lowRiskInvestments[indexPath.row].icones()
+        cell.lowRiskInvestImage.image = AppData.sharedInstance.player.lowRiskInvestments[indexPath.row].icon()
         return cell
     }
     
@@ -60,7 +61,7 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
     
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 80
+        return 90
     }
     
     

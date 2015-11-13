@@ -13,6 +13,17 @@
 		096FFA4D1BEC084400232C22 /* BuyPropertyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 096FFA4B1BEC084400232C22 /* BuyPropertyViewController.xib */; };
 		09D81EBD1BEBD06D00AB7719 /* PropertiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D81EBB1BEBD06D00AB7719 /* PropertiesTableViewCell.swift */; };
 		09D81EBE1BEBD06D00AB7719 /* PropertiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D81EBC1BEBD06D00AB7719 /* PropertiesTableViewCell.xib */; };
+		B00C165E1BF61E9C00317B43 /* buildingIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B00C16541BF61E9C00317B43 /* buildingIcon.png */; };
+		B00C165F1BF61E9C00317B43 /* burgerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B00C16551BF61E9C00317B43 /* burgerIcon.png */; };
+		B00C16601BF61E9C00317B43 /* franchiseIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B00C16561BF61E9C00317B43 /* franchiseIcon.png */; };
+		B00C16611BF61E9C00317B43 /* fruitIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B00C16571BF61E9C00317B43 /* fruitIcon.png */; };
+		B00C16621BF61E9C00317B43 /* houseIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B00C16581BF61E9C00317B43 /* houseIcon.png */; };
+		B00C16631BF61E9C00317B43 /* jointIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B00C16591BF61E9C00317B43 /* jointIcon.png */; };
+		B00C16641BF61E9C00317B43 /* landIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B00C165A1BF61E9C00317B43 /* landIcon.png */; };
+		B00C16651BF61E9C00317B43 /* popcornIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B00C165B1BF61E9C00317B43 /* popcornIcon.png */; };
+		B00C16661BF61E9C00317B43 /* shopIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B00C165C1BF61E9C00317B43 /* shopIcon.png */; };
+		B00C16671BF61E9C00317B43 /* taxiIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B00C165D1BF61E9C00317B43 /* taxiIcon.png */; };
+		B00C16691BF621BC00317B43 /* popViewBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = B00C16681BF621BC00317B43 /* popViewBackground.png */; };
 		B03FBC701BEA54B700CEEC67 /* EnterprisesDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03FBC6F1BEA54B700CEEC67 /* EnterprisesDAO.swift */; };
 		B041E5E41BD82A6000D2B44E /* Database.plist in Resources */ = {isa = PBXBuildFile; fileRef = B041E5E31BD82A6000D2B44E /* Database.plist */; };
 		B0537BE91BF4B235004AF676 /* EverestOil.png in Resources */ = {isa = PBXBuildFile; fileRef = B0537BE81BF4B235004AF676 /* EverestOil.png */; };
@@ -87,6 +98,17 @@
 		096FFA4B1BEC084400232C22 /* BuyPropertyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyPropertyViewController.xib; sourceTree = "<group>"; };
 		09D81EBB1BEBD06D00AB7719 /* PropertiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesTableViewCell.swift; sourceTree = "<group>"; };
 		09D81EBC1BEBD06D00AB7719 /* PropertiesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertiesTableViewCell.xib; sourceTree = "<group>"; };
+		B00C16541BF61E9C00317B43 /* buildingIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buildingIcon.png; sourceTree = "<group>"; };
+		B00C16551BF61E9C00317B43 /* burgerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burgerIcon.png; sourceTree = "<group>"; };
+		B00C16561BF61E9C00317B43 /* franchiseIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = franchiseIcon.png; sourceTree = "<group>"; };
+		B00C16571BF61E9C00317B43 /* fruitIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruitIcon.png; sourceTree = "<group>"; };
+		B00C16581BF61E9C00317B43 /* houseIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = houseIcon.png; sourceTree = "<group>"; };
+		B00C16591BF61E9C00317B43 /* jointIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jointIcon.png; sourceTree = "<group>"; };
+		B00C165A1BF61E9C00317B43 /* landIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = landIcon.png; sourceTree = "<group>"; };
+		B00C165B1BF61E9C00317B43 /* popcornIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popcornIcon.png; sourceTree = "<group>"; };
+		B00C165C1BF61E9C00317B43 /* shopIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shopIcon.png; sourceTree = "<group>"; };
+		B00C165D1BF61E9C00317B43 /* taxiIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taxiIcon.png; sourceTree = "<group>"; };
+		B00C16681BF621BC00317B43 /* popViewBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popViewBackground.png; sourceTree = "<group>"; };
 		B03FBC6F1BEA54B700CEEC67 /* EnterprisesDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterprisesDAO.swift; sourceTree = "<group>"; };
 		B041E5E31BD82A6000D2B44E /* Database.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Database.plist; sourceTree = "<group>"; };
 		B0537BE81BF4B235004AF676 /* EverestOil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EverestOil.png; sourceTree = "<group>"; };
@@ -182,6 +204,23 @@
 				B0537BFC1BF4B636004AF676 /* FastexSA.png */,
 			);
 			name = EnterpriseImages;
+			sourceTree = "<group>";
+		};
+		B00C16531BF61DEE00317B43 /* Properties */ = {
+			isa = PBXGroup;
+			children = (
+				B00C16541BF61E9C00317B43 /* buildingIcon.png */,
+				B00C16551BF61E9C00317B43 /* burgerIcon.png */,
+				B00C16561BF61E9C00317B43 /* franchiseIcon.png */,
+				B00C16571BF61E9C00317B43 /* fruitIcon.png */,
+				B00C16581BF61E9C00317B43 /* houseIcon.png */,
+				B00C16591BF61E9C00317B43 /* jointIcon.png */,
+				B00C165A1BF61E9C00317B43 /* landIcon.png */,
+				B00C165B1BF61E9C00317B43 /* popcornIcon.png */,
+				B00C165C1BF61E9C00317B43 /* shopIcon.png */,
+				B00C165D1BF61E9C00317B43 /* taxiIcon.png */,
+			);
+			name = Properties;
 			sourceTree = "<group>";
 		};
 		B05616541BD822A9004E3B7D /* DAOs */ = {
@@ -380,11 +419,13 @@
 		B0F794C61BD6BF0B00BC69ED /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				B00C16531BF61DEE00317B43 /* Properties */,
 				B0537C061BF4DB7D004AF676 /* barImage.png */,
 				F37BFDD31BF4D67400DA188A /* LowRisk */,
 				096FFA491BEC02A800232C22 /* EnterpriseImages */,
 				B0F794F71BD6BF6400BC69ED /* ArrowUp.png */,
 				B0F794FD1BD6BF6400BC69ED /* closeButton.png */,
+				B00C16681BF621BC00317B43 /* popViewBackground.png */,
 				B0F795001BD6BF6400BC69ED /* fast.png */,
 				B0F795031BD6BF6400BC69ED /* goalsIcon.png */,
 			);
@@ -465,20 +506,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0F794D61BD6BF4E00BC69ED /* InvestmentNotMadeVC.xib in Resources */,
+				B00C16621BF61E9C00317B43 /* houseIcon.png in Resources */,
+				B00C16611BF61E9C00317B43 /* fruitIcon.png in Resources */,
 				B0537BF71BF4B5F7004AF676 /* B&C.png in Resources */,
 				B0F7950A1BD6BF6400BC69ED /* closeButton.png in Resources */,
+				B00C16691BF621BC00317B43 /* popViewBackground.png in Resources */,
 				B0B766C41BEB9C7C0045528D /* LRInvestmentTableViewCell.xib in Resources */,
 				09D81EBE1BEBD06D00AB7719 /* PropertiesTableViewCell.xib in Resources */,
+				B00C16601BF61E9C00317B43 /* franchiseIcon.png in Resources */,
+				B00C16641BF61E9C00317B43 /* landIcon.png in Resources */,
+				B00C165E1BF61E9C00317B43 /* buildingIcon.png in Resources */,
 				B0F794D31BD6BF4E00BC69ED /* LaunchScreen.storyboard in Resources */,
 				F3E020BA1BE15131001C28E1 /* LowRiskInvestmentsVC.xib in Resources */,
 				B0537BE91BF4B235004AF676 /* EverestOil.png in Resources */,
 				B0537BEF1BF4B580004AF676 /* BugSoftwareInc.png in Resources */,
+				B00C16671BF61E9C00317B43 /* taxiIcon.png in Resources */,
+				B00C16631BF61E9C00317B43 /* jointIcon.png in Resources */,
 				B0537BF31BF4B5CA004AF676 /* ElJuegoZone.png in Resources */,
 				093DE7C91BF0A45B0028345F /* HasPropertyViewController.xib in Resources */,
 				B0537BF11BF4B5B7004AF676 /* MrAlwaysYoung.png in Resources */,
 				B0F795041BD6BF6400BC69ED /* ArrowUp.png in Resources */,
 				B0F794B91BD6BE8000BC69ED /* Assets.xcassets in Resources */,
 				B0537BF51BF4B5DE004AF676 /* TimeNewsCentral.png in Resources */,
+				B00C16661BF61E9C00317B43 /* shopIcon.png in Resources */,
 				B0F7950D1BD6BF6400BC69ED /* fast.png in Resources */,
 				B0537C071BF4DB7D004AF676 /* barImage.png in Resources */,
 				F3EE36751BF1111D0011A655 /* LRIDetails.xib in Resources */,
@@ -490,12 +540,14 @@
 				B0C8468A1BD7FD4F0092F8EC /* PropertiesVC.xib in Resources */,
 				096FFA4D1BEC084400232C22 /* BuyPropertyViewController.xib in Resources */,
 				B0537C051BF4DB46004AF676 /* HRInvestmentTableViewCell.xib in Resources */,
+				B00C16651BF61E9C00317B43 /* popcornIcon.png in Resources */,
 				BE6A891D1BD94ECD006DFEAD /* InvestmentMadeVC.xib in Resources */,
 				F37BFDDB1BF50B0900DA188A /* GoalsVC.xib in Resources */,
 				B0537BF91BF4B607004AF676 /* PhilipHollandBuildings.png in Resources */,
 				B0F794D21BD6BF4E00BC69ED /* Main.storyboard in Resources */,
 				B0DF04EA1BDAABB70022DCB9 /* ColorBarViewController.xib in Resources */,
 				B0F795101BD6BF6400BC69ED /* goalsIcon.png in Resources */,
+				B00C165F1BF61E9C00317B43 /* burgerIcon.png in Resources */,
 				B0F794D41BD6BF4E00BC69ED /* HighRiskInvestmentsVC.xib in Resources */,
 				B0537BED1BF4B2B6004AF676 /* BacompanyHouse.png in Resources */,
 			);

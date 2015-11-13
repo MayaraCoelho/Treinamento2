@@ -27,7 +27,7 @@ class LowRiskInvestment:Investment, NSCoding{
         super.init(pInvestedValue: pInvestedValue)
     }
     
-    func icones()->UIImage?
+    func icon()->UIImage?
     {
         return UIImage(named: self.imageName)
     }
