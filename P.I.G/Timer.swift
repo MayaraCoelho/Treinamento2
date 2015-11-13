@@ -52,6 +52,12 @@ class Timer:NSObject, NSCoding {
             AppData.sharedInstance.player.balance = AppData.sharedInstance.player.balance + (AppData.sharedInstance.player.incomePerSecond() * timeInterval)
             
             
+            AppData.sharedInstance.player.lowRiskInvestments[0].currentValue = AppData.sharedInstance.player.lowRiskInvestments[0].currentValue * Double(AppData.sharedInstance.player.lowRiskInvestments[0].interestRatePerSecond())
+            AppData.sharedInstance.player.lowRiskInvestments[1].currentValue = AppData.sharedInstance.player.lowRiskInvestments[1].currentValue * Double(AppData.sharedInstance.player.lowRiskInvestments[1].interestRatePerSecond())
+            
+            /*
+            
+            Deixei este loop comentando por questão de performance
             
             for(var count=0; count < AppData.sharedInstance.player.lowRiskInvestments.count; count++){
             
@@ -66,7 +72,7 @@ class Timer:NSObject, NSCoding {
                 
                 
                 print("\(AppData.sharedInstance.player.lowRiskInvestments[count].name) -=- \(AppData.sharedInstance.player.lowRiskInvestments[count].currentValue)")
-            }
+            }*/
             
             
           
