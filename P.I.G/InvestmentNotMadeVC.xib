@@ -28,17 +28,13 @@
             <rect key="frame" x="0.0" y="0.0" width="300" height="380"/>
             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gAQ-eF-bjv">
-                    <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popViewBackground.png" id="RC7-c6-Bj6">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="380"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
-                    <state key="normal" image="closeButton.png"/>
-                    <connections>
-                        <action selector="closeButtonAct:" destination="-1" eventType="touchUpInside" id="5pu-0Z-kAG"/>
-                    </connections>
-                </button>
+                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enterprise Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UBf-T5-4Oi">
-                    <rect key="frame" x="64" y="0.0" width="236" height="33"/>
+                    <rect key="frame" x="64" y="9" width="236" height="33"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <fontDescription key="fontDescription" name="DIN-RegularAlternate" family="DIN" pointSize="17"/>
@@ -46,7 +42,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" id="R5G-Cs-Iij">
-                    <rect key="frame" x="12" y="33" width="276" height="121"/>
+                    <rect key="frame" x="12" y="40" width="276" height="121"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -54,7 +50,7 @@
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Market Value : 180 Billions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Iw7-go-uk9">
-                    <rect key="frame" x="50" y="157" width="200" height="42"/>
+                    <rect key="frame" x="50" y="169" width="200" height="42"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <fontDescription key="fontDescription" name="DIN-RegularAlternate" family="DIN" pointSize="17"/>
@@ -94,11 +90,15 @@
                         <action selector="investButtonAct:" destination="-1" eventType="touchUpInside" id="ZhQ-8i-q2f"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popViewBackground.png" id="RC7-c6-Bj6">
-                    <rect key="frame" x="0.0" y="8" width="300" height="380"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gAQ-eF-bjv">
+                    <rect key="frame" x="0.0" y="8" width="32" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
-                </imageView>
+                    <state key="normal" image="closeButton.png"/>
+                    <connections>
+                        <action selector="closeButtonAct:" destination="-1" eventType="touchUpInside" id="5pu-0Z-kAG"/>
+                    </connections>
+                </button>
             </subviews>
             <animations/>
             <color key="backgroundColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.20000000000000001" alpha="0.14628232758620691" colorSpace="calibratedRGB"/>
@@ -106,7 +106,7 @@
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="247" y="536"/>
+            <point key="canvasLocation" x="245" y="549"/>
         </view>
     </objects>
     <resources>

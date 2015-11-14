@@ -7,6 +7,7 @@
     <customFonts key="customFonts">
         <mutableArray key="DINRegularAlternate.ttf">
             <string>DIN-RegularAlternate</string>
+            <string>DIN-RegularAlternate</string>
         </mutableArray>
     </customFonts>
     <objects>
@@ -44,6 +45,13 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quantidade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBW-9m-dNQ">
+                        <rect key="frame" x="18" y="44" width="92" height="32"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="DIN-RegularAlternate" family="DIN" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <animations/>
                 <constraints>
@@ -61,6 +69,7 @@
             <color key="backgroundColor" red="0.97647058823529409" green="0.9137254901960784" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
                 <outlet property="backgroundImageView" destination="m0g-Ua-QFr" id="B9V-KY-poM"/>
+                <outlet property="propertyAmount" destination="pBW-9m-dNQ" id="S0D-q7-Asb"/>
                 <outlet property="propertyImage" destination="ybG-5t-HTo" id="WCM-dy-5IX"/>
                 <outlet property="propertyName" destination="gZy-VF-Ehd" id="l0O-qw-26g"/>
             </connections>
