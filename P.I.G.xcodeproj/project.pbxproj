@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		093DE7C81BF0A45B0028345F /* HasPropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093DE7C61BF0A45B0028345F /* HasPropertyViewController.swift */; };
 		093DE7C91BF0A45B0028345F /* HasPropertyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 093DE7C71BF0A45B0028345F /* HasPropertyViewController.xib */; };
+		0966B9911BF6BA6800D9B2D0 /* DINRegularAlternate.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0966B9901BF6BA6800D9B2D0 /* DINRegularAlternate.ttf */; };
 		096FFA4C1BEC084400232C22 /* BuyPropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096FFA4A1BEC084400232C22 /* BuyPropertyViewController.swift */; };
 		096FFA4D1BEC084400232C22 /* BuyPropertyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 096FFA4B1BEC084400232C22 /* BuyPropertyViewController.xib */; };
 		09D81EBD1BEBD06D00AB7719 /* PropertiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D81EBB1BEBD06D00AB7719 /* PropertiesTableViewCell.swift */; };
@@ -94,6 +95,8 @@
 /* Begin PBXFileReference section */
 		093DE7C61BF0A45B0028345F /* HasPropertyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HasPropertyViewController.swift; sourceTree = "<group>"; };
 		093DE7C71BF0A45B0028345F /* HasPropertyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HasPropertyViewController.xib; sourceTree = "<group>"; };
+		0966B98F1BF6B71100D9B2D0 /* DINRegularAlternate.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DINRegularAlternate.ttf; sourceTree = "<group>"; };
+		0966B9901BF6BA6800D9B2D0 /* DINRegularAlternate.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = DINRegularAlternate.ttf; path = ../DINRegularAlternate.ttf; sourceTree = "<group>"; };
 		096FFA4A1BEC084400232C22 /* BuyPropertyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyPropertyViewController.swift; sourceTree = "<group>"; };
 		096FFA4B1BEC084400232C22 /* BuyPropertyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyPropertyViewController.xib; sourceTree = "<group>"; };
 		09D81EBB1BEBD06D00AB7719 /* PropertiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesTableViewCell.swift; sourceTree = "<group>"; };
@@ -189,6 +192,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0966B98E1BF6B70400D9B2D0 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				0966B9901BF6BA6800D9B2D0 /* DINRegularAlternate.ttf */,
+				0966B98F1BF6B71100D9B2D0 /* DINRegularAlternate.ttf */,
+			);
+			name = Font;
+			sourceTree = "<group>";
+		};
 		096FFA491BEC02A800232C22 /* EnterpriseImages */ = {
 			isa = PBXGroup;
 			children = (
@@ -419,6 +431,7 @@
 		B0F794C61BD6BF0B00BC69ED /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				0966B98E1BF6B70400D9B2D0 /* Font */,
 				B00C16531BF61DEE00317B43 /* Properties */,
 				B0537C061BF4DB7D004AF676 /* barImage.png */,
 				F37BFDD31BF4D67400DA188A /* LowRisk */,
@@ -545,6 +558,7 @@
 				F37BFDDB1BF50B0900DA188A /* GoalsVC.xib in Resources */,
 				B0537BF91BF4B607004AF676 /* PhilipHollandBuildings.png in Resources */,
 				B0F794D21BD6BF4E00BC69ED /* Main.storyboard in Resources */,
+				0966B9911BF6BA6800D9B2D0 /* DINRegularAlternate.ttf in Resources */,
 				B0DF04EA1BDAABB70022DCB9 /* ColorBarViewController.xib in Resources */,
 				B0F795101BD6BF6400BC69ED /* goalsIcon.png in Resources */,
 				B00C165F1BF61E9C00317B43 /* burgerIcon.png in Resources */,

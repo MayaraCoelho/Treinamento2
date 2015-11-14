@@ -3,6 +3,12 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="DINRegularAlternate.ttf">
+            <string>DIN-RegularAlternate</string>
+            <string>DIN-RegularAlternate</string>
+        </mutableArray>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopBarViewController" customModule="P_I_G" customModuleProvider="target">
             <connections>
@@ -24,14 +30,14 @@
                         <constraint firstAttribute="width" constant="53" id="6qv-ZK-2mh"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Income: $ VALUE / Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzP-Np-sw7">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Income: $ VALUE / Day" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzP-Np-sw7">
                     <rect key="frame" x="53" y="44" width="259" height="21"/>
                     <animations/>
                     <constraints>
                         <constraint firstAttribute="width" constant="259" id="4A1-Zv-30i"/>
                         <constraint firstAttribute="height" constant="21" id="oNa-uJ-K1V"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                    <fontDescription key="fontDescription" name="DIN-RegularAlternate" family="DIN" pointSize="16"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -42,7 +48,7 @@
                         <constraint firstAttribute="width" constant="220" id="Bgy-L4-buU"/>
                         <constraint firstAttribute="height" constant="21" id="loB-6I-Hxc"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                    <fontDescription key="fontDescription" name="DIN-RegularAlternate" family="DIN" pointSize="16"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>

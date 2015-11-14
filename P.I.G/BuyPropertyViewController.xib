@@ -176,21 +176,21 @@
                     <exclude reference="7aP-Bi-ZLo"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="H2k-l4-H3F"/>
-                    <exclude reference="cLn-lE-4cz"/>
-                    <exclude reference="hHj-zP-HS1"/>
-                    <exclude reference="Kaw-An-wwh"/>
-                    <exclude reference="bIW-tI-WnE"/>
-                    <exclude reference="jxJ-KO-d1R"/>
-                    <exclude reference="HsT-Un-P2u"/>
-                    <exclude reference="PiM-UQ-nGM"/>
-                    <exclude reference="sT6-1X-zRJ"/>
-                    <exclude reference="XwA-cE-ER4"/>
-                    <exclude reference="nNR-tV-RK4"/>
-                    <exclude reference="ra3-dM-ica"/>
                     <exclude reference="NmO-YZ-2u3"/>
                     <exclude reference="bw4-o4-hP3"/>
                     <exclude reference="xpz-rP-SLL"/>
+                    <exclude reference="H2k-l4-H3F"/>
+                    <exclude reference="cLn-lE-4cz"/>
+                    <exclude reference="hHj-zP-HS1"/>
+                    <exclude reference="HsT-Un-P2u"/>
+                    <exclude reference="PiM-UQ-nGM"/>
+                    <exclude reference="sT6-1X-zRJ"/>
+                    <exclude reference="Kaw-An-wwh"/>
+                    <exclude reference="bIW-tI-WnE"/>
+                    <exclude reference="jxJ-KO-d1R"/>
+                    <exclude reference="XwA-cE-ER4"/>
+                    <exclude reference="nNR-tV-RK4"/>
+                    <exclude reference="ra3-dM-ica"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
@@ -202,21 +202,21 @@
                     <include reference="7aP-Bi-ZLo"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="H2k-l4-H3F"/>
-                    <include reference="cLn-lE-4cz"/>
-                    <include reference="hHj-zP-HS1"/>
-                    <include reference="Kaw-An-wwh"/>
-                    <include reference="bIW-tI-WnE"/>
-                    <include reference="jxJ-KO-d1R"/>
-                    <include reference="HsT-Un-P2u"/>
-                    <include reference="PiM-UQ-nGM"/>
-                    <include reference="sT6-1X-zRJ"/>
-                    <include reference="XwA-cE-ER4"/>
-                    <include reference="nNR-tV-RK4"/>
-                    <include reference="ra3-dM-ica"/>
                     <include reference="NmO-YZ-2u3"/>
                     <include reference="bw4-o4-hP3"/>
                     <include reference="xpz-rP-SLL"/>
+                    <include reference="H2k-l4-H3F"/>
+                    <include reference="cLn-lE-4cz"/>
+                    <include reference="hHj-zP-HS1"/>
+                    <include reference="HsT-Un-P2u"/>
+                    <include reference="PiM-UQ-nGM"/>
+                    <include reference="sT6-1X-zRJ"/>
+                    <include reference="Kaw-An-wwh"/>
+                    <include reference="bIW-tI-WnE"/>
+                    <include reference="jxJ-KO-d1R"/>
+                    <include reference="XwA-cE-ER4"/>
+                    <include reference="nNR-tV-RK4"/>
+                    <include reference="ra3-dM-ica"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="341" y="337"/>

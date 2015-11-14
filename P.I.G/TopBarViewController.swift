@@ -27,12 +27,22 @@ class TopBarViewController: UIViewController {
         self.incomeLabel.text = NSString(format: "Income: $ %.2f / day", AppData.sharedInstance.player.income) as String
         
         self.updateTimer = NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: "updateViewValues", userInfo: nil, repeats: true)
+//        ver fontes 
+//        for family: String in UIFont.familyNames()
+//        {
+//            print("\(family)")
+//            for names: String in UIFont.fontNamesForFamilyName(family)
+//            {
+//                print("== \(names)")
+//            }
+//        }
     }
 
     func updateViewValues(){
         self.walletLabel.text = NSString(format: "Wallet: $ %.2f", AppData.sharedInstance.player.balance) as String
         self.incomeLabel.text = NSString(format: "Income: $ %.2f / day", AppData.sharedInstance.player.income) as String
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
