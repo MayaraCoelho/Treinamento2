@@ -5,9 +5,9 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="DINRegularAlternate.ttf">
-            <string>DIN-RegularAlternate</string>
-            <string>DIN-RegularAlternate</string>
+        <mutableArray key="Exo2-Regular.otf">
+            <string>Exo2-Regular</string>
+            <string>Exo2-Regular</string>
         </mutableArray>
     </customFonts>
     <objects>
@@ -17,7 +17,7 @@
             <rect key="frame" x="0.0" y="0.0" width="335" height="90"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="335" height="89"/>
+                <rect key="frame" x="0.0" y="0.0" width="335" height="89.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Aii-vZ-SnO">
@@ -34,7 +34,7 @@
                             <constraint firstAttribute="width" constant="185" id="7mb-Jt-7ia"/>
                             <constraint firstAttribute="height" constant="31" id="EXu-W6-Uup"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="DIN-RegularAlternate" family="DIN" pointSize="19"/>
+                        <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="19"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -46,14 +46,14 @@
                             <constraint firstAttribute="height" constant="70" id="O92-KB-QSa"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knh-Zf-n8U">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knh-Zf-n8U">
                         <rect key="frame" x="23" y="51" width="188" height="21"/>
                         <animations/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="5ph-7k-8LK"/>
                             <constraint firstAttribute="width" constant="188" id="LjH-ny-5Gu"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="DIN-RegularAlternate" family="DIN" pointSize="16"/>
+                        <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="16"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>

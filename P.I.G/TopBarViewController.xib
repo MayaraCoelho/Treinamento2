@@ -4,9 +4,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="DINRegularAlternate.ttf">
-            <string>DIN-RegularAlternate</string>
-            <string>DIN-RegularAlternate</string>
+        <mutableArray key="Exo2-Regular.otf">
+            <string>Exo2-Regular</string>
+            <string>Exo2-Regular</string>
         </mutableArray>
     </customFonts>
     <objects>
@@ -31,13 +31,13 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet : $ VALUE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5I-un-avO">
-                    <rect key="frame" x="53" y="10" width="220" height="30"/>
+                    <rect key="frame" x="60" y="9" width="220" height="30"/>
                     <animations/>
                     <constraints>
                         <constraint firstAttribute="width" constant="220" id="Bgy-L4-buU"/>
                         <constraint firstAttribute="height" constant="30" id="loB-6I-Hxc"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="DIN-RegularAlternate" family="DIN" pointSize="16"/>
+                    <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="16"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -57,13 +57,13 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Income: $ VALUE / Day" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzP-Np-sw7">
-                    <rect key="frame" x="53" y="39" width="259" height="28"/>
+                    <rect key="frame" x="60" y="38" width="259" height="28"/>
                     <animations/>
                     <constraints>
                         <constraint firstAttribute="width" constant="259" id="4A1-Zv-30i"/>
                         <constraint firstAttribute="height" constant="28" id="oNa-uJ-K1V"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="DIN-RegularAlternate" family="DIN" pointSize="16"/>
+                    <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="16"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -71,13 +71,13 @@
             <animations/>
             <color key="backgroundColor" red="0.47501151922247881" green="0.81639382696669083" blue="0.94387727192083271" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="l5I-un-avO" firstAttribute="leading" secondItem="UOp-Jg-iBn" secondAttribute="trailing" id="2Cp-LA-3mW"/>
-                <constraint firstItem="KzP-Np-sw7" firstAttribute="leading" secondItem="UOp-Jg-iBn" secondAttribute="trailing" id="4V8-dA-mQN"/>
-                <constraint firstItem="l5I-un-avO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="79c-mf-ALL"/>
+                <constraint firstItem="l5I-un-avO" firstAttribute="leading" secondItem="UOp-Jg-iBn" secondAttribute="trailing" constant="7" id="2Cp-LA-3mW"/>
+                <constraint firstItem="KzP-Np-sw7" firstAttribute="leading" secondItem="UOp-Jg-iBn" secondAttribute="trailing" constant="7" id="4V8-dA-mQN"/>
+                <constraint firstItem="l5I-un-avO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="9" id="79c-mf-ALL"/>
                 <constraint firstItem="mme-Az-jYW" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="KjD-zw-gaV"/>
                 <constraint firstItem="UOp-Jg-iBn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QdH-0X-6Cy"/>
                 <constraint firstAttribute="bottom" secondItem="UOp-Jg-iBn" secondAttribute="bottom" id="Uoj-DB-9dM"/>
-                <constraint firstAttribute="bottom" secondItem="KzP-Np-sw7" secondAttribute="bottom" constant="8" id="caF-4F-XTU"/>
+                <constraint firstAttribute="bottom" secondItem="KzP-Np-sw7" secondAttribute="bottom" constant="9" id="caF-4F-XTU"/>
                 <constraint firstItem="mme-Az-jYW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="ce6-X2-1fD"/>
                 <constraint firstItem="UOp-Jg-iBn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vIi-Ca-idv"/>
             </constraints>

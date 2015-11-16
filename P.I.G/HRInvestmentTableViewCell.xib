@@ -5,8 +5,8 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="DINRegularAlternate.ttf">
-            <string>DIN-RegularAlternate</string>
+        <mutableArray key="Exo2-Regular.otf">
+            <string>Exo2-Regular</string>
         </mutableArray>
     </customFonts>
     <objects>
@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="372" height="90"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="372" height="89"/>
+                <rect key="frame" x="0.0" y="0.0" width="372" height="89.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jjz-iq-0oY">
@@ -35,16 +35,16 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Everest Oil" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofm-pd-8e3">
-                        <rect key="frame" x="23" y="19" width="266" height="24"/>
+                        <rect key="frame" x="23" y="16" width="266" height="24"/>
                         <animations/>
                         <constraints>
                             <constraint firstAttribute="height" constant="24" id="WFG-Fn-mpS"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="DIN-RegularAlternate" family="DIN" pointSize="16"/>
+                        <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="16"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ts-Wo-THe">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ts-Wo-THe">
                         <rect key="frame" x="16" y="44" width="200" height="28"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -62,7 +62,7 @@
                     <constraint firstItem="OEc-lO-PJc" firstAttribute="leading" secondItem="ofm-pd-8e3" secondAttribute="trailing" constant="5" id="GfM-mS-aDD"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Jjz-iq-0oY" secondAttribute="trailing" constant="20" id="R1c-I0-tfI"/>
                     <constraint firstItem="8ts-Wo-THe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="TnX-OL-Tbp"/>
-                    <constraint firstItem="ofm-pd-8e3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="11" id="UPO-R5-u7f"/>
+                    <constraint firstItem="ofm-pd-8e3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="UPO-R5-u7f"/>
                     <constraint firstItem="ofm-pd-8e3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="eOm-mY-3ky"/>
                     <constraint firstAttribute="bottomMargin" secondItem="8ts-Wo-THe" secondAttribute="bottom" constant="10" id="io5-Wf-F6C"/>
                     <constraint firstItem="OEc-lO-PJc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ir1-ra-7Pb"/>

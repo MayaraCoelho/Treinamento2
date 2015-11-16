@@ -48,6 +48,9 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>DINRegularAlternate.ttf</string>
+		<string>Exo2-Medium.otf</string>
+		<string>Exo2-Regular.otf</string>
+		<string>Exo2-Bold.otf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
