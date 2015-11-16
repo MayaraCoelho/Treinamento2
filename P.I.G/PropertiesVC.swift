@@ -12,6 +12,9 @@ class PropertiesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var topBarContainerView: UIView!
+    @IBOutlet weak var blurView: UIVisualEffectView!
+    @IBOutlet weak var containerView: UIView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,13 +22,15 @@ class PropertiesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         self.addChildViewController(topbarVC)
         self.topBarContainerView.addSubview(topbarVC.view)
         self.restorationIdentifier = "PropertiesVC"
+        self.blurView.hidden = true
         
         
         let nib = UINib.init(nibName: "PropertiesTableViewCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "PropertiesCell")
-//        self.enterpriseDetailsView.hidden = true
-//        self.blurView.hidden = true
 
+        self.containerView.backgroundColor = UIColor(white: 0.0, alpha: 0.0)
+        self.containerView.hidden = true
+        self.blurView.hidden = true
 
     }
 
@@ -41,6 +46,7 @@ class PropertiesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         let property = AppData.sharedInstance.properties[indexPath.row]
         
         cell.propertyName.text = property.name
+        
         //cell.subtitleLabel.text = ""
 //        cell.propertyImage.hidden = true
         
@@ -84,6 +90,11 @@ class PropertiesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.tableView.deselectRowAtIndexPath(indexPath, animated: false)
+        self.blurView.hidden = false
+        self.containerView.hidden = false
+        let popWindow = PropertiesDetailsVC()
+        self.addChildViewController(popWindow)
+        self.containerView.addSubview(popWindow.view)
     }
 
 //    

@@ -87,6 +87,8 @@
 		B0F7950A1BD6BF6400BC69ED /* closeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F794FD1BD6BF6400BC69ED /* closeButton.png */; };
 		B0F7950D1BD6BF6400BC69ED /* fast.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F795001BD6BF6400BC69ED /* fast.png */; };
 		B0F795101BD6BF6400BC69ED /* goalsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F795031BD6BF6400BC69ED /* goalsIcon.png */; };
+		B0F8C7911BFA75A9006980B9 /* PropertiesDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F8C78F1BFA75A9006980B9 /* PropertiesDetailsVC.swift */; };
+		B0F8C7921BFA75A9006980B9 /* PropertiesDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F8C7901BFA75A9006980B9 /* PropertiesDetailsVC.xib */; };
 		BE6A89191BD94BE0006DFEAD /* EnterpriseValueUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A89181BD94BE0006DFEAD /* EnterpriseValueUpdater.swift */; };
 		BE6A891C1BD94ECD006DFEAD /* InvestmentMadeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A891A1BD94ECD006DFEAD /* InvestmentMadeVC.swift */; };
 		BE6A891D1BD94ECD006DFEAD /* InvestmentMadeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE6A891B1BD94ECD006DFEAD /* InvestmentMadeVC.xib */; };
@@ -182,6 +184,8 @@
 		B0F794FD1BD6BF6400BC69ED /* closeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closeButton.png; sourceTree = "<group>"; };
 		B0F795001BD6BF6400BC69ED /* fast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fast.png; sourceTree = "<group>"; };
 		B0F795031BD6BF6400BC69ED /* goalsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goalsIcon.png; sourceTree = "<group>"; };
+		B0F8C78F1BFA75A9006980B9 /* PropertiesDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesDetailsVC.swift; sourceTree = "<group>"; };
+		B0F8C7901BFA75A9006980B9 /* PropertiesDetailsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertiesDetailsVC.xib; sourceTree = "<group>"; };
 		BE6A89181BD94BE0006DFEAD /* EnterpriseValueUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterpriseValueUpdater.swift; sourceTree = "<group>"; };
 		BE6A891A1BD94ECD006DFEAD /* InvestmentMadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentMadeVC.swift; sourceTree = "<group>"; };
 		BE6A891B1BD94ECD006DFEAD /* InvestmentMadeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvestmentMadeVC.xib; sourceTree = "<group>"; };
@@ -335,6 +339,7 @@
 				09D81EBB1BEBD06D00AB7719 /* PropertiesTableViewCell.swift */,
 				096FFA4A1BEC084400232C22 /* BuyPropertyViewController.swift */,
 				093DE7C61BF0A45B0028345F /* HasPropertyViewController.swift */,
+				B0F8C78F1BFA75A9006980B9 /* PropertiesDetailsVC.swift */,
 			);
 			name = Properties;
 			sourceTree = "<group>";
@@ -365,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				B0C846881BD7FD4F0092F8EC /* PropertiesVC.xib */,
+				B0F8C7901BFA75A9006980B9 /* PropertiesDetailsVC.xib */,
 				09D81EBC1BEBD06D00AB7719 /* PropertiesTableViewCell.xib */,
 				096FFA4B1BEC084400232C22 /* BuyPropertyViewController.xib */,
 				093DE7C71BF0A45B0028345F /* HasPropertyViewController.xib */,
@@ -542,6 +548,7 @@
 				09F621EA1BFA473100B6D291 /* Exo2-Medium.otf in Resources */,
 				09F621EB1BFA473100B6D291 /* Exo2-Regular.otf in Resources */,
 				09F621EC1BFA473100B6D291 /* Exo2-SemiBold.otf in Resources */,
+				B0F8C7921BFA75A9006980B9 /* PropertiesDetailsVC.xib in Resources */,
 				B0F794D61BD6BF4E00BC69ED /* InvestmentNotMadeVC.xib in Resources */,
 				B00C16621BF61E9C00317B43 /* houseIcon.png in Resources */,
 				B00C16611BF61E9C00317B43 /* fruitIcon.png in Resources */,
@@ -626,6 +633,7 @@
 				B0B766C31BEB9C7C0045528D /* LRInvestmentTableViewCell.swift in Sources */,
 				B0F794E81BD6BF5600BC69ED /* Timer.swift in Sources */,
 				B0F794EF1BD6BF5600BC69ED /* Goal.swift in Sources */,
+				B0F8C7911BFA75A9006980B9 /* PropertiesDetailsVC.swift in Sources */,
 				F37BFDDA1BF50B0900DA188A /* GoalsVC.swift in Sources */,
 				B0F794F31BD6BF5600BC69ED /* Investment.swift in Sources */,
 				B0F794ED1BD6BF5600BC69ED /* InvestmentManager.swift in Sources */,
