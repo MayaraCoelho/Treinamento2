@@ -50,8 +50,10 @@ class TopBarViewController: UIViewController {
     }
     
     @IBAction func goalsButton(sender: UIButton) {
-        
-        presentViewController(goalsView, animated: false, completion: nil)
+        var alert = UIAlertController(title: "Development", message: "Sorry: This screen is not ready to be presented.", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+        //presentViewController(goalsView, animated: false, completion: nil)
     }
     
     
