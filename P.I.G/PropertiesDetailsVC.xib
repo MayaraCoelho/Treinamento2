@@ -6,6 +6,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PropertiesDetailsVC" customModule="P_I_G" customModuleProvider="target">
             <connections>
+                <outlet property="propertyNameLabel" destination="aDt-0g-1I1" id="h0j-tW-Vnq"/>
+                <outlet property="propertyValueLabel" destination="ihJ-t8-rjl" id="O2K-8F-idb"/>
+                <outlet property="returningValueLabel" destination="1XA-u8-2Oq" id="SsJ-T6-dP4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,6 +29,35 @@
                         <action selector="closeButtonAct:" destination="-1" eventType="touchUpInside" id="PvQ-07-VRs"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Property Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDt-0g-1I1">
+                    <rect key="frame" x="41" y="12" width="251" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Property Value: $ 12000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihJ-t8-rjl">
+                    <rect key="frame" x="57" y="66" width="186" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Returning Value : $ 20 / Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1XA-u8-2Oq">
+                    <rect key="frame" x="41" y="109" width="218" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBA-Rj-RnG">
+                    <rect key="frame" x="126" y="152" width="48" height="30"/>
+                    <animations/>
+                    <state key="normal" title="Buy it !"/>
+                    <connections>
+                        <action selector="buyButtonAct:" destination="-1" eventType="touchUpInside" id="O5H-VQ-SOY"/>
+                    </connections>
+                </button>
             </subviews>
             <animations/>
             <constraints>
@@ -35,7 +67,7 @@
                 <constraint firstAttribute="bottom" secondItem="z8q-Hm-AJW" secondAttribute="bottom" id="fxH-DP-iMk"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="441" y="518"/>
+            <point key="canvasLocation" x="585" y="768"/>
         </view>
     </objects>
     <resources>

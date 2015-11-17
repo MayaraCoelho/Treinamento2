@@ -89,12 +89,12 @@ class PropertiesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
     
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.tableView.deselectRowAtIndexPath(indexPath, animated: false)
         self.blurView.hidden = false
         self.containerView.hidden = false
-        let popWindow = PropertiesDetailsVC()
+        let popWindow = PropertiesDetailsVC(pSuperViewController: self, pProperty: AppData.sharedInstance.properties[indexPath.row])
         self.addChildViewController(popWindow)
         self.containerView.addSubview(popWindow.view)
+        self.tableView.deselectRowAtIndexPath(indexPath, animated: false)
     }
 
 //    

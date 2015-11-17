@@ -64,6 +64,9 @@
                             <include reference="vp7-mq-aI7"/>
                         </mask>
                     </variation>
+                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="17" y="50" width="118" height="49"/>
+                    </variation>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rendimento" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sob-rH-ttl">
                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -86,6 +89,9 @@
                             <include reference="Q9p-5R-lJY"/>
                             <include reference="yvX-Qd-UdF"/>
                         </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="8" y="168" width="127" height="67"/>
                     </variation>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOq-hK-wap">

@@ -13,13 +13,13 @@ class Property{
 
     var id:Int
     var name:String
-    var value:Float
+    var value:Double
     var returningMiniumValue:Float
     var returningMaximumValue:Float
     var imageName:String
     
     
-    init(pID:Int, pName:String, pValue:Float, pReturningMinimumValue:Float, pReturningMaximumValue:Float, pImage:String){
+    init(pID:Int, pName:String, pValue:Double, pReturningMinimumValue:Float, pReturningMaximumValue:Float, pImage:String){
         self.id = pID
         self.name = pName
         self.value = pValue

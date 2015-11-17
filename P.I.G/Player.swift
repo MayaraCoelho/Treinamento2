@@ -69,6 +69,23 @@ class Player:NSObject, NSCoding{
         }
         return -1
     }
+    
+    func addToBalance(pValue:Double){
+        self.balance = self.balance + pValue
+    }
+    
+    func removeFromBalance(pValue:Double){
+        self.balance = self.balance - pValue
+    }
+    
+    func canRemoveFromBalance(pValue:Double)->Bool{
+        if (self.balance - pValue >= 0){
+            return true
+        }
+    return false
+    }
+    
+    
 //    
 //    func propertiesIndexByID(pID:Int)->Int{
 //        var count = 0
