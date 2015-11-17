@@ -19,7 +19,7 @@ class Player:NSObject, NSCoding{
 
     
     override init(){
-    self.balance = 1000
+    self.balance = 5000
     self.highRiskInvestments = [HighRiskInvestment]()
     self.lowRiskInvestments = LRIProperties.init().arrayLRI
     self.income = 400
@@ -86,11 +86,16 @@ class Player:NSObject, NSCoding{
     }
     
     
-//    
-//    func propertiesIndexByID(pID:Int)->Int{
-//        var count = 0
-//        for prp:Property in self.
-//    }
+    func propertiesIndexByID(pID:Int)->Int{
+        var count = 0
+        for prp:Property in self.properties{
+            if (prp.id == pID){
+                return count
+            }
+            count = count + 1
+        }
+        return -1
+    }
     
     func incomePerSecond()->Double{
         let incomePerHour = self.income / 24

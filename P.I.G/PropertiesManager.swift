@@ -31,14 +31,7 @@ class PropertiesManager{
     
     
     func removeSingleProperty(pPropertyID:Int){
-        var index = 0
-        for prop in AppData.sharedInstance.properties{
-            if (prop.id == pPropertyID){
-                AppData.sharedInstance.properties.removeAtIndex(index)
-                return
-            }
-            index = index + 1
-        }
+        AppData.sharedInstance.player.properties.removeAtIndex(AppData.sharedInstance.player.propertiesIndexByID(pPropertyID))
     }
     
 
