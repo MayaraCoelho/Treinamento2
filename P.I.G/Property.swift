@@ -9,22 +9,20 @@
 import Foundation
 import UIKit
 
-class Property{
+class Property:NSObject, NSCoding{
 
     var id:Int
     var name:String
     var value:Double
-    var returningMiniumValue:Float
-    var returningMaximumValue:Float
+    var returningValue:Double
     var imageName:String
     
     
-    init(pID:Int, pName:String, pValue:Double, pReturningMinimumValue:Float, pReturningMaximumValue:Float, pImage:String){
+    init(pID:Int, pName:String, pValue:Double, pReturningValue:Double, pImage:String){
         self.id = pID
         self.name = pName
         self.value = pValue
-        self.returningMiniumValue = pReturningMinimumValue
-        self.returningMaximumValue = pReturningMaximumValue
+        self.returningValue = pReturningValue
         self.imageName = pImage
     }
     
@@ -33,9 +31,44 @@ class Property{
     
     }
     
-    
     func icon()->UIImage?{
         return UIImage(named: self.imageName)
     }
+    
+    
+    //NSCoding Methods
+    required convenience init?(coder decoder: NSCoder) {
+        
+        guard let dID = decoder.decodeObjectForKey("ID") as? Int
+            else {return nil }
+        
+        
+        guard let dName = decoder.decodeObjectForKey("Name") as? String
+            else {return nil }
+        
+        
+        guard let dValue = decoder.decodeObjectForKey("value") as? Double
+            else {return nil }
+        
+        
+        guard let dReturningValue = decoder.decodeObjectForKey("returningValue") as? Double
+            else {return nil }
+        
+        
+        guard let dImageName = decoder.decodeObjectForKey("imageName") as? String
+            else {return nil }
+    
+        self.init(pID: dID, pName: dName, pValue: dValue, pReturningValue:dReturningValue, pImage:dImageName)
+    }
+    
+    
+    func encodeWithCoder(coder: NSCoder) {
+        coder.encodeObject(self.id, forKey: "ID")
+        coder.encodeObject(self.name, forKey: "Name")
+        coder.encodeObject(self.value, forKey: "value")
+        coder.encodeObject(self.returningValue, forKey: "returningValue")
+        coder.encodeObject(self.imageName, forKey: "imageName")
+    }
+    
     
 }

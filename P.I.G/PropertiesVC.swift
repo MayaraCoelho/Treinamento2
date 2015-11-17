@@ -46,6 +46,7 @@ class PropertiesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         let property = AppData.sharedInstance.properties[indexPath.row]
         
         cell.propertyName.text = property.name
+        cell.propertyAmount.text = "Count: " + PropertiesManager().doesPlayerHaveProperty(property).description
         
         //cell.subtitleLabel.text = ""
 //        cell.propertyImage.hidden = true

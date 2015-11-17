@@ -65,12 +65,7 @@ class LRIDetails: UIViewController {
     
     @IBAction func investButtonAct(sender: UIButton) {
         let value = (AppData.sharedInstance.player.balance * Double(self.investmentSlider.value))
-        if (lowRiskInvestment.id == 1){
-            AppData.sharedInstance.investmentManager.applyInSavingAccount(value)
-        } else if (lowRiskInvestment.id == 2){
-            AppData.sharedInstance.investmentManager.applyInCDB(value)
-        }
-       // PlayerDAO.sharedInstance.savePlayer()
+        AppData.sharedInstance.investmentManager.applyInLowRiskInvestment(lowRiskInvestment.id, pValue: value)
         self.closePopView()
     }
     
@@ -89,12 +84,7 @@ class LRIDetails: UIViewController {
     
     @IBAction func rescueButtonAct(sender: UIButton) {
         let value = (self.lowRiskInvestment.currentValue * Double(self.rescueSlider.value))
-        if (lowRiskInvestment.id == 1){
-            AppData.sharedInstance.investmentManager.rescueFromSavingAccount(value)
-        } else if (lowRiskInvestment.id == 2){
-            AppData.sharedInstance.investmentManager.rescueFromCDB(value)
-        }
-      //  PlayerDAO.sharedInstance.savePlayer()
+        AppData.sharedInstance.investmentManager.rescueFromLowRiskInvestment(lowRiskInvestment.id, pValue: value)
         self.closePopView()
     }
     

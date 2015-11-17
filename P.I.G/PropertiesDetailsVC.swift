@@ -10,12 +10,19 @@ import UIKit
 
 class PropertiesDetailsVC: UIViewController {
 
+    @IBOutlet weak var closeButton: UIButton!
+    
     @IBOutlet weak var propertyNameLabel: UILabel!
     
     @IBOutlet weak var propertyValueLabel: UILabel!
     
     @IBOutlet weak var returningValueLabel: UILabel!
     
+    @IBOutlet weak var buyButton: UIButton!
+    
+    @IBOutlet weak var sellButton: UIButton!
+    
+    @IBOutlet weak var ownedLabel: UILabel!
     
     let superViewController:PropertiesVC
     let property:Property
@@ -24,7 +31,22 @@ class PropertiesDetailsVC: UIViewController {
         super.viewDidLoad()
         self.propertyNameLabel.text = self.property.name
         self.propertyValueLabel.text = "Property Value: " + self.property.value.description
-        self.returningValueLabel.text = "Returning Value: " + self.property.returningMiniumValue.description + " /day"
+        self.returningValueLabel.text = "Returning Value: " + self.property.returningValue.description + " /day"
+        self.ownedLabel.text = "Owned: " + PropertiesManager().doesPlayerHaveProperty(self.property).description
+        
+        if (PropertiesManager().doesPlayerHaveProperty(self.property) > 0){
+            self.sellButton.enabled = true
+        } else {
+            self.sellButton.enabled = false
+        }
+        
+        if (AppData.sharedInstance.player.balance >= self.property.value){
+            self.buyButton.enabled = true
+        } else {
+            self.buyButton.enabled = false
+        }
+        
+        
         // Do any additional setup after loading the view.
     }
     
@@ -47,7 +69,14 @@ class PropertiesDetailsVC: UIViewController {
 
     @IBAction func buyButtonAct(sender: UIButton) {
         PropertiesManager().buyProperty(self.property)
+        self.closeButtonAct(self.closeButton)
     }
+    
+    @IBAction func sellButtonAct(sender: UIButton) {
+        PropertiesManager().sellProperty(self.property)
+        self.closeButtonAct(self.closeButton)
+    }
+    
     
     @IBAction func closeButtonAct(sender: UIButton) {
         self.superViewController.blurView.hidden = true

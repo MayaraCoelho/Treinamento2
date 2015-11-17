@@ -120,6 +120,10 @@ class Player:NSObject, NSCoding{
         self.lowRiskInvestments = dLowRiskInvestments
         
         
+        guard let dProperties = decoder.decodeObjectForKey("Properties") as? [Property]
+            else {return nil }
+        self.properties = dProperties
+        
         
         guard let dIncome = decoder.decodeObjectForKey("income") as? Double
             else {return nil }
@@ -134,6 +138,7 @@ class Player:NSObject, NSCoding{
         coder.encodeObject(self.balance, forKey: "balance")
         coder.encodeObject(self.highRiskInvestments, forKey: "HighRiskInvestments")
         coder.encodeObject(self.lowRiskInvestments, forKey: "LowRiskInvestments")
+        coder.encodeObject(self.properties, forKey: "Properties")
         coder.encodeObject(self.income, forKey: "income")
     }
     

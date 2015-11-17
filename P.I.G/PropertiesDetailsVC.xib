@@ -6,9 +6,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PropertiesDetailsVC" customModule="P_I_G" customModuleProvider="target">
             <connections>
+                <outlet property="buyButton" destination="OBA-Rj-RnG" id="cW2-JY-UiO"/>
+                <outlet property="closeButton" destination="SfG-vt-bVR" id="MOw-zd-UXh"/>
+                <outlet property="ownedLabel" destination="4jy-Fr-sw4" id="0W9-Ke-vhQ"/>
                 <outlet property="propertyNameLabel" destination="aDt-0g-1I1" id="h0j-tW-Vnq"/>
                 <outlet property="propertyValueLabel" destination="ihJ-t8-rjl" id="O2K-8F-idb"/>
                 <outlet property="returningValueLabel" destination="1XA-u8-2Oq" id="SsJ-T6-dP4"/>
+                <outlet property="sellButton" destination="ofK-zE-hRY" id="a92-ZZ-mhs"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -51,13 +55,28 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBA-Rj-RnG">
-                    <rect key="frame" x="126" y="152" width="48" height="30"/>
+                    <rect key="frame" x="135" y="171" width="30" height="30"/>
                     <animations/>
-                    <state key="normal" title="Buy it !"/>
+                    <state key="normal" title="Buy"/>
                     <connections>
                         <action selector="buyButtonAct:" destination="-1" eventType="touchUpInside" id="O5H-VQ-SOY"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofK-zE-hRY">
+                    <rect key="frame" x="135" y="236" width="30" height="30"/>
+                    <animations/>
+                    <state key="normal" title="Sell"/>
+                    <connections>
+                        <action selector="sellButtonAct:" destination="-1" eventType="touchUpInside" id="csl-9k-riq"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Owned: ###" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jy-Fr-sw4">
+                    <rect key="frame" x="103" y="306" width="95" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <animations/>
             <constraints>
@@ -67,7 +86,7 @@
                 <constraint firstAttribute="bottom" secondItem="z8q-Hm-AJW" secondAttribute="bottom" id="fxH-DP-iMk"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="585" y="768"/>
+            <point key="canvasLocation" x="675" y="816"/>
         </view>
     </objects>
     <resources>
