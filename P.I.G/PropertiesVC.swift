@@ -106,13 +106,13 @@ class PropertiesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
 //        self.enterpriseDetailsView.addSubview(pViewController.view)
 //    }
 //    
-//    
-    func presentBuyPropertyController(pViewController:BuyPropertyViewController){
-        self.addChildViewController(pViewController)
+////    
+//    func presentBuyPropertyController(pViewController:BuyPropertyViewController){
+//        self.addChildViewController(pViewController)
 //        self.enterpriseDetailsView.hidden = false
 //        self.blurView.hidden = false
 //        self.enterpriseDetailsView.addSubview(pViewController.view)
-    }
+//    }
     
     
     func update(){

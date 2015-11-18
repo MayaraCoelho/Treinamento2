@@ -7,11 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		093DE7C81BF0A45B0028345F /* HasPropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093DE7C61BF0A45B0028345F /* HasPropertyViewController.swift */; };
-		093DE7C91BF0A45B0028345F /* HasPropertyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 093DE7C71BF0A45B0028345F /* HasPropertyViewController.xib */; };
 		0966B9911BF6BA6800D9B2D0 /* DINRegularAlternate.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0966B9901BF6BA6800D9B2D0 /* DINRegularAlternate.ttf */; };
-		096FFA4C1BEC084400232C22 /* BuyPropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096FFA4A1BEC084400232C22 /* BuyPropertyViewController.swift */; };
-		096FFA4D1BEC084400232C22 /* BuyPropertyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 096FFA4B1BEC084400232C22 /* BuyPropertyViewController.xib */; };
 		09D81EBD1BEBD06D00AB7719 /* PropertiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D81EBB1BEBD06D00AB7719 /* PropertiesTableViewCell.swift */; };
 		09D81EBE1BEBD06D00AB7719 /* PropertiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D81EBC1BEBD06D00AB7719 /* PropertiesTableViewCell.xib */; };
 		09F621E71BFA473100B6D291 /* Exo2-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09F621E11BFA473100B6D291 /* Exo2-Black.otf */; };
@@ -101,12 +97,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		093DE7C61BF0A45B0028345F /* HasPropertyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HasPropertyViewController.swift; sourceTree = "<group>"; };
-		093DE7C71BF0A45B0028345F /* HasPropertyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HasPropertyViewController.xib; sourceTree = "<group>"; };
 		0966B98F1BF6B71100D9B2D0 /* DINRegularAlternate.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DINRegularAlternate.ttf; sourceTree = "<group>"; };
 		0966B9901BF6BA6800D9B2D0 /* DINRegularAlternate.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = DINRegularAlternate.ttf; path = ../DINRegularAlternate.ttf; sourceTree = "<group>"; };
-		096FFA4A1BEC084400232C22 /* BuyPropertyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyPropertyViewController.swift; sourceTree = "<group>"; };
-		096FFA4B1BEC084400232C22 /* BuyPropertyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyPropertyViewController.xib; sourceTree = "<group>"; };
 		09D81EBB1BEBD06D00AB7719 /* PropertiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesTableViewCell.swift; sourceTree = "<group>"; };
 		09D81EBC1BEBD06D00AB7719 /* PropertiesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertiesTableViewCell.xib; sourceTree = "<group>"; };
 		09F621E11BFA473100B6D291 /* Exo2-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exo2-Black.otf"; path = "../Exo2-Black.otf"; sourceTree = "<group>"; };
@@ -337,8 +329,6 @@
 			children = (
 				B0C846871BD7FD4F0092F8EC /* PropertiesVC.swift */,
 				09D81EBB1BEBD06D00AB7719 /* PropertiesTableViewCell.swift */,
-				096FFA4A1BEC084400232C22 /* BuyPropertyViewController.swift */,
-				093DE7C61BF0A45B0028345F /* HasPropertyViewController.swift */,
 				B0F8C78F1BFA75A9006980B9 /* PropertiesDetailsVC.swift */,
 			);
 			name = Properties;
@@ -372,8 +362,6 @@
 				B0C846881BD7FD4F0092F8EC /* PropertiesVC.xib */,
 				B0F8C7901BFA75A9006980B9 /* PropertiesDetailsVC.xib */,
 				09D81EBC1BEBD06D00AB7719 /* PropertiesTableViewCell.xib */,
-				096FFA4B1BEC084400232C22 /* BuyPropertyViewController.xib */,
-				093DE7C71BF0A45B0028345F /* HasPropertyViewController.xib */,
 			);
 			name = Properties;
 			sourceTree = "<group>";
@@ -515,7 +503,7 @@
 				TargetAttributes = {
 					B0F794AD1BD6BE8000BC69ED = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = 9M8RSS5KWQ;
+						DevelopmentTeam = 56F6M7MT84;
 					};
 				};
 			};
@@ -567,7 +555,6 @@
 				B00C16671BF61E9C00317B43 /* taxiIcon.png in Resources */,
 				B00C16631BF61E9C00317B43 /* jointIcon.png in Resources */,
 				B0537BF31BF4B5CA004AF676 /* ElJuegoZone.png in Resources */,
-				093DE7C91BF0A45B0028345F /* HasPropertyViewController.xib in Resources */,
 				B0537BF11BF4B5B7004AF676 /* MrAlwaysYoung.png in Resources */,
 				B0F795041BD6BF6400BC69ED /* ArrowUp.png in Resources */,
 				B0F794B91BD6BE8000BC69ED /* Assets.xcassets in Resources */,
@@ -582,7 +569,6 @@
 				B0537BFB1BF4B624004AF676 /* DumontAircrafts.png in Resources */,
 				B041E5E41BD82A6000D2B44E /* Database.plist in Resources */,
 				B0C8468A1BD7FD4F0092F8EC /* PropertiesVC.xib in Resources */,
-				096FFA4D1BEC084400232C22 /* BuyPropertyViewController.xib in Resources */,
 				B0537C051BF4DB46004AF676 /* HRInvestmentTableViewCell.xib in Resources */,
 				B00C16651BF61E9C00317B43 /* popcornIcon.png in Resources */,
 				BE6A891D1BD94ECD006DFEAD /* InvestmentMadeVC.xib in Resources */,
@@ -614,7 +600,6 @@
 				B0F794F21BD6BF5600BC69ED /* PropertyProperties.swift in Sources */,
 				B03FBC701BEA54B700CEEC67 /* EnterprisesDAO.swift in Sources */,
 				B0F794F51BD6BF5600BC69ED /* HighRiskInvestment.swift in Sources */,
-				096FFA4C1BEC084400232C22 /* BuyPropertyViewController.swift in Sources */,
 				B0F794F61BD6BF5600BC69ED /* Enterprise.swift in Sources */,
 				F3EE36771BF11E310011A655 /* LRIProperties.swift in Sources */,
 				B0DF04E81BDAABAF0022DCB9 /* ColorBarViewController.swift in Sources */,
@@ -637,7 +622,6 @@
 				F37BFDDA1BF50B0900DA188A /* GoalsVC.swift in Sources */,
 				B0F794F31BD6BF5600BC69ED /* Investment.swift in Sources */,
 				B0F794ED1BD6BF5600BC69ED /* InvestmentManager.swift in Sources */,
-				093DE7C81BF0A45B0028345F /* HasPropertyViewController.swift in Sources */,
 				B0F794CA1BD6BF3100BC69ED /* HighRiskInvestmentsVC.swift in Sources */,
 				BE6A89191BD94BE0006DFEAD /* EnterpriseValueUpdater.swift in Sources */,
 				B0F794E71BD6BF5600BC69ED /* AppData.swift in Sources */,
