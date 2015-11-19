@@ -11,22 +11,19 @@ import UIKit
 class PropertiesDetailsVC: UIViewController {
 
     @IBOutlet weak var closeButton: UIButton!
-    
     @IBOutlet weak var propertyNameLabel: UILabel!
-    
     @IBOutlet weak var propertyValueLabel: UILabel!
-    
     @IBOutlet weak var returningValueLabel: UILabel!
-    
     @IBOutlet weak var buyButton: UIButton!
-    
     @IBOutlet weak var sellButton: UIButton!
-    
     @IBOutlet weak var ownedLabel: UILabel!
-    
     @IBOutlet weak var buyStepper: UIStepper!
+    @IBOutlet weak var sellStepper: UIStepper!
+    @IBOutlet weak var buyLabel: UILabel!
+    @IBOutlet weak var sellLabel: UILabel!
     
-    var currentValue: Int
+    var currentValueBuy: Int = 0
+    var currentValueSell: Int = 0
     let superViewController:PropertiesVC
     let property:Property
    
@@ -38,28 +35,28 @@ class PropertiesDetailsVC: UIViewController {
         self.propertyValueLabel.text = "Property Value: " + self.property.value.description
         self.returningValueLabel.text = "Returning Value: " + self.property.returningValue.description + " /day"
         self.ownedLabel.text = "Owned: " + PropertiesManager().doesPlayerHaveProperty(self.property).description
-        if (PropertiesManager().doesPlayerHaveProperty(self.property) > 0){
-            self.sellButton.enabled = true
-        } else {
-            self.sellButton.enabled = false
-        }
         
-        if (AppData.sharedInstance.player.balance >= self.property.value){
-            self.buyButton.enabled = true
-        } else {
-            self.buyButton.enabled = false
-        }
-        buyStepper.minimumValue = 0
-        buyStepper.value = Double(PropertiesManager().doesPlayerHaveProperty(self.property))
+//        if (PropertiesManager().doesPlayerHaveProperty(self.property) > 0){
+//            self.sellButton.enabled = true
+//        } else {
+//            self.sellButton.enabled = false
+//        }
 
+//        if (AppData.sharedInstance.player.balance >= self.property.value){
+//            self.buyButton.enabled = true
+//        } else {
+//            self.buyButton.enabled = false
+//        }
+        
+        buyStepper.minimumValue = 0
+        sellStepper.maximumValue = Double (PropertiesManager().doesPlayerHaveProperty(self.property))
+        
         // Do any additional setup after loading the view.
     }
     
     init(pSuperViewController:PropertiesVC, pProperty:Property) {
         self.superViewController = pSuperViewController
         self.property = pProperty
-        self.currentValue = PropertiesManager().doesPlayerHaveProperty(self.property)
-        print(currentValue)
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -75,35 +72,36 @@ class PropertiesDetailsVC: UIViewController {
     
     @IBAction func buyStepperAct(sender: AnyObject) {
         
-        if(Double(currentValue) < buyStepper.value){
-            if (AppData.sharedInstance.player.balance >= self.property.value){
-                PropertiesManager().buyProperty(self.property)
-                currentValue++
-                print("aumentou \(currentValue)")
-            }
-            else{
-                buyStepper.value = Double(currentValue)
-                print("mantem \(currentValue)")
-            }
-            
+        if (AppData.sharedInstance.player.balance >= ((self.property.value)*buyStepper.value)){
+            buyLabel.text = "Buy: \(buyStepper.value)"
+            currentValueBuy++
+            print("comprar \(currentValueBuy)")
         }
-        else{
-            PropertiesManager().sellProperty(self.property)
-            currentValue--
-            print("diminuiu \(currentValue)")
-        }
-        ownedLabel.text = "Owned: " + PropertiesManager().doesPlayerHaveProperty(self.property).description
-
         
     }
 
+    @IBAction func sellStepperAct(sender: AnyObject) {
+        
+        if (PropertiesManager().doesPlayerHaveProperty(self.property)>0){
+            sellLabel.text = "Sell: \(sellStepper.value)"
+            currentValueSell++
+            print("vender \(currentValueSell)")
+        }
+    }
+
     @IBAction func buyButtonAct(sender: UIButton) {
-        PropertiesManager().buyProperty(self.property)
+        var i: Int
+        for (i = 0; i < currentValueBuy; i++){
+            PropertiesManager().buyProperty(self.property)
+        }
         self.closeButtonAct(self.closeButton)
     }
     
     @IBAction func sellButtonAct(sender: UIButton) {
-        PropertiesManager().sellProperty(self.property)
+        var i: Int
+        for (i = 0; i < currentValueSell; i++){
+            PropertiesManager().sellProperty(self.property)
+        }
         self.closeButtonAct(self.closeButton)
     }
     
