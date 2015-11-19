@@ -88,6 +88,8 @@
 		BE6A89191BD94BE0006DFEAD /* EnterpriseValueUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A89181BD94BE0006DFEAD /* EnterpriseValueUpdater.swift */; };
 		BE6A891C1BD94ECD006DFEAD /* InvestmentMadeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6A891A1BD94ECD006DFEAD /* InvestmentMadeVC.swift */; };
 		BE6A891D1BD94ECD006DFEAD /* InvestmentMadeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE6A891B1BD94ECD006DFEAD /* InvestmentMadeVC.xib */; };
+		F33BB7141BFE0F98002A9588 /* GoalsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33BB7121BFE0F98002A9588 /* GoalsCell.swift */; settings = {ASSET_TAGS = (); }; };
+		F33BB7151BFE0F98002A9588 /* GoalsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F33BB7131BFE0F98002A9588 /* GoalsCell.xib */; settings = {ASSET_TAGS = (); }; };
 		F37BFDDA1BF50B0900DA188A /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37BFDD81BF50B0900DA188A /* GoalsVC.swift */; };
 		F37BFDDB1BF50B0900DA188A /* GoalsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F37BFDD91BF50B0900DA188A /* GoalsVC.xib */; };
 		F3E020BA1BE15131001C28E1 /* LowRiskInvestmentsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3E020B91BE15131001C28E1 /* LowRiskInvestmentsVC.xib */; };
@@ -181,6 +183,8 @@
 		BE6A89181BD94BE0006DFEAD /* EnterpriseValueUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterpriseValueUpdater.swift; sourceTree = "<group>"; };
 		BE6A891A1BD94ECD006DFEAD /* InvestmentMadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestmentMadeVC.swift; sourceTree = "<group>"; };
 		BE6A891B1BD94ECD006DFEAD /* InvestmentMadeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvestmentMadeVC.xib; sourceTree = "<group>"; };
+		F33BB7121BFE0F98002A9588 /* GoalsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoalsCell.swift; path = ../GoalsCell.swift; sourceTree = "<group>"; };
+		F33BB7131BFE0F98002A9588 /* GoalsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GoalsCell.xib; path = ../GoalsCell.xib; sourceTree = "<group>"; };
 		F37BFDD81BF50B0900DA188A /* GoalsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
 		F37BFDD91BF50B0900DA188A /* GoalsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoalsVC.xib; sourceTree = "<group>"; };
 		F3E020B91BE15131001C28E1 /* LowRiskInvestmentsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LowRiskInvestmentsVC.xib; sourceTree = "<group>"; };
@@ -432,7 +436,7 @@
 			children = (
 				B0C8467F1BD7F0B20092F8EC /* TopBarViewController.swift */,
 				B06D6C541BF22C0F00B5C8EA /* DeveloperInfoVC.swift */,
-				F37BFDD81BF50B0900DA188A /* GoalsVC.swift */,
+				F33BB7161BFE11D8002A9588 /* Goals */,
 				B0B766C91BEBA2900045528D /* HighRiskInvestment */,
 				B0B766CA1BEBA2B50045528D /* LowRiskInvestment */,
 				B0B766CB1BEBA2EF0045528D /* Properties */,
@@ -457,6 +461,15 @@
 			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
+		F33BB7161BFE11D8002A9588 /* Goals */ = {
+			isa = PBXGroup;
+			children = (
+				F37BFDD81BF50B0900DA188A /* GoalsVC.swift */,
+				F33BB7121BFE0F98002A9588 /* GoalsCell.swift */,
+			);
+			name = Goals;
+			sourceTree = "<group>";
+		};
 		F37BFDD31BF4D67400DA188A /* LowRisk */ = {
 			isa = PBXGroup;
 			children = (
@@ -468,6 +481,7 @@
 			isa = PBXGroup;
 			children = (
 				F37BFDD91BF50B0900DA188A /* GoalsVC.xib */,
+				F33BB7131BFE0F98002A9588 /* GoalsCell.xib */,
 			);
 			name = Goals;
 			sourceTree = "<group>";
@@ -538,6 +552,7 @@
 				09F621EC1BFA473100B6D291 /* Exo2-SemiBold.otf in Resources */,
 				B0F8C7921BFA75A9006980B9 /* PropertiesDetailsVC.xib in Resources */,
 				B0F794D61BD6BF4E00BC69ED /* InvestmentNotMadeVC.xib in Resources */,
+				F33BB7151BFE0F98002A9588 /* GoalsCell.xib in Resources */,
 				B00C16621BF61E9C00317B43 /* houseIcon.png in Resources */,
 				B00C16611BF61E9C00317B43 /* fruitIcon.png in Resources */,
 				B0537BF71BF4B5F7004AF676 /* B&C.png in Resources */,
@@ -614,6 +629,7 @@
 				B0F794CC1BD6BF3100BC69ED /* InvestmentNotMadeVC.swift in Sources */,
 				B0C846851BD7FC610092F8EC /* LowRiskInvestmentsVC.swift in Sources */,
 				B06D6C561BF22C0F00B5C8EA /* DeveloperInfoVC.swift in Sources */,
+				F33BB7141BFE0F98002A9588 /* GoalsCell.swift in Sources */,
 				B0F794F41BD6BF5600BC69ED /* LowRiskInvestment.swift in Sources */,
 				B0B766C31BEB9C7C0045528D /* LRInvestmentTableViewCell.swift in Sources */,
 				B0F794E81BD6BF5600BC69ED /* Timer.swift in Sources */,

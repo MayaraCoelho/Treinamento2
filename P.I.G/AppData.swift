@@ -16,6 +16,7 @@ class AppData{
     var timer:Timer
     var investmentManager:InvestmentManager
     var properties: [Property]
+    var goals:[Goal]
     
     
     
@@ -25,6 +26,7 @@ class AppData{
         self.timer = Timer()
         self.investmentManager = InvestmentManager()
         self.properties = PropertyProperties.init().properties
+        self.goals = GoalProperties.init().goals
     }
     
     

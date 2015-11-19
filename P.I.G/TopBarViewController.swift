@@ -49,12 +49,6 @@ class TopBarViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func goalsButton(sender: UIButton) {
-        var alert = UIAlertController(title: "Development", message: "Sorry: This screen is not ready to be presented.", preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-        self.presentViewController(alert, animated: true, completion: nil)
-        //presentViewController(goalsView, animated: false, completion: nil)
-    }
     
     
     

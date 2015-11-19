@@ -9,17 +9,24 @@
 import Foundation
 
 class Goal{
+    
     var id:Int
     var description:String
     var hasBeenReached:Bool
-    var tip:Tip
+    var tip:Tip?
 
-    
-    
     init(paramID:Int, paramDescription:String, paramTip:Tip){
         self.id = paramID
         self.description = paramDescription
         self.hasBeenReached = false
         self.tip = paramTip
     }
+    
+    init(paramID:Int, paramDescription:String){
+        self.id = paramID
+        self.description = paramDescription
+        self.hasBeenReached = false
+    }
+    
+    
 }

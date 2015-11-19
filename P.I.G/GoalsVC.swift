@@ -8,17 +8,20 @@
 
 import UIKit
 
-class GoalsVC: UIViewController {
+class GoalsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var topBarView: UIView!
 
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let topBar = TopBarViewController()
         addChildViewController(topBar)
         self.topBarView.addSubview(topBar.view)
+        
+        let nib = UINib.init(nibName: "GoalsCell", bundle: nil)
+        self.tableView.registerNib(nib, forCellReuseIdentifier: "goalsCell")
         
         
         // Do any additional setup after loading the view.
@@ -30,6 +33,27 @@ class GoalsVC: UIViewController {
     }
     
 
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("goalsCell") as! GoalsCell
+        cell.textLabel?.text = AppData.sharedInstance.goals[indexPath.row].description
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 90
+    }
+    
+    
+    
+    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    
     /*
     // MARK: - Navigation
 

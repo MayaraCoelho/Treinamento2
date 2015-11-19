@@ -22,9 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let highRiskInvestmentsVC = HighRiskInvestmentsVC()
         let lowRiskInvestmentsVC = LowRiskInvestmentsVC()
         let propertiesVC = PropertiesVC()
-        let devInfoVC = DeveloperInfoVC()
+        let goalsTipsVC = GoalsVC()
         
-        let controllers = [highRiskInvestmentsVC, lowRiskInvestmentsVC, propertiesVC, devInfoVC]
+        let controllers = [highRiskInvestmentsVC, lowRiskInvestmentsVC, propertiesVC, goalsTipsVC]
         tabBarController.viewControllers = controllers
         window?.rootViewController = tabBarController
         
@@ -43,8 +43,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             tag:3)
         
 
-        devInfoVC.tabBarItem = UITabBarItem(
-            title: "Developer Info",
+        goalsTipsVC.tabBarItem = UITabBarItem(
+            title: "Goals & Tips",
             image: nil,
             tag:4)
         
