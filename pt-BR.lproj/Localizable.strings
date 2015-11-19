@@ -1,0 +1,76 @@
+/* 
+  Localizable.strings
+  P.I.G
+
+  Created by Maria Carolina Santos on 19/11/15.
+  Copyright © 2015 Henrique do Prado Linhares. All rights reserved.
+*/
+
+/* PT BR */
+
+
+/////////////EMPRESAS/////////////
+
+//// DESCRICAO
+
+"descE1" = "Fundada na Arábia Saudida em 1931, é a maior companhia de petróleo do mundo, responsável pela venda de 400 barris de petróleo por dia nos EUA";
+
+"descE2" = "Fundada em 1980 pelo estudante Frank Roy, atua criando sistemas poderosos que mudaram o cotidiano da nossa sociedade.";
+
+"descE3" = "Coorporação brasileira fundada pela junção das duas maiores empresas do ramo alimentício";
+
+"descE4" = "A estilista francesa, Amélie DeLage, criou sua pequena loja de roupas que expandiu e hoje se tornou um ícone fashion mundial.";
+
+"descE5" = "Empresa fundada por três estudantes da Universidade do México especializada em desenvolvimento de games conceituados como Nachos Locos.";
+
+"descE6" = "Empresa mídia que atingiu o ápice de seu sucesso, em 2005, ao lançar um jornal sensacionalista pela Rússia.";
+
+"descE7" = "Fundada em 1910, pelo casal Barney e Clara, é considerado o maior banco para investimentos de toda Europa.";
+
+"descE8" = " Foi fundada pelo engenheiro, Philip Holland, na Inglaterra e é responsável pelas maiores construções do mundo contemporâneo.";
+
+"descE9" = "Fundada na Argentina no ano de 1990, fabrica aviões de todos os portes e que são famosos pelo seu excelente desempenho.";
+
+"descE10" = "Startup criada pelo carteiro aposentado, George, oferece um serviço exclusivo que leva sua encomenda para qualquer lugar do mundo em até 24h.";
+
+//// NOME
+"nameE1" = "Everest Oil";
+
+"nameE2" = "Bug Software Inc";
+
+"nameE3" = "Bacompany House";
+
+"nameE4"= "Mr Always Young";
+
+"nameE5" = "El Juego Zone";
+
+"nameE6" = "Time News Central";
+
+"nameE7" = "B&C";
+
+"nameE8" = "Philip Holland Buildings";
+
+"nameE9" = "Dumont Aircrafts";
+
+"nameE10" = "Fastex SA";
+
+//////////////////////////////////////
+
+
+/////////////Investimentos/////////////
+"Saving Account" = "Poupança";
+"CDB" = "CDB";
+
+
+/////////////Propriedades/////////////
+
+"Barraca de Fruta" = "Barraca de Fruta";
+"Barraca de Pipoca" ="Barraca de Pipoca";
+"Motorista de Transporte Alternativo" = "Motorista de Transporte Alternativo";
+"Terreno" = "Terreno";
+"Apartamento" = "Apartamento";
+"Casa" = "Casa";
+"Hamburgueria na Zona Sul" = "Hamburgueria na Zona Sul";
+"Rede com 5 restaurantes" = "Rede com 5 restaurantes";
+"Condominio Residencial" = "Condominio Residencial";
+"Shopping Center" = "Shopping Center";

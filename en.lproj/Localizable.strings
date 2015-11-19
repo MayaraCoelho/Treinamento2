@@ -1,0 +1,79 @@
+/* 
+  Localizable.strings
+  P.I.G
+
+  Created by Maria Carolina Santos on 19/11/15.
+  Copyright © 2015 Henrique do Prado Linhares. All rights reserved.
+*/
+
+
+/* ENGLISH */
+
+/////////////EMPRESAS/////////////
+
+//// DESCRICAO
+
+"descE1" = "Founded in Saudi Arabia, 1931, is the largest oil company in the world, responsible for the sale of about 400 barrels of oil a day to the United States.";
+
+"descE2" = "Founded in 1980 by the student Frank Roy, acts creating powerful systems that changed the daily life of our society.";
+
+"descE3" = "Brazilian corporation founded by the junction of the two largest food companies.";
+
+"descE4" = "The French designer Amélie DeLarge created a small clothing store that has expanded and today has become a worldwide fashion icon.";
+
+"descE5" = "Company founded by three students from the University of Mexico specializes in developing highly regarded games as Nachos Locos.";
+
+"descE6" = "Media company that reaches the height of its success in 2005, due to the launch of a tabloid in Russia.";
+
+"descE7" = "Founded in 1910 by the couple Barney and Clara, is considered the largest bank for investment from all over Europe.";
+
+"descE8" = "It was founded by engineer Philip Holland in England, and is responsible for the largest buildings of the contemporary world.";
+
+"descE9" = "Founded in Argentina in 1990, manufactures aircraft of all sizes and are famous for their excellent performance.";
+
+"descE10" = "Startup created by retired postman George, it offers an unique service that takes your order anywhere in the world in 24 hours.";
+
+
+//// NOME
+"nameE1" = "Everest Oil";
+
+"nameE2" = "Bug Software Inc";
+
+"nameE3" = "Bacompany House";
+
+"nameE4"= "Mr Always Young";
+
+"nameE5" = "El Juego Zone";
+
+"nameE6" = "Time News Central";
+
+"nameE7" = "B&C";
+
+"nameE8" = "Philip Holland Buildings";
+
+"nameE9" = "Dumont Aircrafts";
+
+"nameE10" =  "Fastex SA";
+
+
+
+
+/////////////Investimentos/////////////
+"Saving Account" = "Saving Account";
+"CDB" = "CDB";
+
+
+/////////////Propriedades/////////////
+
+"Barraca de Fruta" = "Fruit Stand";
+"Barraca de Pipoca" ="Popcorn Stand";
+"Motorista de Transporte Alternativo" = "Taxi Driver";
+"Terreno" = "Empty Fiel";
+"Apartamento" = "Apartment";
+"Casa" = "House";
+"Hamburgueria na Zona Sul" = "Fast Food";
+"Rede com 5 restaurantes" = "Restaurant Chain";
+"Condominio Residencial" = "Condominium";
+"Shopping Center" = "Shopping Center";
+
+
