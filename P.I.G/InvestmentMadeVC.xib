@@ -12,6 +12,7 @@
             <string>Exo2-Regular</string>
             <string>Exo2-Regular</string>
             <string>Exo2-Regular</string>
+            <string>Exo2-Regular</string>
         </mutableArray>
     </customFonts>
     <objects>
@@ -20,6 +21,7 @@
                 <outlet property="enterpriseDescriptionLabel" destination="KzE-Ti-rlm" id="4oW-fh-4b6"/>
                 <outlet property="enterpriseNameLabel" destination="gZN-RW-RW9" id="qfR-tG-7dX"/>
                 <outlet property="enterpriseValueLabel" destination="2iN-0e-8or" id="5P1-7h-VTX"/>
+                <outlet property="initialInvestmentValueLabel" destination="edo-sK-02z" id="q3l-bt-Rsv"/>
                 <outlet property="investButton" destination="87T-Y3-NiT" id="YPg-1V-j36"/>
                 <outlet property="investMoreLabel" destination="lRg-v3-t8Y" id="ecz-kd-tDV"/>
                 <outlet property="investSlider" destination="Bll-lB-5Tm" id="cec-n3-gom"/>
@@ -67,15 +69,23 @@
                     <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
                 </textView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Market Value : 180 Billions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2iN-0e-8or">
-                    <rect key="frame" x="19" y="128" width="264" height="31"/>
+                    <rect key="frame" x="19" y="114" width="264" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Investment Value : $ 752.21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2fJ-RK-lWg">
-                    <rect key="frame" x="19" y="157" width="264" height="34"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Value : $ 752.21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2fJ-RK-lWg">
+                    <rect key="frame" x="19" y="167" width="264" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Initial Value: 700.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="edo-sK-02z">
+                    <rect key="frame" x="19" y="138" width="264" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="17"/>
@@ -83,7 +93,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invest more: $ 12.42" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lRg-v3-t8Y">
-                    <rect key="frame" x="19" y="192" width="190" height="34"/>
+                    <rect key="frame" x="19" y="205" width="190" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="17"/>
@@ -91,7 +101,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="Bll-lB-5Tm">
-                    <rect key="frame" x="23" y="227" width="262" height="31"/>
+                    <rect key="frame" x="23" y="250" width="262" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <connections>
@@ -99,7 +109,7 @@
                     </connections>
                 </slider>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="1L5-Wz-jbo">
-                    <rect key="frame" x="17" y="313" width="268" height="31"/>
+                    <rect key="frame" x="17" y="336" width="268" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <color key="minimumTrackTintColor" red="1" green="0.0" blue="0.019891490399700729" alpha="1" colorSpace="calibratedRGB"/>
@@ -108,7 +118,7 @@
                     </connections>
                 </slider>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rescue : 451.21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fnF-36-Ff8">
-                    <rect key="frame" x="19" y="270" width="169" height="38"/>
+                    <rect key="frame" x="19" y="289" width="169" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="17"/>
@@ -116,7 +126,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="87T-Y3-NiT">
-                    <rect key="frame" x="205" y="199" width="78" height="30"/>
+                    <rect key="frame" x="205" y="210" width="78" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <state key="normal" image="investImage"/>
@@ -125,7 +135,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LwY-vJ-MHK">
-                    <rect key="frame" x="205" y="282" width="78" height="30"/>
+                    <rect key="frame" x="205" y="295" width="78" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <state key="normal" image="rescueImage"/>

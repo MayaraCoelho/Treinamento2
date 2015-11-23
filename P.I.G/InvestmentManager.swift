@@ -58,9 +58,6 @@ class InvestmentManager{
         
     }
     
-    
-    
-    
     func applyInLowRiskInvestment(pLowRiskInvestmentID:Int, pValue:Double){
         if (AppData.sharedInstance.player.canRemoveFromBalance(pValue)){
             AppData.sharedInstance.player.removeFromBalance(pValue)

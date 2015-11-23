@@ -18,6 +18,8 @@ class InvestmentMadeVC: UIViewController {
     
     @IBOutlet weak var investedValueLabel: UILabel!
     
+    @IBOutlet weak var initialInvestmentValueLabel: UILabel!
+    
     @IBOutlet weak var investMoreLabel: UILabel!
 
     @IBOutlet weak var investButton: UIButton!
@@ -40,7 +42,13 @@ class InvestmentMadeVC: UIViewController {
         self.enterpriseNameLabel.text = self.enterprise.name
         self.enterpriseDescriptionLabel.text = self.enterprise.descript
         self.enterpriseValueLabel.text = NSString(format: "Stock Value: %.2f",self.enterprise.stockValue) as String
-        self.investedValueLabel.text = NSString(format: "Investment Value: %.2f",self.investment.currentValue) as String
+        
+        self.initialInvestmentValueLabel.text = NSString(format: "Initial Value: %.2f",self.investment.investedValue) as String
+        
+        self.investedValueLabel.text = NSString(format: "Current Value: %.2f",self.investment.currentValue) as String
+        
+        
+        
         
         self.investMoreLabel.text = "Invest more: $ 0"
         self.investButton.enabled = false

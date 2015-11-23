@@ -15,7 +15,7 @@ class Investment:NSObject {
     
     init(pInvestedValue:Double){
         self.investedValue = pInvestedValue
-        self.currentValue = self.investedValue
+        self.currentValue = pInvestedValue
     }
     
     
