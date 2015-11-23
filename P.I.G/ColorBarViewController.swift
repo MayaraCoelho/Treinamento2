@@ -16,6 +16,9 @@ class ColorBarViewController: UIViewController {
     @IBOutlet weak var viewWitdhConstraint: NSLayoutConstraint!
 
     @IBOutlet weak var textLabel: UILabel!
+    
+    let myGreenColor = UIColor(red: 97/255.0, green: 178/255.0, blue: 47/255.0, alpha: 1.0)
+    let myRedColor = UIColor(red: 207/255.0, green: 93/255.0, blue: 93/255.0, alpha: 1.0)
 
     
     override func viewDidLoad() {
@@ -26,7 +29,7 @@ class ColorBarViewController: UIViewController {
     
     func drawBar(pNumber:Float){
         if (pNumber > 1){
-            barView.backgroundColor = UIColor.greenColor()
+            barView.backgroundColor = myGreenColor
             if (pNumber >= 2){
                 self.viewWitdhConstraint.constant = CGFloat(200)
             } else {
@@ -34,7 +37,7 @@ class ColorBarViewController: UIViewController {
             }
         } else if (pNumber < 1){
             let inversepNumber = 1 - pNumber
-            barView.backgroundColor = UIColor.redColor()
+            barView.backgroundColor = myRedColor
             self.viewWitdhConstraint.constant = CGFloat((inversepNumber * 200))
         }
     }

@@ -18,9 +18,7 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
     
     @IBOutlet weak var topBarViewContainer: UIView!
     
-    override func viewWillAppear(animated: Bool) {
-        self.tableView.reloadData()
-    }
+    var updateTimer = NSTimer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +34,17 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
         self.enterpriseDetailsView.backgroundColor = UIColor(white: 0.0, alpha: 0.0)
         self.enterpriseDetailsView.opaque = false
     }
+    
+    
+    override func viewWillDisappear(animated: Bool) {
+        self.updateTimer.invalidate()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.tableView.reloadData()
+        self.updateTimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "update", userInfo: nil, repeats: true)
+    }
+    
     
 
     override func didReceiveMemoryWarning() {
@@ -66,7 +75,7 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
             
             colorBarVC.drawBar(Float((investment?.currentValue)!) / Float((investment?.investedValue)!))
             
-            colorBarVC.textLabel.text = NSString(format: "W/L: %.2f ", (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(enterprise)?.currentValue)! - (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(enterprise)?.investedValue)!) as String
+            colorBarVC.textLabel.text = NSString(format: "%.2f ", (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(enterprise)?.currentValue)! - (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(enterprise)?.investedValue)!) as String
         }
         
         cell.enterpriseImage.image = enterprise.icon()
@@ -129,7 +138,7 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
     
     
     func update(){
-        self.viewDidLoad()
+        print("updating HRI VIEW")
         self.tableView.reloadData()
     }
     
