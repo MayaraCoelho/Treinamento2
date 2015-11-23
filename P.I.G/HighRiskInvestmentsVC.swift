@@ -73,9 +73,9 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
             
             cell.containerView.addSubview(colorBarVC.view)
             
-            colorBarVC.drawBar(Float((investment?.currentValue)!) / Float((investment?.investedValue)!))
+            colorBarVC.drawBar(Float((investment?.currentValue)!) / Float((investment?.startingValue)!))
             
-            colorBarVC.textLabel.text = NSString(format: "%.2f ", (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(enterprise)?.currentValue)! - (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(enterprise)?.investedValue)!) as String
+            colorBarVC.textLabel.text = NSString(format: "%.2f ", (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(enterprise)?.currentValue)! - (AppData.sharedInstance.player.highRiskInvestmentForEnterprise(enterprise)?.startingValue)!) as String
         }
         
         cell.enterpriseImage.image = enterprise.icon()

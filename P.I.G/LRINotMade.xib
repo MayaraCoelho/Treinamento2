@@ -9,24 +9,19 @@
             <string>Exo2-Regular</string>
             <string>Exo2-Regular</string>
             <string>Exo2-Regular</string>
-            <string>Exo2-Regular</string>
-            <string>Exo2-Regular</string>
         </mutableArray>
         <mutableArray key="Exo2-SemiBold.otf">
             <string>Exo2-SemiBold</string>
         </mutableArray>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LRIDetails" customModule="P_I_G" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LRINotMade" customModule="P_I_G" customModuleProvider="target">
             <connections>
                 <outlet property="amountInvestedValue" destination="ock-FL-hiu" id="kOO-1y-lcQ"/>
                 <outlet property="investButton" destination="nIg-2K-OBF" id="8yc-D8-EUY"/>
                 <outlet property="investmentSlider" destination="xrU-2l-4xO" id="vks-fd-Tka"/>
                 <outlet property="investmentValue" destination="Jgg-wH-SV7" id="yF7-2u-twi"/>
                 <outlet property="lowRiskInvestmentName" destination="cSZ-ku-TYj" id="E8e-vo-ppu"/>
-                <outlet property="rescueButton" destination="05K-xw-bLp" id="b8c-ub-9PG"/>
-                <outlet property="rescueSlider" destination="06d-6B-fZV" id="fnR-O2-w75"/>
-                <outlet property="rescueValue" destination="hxw-Cj-ocT" id="Fyw-q1-tpW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -72,14 +67,6 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" id="xrU-2l-4xO">
-                    <rect key="frame" x="12" y="137" width="259" height="31"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <animations/>
-                    <connections>
-                        <action selector="investmentSliderChanged:" destination="-1" eventType="valueChanged" id="2hZ-m7-D5H"/>
-                    </connections>
-                </slider>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dIr-dz-pK6">
                     <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -89,7 +76,7 @@
                         <action selector="exitButtonAct:" destination="-1" eventType="touchUpInside" id="dEK-Wc-0Yu"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cSZ-ku-TYj">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Investment Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cSZ-ku-TYj">
                     <rect key="frame" x="46" y="8" width="202" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
@@ -98,7 +85,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nIg-2K-OBF">
-                    <rect key="frame" x="108" y="175" width="78" height="30"/>
+                    <rect key="frame" x="111" y="297" width="78" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <state key="normal" image="investImage"/>
@@ -106,40 +93,14 @@
                         <action selector="investButtonAct:" destination="-1" eventType="touchUpInside" id="Zck-1l-PuZ"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rescue :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1MW-aO-CvA">
-                    <rect key="frame" x="14" y="227" width="140" height="22"/>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" id="xrU-2l-4xO">
+                    <rect key="frame" x="18" y="243" width="259" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
-                    <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hxw-Cj-ocT">
-                    <rect key="frame" x="118" y="228" width="130" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <animations/>
-                    <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" id="06d-6B-fZV">
-                    <rect key="frame" x="12" y="272" width="259" height="31"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <animations/>
-                    <color key="tintColor" red="0.96078431369999995" green="0.11587026198362212" blue="0.022939414275861679" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
-                        <action selector="rescueSliderChanged:" destination="-1" eventType="valueChanged" id="Fx2-lb-NjB"/>
+                        <action selector="investmentSliderChanged:" destination="-1" eventType="valueChanged" id="2hZ-m7-D5H"/>
                     </connections>
                 </slider>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="05K-xw-bLp">
-                    <rect key="frame" x="108" y="316" width="78" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <animations/>
-                    <state key="normal" image="rescueImage"/>
-                    <connections>
-                        <action selector="rescueButtonAct:" destination="-1" eventType="touchUpInside" id="TGQ-rM-SB4"/>
-                    </connections>
-                </button>
             </subviews>
             <animations/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -150,6 +111,5 @@
         <image name="closeButton.png" width="300" height="300"/>
         <image name="investImage" width="115" height="40"/>
         <image name="popViewBackground.png" width="1098" height="1395"/>
-        <image name="rescueImage" width="116" height="40"/>
     </resources>
 </document>

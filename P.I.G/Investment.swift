@@ -10,11 +10,11 @@ import Foundation
 
 class Investment:NSObject {
     
-    var investedValue:Double
+    var startingValue:Double
     var currentValue:Double
     
     init(pInvestedValue:Double){
-        self.investedValue = pInvestedValue
+        self.startingValue = pInvestedValue
         self.currentValue = pInvestedValue
     }
     

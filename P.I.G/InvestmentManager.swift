@@ -20,7 +20,7 @@ class InvestmentManager{
             let investment = AppData.sharedInstance.player.highRiskInvestmentForEnterprise(pEnterprise)!
             AppData.sharedInstance.player.removeHighRiskInvestmentForEnterprise(pEnterprise)
             investment.currentValue = investment.currentValue + pValue
-            investment.investedValue = investment.investedValue + pValue
+            investment.startingValue = investment.startingValue + pValue
             AppData.sharedInstance.player.highRiskInvestments.append(investment)
         } else {
             let investment = HighRiskInvestment(pEnterpriseID: pEnterprise.id, pInvestedValue: pValue)
@@ -47,7 +47,7 @@ class InvestmentManager{
             if (pValue <= investment.currentValue){
                 AppData.sharedInstance.player.removeHighRiskInvestmentForEnterprise(pEnterprise)
                 investment.currentValue = investment.currentValue - pValue
-                investment.investedValue = investment.currentValue
+                investment.startingValue = investment.startingValue
                 AppData.sharedInstance.player.highRiskInvestments.append(investment)
                 AppData.sharedInstance.player.addToBalance(pValue)
             } else if (pValue == investment.currentValue){
@@ -63,7 +63,7 @@ class InvestmentManager{
             AppData.sharedInstance.player.removeFromBalance(pValue)
             let index = AppData.sharedInstance.player.lowRiskInvestmentIndexByID(pLowRiskInvestmentID)
             AppData.sharedInstance.player.lowRiskInvestments[index].currentValue = AppData.sharedInstance.player.lowRiskInvestments[index].currentValue + pValue
-            AppData.sharedInstance.player.lowRiskInvestments[index].investedValue = AppData.sharedInstance.player.lowRiskInvestments[index].investedValue + pValue
+            AppData.sharedInstance.player.lowRiskInvestments[index].startingValue = AppData.sharedInstance.player.lowRiskInvestments[index].startingValue + pValue
         }
     }
     
@@ -73,7 +73,7 @@ class InvestmentManager{
         if (pValue <= AppData.sharedInstance.player.lowRiskInvestments[index].currentValue){
             AppData.sharedInstance.player.addToBalance(pValue)
             AppData.sharedInstance.player.lowRiskInvestments[index].currentValue = AppData.sharedInstance.player.lowRiskInvestments[index].currentValue - pValue
-            AppData.sharedInstance.player.lowRiskInvestments[index].investedValue = AppData.sharedInstance.player.lowRiskInvestments[index].currentValue
+            AppData.sharedInstance.player.lowRiskInvestments[index].startingValue = AppData.sharedInstance.player.lowRiskInvestments[index].currentValue
         }
     }
     

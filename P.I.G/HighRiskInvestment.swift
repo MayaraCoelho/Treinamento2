@@ -43,7 +43,7 @@ class HighRiskInvestment:Investment, NSCoding {
     }
     
     @objc func encodeWithCoder(coder: NSCoder) {
-        coder.encodeObject(self.investedValue, forKey: "investedValue")
+        coder.encodeObject(self.startingValue, forKey: "investedValue")
         coder.encodeObject(self.currentValue, forKey: "currentValue")
         coder.encodeObject(self.enterpriseID, forKey: "enterpriseID")
         coder.encodeObject(self.lastEnterpriseValue, forKey: "lastEnterpriseValue")

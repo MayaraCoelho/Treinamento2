@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LRIDetails: UIViewController {
+class LRINotMade: UIViewController {
 
     
    
@@ -22,11 +22,7 @@ class LRIDetails: UIViewController {
     
     @IBOutlet weak var investmentSlider: UISlider!
     
-    @IBOutlet weak var rescueValue: UILabel!
-    
-    @IBOutlet weak var rescueSlider: UISlider!
-    
-    @IBOutlet weak var rescueButton: UIButton!
+
     
     var superViewController:LowRiskInvestmentsVC
     
@@ -38,7 +34,6 @@ class LRIDetails: UIViewController {
         self.lowRiskInvestmentName.text = self.lowRiskInvestment.name
         self.amountInvestedValue.text = NSString(format:"$ %.2f",self.lowRiskInvestment.currentValue) as String
         self.investmentValue.text = NSString(format:"$ %.2f",0) as String
-        self.rescueValue.text = NSString(format:"$ %.2f",0) as String
         // Do any additional setup after loading the view.
     }
     
@@ -69,24 +64,6 @@ class LRIDetails: UIViewController {
         self.closePopView()
     }
     
-    
-    @IBAction func rescueSliderChanged(sender: UISlider) {
-        let value = self.lowRiskInvestment.currentValue * Double(self.rescueSlider.value)
-        if (value > 0){
-            self.rescueButton.enabled = true
-        } else {
-            self.rescueButton.enabled = false
-        }
-        
-        self.rescueValue.text = NSString(format:"$ %.2f",value) as String
-    }
-    
-    
-    @IBAction func rescueButtonAct(sender: UIButton) {
-        let value = (self.lowRiskInvestment.currentValue * Double(self.rescueSlider.value))
-        AppData.sharedInstance.investmentManager.rescueFromLowRiskInvestment(lowRiskInvestment.id, pValue: value)
-        self.closePopView()
-    }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

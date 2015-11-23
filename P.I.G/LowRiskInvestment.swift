@@ -62,12 +62,12 @@ class LowRiskInvestment:Investment, NSCoding{
     
         self.init(pID: dID, pName: dName, pInterestRates:dInterestRates, pInvestmentTerm:dInvestmentTerm, pInvestedValue:0, pImageName: dImageName)
         self.currentValue = dCurrentValue
-        self.investedValue = dInvestedValue
+        self.startingValue = dInvestedValue
     
     }
     
     @objc func encodeWithCoder(coder: NSCoder) {
-        coder.encodeObject(self.investedValue, forKey: "investedValue")
+        coder.encodeObject(self.startingValue, forKey: "investedValue")
         coder.encodeObject(self.currentValue, forKey: "currentValue")
         coder.encodeObject(self.id, forKey: "LRI-ID")
         coder.encodeObject(self.name, forKey: "name")
