@@ -48,9 +48,11 @@ class InvestmentNotMadeVC: UIViewController {
         
         self.enterpriseValueLabel.text = NSString(format: "Stock Value: %.2f",self.enterprise.stockValue) as String
         
-        self.investmentValueLabel.text = "$ 0"
+        self.investmentValueLabel.text = "Invest : $ 0"
         
         self.investmentButton.enabled = false
+        
+        self.investmentValueSlider.value = 0
         
         // Do any additional setup after loading the view.
     }
@@ -65,7 +67,7 @@ class InvestmentNotMadeVC: UIViewController {
         
         let value = (AppData.sharedInstance.player.balance * Double(self.investmentValueSlider.value))
         
-        self.investmentValueLabel.text = NSString(format:"$ %.2f",value) as String
+        self.investmentValueLabel.text = NSString(format:"Invest : $ %.2f",value) as String
         
     }
     

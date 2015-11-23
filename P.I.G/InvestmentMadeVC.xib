@@ -60,7 +60,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" textAlignment="justified" id="KzE-Ti-rlm">
-                    <rect key="frame" x="19" y="34" width="264" height="86"/>
+                    <rect key="frame" x="9" y="34" width="275" height="86"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -104,15 +104,16 @@
                     <rect key="frame" x="23" y="250" width="262" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
+                    <color key="minimumTrackTintColor" red="0.38039215686274508" green="0.69803921568627447" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <action selector="investmentSliderValueChanged:" destination="-1" eventType="valueChanged" id="Hdu-aj-yAK"/>
                     </connections>
                 </slider>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="1L5-Wz-jbo">
-                    <rect key="frame" x="17" y="336" width="268" height="31"/>
+                    <rect key="frame" x="23" y="336" width="262" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
-                    <color key="minimumTrackTintColor" red="1" green="0.0" blue="0.019891490399700729" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="minimumTrackTintColor" red="0.81176470588235294" green="0.36470588235294116" blue="0.36470588235294116" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <action selector="rescueSliderValueChanged:" destination="-1" eventType="valueChanged" id="Tb1-qO-T2v"/>
                     </connections>
