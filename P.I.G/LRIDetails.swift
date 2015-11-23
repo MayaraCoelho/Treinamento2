@@ -8,8 +8,9 @@
 
 import UIKit
 
-class LRIMade: UIViewController {
+class LRIDetails: UIViewController {
 
+    
    
     @IBOutlet weak var lowRiskInvestmentName: UILabel!
     

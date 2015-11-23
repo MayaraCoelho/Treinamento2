@@ -12,7 +12,6 @@ class HighRiskInvestment:Investment, NSCoding {
 
     var enterpriseID:Int
     var lastEnterpriseValue:Double
-    var taxes = 0.12
     
     init(pEnterpriseID:Int, pInvestedValue:Double){
         self.enterpriseID = pEnterpriseID

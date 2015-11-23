@@ -21,7 +21,6 @@ class LRInvestmentTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.selectionStyle = UITableViewCellSelectionStyle.None
         self.backgroundImageView.image = UIImage(named: "barImage.png")
         // Initialization code
     }
