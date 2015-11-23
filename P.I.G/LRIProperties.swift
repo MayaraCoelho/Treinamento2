@@ -13,12 +13,12 @@ class LRIProperties{
     
     init(){
     
-        let poupanca = LowRiskInvestment(pID: 1, pName: NSLocalizedString("Saving Account", comment: ""), pInterestRates: 0.5, pInvestmentTerm: 86400, pInvestedValue: 0, pImageName: "lowCDB.png")
+        let poupanca = LowRiskInvestment(pID: 1, pName: NSLocalizedString("Saving Account", comment: ""), pInterestRates: 0.5, pInvestmentTerm: 86400, pInvestedValue: 0, pImageName: "lowCDB.png", pTaxes: 0.0)
     
         self.arrayLRI.append(poupanca)
     
         
-        let cdb = LowRiskInvestment(pID: 2, pName: NSLocalizedString("CDB", comment: ""), pInterestRates: 0.7, pInvestmentTerm: 259200, pInvestedValue: 0, pImageName: "lowSaving.png")
+        let cdb = LowRiskInvestment(pID: 2, pName: NSLocalizedString("CDB", comment: ""), pInterestRates: 0.7, pInvestmentTerm: 259200, pInvestedValue: 0, pImageName: "lowSaving.png", pTaxes: 0.8)
         
         self.arrayLRI.append(cdb)
         
