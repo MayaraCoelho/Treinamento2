@@ -54,17 +54,6 @@ class SavingAccountVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
-    override func viewWillAppear(animated: Bool) {
-        
-    }
-    
-    override func viewWillDisappear(animated: Bool) {
-        
-    }
-    
-    
-    
     init(pSuperViewController:LowRiskInvestmentsVC, pLowRiskInvestment:LowRiskInvestment) {
         self.superViewController = pSuperViewController
         self.lowRiskInvestment = pLowRiskInvestment

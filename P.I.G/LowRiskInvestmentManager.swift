@@ -32,6 +32,20 @@ class LowRiskInvestmentManager{
         }
     }
 
+    
+    
+    func applyInCDB(pValue:Double, pInvestmentTerm:NSTimeInterval, pInterestRate:Float){
+        if (AppData.sharedInstance.player.canRemoveFromBalance(pValue)){
+            AppData.sharedInstance.player.removeFromBalance(pValue)
+            let index = AppData.sharedInstance.player.lowRiskInvestmentIndexByID(2)
+            AppData.sharedInstance.player.lowRiskInvestments[index].currentValue = AppData.sharedInstance.player.lowRiskInvestments[index].currentValue + pValue
+            AppData.sharedInstance.player.lowRiskInvestments[index].startingValue = AppData.sharedInstance.player.lowRiskInvestments[index].startingValue + pValue
+            AppData.sharedInstance.player.lowRiskInvestments[index].startDate = NSDate()
+            AppData.sharedInstance.player.lowRiskInvestments[index].investmentTerm = pInvestmentTerm
+            AppData.sharedInstance.player.lowRiskInvestments[index].interestRates = pInterestRate
+        }
+    }
+    
 
 
 

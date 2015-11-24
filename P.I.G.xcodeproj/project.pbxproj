@@ -57,6 +57,8 @@
 		B06D6C571BF22C0F00B5C8EA /* DeveloperInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06D6C551BF22C0F00B5C8EA /* DeveloperInfoVC.xib */; };
 		B07CC9ED1C04CC4100226FFE /* CDBNotMadeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07CC9EB1C04CC4100226FFE /* CDBNotMadeVC.swift */; };
 		B07CC9EE1C04CC4100226FFE /* CDBNotMadeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B07CC9EC1C04CC4100226FFE /* CDBNotMadeVC.xib */; };
+		B07CC9F11C04E24500226FFE /* CDBMade.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07CC9EF1C04E24500226FFE /* CDBMade.swift */; };
+		B07CC9F21C04E24500226FFE /* CDBMade.xib in Resources */ = {isa = PBXBuildFile; fileRef = B07CC9F01C04E24500226FFE /* CDBMade.xib */; };
 		B09A6ADB1BFB672D00339D6A /* PropertiesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09A6ADA1BFB672D00339D6A /* PropertiesManager.swift */; };
 		B0B766C31BEB9C7C0045528D /* LRInvestmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B766C11BEB9C7C0045528D /* LRInvestmentTableViewCell.swift */; };
 		B0B766C41BEB9C7C0045528D /* LRInvestmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0B766C21BEB9C7C0045528D /* LRInvestmentTableViewCell.xib */; };
@@ -104,7 +106,7 @@
 		F37BFDDA1BF50B0900DA188A /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37BFDD81BF50B0900DA188A /* GoalsVC.swift */; };
 		F37BFDDB1BF50B0900DA188A /* GoalsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F37BFDD91BF50B0900DA188A /* GoalsVC.xib */; };
 		F3E020BA1BE15131001C28E1 /* LowRiskInvestmentsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3E020B91BE15131001C28E1 /* LowRiskInvestmentsVC.xib */; };
-		F3EE36741BF1111D0011A655 /* LRINotMade.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EE36721BF1111D0011A655 /* LRINotMade.swift */; };
+		F3EE36741BF1111D0011A655 /* SavingAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EE36721BF1111D0011A655 /* SavingAccountVC.swift */; };
 		F3EE36751BF1111D0011A655 /* SavingAccountVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3EE36731BF1111D0011A655 /* SavingAccountVC.xib */; };
 		F3EE36771BF11E310011A655 /* LRIProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EE36761BF11E310011A655 /* LRIProperties.swift */; };
 /* End PBXBuildFile section */
@@ -173,6 +175,8 @@
 		B06D6C551BF22C0F00B5C8EA /* DeveloperInfoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeveloperInfoVC.xib; sourceTree = "<group>"; };
 		B07CC9EB1C04CC4100226FFE /* CDBNotMadeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDBNotMadeVC.swift; sourceTree = "<group>"; };
 		B07CC9EC1C04CC4100226FFE /* CDBNotMadeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CDBNotMadeVC.xib; sourceTree = "<group>"; };
+		B07CC9EF1C04E24500226FFE /* CDBMade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDBMade.swift; sourceTree = "<group>"; };
+		B07CC9F01C04E24500226FFE /* CDBMade.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CDBMade.xib; sourceTree = "<group>"; };
 		B09A6ADA1BFB672D00339D6A /* PropertiesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesManager.swift; sourceTree = "<group>"; };
 		B0B766C11BEB9C7C0045528D /* LRInvestmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRInvestmentTableViewCell.swift; sourceTree = "<group>"; };
 		B0B766C21BEB9C7C0045528D /* LRInvestmentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LRInvestmentTableViewCell.xib; sourceTree = "<group>"; };
@@ -222,7 +226,7 @@
 		F37BFDD81BF50B0900DA188A /* GoalsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
 		F37BFDD91BF50B0900DA188A /* GoalsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoalsVC.xib; sourceTree = "<group>"; };
 		F3E020B91BE15131001C28E1 /* LowRiskInvestmentsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LowRiskInvestmentsVC.xib; sourceTree = "<group>"; };
-		F3EE36721BF1111D0011A655 /* LRINotMade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRINotMade.swift; sourceTree = "<group>"; };
+		F3EE36721BF1111D0011A655 /* SavingAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavingAccountVC.swift; sourceTree = "<group>"; };
 		F3EE36731BF1111D0011A655 /* SavingAccountVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SavingAccountVC.xib; sourceTree = "<group>"; };
 		F3EE36761BF11E310011A655 /* LRIProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LRIProperties.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -380,7 +384,9 @@
 			children = (
 				B0C846831BD7FC610092F8EC /* LowRiskInvestmentsVC.swift */,
 				B0B766C11BEB9C7C0045528D /* LRInvestmentTableViewCell.swift */,
-				F3EE36721BF1111D0011A655 /* LRINotMade.swift */,
+				F3EE36721BF1111D0011A655 /* SavingAccountVC.swift */,
+				B07CC9EB1C04CC4100226FFE /* CDBNotMadeVC.swift */,
+				B07CC9EF1C04E24500226FFE /* CDBMade.swift */,
 			);
 			name = LowRiskInvestment;
 			sourceTree = "<group>";
@@ -413,8 +419,8 @@
 				F3E020B91BE15131001C28E1 /* LowRiskInvestmentsVC.xib */,
 				B0B766C21BEB9C7C0045528D /* LRInvestmentTableViewCell.xib */,
 				F3EE36731BF1111D0011A655 /* SavingAccountVC.xib */,
-				B07CC9EB1C04CC4100226FFE /* CDBNotMadeVC.swift */,
 				B07CC9EC1C04CC4100226FFE /* CDBNotMadeVC.xib */,
+				B07CC9F01C04E24500226FFE /* CDBMade.xib */,
 			);
 			name = LowRiskInvestment;
 			sourceTree = "<group>";
@@ -636,6 +642,7 @@
 				B00C16631BF61E9C00317B43 /* jointIcon.png in Resources */,
 				B0537BF31BF4B5CA004AF676 /* ElJuegoZone.png in Resources */,
 				B0537BF11BF4B5B7004AF676 /* MrAlwaysYoung.png in Resources */,
+				B07CC9F21C04E24500226FFE /* CDBMade.xib in Resources */,
 				B0F795041BD6BF6400BC69ED /* ArrowUp.png in Resources */,
 				B0F794B91BD6BE8000BC69ED /* Assets.xcassets in Resources */,
 				B0537BF51BF4B5DE004AF676 /* TimeNewsCentral.png in Resources */,
@@ -697,7 +704,7 @@
 				B05616581BD822ED004E3B7D /* PListManager.swift in Sources */,
 				B09A6ADB1BFB672D00339D6A /* PropertiesManager.swift in Sources */,
 				B0C846811BD7F0B20092F8EC /* TopBarViewController.swift in Sources */,
-				F3EE36741BF1111D0011A655 /* LRINotMade.swift in Sources */,
+				F3EE36741BF1111D0011A655 /* SavingAccountVC.swift in Sources */,
 				095F95761C0484A600E96016 /* YALFoldingTabBar.m in Sources */,
 				B0F794CC1BD6BF3100BC69ED /* InvestmentNotMadeVC.swift in Sources */,
 				B0C846851BD7FC610092F8EC /* LowRiskInvestmentsVC.swift in Sources */,
@@ -715,6 +722,7 @@
 				B0F794CA1BD6BF3100BC69ED /* HighRiskInvestmentsVC.swift in Sources */,
 				BE6A89191BD94BE0006DFEAD /* EnterpriseValueUpdater.swift in Sources */,
 				B0F794E71BD6BF5600BC69ED /* AppData.swift in Sources */,
+				B07CC9F11C04E24500226FFE /* CDBMade.swift in Sources */,
 				B0F794EC1BD6BF5600BC69ED /* GoalProperties.swift in Sources */,
 				B0C846891BD7FD4F0092F8EC /* PropertiesVC.swift in Sources */,
 			);

@@ -87,13 +87,26 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.popWindowView.hidden = false
         self.blurView.hidden = false
+        var popVC = UIViewController()
         
-        if (indexPath.row == 0){
-        let popVC = SavingAccountVC(pSuperViewController: self, pLowRiskInvestment: AppData.sharedInstance.player.lowRiskInvestments[indexPath.row])
-        self.addChildViewController(popVC)
-        self.popWindowView.addSubview(popVC.view)
+        if (indexPath.row == 0){//SAVING ACCOUNT
+            
+            popVC = SavingAccountVC(pSuperViewController: self, pLowRiskInvestment: AppData.sharedInstance.player.lowRiskInvestments[indexPath.row])
+            self.addChildViewController(popVC)
+            self.popWindowView.addSubview(popVC.view)
+            
+        } else if (indexPath.row == 1){//CDB
+            
+            if (AppData.sharedInstance.player.lowRiskInvestments[AppData.sharedInstance.player.lowRiskInvestmentIndexByID(2)].currentValue == 0){
+                popVC = CDBNotMadeVC(pSuperViewController: self, pLowRiskInvestment: AppData.sharedInstance.player.lowRiskInvestments[indexPath.row])
+            } else {
+                popVC = CDBMade(pSuperViewController: self, pLowRiskInvestment: AppData.sharedInstance.player.lowRiskInvestments[indexPath.row])
+            }
         }
         
+        
+        self.addChildViewController(popVC)
+        self.popWindowView.addSubview(popVC.view)
         self.tableView.deselectRowAtIndexPath(indexPath, animated: false)
     }
     
@@ -104,15 +117,5 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     
-    
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
     
 }
