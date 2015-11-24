@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		093B26D01BFE3F2400104BD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093B26D21BFE3F2400104BD0 /* Main.storyboard */; };
 		093B26D81BFE3FB300104BD0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 093B26DA1BFE3FB300104BD0 /* Localizable.strings */; };
+		095F95731C0484A600E96016 /* YALTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 095F95641C0484A600E96016 /* YALTabBarItem.m */; };
+		095F95741C0484A600E96016 /* YALSpringAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 095F95671C0484A600E96016 /* YALSpringAnimation.m */; };
+		095F95751C0484A600E96016 /* YALFoldingTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 095F95691C0484A600E96016 /* YALFoldingTabBarController.m */; };
+		095F95761C0484A600E96016 /* YALFoldingTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 095F956B1C0484A600E96016 /* YALFoldingTabBar.m */; };
+		095F95771C0484A600E96016 /* YALAnimatingTabBarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 095F956D1C0484A600E96016 /* YALAnimatingTabBarConstants.m */; };
+		095F95781C0484A600E96016 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = 095F956F1C0484A600E96016 /* CATransaction+TransactionWithAnimationsAndCompletion.m */; };
+		095F95791C0484A600E96016 /* CAAnimation+YALTabBarViewAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 095F95711C0484A600E96016 /* CAAnimation+YALTabBarViewAnimations.m */; };
 		0966B9911BF6BA6800D9B2D0 /* DINRegularAlternate.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0966B9901BF6BA6800D9B2D0 /* DINRegularAlternate.ttf */; };
 		09D81EBD1BEBD06D00AB7719 /* PropertiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D81EBB1BEBD06D00AB7719 /* PropertiesTableViewCell.swift */; };
 		09D81EBE1BEBD06D00AB7719 /* PropertiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D81EBC1BEBD06D00AB7719 /* PropertiesTableViewCell.xib */; };
@@ -105,8 +112,24 @@
 		093B26D91BFE3FB300104BD0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		093B26DB1BFE3FB800104BD0 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		093B26DD1BFE4B7E00104BD0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		095F95641C0484A600E96016 /* YALTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALTabBarItem.m; sourceTree = "<group>"; };
+		095F95651C0484A600E96016 /* YALTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALTabBarItem.h; sourceTree = "<group>"; };
+		095F95661C0484A600E96016 /* YALTabBarInteracting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALTabBarInteracting.h; sourceTree = "<group>"; };
+		095F95671C0484A600E96016 /* YALSpringAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALSpringAnimation.m; sourceTree = "<group>"; };
+		095F95681C0484A600E96016 /* YALSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALSpringAnimation.h; sourceTree = "<group>"; };
+		095F95691C0484A600E96016 /* YALFoldingTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFoldingTabBarController.m; sourceTree = "<group>"; };
+		095F956A1C0484A600E96016 /* YALFoldingTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFoldingTabBarController.h; sourceTree = "<group>"; };
+		095F956B1C0484A600E96016 /* YALFoldingTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALFoldingTabBar.m; sourceTree = "<group>"; };
+		095F956C1C0484A600E96016 /* YALFoldingTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALFoldingTabBar.h; sourceTree = "<group>"; };
+		095F956D1C0484A600E96016 /* YALAnimatingTabBarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALAnimatingTabBarConstants.m; sourceTree = "<group>"; };
+		095F956E1C0484A600E96016 /* YALAnimatingTabBarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALAnimatingTabBarConstants.h; sourceTree = "<group>"; };
+		095F956F1C0484A600E96016 /* CATransaction+TransactionWithAnimationsAndCompletion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CATransaction+TransactionWithAnimationsAndCompletion.m"; sourceTree = "<group>"; };
+		095F95701C0484A600E96016 /* CATransaction+TransactionWithAnimationsAndCompletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATransaction+TransactionWithAnimationsAndCompletion.h"; sourceTree = "<group>"; };
+		095F95711C0484A600E96016 /* CAAnimation+YALTabBarViewAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+YALTabBarViewAnimations.m"; sourceTree = "<group>"; };
+		095F95721C0484A600E96016 /* CAAnimation+YALTabBarViewAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+YALTabBarViewAnimations.h"; sourceTree = "<group>"; };
 		0966B98F1BF6B71100D9B2D0 /* DINRegularAlternate.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DINRegularAlternate.ttf; sourceTree = "<group>"; };
 		0966B9901BF6BA6800D9B2D0 /* DINRegularAlternate.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = DINRegularAlternate.ttf; path = ../DINRegularAlternate.ttf; sourceTree = "<group>"; };
+		0966CC671C04820100805647 /* P.I.G-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "P.I.G-Bridging-Header.h"; sourceTree = "<group>"; };
 		09D81EBB1BEBD06D00AB7719 /* PropertiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesTableViewCell.swift; sourceTree = "<group>"; };
 		09D81EBC1BEBD06D00AB7719 /* PropertiesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertiesTableViewCell.xib; sourceTree = "<group>"; };
 		09F621E11BFA473100B6D291 /* Exo2-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exo2-Black.otf"; path = "../Exo2-Black.otf"; sourceTree = "<group>"; };
@@ -209,6 +232,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		095F957A1C0484AD00E96016 /* FoldingTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				095F95641C0484A600E96016 /* YALTabBarItem.m */,
+				095F95651C0484A600E96016 /* YALTabBarItem.h */,
+				095F95661C0484A600E96016 /* YALTabBarInteracting.h */,
+				095F95671C0484A600E96016 /* YALSpringAnimation.m */,
+				095F95681C0484A600E96016 /* YALSpringAnimation.h */,
+				095F95691C0484A600E96016 /* YALFoldingTabBarController.m */,
+				095F956A1C0484A600E96016 /* YALFoldingTabBarController.h */,
+				095F956B1C0484A600E96016 /* YALFoldingTabBar.m */,
+				095F956C1C0484A600E96016 /* YALFoldingTabBar.h */,
+				095F956D1C0484A600E96016 /* YALAnimatingTabBarConstants.m */,
+				095F956E1C0484A600E96016 /* YALAnimatingTabBarConstants.h */,
+				095F956F1C0484A600E96016 /* CATransaction+TransactionWithAnimationsAndCompletion.m */,
+				095F95701C0484A600E96016 /* CATransaction+TransactionWithAnimationsAndCompletion.h */,
+				095F95711C0484A600E96016 /* CAAnimation+YALTabBarViewAnimations.m */,
+				095F95721C0484A600E96016 /* CAAnimation+YALTabBarViewAnimations.h */,
+			);
+			name = FoldingTabBar;
+			sourceTree = "<group>";
+		};
 		0966B98E1BF6B70400D9B2D0 /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,6 +440,7 @@
 			isa = PBXGroup;
 			children = (
 				B0F794B11BD6BE8000BC69ED /* AppDelegate.swift */,
+				0966CC671C04820100805647 /* P.I.G-Bridging-Header.h */,
 				B041E5E31BD82A6000D2B44E /* Database.plist */,
 				B0F794C51BD6BEE200BC69ED /* Controller */,
 				B0F794C41BD6BEDD00BC69ED /* View */,
@@ -453,6 +499,7 @@
 		B0F794C61BD6BF0B00BC69ED /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				095F957A1C0484AD00E96016 /* FoldingTabBar */,
 				0966B98E1BF6B70400D9B2D0 /* Font */,
 				B00C16531BF61DEE00317B43 /* Properties */,
 				B0537C061BF4DB7D004AF676 /* barImage.png */,
@@ -615,6 +662,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0F794F11BD6BF5600BC69ED /* Property.swift in Sources */,
+				095F95781C0484A600E96016 /* CATransaction+TransactionWithAnimationsAndCompletion.m in Sources */,
 				B0F794B21BD6BE8000BC69ED /* AppDelegate.swift in Sources */,
 				BE6A891C1BD94ECD006DFEAD /* InvestmentMadeVC.swift in Sources */,
 				B05616561BD822B7004E3B7D /* PlayerDAO.swift in Sources */,
@@ -622,9 +670,13 @@
 				B0F794F01BD6BF5600BC69ED /* Tip.swift in Sources */,
 				B0F794F21BD6BF5600BC69ED /* PropertyProperties.swift in Sources */,
 				B03FBC701BEA54B700CEEC67 /* EnterprisesDAO.swift in Sources */,
+				095F95751C0484A600E96016 /* YALFoldingTabBarController.m in Sources */,
 				B0F794F51BD6BF5600BC69ED /* HighRiskInvestment.swift in Sources */,
+				095F95791C0484A600E96016 /* CAAnimation+YALTabBarViewAnimations.m in Sources */,
+				095F95731C0484A600E96016 /* YALTabBarItem.m in Sources */,
 				B0F794F61BD6BF5600BC69ED /* Enterprise.swift in Sources */,
 				F3EE36771BF11E310011A655 /* LRIProperties.swift in Sources */,
+				095F95771C0484A600E96016 /* YALAnimatingTabBarConstants.m in Sources */,
 				B0DF04E81BDAABAF0022DCB9 /* ColorBarViewController.swift in Sources */,
 				B0C3AAB81BF35CBC00D8CA03 /* TimerDAO.swift in Sources */,
 				B0F794EE1BD6BF5600BC69ED /* Player.swift in Sources */,
@@ -634,10 +686,12 @@
 				B09A6ADB1BFB672D00339D6A /* PropertiesManager.swift in Sources */,
 				B0C846811BD7F0B20092F8EC /* TopBarViewController.swift in Sources */,
 				F3EE36741BF1111D0011A655 /* LRINotMade.swift in Sources */,
+				095F95761C0484A600E96016 /* YALFoldingTabBar.m in Sources */,
 				B0F794CC1BD6BF3100BC69ED /* InvestmentNotMadeVC.swift in Sources */,
 				B0C846851BD7FC610092F8EC /* LowRiskInvestmentsVC.swift in Sources */,
 				B06D6C561BF22C0F00B5C8EA /* DeveloperInfoVC.swift in Sources */,
 				F33BB7141BFE0F98002A9588 /* GoalsCell.swift in Sources */,
+				095F95741C0484A600E96016 /* YALSpringAnimation.m in Sources */,
 				B0F794F41BD6BF5600BC69ED /* LowRiskInvestment.swift in Sources */,
 				B0B766C31BEB9C7C0045528D /* LRInvestmentTableViewCell.swift in Sources */,
 				B0F794E81BD6BF5600BC69ED /* Timer.swift in Sources */,
@@ -774,6 +828,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "bepid.P-I-G";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "P.I.G/P.I.G-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -788,6 +843,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "bepid.P-I-G";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "P.I.G/P.I.G-Bridging-Header.h";
 			};
 			name = Release;
 		};

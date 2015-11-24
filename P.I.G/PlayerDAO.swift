@@ -23,7 +23,7 @@ class PlayerDAO{
         print("reading player")
         let read = PListManager.sharedInstance.readPlist("Database", key: "player")
         let data = read as! NSData
-        AppData.sharedInstance.player = NSKeyedUnarchiver.unarchiveObjectWithData(data) as! Player
+        AppData.sharedInstance.player = NSKeyedUnarchiver.unarchiveObjectWithData(data) as! Pl ayer
     }
 
 }
