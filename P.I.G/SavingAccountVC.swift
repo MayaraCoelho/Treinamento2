@@ -51,6 +51,10 @@ class SavingAccountVC: UIViewController {
         
         self.rescueButton.enabled = false
         self.investButton.enabled = false
+        
+        let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
+        let deviceToken = delegate?.tabBarC
+        deviceToken?.tabBarView.hidden = true
         // Do any additional setup after loading the view.
     }
     

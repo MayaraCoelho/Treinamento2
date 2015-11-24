@@ -12,41 +12,37 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var tabBarC: YALFoldingTabBarController = YALFoldingTabBarController()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
 
         
-        let tabBarController = YALFoldingTabBarController()
+//        let tabBarC = YALFoldingTabBarController()
         let highRiskInvestmentsVC = HighRiskInvestmentsVC()
         let lowRiskInvestmentsVC = LowRiskInvestmentsVC()
         let propertiesVC = PropertiesVC()
         let goalsTipsVC = GoalsVC()
         
         let controllers = [highRiskInvestmentsVC, lowRiskInvestmentsVC, propertiesVC, goalsTipsVC]
-        tabBarController.viewControllers = controllers
-        window?.rootViewController = tabBarController
+        tabBarC.viewControllers = controllers
+        window?.rootViewController = tabBarC
         
         (highRiskInvestmentsVC.tabBarController as! YALFoldingTabBarController).leftBarItems = [YALTabBarItem(itemImage: UIImage(named: "hriTab"), leftItemImage: nil, rightItemImage: nil),YALTabBarItem(itemImage: UIImage(named: "lriTab"), leftItemImage: nil, rightItemImage: nil)]
         
-//        (lowRiskInvestmentsVC.tabBarController as! YALFoldingTabBarController).leftBarItems = []
-    
-        
         (propertiesVC.tabBarController as! YALFoldingTabBarController).rightBarItems = [YALTabBarItem(itemImage: UIImage(named: "propeTab"), leftItemImage: nil, rightItemImage: nil), YALTabBarItem(itemImage: UIImage(named: "goalTab"), leftItemImage: nil, rightItemImage: nil)]
         
-//        (goalsTipsVC.tabBarController as! YALFoldingTabBarController).rightBarItems = []
+        tabBarC.centerButtonImage = UIImage(named: "moedaTab")
         
-        tabBarController.centerButtonImage = UIImage(named: "moedaTab")
+        tabBarC.tabBarView.extraTabBarItemHeight = YALExtraTabBarItemsDefaultHeight
+        tabBarC.tabBarView.offsetForExtraTabBarItems = YALForExtraTabBarItemsDefaultOffset
+        tabBarC.tabBarView.backgroundColor = UIColor.clearColor()
+        tabBarC.tabBarView.tabBarColor = UIColor(red:0.26, green:0.73, blue:0.81, alpha:1)
+        tabBarC.tabBarView.dotColor = UIColor.clearColor()
+        tabBarC.tabBarViewHeight = YALTabBarViewDefaultHeight
+        tabBarC.tabBarView.tabBarViewEdgeInsets = YALTabBarViewHDefaultEdgeInsets
+        tabBarC.tabBarView.tabBarItemsEdgeInsets = YALTabBarViewItemsDefaultEdgeInsets
         
-        tabBarController.tabBarView.extraTabBarItemHeight = YALExtraTabBarItemsDefaultHeight
-        tabBarController.tabBarView.offsetForExtraTabBarItems = YALForExtraTabBarItemsDefaultOffset
-        tabBarController.tabBarView.backgroundColor = UIColor.clearColor()
-        tabBarController.tabBarView.tabBarColor = UIColor(red:0.26, green:0.73, blue:0.81, alpha:1)
-        tabBarController.tabBarView.dotColor = UIColor.clearColor()
-        tabBarController.tabBarViewHeight = YALTabBarViewDefaultHeight
-        tabBarController.tabBarView.tabBarViewEdgeInsets = YALTabBarViewHDefaultEdgeInsets
-        tabBarController.tabBarView.tabBarItemsEdgeInsets = YALTabBarViewItemsDefaultEdgeInsets
         
         
         if (PListManager.sharedInstance.databaseExists()){ // If Database exists

@@ -23,6 +23,8 @@ class GoalsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let nib = UINib.init(nibName: "GoalsCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "goalsCell")
         
+        view.backgroundColor = UIColor(red:0.98, green:0.93, blue:0.85, alpha:1)
+        
         
         // Do any additional setup after loading the view.
     }

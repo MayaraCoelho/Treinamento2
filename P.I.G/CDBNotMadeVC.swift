@@ -36,6 +36,10 @@ class CDBNotMadeVC: UIViewController {
         self.investmentSlider.value = 0.0
         self.investButton.enabled = false
         self.deadlineSegControl.selectedSegmentIndex = 0
+        
+        let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
+        let deviceToken = delegate?.tabBarC
+        deviceToken?.tabBarView.hidden = true
     }
     
     @IBAction func investmentSliderValueChanged(sender: AnyObject) {

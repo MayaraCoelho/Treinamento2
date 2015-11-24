@@ -28,6 +28,9 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
         let nib = UINib.init(nibName: "LRInvestmentTableViewCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "LRICell")
         
+        let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
+        let deviceToken = delegate?.tabBarC
+        deviceToken?.tabBarView.hidden = false
         
         let topBarVC = TopBarViewController()
         self.addChildViewController(topBarVC)
@@ -39,6 +42,7 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
         
         self.popWindowView.backgroundColor = UIColor(white: 0.0, alpha: 0.0)
         self.popWindowView.opaque = false
+        
     }
     
     

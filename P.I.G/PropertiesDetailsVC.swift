@@ -51,6 +51,11 @@ class PropertiesDetailsVC: UIViewController {
         buyStepper.minimumValue = 0
         sellStepper.maximumValue = Double (PropertiesManager().doesPlayerHaveProperty(self.property))
         
+        let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
+        let deviceToken = delegate?.tabBarC
+        deviceToken?.tabBarView.hidden = true
+//        self.tabBarController?.removeFromParentViewController()
+        
         // Do any additional setup after loading the view.
     }
     
@@ -110,6 +115,9 @@ class PropertiesDetailsVC: UIViewController {
         self.superViewController.blurView.hidden = true
         self.superViewController.containerView.hidden = true
         self.superViewController.tableView.reloadData()
+        let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
+        let deviceToken = delegate?.tabBarC
+        deviceToken?.tabBarView.hidden = false
     }
 
 

@@ -18,6 +18,10 @@ class CDBMade: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
+        let deviceToken = delegate?.tabBarC
+        deviceToken?.tabBarView.hidden = true
 
         // Do any additional setup after loading the view.
     }

@@ -23,14 +23,18 @@ class PropertiesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         self.topBarContainerView.addSubview(topbarVC.view)
         self.restorationIdentifier = "PropertiesVC"
         self.blurView.hidden = true
+
+        view.backgroundColor = UIColor(red:0.98, green:0.93, blue:0.85, alpha:1)
         
         
         let nib = UINib.init(nibName: "PropertiesTableViewCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "PropertiesCell")
 
+
         self.containerView.backgroundColor = UIColor(white: 0.0, alpha: 0.0)
         self.containerView.hidden = true
         self.blurView.hidden = true
+        
 
     }
 
@@ -94,6 +98,7 @@ class PropertiesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         self.containerView.hidden = false
         let popWindow = PropertiesDetailsVC(pSuperViewController: self, pProperty: AppData.sharedInstance.properties[indexPath.row])
         self.addChildViewController(popWindow)
+    
         self.containerView.addSubview(popWindow.view)
         self.tableView.deselectRowAtIndexPath(indexPath, animated: false)
     }

@@ -58,6 +58,10 @@ class InvestmentMadeVC: UIViewController {
         self.rescueButton.enabled = false
         self.rescueSlider.value = 0
         
+        let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
+        let deviceToken = delegate?.tabBarC
+        deviceToken?.tabBarView.hidden = true
+        
         // Do any additional setup after loading the view.
     }
     
