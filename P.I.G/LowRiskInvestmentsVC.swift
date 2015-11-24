@@ -19,7 +19,10 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var popWindowView: UIView!
         
     @IBOutlet weak var blurView: UIVisualEffectView!
-        
+    
+    var updateTimer = NSTimer()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let nib = UINib.init(nibName: "LRInvestmentTableViewCell", bundle: nil)
@@ -36,6 +39,22 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
         
         self.popWindowView.backgroundColor = UIColor(white: 0.0, alpha: 0.0)
         self.popWindowView.opaque = false
+    }
+    
+    
+    
+    override func viewWillDisappear(animated: Bool) {
+        self.updateTimer.invalidate()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.tableView.reloadData()
+        self.updateTimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "update", userInfo: nil, repeats: true)
+    }
+    
+    func update(){
+        print("updating LRI VIEW")
+        self.tableView.reloadData()
     }
     
     
@@ -68,9 +87,13 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.popWindowView.hidden = false
         self.blurView.hidden = false
-        let popVC = LRINotMade(pSuperViewController: self, pLowRiskInvestment: AppData.sharedInstance.player.lowRiskInvestments[indexPath.row])
+        
+        if (indexPath.row == 0){
+        let popVC = SavingAccountVC(pSuperViewController: self, pLowRiskInvestment: AppData.sharedInstance.player.lowRiskInvestments[indexPath.row])
         self.addChildViewController(popVC)
         self.popWindowView.addSubview(popVC.view)
+        }
+        
         self.tableView.deselectRowAtIndexPath(indexPath, animated: false)
     }
     

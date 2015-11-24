@@ -89,7 +89,7 @@ class InvestmentMadeVC: UIViewController {
     
     @IBAction func investButtonAct(sender: UIButton) {
         let investmentValue = (AppData.sharedInstance.player.balance * Double(self.investSlider.value))
-        AppData.sharedInstance.investmentManager.applyInHighRiskInvestment(self.enterprise, pValue: investmentValue)
+        AppData.sharedInstance.highRiskinvestmentManager.applyInHighRiskInvestment(self.enterprise, pValue: investmentValue)
         self.closePopUpScreen()
       //  PlayerDAO.sharedInstance.savePlayer()
     }
@@ -114,12 +114,12 @@ class InvestmentMadeVC: UIViewController {
         } else {
             
             if (rescueSlider.value == 1){
-                AppData.sharedInstance.investmentManager.rescueFromHighRiskInvestment(self.enterprise)
+                AppData.sharedInstance.highRiskinvestmentManager.rescueFromHighRiskInvestment(self.enterprise)
             } else {
         
                 let rescueValue = self.investment.currentValue * Double(self.rescueSlider.value)
         
-                AppData.sharedInstance.investmentManager.rescueFromHighRiskInvestment(self.enterprise, pValue: rescueValue)
+                AppData.sharedInstance.highRiskinvestmentManager.rescueFromHighRiskInvestment(self.enterprise, pValue: rescueValue)
             }
         
             self.closePopUpScreen()

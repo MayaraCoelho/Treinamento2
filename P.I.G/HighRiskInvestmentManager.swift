@@ -8,7 +8,7 @@
 
 import Foundation
 
-class InvestmentManager{
+class HighRiskInvestmentManager{
     
     func applyInHighRiskInvestment(pEnterprise:Enterprise, pValue:Double){
         
@@ -36,7 +36,6 @@ class InvestmentManager{
             let investment = AppData.sharedInstance.player.highRiskInvestmentForEnterprise(pEnterprise)!
             AppData.sharedInstance.player.addToBalance(investment.currentValue)
             AppData.sharedInstance.player.removeHighRiskInvestmentForEnterprise(pEnterprise)
-            
         }
     }
     
@@ -58,23 +57,6 @@ class InvestmentManager{
         
     }
     
-    func applyInLowRiskInvestment(pLowRiskInvestmentID:Int, pValue:Double){
-        if (AppData.sharedInstance.player.canRemoveFromBalance(pValue)){
-            AppData.sharedInstance.player.removeFromBalance(pValue)
-            let index = AppData.sharedInstance.player.lowRiskInvestmentIndexByID(pLowRiskInvestmentID)
-            AppData.sharedInstance.player.lowRiskInvestments[index].currentValue = AppData.sharedInstance.player.lowRiskInvestments[index].currentValue + pValue
-            AppData.sharedInstance.player.lowRiskInvestments[index].startingValue = AppData.sharedInstance.player.lowRiskInvestments[index].startingValue + pValue
-        }
-    }
-    
-    
-    func rescueFromLowRiskInvestment(pLowRiskInvestmentID:Int, pValue:Double){
-        let index = AppData.sharedInstance.player.lowRiskInvestmentIndexByID(pLowRiskInvestmentID)
-        if (pValue <= AppData.sharedInstance.player.lowRiskInvestments[index].currentValue){
-            AppData.sharedInstance.player.addToBalance(pValue)
-            AppData.sharedInstance.player.lowRiskInvestments[index].currentValue = AppData.sharedInstance.player.lowRiskInvestments[index].currentValue - pValue
-            AppData.sharedInstance.player.lowRiskInvestments[index].startingValue = AppData.sharedInstance.player.lowRiskInvestments[index].currentValue
-        }
-    }
+
     
 }

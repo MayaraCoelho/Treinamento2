@@ -73,7 +73,7 @@ class InvestmentNotMadeVC: UIViewController {
     
     @IBAction func investButtonAct(sender: UIButton) {
         let investmentValue = (AppData.sharedInstance.player.balance * Double(self.investmentValueSlider.value))
-        AppData.sharedInstance.investmentManager.applyInHighRiskInvestment(self.enterprise, pValue: investmentValue)
+        AppData.sharedInstance.highRiskinvestmentManager.applyInHighRiskInvestment(self.enterprise, pValue: investmentValue)
         self.closePopUpScreen()
        // PlayerDAO.sharedInstance.savePlayer()
     }

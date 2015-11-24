@@ -8,13 +8,15 @@
 
 import UIKit
 
-class LRINotMade: UIViewController {
+class SavingAccountVC: UIViewController {
 
     
    
     @IBOutlet weak var lowRiskInvestmentName: UILabel!
     
-    @IBOutlet weak var amountInvestedValue: UILabel!
+    @IBOutlet weak var lowRiskInvestmentDescript: UITextView!
+    
+    @IBOutlet weak var taxesTextLabel: UILabel!
     
     @IBOutlet weak var investmentValue: UILabel!
     
@@ -22,7 +24,13 @@ class LRINotMade: UIViewController {
     
     @IBOutlet weak var investmentSlider: UISlider!
     
-
+    
+    @IBOutlet weak var rescueButton: UIButton!
+    
+    @IBOutlet weak var rescueSlider: UISlider!
+    
+    @IBOutlet weak var rescueLabel: UILabel!
+    
     
     var superViewController:LowRiskInvestmentsVC
     
@@ -32,10 +40,30 @@ class LRINotMade: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.lowRiskInvestmentName.text = self.lowRiskInvestment.name
-        self.amountInvestedValue.text = NSString(format:"$ %.2f",self.lowRiskInvestment.currentValue) as String
+        self.lowRiskInvestmentDescript.text = self.lowRiskInvestment.descript
+        self.taxesTextLabel.text = (self.lowRiskInvestment.taxes * 100).description + " de impostos sobre os lucros"
+        
         self.investmentValue.text = NSString(format:"$ %.2f",0) as String
+        self.rescueLabel.text = NSString(format:"$ %.2f",0) as String
+        
+        self.investmentSlider.value = 0.0
+        self.rescueSlider.value = 0.0
+        
+        self.rescueButton.enabled = false
+        self.investButton.enabled = false
         // Do any additional setup after loading the view.
     }
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        
+    }
+    
+    
     
     init(pSuperViewController:LowRiskInvestmentsVC, pLowRiskInvestment:LowRiskInvestment) {
         self.superViewController = pSuperViewController
@@ -58,11 +86,37 @@ class LRINotMade: UIViewController {
     
     }
     
+    @IBAction func rescueSliderChanged(sender: UISlider) {
+        if (self.lowRiskInvestment.currentValue == 0){
+            self.rescueButton.enabled = false
+        } else {
+            let value = (self.lowRiskInvestment.currentValue * Double(self.rescueSlider.value))
+            self.rescueLabel.text = NSString(format:"$ %.2f",value) as String
+            self.rescueButton.enabled = true
+        }
+        
+    }
+    
+    
+    
     @IBAction func investButtonAct(sender: UIButton) {
         let value = (AppData.sharedInstance.player.balance * Double(self.investmentSlider.value))
-        AppData.sharedInstance.investmentManager.applyInLowRiskInvestment(lowRiskInvestment.id, pValue: value)
+        if (self.lowRiskInvestment.id == 1){
+            AppData.sharedInstance.lowRiskInvestmentManager.applyInSavingAccount(value)
+        }
+        
         self.closePopView()
     }
+    
+    
+    
+    @IBAction func rescueButtonAct(sender: UIButton) {
+        let value = (self.lowRiskInvestment.currentValue * Double(self.rescueSlider.value))
+        print("VALUE: \(value)")
+        AppData.sharedInstance.lowRiskInvestmentManager.rescueFromSavingAccount(value)
+        self.closePopView()
+    }
+    
     
     
     required init?(coder aDecoder: NSCoder) {

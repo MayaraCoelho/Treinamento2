@@ -13,17 +13,23 @@ class LowRiskInvestment:Investment, NSCoding{
 
     var id:Int
     var name:String
+    var descript:String
     var interestRates:Float
     var investmentTerm:NSTimeInterval
+    var startDate:NSDate
     var imageName: String
+    var taxes:Double
     
     
-    init(pID:Int, pName:String, pInterestRates:Float, pInvestmentTerm:NSTimeInterval, pInvestedValue:Double, pImageName: String) {
+    init(pID:Int, pName:String, pDescript:String, pInterestRates:Float, pInvestmentTerm:NSTimeInterval, pStartDate:NSDate, pInvestedValue:Double, pImageName: String, pTaxes:Double) {
         self.id = pID
         self.name = pName
+        self.descript = pDescript
         self.interestRates = pInterestRates
         self.investmentTerm = pInvestmentTerm
+        self.startDate = pStartDate
         self.imageName = pImageName
+        self.taxes = pTaxes
         super.init(pInvestedValue: pInvestedValue)
     }
     
@@ -55,15 +61,27 @@ class LowRiskInvestment:Investment, NSCoding{
         
         guard let dInvestmentTerm = decoder.decodeObjectForKey("investmentTerm") as? NSTimeInterval
             else {return nil }
+        
         guard let dImageName =
             decoder.decodeObjectForKey("imageName") as? String
             else {return nil}
         
+        guard let dDescript =
+            decoder.decodeObjectForKey("descript") as? String
+            else {return nil}
+        
+        guard let dStartDate =
+            decoder.decodeObjectForKey("startDate") as? NSDate
+            else {return nil}
+        
+        guard let dTaxes =
+            decoder.decodeObjectForKey("taxes") as? Double
+            else {return nil}
+        
     
-        self.init(pID: dID, pName: dName, pInterestRates:dInterestRates, pInvestmentTerm:dInvestmentTerm, pInvestedValue:0, pImageName: dImageName)
+        self.init(pID: dID, pName: dName, pDescript:dDescript, pInterestRates:dInterestRates, pInvestmentTerm:dInvestmentTerm, pStartDate:dStartDate, pInvestedValue:0, pImageName: dImageName, pTaxes:dTaxes)
         self.currentValue = dCurrentValue
         self.startingValue = dInvestedValue
-    
     }
     
     @objc func encodeWithCoder(coder: NSCoder) {
@@ -74,7 +92,9 @@ class LowRiskInvestment:Investment, NSCoding{
         coder.encodeObject(self.interestRates, forKey: "interestRates")
         coder.encodeObject(self.investmentTerm, forKey: "investmentTerm")
         coder.encodeObject(self.imageName, forKey: "imageName")
-        
+        coder.encodeObject(self.descript, forKey: "descript")
+        coder.encodeObject(self.startDate, forKey: "startDate")
+        coder.encodeObject(self.taxes, forKey: "taxes")
     }
     
     func interestRatePerSecond()->Float{

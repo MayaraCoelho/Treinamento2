@@ -14,7 +14,8 @@ class AppData{
     var player:Player
     var enterprises:[Enterprise]
     var timer:Timer
-    var investmentManager:InvestmentManager
+    var highRiskinvestmentManager:HighRiskInvestmentManager
+    var lowRiskInvestmentManager:LowRiskInvestmentManager
     var properties: [Property]
     var goals:[Goal]
     
@@ -24,7 +25,8 @@ class AppData{
         self.player = Player()
         self.enterprises = EnterpriseProperties.init().enterprises
         self.timer = Timer()
-        self.investmentManager = InvestmentManager()
+        self.highRiskinvestmentManager = HighRiskInvestmentManager()
+        self.lowRiskInvestmentManager = LowRiskInvestmentManager()
         self.properties = PropertyProperties.init().properties
         self.goals = GoalProperties.init().goals
     }
