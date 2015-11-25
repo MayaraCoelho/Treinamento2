@@ -11,21 +11,14 @@ import UIKit
 class InvestmentNotMadeVC: UIViewController {
     
     @IBOutlet weak var enterpriseName: UILabel!
-    
     @IBOutlet weak var enterpriseDescription: UITextView!
-    
     @IBOutlet weak var enterpriseValueLabel: UILabel!
-    
     @IBOutlet weak var investmentValueLabel: UILabel!
-    
     @IBOutlet weak var investmentValueSlider: UISlider!
-    
     @IBOutlet weak var investmentButton: UIButton!
-    
     
     var enterprise:Enterprise
     var homeViewController:HighRiskInvestmentsVC
-    
 
     init(pEnterprise:Enterprise, pHomeViewController:HighRiskInvestmentsVC) {
         self.enterprise = pEnterprise
@@ -37,29 +30,19 @@ class InvestmentNotMadeVC: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.enterpriseName.text = self.enterprise.name
-        
         self.enterpriseDescription.text = self.enterprise.descript
-        
         self.enterpriseValueLabel.text = NSString(format: "Stock Value: %.2f",self.enterprise.stockValue) as String
-        
         self.investmentValueLabel.text = "Invest : $ 0"
-        
         self.investmentButton.enabled = false
-        
         self.investmentValueSlider.value = 0
         
-
         let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
         let deviceToken = delegate?.tabBarC
         deviceToken?.tabBarView.hidden = true
-        
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func sliderValueChanged(sender: UISlider) {
@@ -69,11 +52,8 @@ class InvestmentNotMadeVC: UIViewController {
         } else {
             self.investmentButton.enabled = false
         }
-        
         let value = (AppData.sharedInstance.player.balance * Double(self.investmentValueSlider.value))
-        
         self.investmentValueLabel.text = NSString(format:"Invest : $ %.2f",value) as String
-        
     }
     
     @IBAction func investButtonAct(sender: UIButton) {
@@ -102,15 +82,4 @@ class InvestmentNotMadeVC: UIViewController {
         self.removeFromParentViewController()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

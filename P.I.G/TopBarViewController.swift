@@ -17,19 +17,15 @@ class TopBarViewController: UIViewController {
     
     let goalsView = GoalsVC(nibName:"GoalsVC", bundle:nil)
     
-    
     var updateTimer = NSTimer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.walletLabel.text = NSString(format: "Wallet: $ %.2f", AppData.sharedInstance.player.balance) as String
-        self.incomeLabel.text = NSString(format: "Income: $ %.2f / day", AppData.sharedInstance.player.income) as String
-        
-        self.updateTimer = NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: "updateViewValues", userInfo: nil, repeats: true)
+        self.updateView()
+        self.updateTimer = NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: "updateView", userInfo: nil, repeats: true)
     }
 
-    func updateViewValues(){
+    func updateView(){
         self.walletLabel.text = NSString(format: "Wallet: $ %.2f", AppData.sharedInstance.player.balance) as String
         self.incomeLabel.text = NSString(format: "Income: $ %.2f / day", AppData.sharedInstance.player.income) as String
     }
@@ -40,23 +36,10 @@ class TopBarViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
-    
-    
+
     /*
     override func viewWillDisappear(animated: Bool) {
         self.updateTimer.invalidate()
     }*/
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

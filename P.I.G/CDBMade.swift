@@ -25,8 +25,6 @@ class CDBMade: UIViewController {
     
     var updateTimer = NSTimer()
     
-    let myGreenColor = UIColor(red: 97/255.0, green: 178/255.0, blue: 47/255.0, alpha: 1.0)
-    let myRedColor = UIColor(red: 207/255.0, green: 93/255.0, blue: 93/255.0, alpha: 1.0)
     
     var superViewController:LowRiskInvestmentsVC
     
@@ -60,12 +58,12 @@ class CDBMade: UIViewController {
         
         if (currentInterval >= self.lowRiskInvestment.investmentTerm){
             self.investmentStatus.text = "Status: Ready for rescue"
-            self.investmentStatus.backgroundColor = self.myGreenColor
+            self.investmentStatus.backgroundColor = AppUIColors().myGreenColor
             self.rescueButton.enabled = true
                     self.timeUntilRescue.text = self.stringFromTimeInterval(0)
         } else {
             self.investmentStatus.text = "Status: Not ready for rescue"
-            self.investmentStatus.backgroundColor = self.myRedColor
+            self.investmentStatus.backgroundColor = AppUIColors().myRedColor
             self.rescueButton.enabled = false
             let investmentEndDate = self.lowRiskInvestment.startDate.dateByAddingTimeInterval(self.lowRiskInvestment.investmentTerm)
             self.timeUntilRescue.text = self.stringFromTimeInterval(investmentEndDate.timeIntervalSinceDate(now))

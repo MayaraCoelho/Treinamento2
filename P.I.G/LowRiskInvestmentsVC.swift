@@ -11,26 +11,17 @@ import UIKit
 class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
-
     @IBOutlet weak var tableView: UITableView!
-    
     @IBOutlet weak var topBarContainverView: UIView!
-    
     @IBOutlet weak var popWindowView: UIView!
-        
     @IBOutlet weak var blurView: UIVisualEffectView!
     
     var updateTimer = NSTimer()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let nib = UINib.init(nibName: "LRInvestmentTableViewCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "LRICell")
-        
-        let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
-        let deviceToken = delegate?.tabBarC
-        deviceToken?.tabBarView.hidden = false
         
         let topBarVC = TopBarViewController()
         self.addChildViewController(topBarVC)
@@ -42,7 +33,10 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
         
         self.popWindowView.backgroundColor = UIColor(white: 0.0, alpha: 0.0)
         self.popWindowView.opaque = false
-        
+     
+        let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
+        let deviceToken = delegate?.tabBarC
+        deviceToken?.tabBarView.hidden = false
     }
     
     
