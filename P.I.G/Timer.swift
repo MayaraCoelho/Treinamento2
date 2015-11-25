@@ -48,9 +48,9 @@ class Timer:NSObject, NSCoding {
         
             AppData.sharedInstance.player.balance = AppData.sharedInstance.player.balance + (AppData.sharedInstance.player.incomePerSecond() * timeInterval)
             
-            /*
+            
             if (AppData.sharedInstance.player.lowRiskInvestments[0].currentValue > 0){
-                var multiplier = Double(AppData.sharedInstance.player.lowRiskInvestments[0].interestRatePerSecond())
+                let multiplier = Double(AppData.sharedInstance.player.lowRiskInvestments[0].interestRatePerSecond())
                 let interest = multiplier * timeInterval * AppData.sharedInstance.player.lowRiskInvestments[0].currentValue
                 
                 print("Multiplier: \(multiplier) <> timeInterval: \(timeInterval) <> Current value: \(AppData.sharedInstance.player.lowRiskInvestments[0].currentValue) <> interest: \(interest)")
@@ -59,12 +59,15 @@ class Timer:NSObject, NSCoding {
             }
             
             if (AppData.sharedInstance.player.lowRiskInvestments[1].currentValue > 0){
-                let mount = AppData.sharedInstance.player.lowRiskInvestments[1].currentValue * Double(AppData.sharedInstance.player.lowRiskInvestments[1].interestRatePerSecond())
-                let result = pow(mount, Double(timeInterval))
-                AppData.sharedInstance.player.lowRiskInvestments[1].currentValue = result
-
-            }*/
+               // let currentInterval = now.timeIntervalSinceDate(AppData.sharedInstance.player.lowRiskInvestments[1].startDate)
+                //if (currentInterval <= AppData.sharedInstance.player.lowRiskInvestments[1].investmentTerm){
+                    let multiplier = Double(AppData.sharedInstance.player.lowRiskInvestments[1].interestRatePerSecond())
+                    let interest = multiplier * timeInterval * AppData.sharedInstance.player.lowRiskInvestments[1].currentValue
+                    AppData.sharedInstance.player.lowRiskInvestments[1].currentValue = AppData.sharedInstance.player.lowRiskInvestments[1].currentValue + interest
+                //}
+            }
             
+            /*
             var count:Int = 0
             for lri:LowRiskInvestment in AppData.sharedInstance.player.lowRiskInvestments {
                 if (lri.currentValue > 0){
@@ -74,27 +77,7 @@ class Timer:NSObject, NSCoding {
                 }
                 count = count + 1
             }
-            
-            
-            /*
-            
-            Deixei este loop comentando por questão de performance
-            
-            for(var count=0; count < AppData.sharedInstance.player.lowRiskInvestments.count; count++){
-            
-                let integerTimeInterval:Int = Int(timeInterval)
-                print("Time interval integer value: \(integerTimeInterval)")
-                var k:Int
-                
-                for k=integerTimeInterval; k > 0; k-- {
-                print("@#$@#@$@#@$@#@$#@ PASSANDO PELO FOR $@#@$@#@$@#$@#@$@$%@$%$@@#@$#@")
-                AppData.sharedInstance.player.lowRiskInvestments[count].currentValue = AppData.sharedInstance.player.lowRiskInvestments[count].currentValue * Double(AppData.sharedInstance.player.lowRiskInvestments[count].interestRatePerSecond())
-                }
-                
-                
-                print("\(AppData.sharedInstance.player.lowRiskInvestments[count].name) -=- \(AppData.sharedInstance.player.lowRiskInvestments[count].currentValue)")
-            }*/
-            
+            */
             
           
         }
