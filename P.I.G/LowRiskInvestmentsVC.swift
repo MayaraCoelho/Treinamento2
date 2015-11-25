@@ -67,9 +67,9 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    /* func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Low Risk Investments"
-    }
+    } */
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

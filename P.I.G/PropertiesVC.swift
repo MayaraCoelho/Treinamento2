@@ -76,9 +76,10 @@ class PropertiesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         return cell
     }
     
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    
+    /* func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Properties"
-    }
+    } */
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

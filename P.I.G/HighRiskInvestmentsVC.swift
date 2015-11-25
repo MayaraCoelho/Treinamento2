@@ -86,9 +86,10 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
         return cell
     }
     
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "High Risk Investments"
-    }
+    
+    /* func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+          return "High Risk Investments"
+    } */
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

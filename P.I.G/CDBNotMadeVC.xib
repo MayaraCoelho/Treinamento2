@@ -80,6 +80,7 @@
                     <rect key="frame" x="16" y="138" width="262" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
+                    <color key="minimumTrackTintColor" red="0.3803921569" green="0.69803921570000005" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <action selector="investmentSliderValueChanged:" destination="-1" eventType="valueChanged" id="6Z8-V0-3dn"/>
                     </connections>

@@ -65,7 +65,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nIg-2K-OBF">
-                    <rect key="frame" x="196" y="115" width="78" height="30"/>
+                    <rect key="frame" x="196" y="111" width="78" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <state key="normal" image="investImage"/>
@@ -77,11 +77,12 @@
                     <rect key="frame" x="17" y="157" width="259" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
+                    <color key="minimumTrackTintColor" red="0.3803921569" green="0.69803921570000005" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <action selector="investmentSliderChanged:" destination="-1" eventType="valueChanged" id="2hZ-m7-D5H"/>
                     </connections>
                 </slider>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" id="F6q-sd-pE0">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" selectable="NO" id="F6q-sd-pE0">
                     <rect key="frame" x="9" y="35" width="275" height="56"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
@@ -98,7 +99,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jgg-wH-SV7">
-                    <rect key="frame" x="70" y="119" width="128" height="21"/>
+                    <rect key="frame" x="70" y="115" width="128" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="17"/>
@@ -114,7 +115,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H0m-VU-22E">
-                    <rect key="frame" x="68" y="228" width="133" height="25"/>
+                    <rect key="frame" x="68" y="227" width="133" height="25"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="17"/>
@@ -125,12 +126,13 @@
                     <rect key="frame" x="17" y="286" width="259" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
+                    <color key="minimumTrackTintColor" red="0.81176470590000005" green="0.36470588240000001" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <action selector="rescueSliderChanged:" destination="-1" eventType="valueChanged" id="S4v-Uz-e5P"/>
                     </connections>
                 </slider>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="v9N-6m-CEs">
-                    <rect key="frame" x="193" y="226" width="84" height="28"/>
+                    <rect key="frame" x="193" y="227" width="84" height="28"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <state key="normal" image="rescueImage"/>

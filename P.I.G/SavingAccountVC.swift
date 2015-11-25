@@ -84,8 +84,12 @@ class SavingAccountVC: UIViewController {
             self.rescueButton.enabled = false
         } else {
             let value = (self.lowRiskInvestment.currentValue * Double(self.rescueSlider.value))
+            if (value > 0){
             self.rescueLabel.text = NSString(format:"$ %.2f",value) as String
-            self.rescueButton.enabled = true
+                self.rescueButton.enabled = true
+            } else {
+                self.rescueButton.enabled = false
+            }
         }
         
     }
