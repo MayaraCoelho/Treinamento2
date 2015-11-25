@@ -33,9 +33,6 @@ class Timer:NSObject, NSCoding {
     func localUpdate(){
         let now = NSDate()
         
-      
-        
-        
         if (self.lastLocalUpdate != nil){
             var timeInterval = now.timeIntervalSinceDate(self.lastLocalUpdate!)
             
@@ -46,15 +43,37 @@ class Timer:NSObject, NSCoding {
                 timeInterval = 1
             }
             
+
             
-            
-           // print(">>>>>> Time interval:" + timeInterval.description)
+        
             AppData.sharedInstance.player.balance = AppData.sharedInstance.player.balance + (AppData.sharedInstance.player.incomePerSecond() * timeInterval)
             
+            /*
+            if (AppData.sharedInstance.player.lowRiskInvestments[0].currentValue > 0){
+                var multiplier = Double(AppData.sharedInstance.player.lowRiskInvestments[0].interestRatePerSecond())
+                let interest = multiplier * timeInterval * AppData.sharedInstance.player.lowRiskInvestments[0].currentValue
+                
+                print("Multiplier: \(multiplier) <> timeInterval: \(timeInterval) <> Current value: \(AppData.sharedInstance.player.lowRiskInvestments[0].currentValue) <> interest: \(interest)")
+                AppData.sharedInstance.player.lowRiskInvestments[0].currentValue = AppData.sharedInstance.player.lowRiskInvestments[0].currentValue + interest
+         
+            }
             
-            AppData.sharedInstance.player.lowRiskInvestments[0].currentValue = AppData.sharedInstance.player.lowRiskInvestments[0].currentValue * Double(AppData.sharedInstance.player.lowRiskInvestments[0].interestRatePerSecond())
-            AppData.sharedInstance.player.lowRiskInvestments[1].currentValue = AppData.sharedInstance.player.lowRiskInvestments[1].currentValue * Double(AppData.sharedInstance.player.lowRiskInvestments[1].interestRatePerSecond())
+            if (AppData.sharedInstance.player.lowRiskInvestments[1].currentValue > 0){
+                let mount = AppData.sharedInstance.player.lowRiskInvestments[1].currentValue * Double(AppData.sharedInstance.player.lowRiskInvestments[1].interestRatePerSecond())
+                let result = pow(mount, Double(timeInterval))
+                AppData.sharedInstance.player.lowRiskInvestments[1].currentValue = result
+
+            }*/
             
+            var count:Int = 0
+            for lri:LowRiskInvestment in AppData.sharedInstance.player.lowRiskInvestments {
+                if (lri.currentValue > 0){
+                    let multiplier = Double(AppData.sharedInstance.player.lowRiskInvestments[count].interestRatePerSecond())
+                    let interest = multiplier * timeInterval * AppData.sharedInstance.player.lowRiskInvestments[count].currentValue
+                    AppData.sharedInstance.player.lowRiskInvestments[count].currentValue = AppData.sharedInstance.player.lowRiskInvestments[count].currentValue + interest
+                }
+                count = count + 1
+            }
             
             
             /*

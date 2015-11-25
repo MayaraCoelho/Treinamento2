@@ -65,13 +65,13 @@ class CDBNotMadeVC: UIViewController {
 
     @IBAction func deadlineSegControlAct(sender: AnyObject) {
         if (deadlineSegControl.selectedSegmentIndex == 0){
-            self.interestRateLabel.text = "Interest Rate: 7%"
+            self.interestRateLabel.text = "Interest Rate: 7% / day"
             self.lowRiskInvestment.interestRates = 0.07
         } else if (deadlineSegControl.selectedSegmentIndex == 1){
-            self.interestRateLabel.text = "Interest Rate: 8%"
+            self.interestRateLabel.text = "Interest Rate: 8% / day"
             self.lowRiskInvestment.interestRates = 0.08
         } else if (deadlineSegControl.selectedSegmentIndex == 2){
-            self.interestRateLabel.text = "Interest Rate: 9%"
+            self.interestRateLabel.text = "Interest Rate: 9% / day"
             self.lowRiskInvestment.interestRates = 0.09
         }
     }

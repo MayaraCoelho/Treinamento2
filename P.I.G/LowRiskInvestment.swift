@@ -101,7 +101,7 @@ class LowRiskInvestment:Investment, NSCoding{
         let interestRatePerHour = self.interestRates / 24
         let interestRatePerMinute = interestRatePerHour / 60
         var interestRatePerSecond = interestRatePerMinute / 60
-        interestRatePerSecond = interestRatePerSecond + 1
+       // interestRatePerSecond = interestRatePerSecond + 1
         return interestRatePerSecond
     }
     

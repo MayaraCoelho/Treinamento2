@@ -81,7 +81,7 @@
                         <action selector="investmentSliderChanged:" destination="-1" eventType="valueChanged" id="2hZ-m7-D5H"/>
                     </connections>
                 </slider>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="F6q-sd-pE0">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" id="F6q-sd-pE0">
                     <rect key="frame" x="9" y="35" width="275" height="56"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>

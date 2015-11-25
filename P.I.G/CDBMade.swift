@@ -10,6 +10,24 @@ import UIKit
 
 class CDBMade: UIViewController {
     
+    
+    @IBOutlet weak var investmentName: UILabel!
+    
+    @IBOutlet weak var investmentStatus: UILabel!
+    
+    @IBOutlet weak var rescueButton: UIButton!
+    
+    @IBOutlet weak var timeUntilRescue: UILabel!
+    
+    @IBOutlet weak var startingValue: UILabel!
+    
+    @IBOutlet weak var currentValue: UILabel!
+    
+    var updateTimer = NSTimer()
+    
+    let myGreenColor = UIColor(red: 97/255.0, green: 178/255.0, blue: 47/255.0, alpha: 1.0)
+    let myRedColor = UIColor(red: 207/255.0, green: 93/255.0, blue: 93/255.0, alpha: 1.0)
+    
     var superViewController:LowRiskInvestmentsVC
     
     var lowRiskInvestment:LowRiskInvestment
@@ -22,10 +40,48 @@ class CDBMade: UIViewController {
         let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
         let deviceToken = delegate?.tabBarC
         deviceToken?.tabBarView.hidden = true
-
-        // Do any additional setup after loading the view.
+        self.investmentName.text = self.lowRiskInvestment.name
+        self.updateView()
     }
 
+    
+    override func viewWillAppear(animated: Bool) {
+        self.updateTimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "updateView", userInfo: nil, repeats: true)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        self.updateTimer.invalidate()
+    }
+    
+    
+    func updateView(){
+        let now = NSDate()
+        let currentInterval =  now.timeIntervalSinceDate(self.lowRiskInvestment.startDate)
+        
+        if (currentInterval >= self.lowRiskInvestment.investmentTerm){
+            self.investmentStatus.text = "Status: Ready for rescue"
+            self.investmentStatus.backgroundColor = self.myGreenColor
+            self.rescueButton.enabled = true
+                    self.timeUntilRescue.text = self.stringFromTimeInterval(0)
+        } else {
+            self.investmentStatus.text = "Status: Not ready for rescue"
+            self.investmentStatus.backgroundColor = self.myRedColor
+            self.rescueButton.enabled = false
+            let investmentEndDate = self.lowRiskInvestment.startDate.dateByAddingTimeInterval(self.lowRiskInvestment.investmentTerm)
+            self.timeUntilRescue.text = self.stringFromTimeInterval(investmentEndDate.timeIntervalSinceDate(now))
+        }
+        
+        let investmentEndDate = self.lowRiskInvestment.startDate.dateByAddingTimeInterval(self.lowRiskInvestment.investmentTerm)
+        
+       // self.timeUntilRescue.text = self.stringFromTimeInterval(investmentEndDate.timeIntervalSinceDate(now))
+    
+        self.startingValue.text =  NSString(format: "Starting Value: %.2f ",AppData.sharedInstance.player.lowRiskInvestments[AppData.sharedInstance.player.lowRiskInvestmentIndexByID(2)].startingValue) as String
+            
+         self.currentValue.text =  NSString(format: "Current Value: %.2f ",AppData.sharedInstance.player.lowRiskInvestments[AppData.sharedInstance.player.lowRiskInvestmentIndexByID(2)].currentValue) as String
+    }
+    
+    
+    
     @IBAction func closeButtonAct(sender: UIButton) {
         self.closePopView()
     }
@@ -53,5 +109,19 @@ class CDBMade: UIViewController {
         self.superViewController.tableView.reloadData()
         self.view.removeFromSuperview()
     }
+    
+    func stringFromTimeInterval(interval: NSTimeInterval) -> String {
+        let interval = Int(interval)
+        let seconds = interval % 60
+        let minutes = (interval / 60) % 60
+        let hours = (interval / 3600)
+        return String(format: "%02d:%02d:%02d", hours, minutes, seconds)
+    }
+    
+    @IBAction func rescueButtonAct(sender: UIButton) {
+        AppData.sharedInstance.lowRiskInvestmentManager.rescueFromCDB()
+        self.closePopView()
+    }
+    
     
 }
