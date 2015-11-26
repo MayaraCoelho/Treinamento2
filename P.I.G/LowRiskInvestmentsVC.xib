@@ -13,6 +13,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LowRiskInvestmentsVC" customModule="P_I_G" customModuleProvider="target">
             <connections>
                 <outlet property="blurView" destination="muK-tn-nyK" id="Xdi-8a-Qd4"/>
+                <outlet property="lriLabel" destination="Yky-3F-Kl8" id="l40-uJ-A2U"/>
+                <outlet property="lriTitle" destination="gJB-3q-2N1" id="WdU-84-MqK"/>
                 <outlet property="popWindowView" destination="LSL-4L-c0c" id="24d-Q9-IYb"/>
                 <outlet property="tableView" destination="H4i-9z-6Cj" id="a3n-dd-ONO"/>
                 <outlet property="topBarContainverView" destination="S76-Ua-UqD" id="vAM-fz-RjG"/>

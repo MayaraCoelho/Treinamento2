@@ -26,8 +26,8 @@ class TopBarViewController: UIViewController {
     }
 
     func updateView(){
-        self.walletLabel.text = NSString(format: "Wallet: $ %.2f", AppData.sharedInstance.player.balance) as String
-        self.incomeLabel.text = NSString(format: "Income: $ %.2f / day", AppData.sharedInstance.player.income) as String
+        self.walletLabel.text = NSString(format: NSLocalizedString("wallet", comment: "") + ": $ %.2f", AppData.sharedInstance.player.balance) as String
+        self.incomeLabel.text = NSString(format: NSLocalizedString("income", comment: "") + ": $ %.2f/" + NSLocalizedString("day", comment: ""), AppData.sharedInstance.player.income) as String
     }
     
     

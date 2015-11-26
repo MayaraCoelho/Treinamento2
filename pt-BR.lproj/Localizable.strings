@@ -8,6 +8,33 @@
 
 /* PT BR */
 
+/////////////EMPRESAS/////////////
+
+"hri" = "Investimento de Alto Risco";
+"lri" = "Investimento de Baixo Risco";
+"prp" = "Propriedades";
+"stck" = "Valor da Ação";
+"invest" = "Investir";
+"invMore" = "Investir mais";
+"rescue" = "Resgatar";
+"initv" = "Valor Inicial";
+"curv"  = "Valor Atual";
+"value" = "Valor";
+"wallet" = "Carteira";
+"income" = "Salário";
+
+"day" = "dia";
+
+"descpLRI" = "de impostos sobre os lucros";
+
+"intrt" = "Taxa de juros";
+
+"prpv" = "Valor da compra";
+"own" = "Possui";
+"retv" = "Valor de retorno";
+
+"buy" = "Comprar";
+"sell" = "Vender";
 
 /////////////EMPRESAS/////////////
 
@@ -53,6 +80,11 @@
 "nameE9" = "Dumont Aircrafts";
 
 "nameE10" = "Fastex SA";
+
+
+//juros
+
+"amountTx" = "12% de impostos sobre os lucros";
 
 //////////////////////////////////////
 

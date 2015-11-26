@@ -17,6 +17,8 @@ class InvestmentNotMadeVC: UIViewController {
     @IBOutlet weak var investmentValueSlider: UISlider!
     @IBOutlet weak var investmentButton: UIButton!
     
+    @IBOutlet weak var taxesLabel: UITextView!
+    
     var enterprise:Enterprise
     var homeViewController:HighRiskInvestmentsVC
 
@@ -35,14 +37,16 @@ class InvestmentNotMadeVC: UIViewController {
         
         self.enterpriseName.text = self.enterprise.name
         self.enterpriseDescription.text = self.enterprise.descript
-        self.enterpriseValueLabel.text = NSString(format: "Stock Value: %.2f",self.enterprise.stockValue) as String
-        self.investmentValueLabel.text = "Invest : $ 0"
+        self.enterpriseValueLabel.text = NSString(format: NSLocalizedString("stck", comment: "")+": %.2f",self.enterprise.stockValue) as String
+        self.investmentValueLabel.text = NSLocalizedString("invest", comment: "")+" $ 0"
         self.investmentButton.enabled = false
         self.investmentValueSlider.value = 0
         
         let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
         let deviceToken = delegate?.tabBarC
         deviceToken?.tabBarView.hidden = true
+        
+        taxesLabel.text = NSLocalizedString("amountTx", comment: "")
     }
     
     @IBAction func sliderValueChanged(sender: UISlider) {
@@ -53,7 +57,7 @@ class InvestmentNotMadeVC: UIViewController {
             self.investmentButton.enabled = false
         }
         let value = (AppData.sharedInstance.player.balance * Double(self.investmentValueSlider.value))
-        self.investmentValueLabel.text = NSString(format:"Invest : $ %.2f",value) as String
+        self.investmentValueLabel.text = NSString(format: NSLocalizedString("invest", comment: "")+" $ %.2f", value) as String
     }
     
     @IBAction func investButtonAct(sender: UIButton) {

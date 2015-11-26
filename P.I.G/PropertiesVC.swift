@@ -15,6 +15,7 @@ class PropertiesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
     @IBOutlet weak var blurView: UIVisualEffectView!
     @IBOutlet weak var containerView: UIView!
     
+    @IBOutlet weak var prpLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,7 @@ class PropertiesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         let nib = UINib.init(nibName: "PropertiesTableViewCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "PropertiesCell")
 
+        prpLabel.text = NSLocalizedString("prp", comment: "")
 
         self.containerView.backgroundColor = UIColor(white: 0.0, alpha: 0.0)
         self.containerView.hidden = true
@@ -59,7 +61,7 @@ class PropertiesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         
 //            cell.containerView.hidden = false
             let colorBarVC = ColorBarViewController()
-            
+        
             colorBarVC.view.frame = CGRectMake(0, 0, CGFloat(200), CGFloat(28))
             self.addChildViewController(colorBarVC)
             

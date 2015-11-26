@@ -32,9 +32,9 @@ class PropertiesDetailsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.propertyNameLabel.text = self.property.name
-        self.propertyValueLabel.text = "Property Value: " + self.property.value.description
-        self.returningValueLabel.text = "Returning Value: " + self.property.returningValue.description + " /day"
-        self.ownedLabel.text = "Owned: " + PropertiesManager().doesPlayerHaveProperty(self.property).description
+        self.propertyValueLabel.text = NSLocalizedString("prpv", comment: "") + ": $\(self.property.value.description)"
+        self.returningValueLabel.text = NSLocalizedString("retv", comment: "") + ": $\(self.property.returningValue.description)" + "/" + NSLocalizedString("day", comment: "")
+        self.ownedLabel.text = NSLocalizedString("own", comment: "") + PropertiesManager().doesPlayerHaveProperty(self.property).description
         
 //        if (PropertiesManager().doesPlayerHaveProperty(self.property) > 0){
 //            self.sellButton.enabled = true
@@ -78,7 +78,7 @@ class PropertiesDetailsVC: UIViewController {
     @IBAction func buyStepperAct(sender: AnyObject) {
         
         if (AppData.sharedInstance.player.balance >= ((self.property.value)*buyStepper.value)){
-            buyLabel.text = "Buy: \(buyStepper.value)"
+            buyLabel.text = NSLocalizedString("buy", comment: "")+": \(buyStepper.value)"
             currentValueBuy++
             print("comprar \(currentValueBuy)")
         }
@@ -88,7 +88,7 @@ class PropertiesDetailsVC: UIViewController {
     @IBAction func sellStepperAct(sender: AnyObject) {
         
         if (PropertiesManager().doesPlayerHaveProperty(self.property)>0){
-            sellLabel.text = "Sell: \(sellStepper.value)"
+            sellLabel.text = NSLocalizedString("sell", comment: "")+": \(sellStepper.value)"
             currentValueSell++
             print("vender \(currentValueSell)")
         }

@@ -51,7 +51,7 @@
                         <constraint firstAttribute="width" constant="259" id="4A1-Zv-30i"/>
                         <constraint firstAttribute="height" constant="28" id="oNa-uJ-K1V"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="16"/>
+                    <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="13"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>

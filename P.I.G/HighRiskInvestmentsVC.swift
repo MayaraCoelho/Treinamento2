@@ -10,6 +10,8 @@ import UIKit
 
 class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var hriTitle: UIImageView!
+    @IBOutlet weak var hriLabel: UILabel!
     @IBOutlet weak var enterpriseDetailsView: UIView!
     
     @IBOutlet weak var blurView: UIVisualEffectView!
@@ -33,6 +35,8 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
         
         self.enterpriseDetailsView.backgroundColor = UIColor(white: 0.0, alpha: 0.0)
         self.enterpriseDetailsView.opaque = false
+        
+        hriLabel.text = NSLocalizedString("hri", comment: "")
         
         topBarViewContainer.backgroundColor = UIColor(red:0.98, green:0.93, blue:0.85, alpha:1)
         

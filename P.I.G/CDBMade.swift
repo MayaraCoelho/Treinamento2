@@ -73,9 +73,9 @@ class CDBMade: UIViewController {
         
        // self.timeUntilRescue.text = self.stringFromTimeInterval(investmentEndDate.timeIntervalSinceDate(now))
     
-        self.startingValue.text =  NSString(format: "Starting Value: %.2f ",AppData.sharedInstance.player.lowRiskInvestments[AppData.sharedInstance.player.lowRiskInvestmentIndexByID(2)].startingValue) as String
+        self.startingValue.text =  NSString(format: NSLocalizedString("initv", comment: "") + ": %.2f ",AppData.sharedInstance.player.lowRiskInvestments[AppData.sharedInstance.player.lowRiskInvestmentIndexByID(2)].startingValue) as String
             
-         self.currentValue.text =  NSString(format: "Current Value: %.2f ",AppData.sharedInstance.player.lowRiskInvestments[AppData.sharedInstance.player.lowRiskInvestmentIndexByID(2)].currentValue) as String
+         self.currentValue.text =  NSString(format: NSLocalizedString("curv", comment: "") + ":%.2f ",AppData.sharedInstance.player.lowRiskInvestments[AppData.sharedInstance.player.lowRiskInvestmentIndexByID(2)].currentValue) as String
     }
     
     

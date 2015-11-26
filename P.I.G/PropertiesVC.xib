@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="blurView" destination="AsY-em-yCz" id="8oX-gm-fhf"/>
                 <outlet property="containerView" destination="Zs3-XE-8Db" id="YzJ-oZ-y0U"/>
+                <outlet property="prpLabel" destination="ZAE-KX-kvl" id="ich-L3-2uB"/>
                 <outlet property="tableView" destination="3Qa-cD-ftw" id="E8E-iT-NOm"/>
                 <outlet property="topBarContainerView" destination="jxt-0f-8q3" id="dLT-KJ-8dK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

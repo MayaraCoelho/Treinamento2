@@ -31,15 +31,15 @@ class InvestmentMadeVC: UIViewController {
 
         self.enterpriseNameLabel.text = self.enterprise.name
         self.enterpriseDescriptionLabel.text = self.enterprise.descript
-        self.enterpriseValueLabel.text = NSString(format: "Stock Value : %.2f",self.enterprise.stockValue) as String
-        self.initialInvestmentValueLabel.text = NSString(format: "Initial Value: %.2f",self.investment.startingValue) as String
-        self.investedValueLabel.text = NSString(format: "Current Value: %.2f",self.investment.currentValue) as String
+        self.enterpriseValueLabel.text = NSString(format: NSLocalizedString("stck", comment: "")+": %.2f",self.enterprise.stockValue) as String
+        self.initialInvestmentValueLabel.text = NSString(format: NSLocalizedString("initv", comment: "") + ": %.2f",self.investment.startingValue) as String
+        self.investedValueLabel.text = NSString(format: NSLocalizedString("curv", comment: "") + ": %.2f",self.investment.currentValue) as String
         
-        self.investMoreLabel.text = "Invest more: $ 0"
+        self.investMoreLabel.text = NSLocalizedString("invMore", comment: "")+": $ 0"
         self.investButton.enabled = false
         self.investSlider.value = 0
         
-        self.rescueLabel.text = "Rescue: $ 0"
+        self.rescueLabel.text = NSLocalizedString("rescue", comment: "")+": $ 0"
         self.rescueButton.enabled = false
         self.rescueSlider.value = 0
         
@@ -68,7 +68,7 @@ class InvestmentMadeVC: UIViewController {
         } else {
             self.investButton.enabled = false
         }
-        self.investMoreLabel.text = NSString(format:"Invest More: $ %.2f",value) as String
+        self.investMoreLabel.text = NSString(format: NSLocalizedString("invMore", comment: "")+" $ %.2f", value) as String
     }
     
     @IBAction func investButtonAct(sender: UIButton) {
@@ -86,7 +86,7 @@ class InvestmentMadeVC: UIViewController {
             self.investButton.enabled = false
         }
         let value = self.investment.currentValue * Double(self.rescueSlider.value)
-        self.rescueLabel.text = NSString(format: "Rescue: $ %.2f", value) as String
+        self.rescueLabel.text = NSString(format: NSLocalizedString("rescue", comment: "")+" $ %.2f", value) as String
     }
     
     

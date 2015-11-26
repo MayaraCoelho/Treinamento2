@@ -9,6 +9,37 @@
 
 /* ENGLISH */
 
+/////////////GERAL/////////////
+
+"hri" = "High Risk Investment";
+"lri" = "Low Risk Investment";
+"prp" = "Properties";
+"stck" = "Stock Value";
+"invest" = "Invest";
+"invMore" = "Invest More";
+"rescue" = "Rescue";
+"initv" = "Initial Value";
+"curv"  = "Current Value";
+"value" = "Value";
+"wallet" = "Wallet";
+"income" = "Income";
+
+"day" = "day";
+
+"descpLRI" = "taxes on profits";
+
+"intrt" = "Interest Rate";
+
+"prpv" = "Property Value";
+"own" = "Owned";
+"retv" = "Returning Value";
+
+"buy" = "Buy";
+"sell" = "Sell";
+
+
+
+
 /////////////EMPRESAS/////////////
 
 //// DESCRICAO
@@ -55,7 +86,9 @@
 
 "nameE10" =  "Fastex SA";
 
+//juros
 
+"amountTx" = "12% tax on profits";
 
 
 /////////////Investimentos/////////////

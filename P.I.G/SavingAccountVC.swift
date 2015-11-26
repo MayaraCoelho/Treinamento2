@@ -14,6 +14,9 @@ class SavingAccountVC: UIViewController {
    
     @IBOutlet weak var lowRiskInvestmentName: UILabel!
     
+    @IBOutlet weak var rscLbl: UILabel!
+    @IBOutlet weak var invLbl: UILabel!
+   
     @IBOutlet weak var lowRiskInvestmentDescript: UITextView!
     
     @IBOutlet weak var taxesTextLabel: UILabel!
@@ -41,7 +44,7 @@ class SavingAccountVC: UIViewController {
         super.viewDidLoad()
         self.lowRiskInvestmentName.text = self.lowRiskInvestment.name
         self.lowRiskInvestmentDescript.text = self.lowRiskInvestment.descript
-        self.taxesTextLabel.text = (self.lowRiskInvestment.taxes * 100).description + " de impostos sobre os lucros"
+        self.taxesTextLabel.text = (self.lowRiskInvestment.taxes * 100).description + NSLocalizedString("descLRI", comment: "")
         
         self.investmentValue.text = NSString(format:"$ %.2f",0) as String
         self.rescueLabel.text = NSString(format:"$ %.2f",0) as String
@@ -56,6 +59,9 @@ class SavingAccountVC: UIViewController {
         let deviceToken = delegate?.tabBarC
         deviceToken?.tabBarView.hidden = true
         // Do any additional setup after loading the view.
+        invLbl.text = NSLocalizedString("invest", comment: "") + ":"
+        rscLbl.text = NSLocalizedString("rescue", comment: "") + ":"
+    
     }
     
     init(pSuperViewController:LowRiskInvestmentsVC, pLowRiskInvestment:LowRiskInvestment) {

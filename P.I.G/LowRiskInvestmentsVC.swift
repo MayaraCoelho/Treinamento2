@@ -11,6 +11,8 @@ import UIKit
 class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
+    @IBOutlet weak var lriLabel: UILabel!
+    @IBOutlet weak var lriTitle: UIImageView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var topBarContainverView: UIView!
     @IBOutlet weak var popWindowView: UIView!
@@ -27,6 +29,8 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
         self.addChildViewController(topBarVC)
         self.topBarContainverView.addSubview(topBarVC.view)
         self.restorationIdentifier = "LowRiskInvestmentVC"
+        
+        lriLabel.text = NSLocalizedString("lri", comment: "")
         
         self.blurView.hidden = true
         self.popWindowView.hidden = true
@@ -64,7 +68,7 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
         let cell = tableView.dequeueReusableCellWithIdentifier("LRICell") as! LRInvestmentTableViewCell
     
         cell.LowRiskInvestName.text = AppData.sharedInstance.player.lowRiskInvestments[indexPath.row].name
-        cell.LowRiskInvestValue.text = NSString(format: "Value : %.2f ",AppData.sharedInstance.player.lowRiskInvestments[indexPath.row].currentValue) as String
+        cell.LowRiskInvestValue.text = NSString(format: NSLocalizedString("value", comment: "") + ": %.2f ",AppData.sharedInstance.player.lowRiskInvestments[indexPath.row].currentValue) as String
         cell.lowRiskInvestImage.image = AppData.sharedInstance.player.lowRiskInvestments[indexPath.row].icon()
         return cell
     }

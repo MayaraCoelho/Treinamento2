@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Exo2-Regular.otf">
@@ -17,6 +17,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SavingAccountVC" customModule="P_I_G" customModuleProvider="target">
             <connections>
+                <outlet property="invLbl" destination="6D6-mH-6d0" id="w59-NV-g46"/>
                 <outlet property="investButton" destination="nIg-2K-OBF" id="8yc-D8-EUY"/>
                 <outlet property="investmentSlider" destination="xrU-2l-4xO" id="vks-fd-Tka"/>
                 <outlet property="investmentValue" destination="Jgg-wH-SV7" id="yF7-2u-twi"/>
@@ -25,6 +26,7 @@
                 <outlet property="rescueButton" destination="v9N-6m-CEs" id="IQd-0a-k1g"/>
                 <outlet property="rescueLabel" destination="H0m-VU-22E" id="MbJ-sH-mtN"/>
                 <outlet property="rescueSlider" destination="ujC-Qt-1PS" id="om3-9G-Rsr"/>
+                <outlet property="rscLbl" destination="YmX-Kv-eoE" id="UFi-cm-GBE"/>
                 <outlet property="taxesTextLabel" destination="BQn-HV-hAq" id="4Ut-5t-a1o"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -107,7 +109,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rescue: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YmX-Kv-eoE">
-                    <rect key="frame" x="14" y="230" width="66" height="21"/>
+                    <rect key="frame" x="14" y="230" width="103" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="17"/>
