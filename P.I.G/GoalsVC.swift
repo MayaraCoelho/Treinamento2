@@ -9,9 +9,9 @@
 import UIKit
 
 class GoalsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var topBarView: UIView!
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -23,21 +23,30 @@ class GoalsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let nib = UINib.init(nibName: "GoalsCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "goalsCell")
         
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+        self.tableView.tableFooterView = UIView(frame:CGRectZero)
+        
+        tableView.tableFooterView!.hidden = true
+        tableView.backgroundColor = UIColor.clearColor()
+        
         view.backgroundColor = UIColor(red:0.98, green:0.93, blue:0.85, alpha:1)
         
         
-        // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let goals = AppData.sharedInstance.goals[indexPath.row]
+        
         let cell = tableView.dequeueReusableCellWithIdentifier("goalsCell") as! GoalsCell
-        cell.textLabel?.text = AppData.sharedInstance.goals[indexPath.row].description
+        cell.textLabel?.text = goals.description
+        
         return cell
     }
     
@@ -52,18 +61,18 @@ class GoalsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return AppData.sharedInstance.goals.count
     }
     
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            
+            AppData.sharedInstance.goals.removeAtIndex(indexPath.row)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.None)
+            self.tableView.reloadData()
+        }
     }
-    */
-
+    
+    
 }
