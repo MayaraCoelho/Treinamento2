@@ -44,40 +44,28 @@ class Timer:NSObject, NSCoding {
             }
             
 
-            
-        
             AppData.sharedInstance.player.balance = AppData.sharedInstance.player.balance + (AppData.sharedInstance.player.incomePerSecond() * timeInterval)
             
             
             if (AppData.sharedInstance.player.lowRiskInvestments[0].currentValue > 0){
                 let multiplier = Double(AppData.sharedInstance.player.lowRiskInvestments[0].interestRatePerSecond())
                 let interest = multiplier * timeInterval * AppData.sharedInstance.player.lowRiskInvestments[0].currentValue
-                
-                print("Multiplier: \(multiplier) <> timeInterval: \(timeInterval) <> Current value: \(AppData.sharedInstance.player.lowRiskInvestments[0].currentValue) <> interest: \(interest)")
                 AppData.sharedInstance.player.lowRiskInvestments[0].currentValue = AppData.sharedInstance.player.lowRiskInvestments[0].currentValue + interest
          
             }
             
             if (AppData.sharedInstance.player.lowRiskInvestments[1].currentValue > 0){
-               // let currentInterval = now.timeIntervalSinceDate(AppData.sharedInstance.player.lowRiskInvestments[1].startDate)
-                //if (currentInterval <= AppData.sharedInstance.player.lowRiskInvestments[1].investmentTerm){
+                let currentInterval = now.timeIntervalSinceDate(AppData.sharedInstance.player.lowRiskInvestments[1].startDate)
+                if (currentInterval <= AppData.sharedInstance.player.lowRiskInvestments[1].investmentTerm){
                     let multiplier = Double(AppData.sharedInstance.player.lowRiskInvestments[1].interestRatePerSecond())
                     let interest = multiplier * timeInterval * AppData.sharedInstance.player.lowRiskInvestments[1].currentValue
                     AppData.sharedInstance.player.lowRiskInvestments[1].currentValue = AppData.sharedInstance.player.lowRiskInvestments[1].currentValue + interest
-                //}
-            }
-            
-            /*
-            var count:Int = 0
-            for lri:LowRiskInvestment in AppData.sharedInstance.player.lowRiskInvestments {
-                if (lri.currentValue > 0){
-                    let multiplier = Double(AppData.sharedInstance.player.lowRiskInvestments[count].interestRatePerSecond())
-                    let interest = multiplier * timeInterval * AppData.sharedInstance.player.lowRiskInvestments[count].currentValue
-                    AppData.sharedInstance.player.lowRiskInvestments[count].currentValue = AppData.sharedInstance.player.lowRiskInvestments[count].currentValue + interest
+                } else if (currentInterval > AppData.sharedInstance.player.lowRiskInvestments[1].investmentTerm){
+                    let multiplier = Double(AppData.sharedInstance.player.lowRiskInvestments[1].interestRatePerSecond())
+                    let interest = multiplier * AppData.sharedInstance.player.lowRiskInvestments[1].investmentTerm * AppData.sharedInstance.player.lowRiskInvestments[1].startingValue
+                    AppData.sharedInstance.player.lowRiskInvestments[1].currentValue = AppData.sharedInstance.player.lowRiskInvestments[1].startingValue + interest
                 }
-                count = count + 1
             }
-            */
             
           
         }
