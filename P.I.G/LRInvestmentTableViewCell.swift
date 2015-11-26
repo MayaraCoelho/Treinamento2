@@ -23,6 +23,7 @@ class LRInvestmentTableViewCell: UITableViewCell {
         super.awakeFromNib()
         self.selectionStyle = UITableViewCellSelectionStyle.None
         self.backgroundImageView.image = UIImage(named: "barImage.png")
+        self.backgroundColor = UIColor(red:0.98, green:0.93, blue:0.85, alpha:1)
         // Initialization code
     }
 

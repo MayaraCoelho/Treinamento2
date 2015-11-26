@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Exo2-Regular.otf">
@@ -27,7 +27,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                     <animations/>
                     <color key="backgroundColor" red="0.97647058823529409" green="0.9137254901960784" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
-                    <color key="sectionIndexBackgroundColor" red="0.97647058823529409" green="0.90980392156862744" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="0.97254901960784312" green="0.89803921568627454" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
                     <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                         <rect key="frame" x="0.0" y="78" width="400" height="522"/>
                     </variation>
@@ -39,7 +39,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jxt-0f-8q3">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                     <animations/>
-                    <color key="backgroundColor" red="0.67115590588300988" green="0.84567395307114301" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.97254901959999995" green="0.8980392157" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="75" id="jOo-SE-Pbx"/>
                     </constraints>
@@ -70,6 +70,7 @@
                         </label>
                     </subviews>
                     <animations/>
+                    <color key="backgroundColor" red="0.97254901959999995" green="0.8980392157" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="gf8-ns-yue" firstAttribute="leading" secondItem="aU8-RN-S8L" secondAttribute="leading" id="063-sx-ldR"/>
                         <constraint firstItem="ZAE-KX-kvl" firstAttribute="leading" secondItem="aU8-RN-S8L" secondAttribute="leading" constant="20" id="6Gc-Kz-cQS"/>
@@ -88,12 +89,12 @@
                         <mask key="constraints">
                             <exclude reference="Hg9-CH-KNC"/>
                             <exclude reference="vF4-Ua-leN"/>
+                            <exclude reference="6Gc-Kz-cQS"/>
+                            <exclude reference="TU3-Ff-1Rk"/>
                             <exclude reference="063-sx-ldR"/>
                             <exclude reference="9LY-ld-C2Z"/>
                             <exclude reference="ejd-U1-jdc"/>
                             <exclude reference="o0T-yn-tqN"/>
-                            <exclude reference="6Gc-Kz-cQS"/>
-                            <exclude reference="TU3-Ff-1Rk"/>
                         </mask>
                     </variation>
                     <variation key="heightClass=regular-widthClass=compact">
@@ -104,12 +105,12 @@
                         <mask key="constraints">
                             <include reference="Hg9-CH-KNC"/>
                             <include reference="vF4-Ua-leN"/>
+                            <include reference="6Gc-Kz-cQS"/>
+                            <include reference="TU3-Ff-1Rk"/>
                             <include reference="063-sx-ldR"/>
                             <include reference="9LY-ld-C2Z"/>
                             <include reference="ejd-U1-jdc"/>
                             <include reference="o0T-yn-tqN"/>
-                            <include reference="6Gc-Kz-cQS"/>
-                            <include reference="TU3-Ff-1Rk"/>
                         </mask>
                     </variation>
                 </view>
@@ -169,7 +170,7 @@
                 </visualEffectView>
             </subviews>
             <animations/>
-            <color key="backgroundColor" red="0.97647058823529409" green="0.9137254901960784" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.97647058819999999" green="0.91372549020000005" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="AsY-em-yCz" secondAttribute="bottom" id="2Qj-nV-cdF"/>
                 <constraint firstItem="3Qa-cD-ftw" firstAttribute="top" secondItem="jxt-0f-8q3" secondAttribute="bottom" constant="70" id="2WA-z3-tOs"/>
@@ -193,19 +194,19 @@
                     <exclude reference="AsY-em-yCz"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="2Qj-nV-cdF"/>
-                    <exclude reference="6xm-Wb-YL0"/>
-                    <exclude reference="Kfl-Cw-Fhh"/>
-                    <exclude reference="vOF-GS-RMD"/>
-                    <exclude reference="8Ic-9J-NDY"/>
-                    <exclude reference="M7h-xZ-voM"/>
-                    <exclude reference="XZl-1c-9Hm"/>
-                    <exclude reference="T9Z-qa-MPg"/>
-                    <exclude reference="cjo-MI-Xtn"/>
                     <exclude reference="2WA-z3-tOs"/>
                     <exclude reference="8H7-2H-gjb"/>
                     <exclude reference="ISV-t1-NuP"/>
                     <exclude reference="WTR-le-8yI"/>
+                    <exclude reference="2Qj-nV-cdF"/>
+                    <exclude reference="6xm-Wb-YL0"/>
+                    <exclude reference="Kfl-Cw-Fhh"/>
+                    <exclude reference="vOF-GS-RMD"/>
+                    <exclude reference="T9Z-qa-MPg"/>
+                    <exclude reference="cjo-MI-Xtn"/>
+                    <exclude reference="8Ic-9J-NDY"/>
+                    <exclude reference="M7h-xZ-voM"/>
+                    <exclude reference="XZl-1c-9Hm"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
@@ -220,19 +221,19 @@
                     <include reference="AsY-em-yCz"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="2Qj-nV-cdF"/>
-                    <include reference="6xm-Wb-YL0"/>
-                    <include reference="Kfl-Cw-Fhh"/>
-                    <include reference="vOF-GS-RMD"/>
-                    <include reference="8Ic-9J-NDY"/>
-                    <include reference="M7h-xZ-voM"/>
-                    <include reference="XZl-1c-9Hm"/>
-                    <include reference="T9Z-qa-MPg"/>
-                    <include reference="cjo-MI-Xtn"/>
                     <include reference="2WA-z3-tOs"/>
                     <include reference="8H7-2H-gjb"/>
                     <include reference="ISV-t1-NuP"/>
                     <include reference="WTR-le-8yI"/>
+                    <include reference="2Qj-nV-cdF"/>
+                    <include reference="6xm-Wb-YL0"/>
+                    <include reference="Kfl-Cw-Fhh"/>
+                    <include reference="vOF-GS-RMD"/>
+                    <include reference="T9Z-qa-MPg"/>
+                    <include reference="cjo-MI-Xtn"/>
+                    <include reference="8Ic-9J-NDY"/>
+                    <include reference="M7h-xZ-voM"/>
+                    <include reference="XZl-1c-9Hm"/>
                 </mask>
             </variation>
         </view>

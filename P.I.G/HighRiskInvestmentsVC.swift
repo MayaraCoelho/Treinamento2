@@ -34,6 +34,8 @@ class HighRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewD
         self.enterpriseDetailsView.backgroundColor = UIColor(white: 0.0, alpha: 0.0)
         self.enterpriseDetailsView.opaque = false
         
+        topBarViewContainer.backgroundColor = UIColor(red:0.98, green:0.93, blue:0.85, alpha:1)
+        
         let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
         let deviceToken = delegate?.tabBarC
         deviceToken?.tabBarView.hidden = false

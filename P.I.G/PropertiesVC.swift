@@ -24,8 +24,6 @@ class PropertiesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         self.restorationIdentifier = "PropertiesVC"
         self.blurView.hidden = true
 
-        view.backgroundColor = UIColor(red:0.98, green:0.93, blue:0.85, alpha:1)
-        
         
         let nib = UINib.init(nibName: "PropertiesTableViewCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "PropertiesCell")

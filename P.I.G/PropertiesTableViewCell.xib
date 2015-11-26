@@ -23,6 +23,7 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m0g-Ua-QFr">
                         <rect key="frame" x="8" y="13" width="310" height="64"/>
                         <animations/>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.8901960784313725" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="64" id="lgP-re-kpP"/>
                         </constraints>
@@ -66,7 +67,7 @@
                 </constraints>
             </tableViewCellContentView>
             <animations/>
-            <color key="backgroundColor" red="0.97647058823529409" green="0.9137254901960784" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.97647058819999999" green="0.91372549020000005" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
                 <outlet property="backgroundImageView" destination="m0g-Ua-QFr" id="B9V-KY-poM"/>
                 <outlet property="propertyAmount" destination="pBW-9m-dNQ" id="S0D-q7-Asb"/>
