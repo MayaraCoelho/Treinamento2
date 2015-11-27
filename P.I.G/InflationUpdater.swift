@@ -10,6 +10,11 @@ import Foundation
 
 class InflationUpdater{
     
+    let basePlayerIncome = Double(400)
+    
+    
+    
+    
     func update(){
     
         let qualityOfServiceClass = QOS_CLASS_BACKGROUND
@@ -37,16 +42,17 @@ class InflationUpdater{
             print("number: \(number) <><><><><><><><><><><><><><><><><><><><>")
             if (number > 1){
                 
-                AppData.sharedInstance.player.income = AppData.sharedInstance.player.income * number!
+                //FIX ME
+               // AppData.sharedInstance.player.income = self.basePlayerIncome * number!
                 
                 for prop:Property in AppData.sharedInstance.properties{
-                    prop.value = prop.value * number!
-                    prop.returningValue = prop.returningValue * number!
+                    prop.value = prop.baseValue * number!
+                    prop.returningValue = prop.baseReturningValue * number!
                 }
                 
                 for prop:Property in AppData.sharedInstance.player.properties{
-                    prop.value = prop.value * number!
-                    prop.returningValue = prop.returningValue * number!
+                    prop.value = prop.baseValue * number!
+                    prop.returningValue = prop.baseReturningValue * number!
                 }
                 
             }
