@@ -77,6 +77,8 @@
 		B0DF04EA1BDAABB70022DCB9 /* ColorBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0DF04E91BDAABB70022DCB9 /* ColorBarViewController.xib */; };
 		B0ED4FC91C0892CF00DB9F71 /* DevelopersInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ED4FC71C0892CF00DB9F71 /* DevelopersInfoViewController.swift */; };
 		B0ED4FCA1C0892CF00DB9F71 /* DevelopersInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0ED4FC81C0892CF00DB9F71 /* DevelopersInfoViewController.xib */; };
+		B0ED4FCC1C08B86300DB9F71 /* WhichMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ED4FCB1C08B86300DB9F71 /* WhichMusic.swift */; };
+		B0ED4FCE1C08B9FE00DB9F71 /* song2.wav in Resources */ = {isa = PBXBuildFile; fileRef = B0ED4FCD1C08B9FE00DB9F71 /* song2.wav */; };
 		B0F794B21BD6BE8000BC69ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794B11BD6BE8000BC69ED /* AppDelegate.swift */; };
 		B0F794B91BD6BE8000BC69ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0F794B81BD6BE8000BC69ED /* Assets.xcassets */; };
 		B0F794CA1BD6BF3100BC69ED /* HighRiskInvestmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F794C71BD6BF3100BC69ED /* HighRiskInvestmentsVC.swift */; };
@@ -201,6 +203,8 @@
 		B0DF04E91BDAABB70022DCB9 /* ColorBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorBarViewController.xib; sourceTree = "<group>"; };
 		B0ED4FC71C0892CF00DB9F71 /* DevelopersInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevelopersInfoViewController.swift; sourceTree = "<group>"; };
 		B0ED4FC81C0892CF00DB9F71 /* DevelopersInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DevelopersInfoViewController.xib; sourceTree = "<group>"; };
+		B0ED4FCB1C08B86300DB9F71 /* WhichMusic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhichMusic.swift; sourceTree = "<group>"; };
+		B0ED4FCD1C08B9FE00DB9F71 /* song2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = song2.wav; sourceTree = "<group>"; };
 		B0F794AE1BD6BE8000BC69ED /* PIG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PIG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F794B11BD6BE8000BC69ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0F794B81BD6BE8000BC69ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -467,6 +471,7 @@
 			isa = PBXGroup;
 			children = (
 				B0F794B11BD6BE8000BC69ED /* AppDelegate.swift */,
+				B0ED4FCB1C08B86300DB9F71 /* WhichMusic.swift */,
 				B000BEA01C08836A002C54BF /* AudioController.swift */,
 				0966CC671C04820100805647 /* P.I.G-Bridging-Header.h */,
 				B041E5E31BD82A6000D2B44E /* Database.plist */,
@@ -475,6 +480,7 @@
 				B0F794C31BD6BED300BC69ED /* Model */,
 				B0F794C61BD6BF0B00BC69ED /* SupportingFiles */,
 				B000BEA21C0883E6002C54BF /* song1.wav */,
+				B0ED4FCD1C08B9FE00DB9F71 /* song2.wav */,
 				B0F794B81BD6BE8000BC69ED /* Assets.xcassets */,
 				B0F794BD1BD6BE8000BC69ED /* Info.plist */,
 			);
@@ -659,6 +665,7 @@
 				B0537BEF1BF4B580004AF676 /* BugSoftwareInc.png in Resources */,
 				B00C16671BF61E9C00317B43 /* taxiIcon.png in Resources */,
 				B00C16631BF61E9C00317B43 /* jointIcon.png in Resources */,
+				B0ED4FCE1C08B9FE00DB9F71 /* song2.wav in Resources */,
 				B0537BF31BF4B5CA004AF676 /* ElJuegoZone.png in Resources */,
 				B0537BF11BF4B5B7004AF676 /* MrAlwaysYoung.png in Resources */,
 				B07CC9F21C04E24500226FFE /* CDBMade.xib in Resources */,
@@ -737,6 +744,7 @@
 				B0F794F41BD6BF5600BC69ED /* LowRiskInvestment.swift in Sources */,
 				B0B766C31BEB9C7C0045528D /* LRInvestmentTableViewCell.swift in Sources */,
 				B0F794E81BD6BF5600BC69ED /* Timer.swift in Sources */,
+				B0ED4FCC1C08B86300DB9F71 /* WhichMusic.swift in Sources */,
 				B0F794EF1BD6BF5600BC69ED /* Goal.swift in Sources */,
 				B0ED4FC91C0892CF00DB9F71 /* DevelopersInfoViewController.swift in Sources */,
 				B0F8C7911BFA75A9006980B9 /* PropertiesDetailsVC.swift in Sources */,

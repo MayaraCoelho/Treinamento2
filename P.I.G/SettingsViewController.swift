@@ -75,5 +75,18 @@ class SettingsViewController: UIViewController {
         self.presentViewController(DevelopersInfoViewController(), animated: true, completion: nil)
     }
     
+    @IBAction func whichMusic(sender: UISwitch) {
+        if (WhichMusic.sharedInstance.music == 1){
+            AudioControler.sharedInstance.stopBackgroundSong()
+            AudioControler.sharedInstance.playSong2()
+            WhichMusic.sharedInstance.music = 2
+        } else {
+            AudioControler.sharedInstance.stopBackgroundSong()
+            AudioControler.sharedInstance.playSong1()
+            WhichMusic.sharedInstance.music = 1
+        }
+    }
+    
+    
     
 }

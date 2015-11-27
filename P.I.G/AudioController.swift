@@ -28,6 +28,26 @@ class AudioControler{
         self.audioPlayer.stop()
     }
     
+    func playSong1() {
+        do {
+            self.audioPlayer =  try AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("song1", ofType: "wav")!))
+            self.audioPlayer.play()
+            
+        } catch {
+            print("Error")
+        }
+    }
+    
+    func playSong2() {
+        do {
+            self.audioPlayer =  try AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("song2", ofType: "wav")!))
+            self.audioPlayer.play()
+            
+        } catch {
+            print("Error")
+        }
+    }
+    
     
 
 
