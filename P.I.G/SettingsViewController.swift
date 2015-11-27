@@ -68,7 +68,11 @@ class SettingsViewController: UIViewController {
         // Present the controller
         self.presentViewController(alertController, animated: true, completion: nil)
         
-        
+    }
+    
+    
+    @IBAction func developersButtonAct(sender: UIButton) {
+        self.presentViewController(DevelopersInfoViewController(), animated: true, completion: nil)
     }
     
     
