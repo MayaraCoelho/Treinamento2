@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Exo2-Regular.otf">
@@ -206,7 +206,7 @@
                 <constraint firstAttribute="trailing" secondItem="w2g-8b-Uar" secondAttribute="trailing" id="Rff-1K-DMa"/>
                 <constraint firstItem="w2g-8b-Uar" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SuL-KG-p9j"/>
                 <constraint firstItem="w2g-8b-Uar" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VOV-7S-soP"/>
-                <constraint firstItem="ddK-6v-xqo" firstAttribute="top" secondItem="w2g-8b-Uar" secondAttribute="bottom" constant="15" id="XRU-3b-8pk"/>
+                <constraint firstItem="ddK-6v-xqo" firstAttribute="top" secondItem="w2g-8b-Uar" secondAttribute="bottom" constant="25" id="XRU-3b-8pk"/>
                 <constraint firstAttribute="bottom" secondItem="oKE-TA-T9o" secondAttribute="bottom" id="jV2-Va-yGR"/>
                 <constraint firstAttribute="trailing" secondItem="yAR-Zr-6mh" secondAttribute="trailing" constant="10" id="rm9-kc-KEc"/>
             </constraints>
