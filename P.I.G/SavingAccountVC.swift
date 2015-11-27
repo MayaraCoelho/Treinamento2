@@ -13,30 +13,17 @@ class SavingAccountVC: UIViewController {
     
    
     @IBOutlet weak var lowRiskInvestmentName: UILabel!
-    
     @IBOutlet weak var rscLbl: UILabel!
     @IBOutlet weak var invLbl: UILabel!
-   
     @IBOutlet weak var lowRiskInvestmentDescript: UITextView!
-    
-    @IBOutlet weak var taxesTextLabel: UILabel!
-    
     @IBOutlet weak var investmentValue: UILabel!
-    
     @IBOutlet weak var investButton: UIButton!
-    
     @IBOutlet weak var investmentSlider: UISlider!
-    
-    
     @IBOutlet weak var rescueButton: UIButton!
-    
     @IBOutlet weak var rescueSlider: UISlider!
-    
     @IBOutlet weak var rescueLabel: UILabel!
     
-    
     var superViewController:LowRiskInvestmentsVC
-    
     var lowRiskInvestment:LowRiskInvestment
     
     
@@ -44,7 +31,6 @@ class SavingAccountVC: UIViewController {
         super.viewDidLoad()
         self.lowRiskInvestmentName.text = self.lowRiskInvestment.name
         self.lowRiskInvestmentDescript.text = self.lowRiskInvestment.descript
-        self.taxesTextLabel.text = (self.lowRiskInvestment.taxes * 100).description + NSLocalizedString("descLRI", comment: "")
         
         self.investmentValue.text = NSString(format:"$ %.2f",0) as String
         self.rescueLabel.text = NSString(format:"$ %.2f",0) as String
@@ -147,17 +133,5 @@ class SavingAccountVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -21,7 +21,6 @@
                 <outlet property="investmentButton" destination="Shl-wt-QL3" id="ATd-yF-opJ"/>
                 <outlet property="investmentValueLabel" destination="dbL-1y-H7d" id="FuT-m0-noa"/>
                 <outlet property="investmentValueSlider" destination="7n0-j8-WhV" id="5De-3Z-GLa"/>
-                <outlet property="taxesLabel" destination="jNo-wD-7m3" id="SEX-sc-lVO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -52,7 +51,7 @@
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stock Value" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Iw7-go-uk9">
-                    <rect key="frame" x="19" y="134" width="263" height="42"/>
+                    <rect key="frame" x="19" y="138" width="263" height="42"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="17"/>
@@ -60,7 +59,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="7n0-j8-WhV">
-                    <rect key="frame" x="10" y="235" width="280" height="31"/>
+                    <rect key="frame" x="10" y="251" width="280" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <color key="minimumTrackTintColor" red="0.38039215686274508" green="0.69803921568627447" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
@@ -69,7 +68,7 @@
                     </connections>
                 </slider>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Shl-wt-QL3">
-                    <rect key="frame" x="111" y="302" width="78" height="30"/>
+                    <rect key="frame" x="111" y="321" width="78" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <state key="normal" image="investImage"/>
@@ -87,20 +86,13 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invest : $ 542" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dbL-1y-H7d">
-                    <rect key="frame" x="19" y="180" width="257" height="39"/>
+                    <rect key="frame" x="19" y="185" width="257" height="39"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="12% de impostos sobre os lucros" textAlignment="center" id="jNo-wD-7m3">
-                    <rect key="frame" x="8" y="342" width="284" height="33"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <animations/>
-                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                </textView>
             </subviews>
             <animations/>
             <color key="backgroundColor" red="0.59999999999999998" green="0.40000000000000002" blue="0.20000000000000001" alpha="0.14628232758620691" colorSpace="calibratedRGB"/>

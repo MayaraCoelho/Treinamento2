@@ -17,7 +17,6 @@ class InvestmentNotMadeVC: UIViewController {
     @IBOutlet weak var investmentValueSlider: UISlider!
     @IBOutlet weak var investmentButton: UIButton!
     
-    @IBOutlet weak var taxesLabel: UITextView!
     
     var enterprise:Enterprise
     var homeViewController:HighRiskInvestmentsVC
@@ -47,7 +46,6 @@ class InvestmentNotMadeVC: UIViewController {
         let deviceToken = delegate?.tabBarC
         deviceToken?.tabBarView.hidden = true
         
-        taxesLabel.text = NSLocalizedString("amountTx", comment: "")
     }
     
     @IBAction func sliderValueChanged(sender: UISlider) {

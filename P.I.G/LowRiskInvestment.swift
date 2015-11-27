@@ -18,10 +18,9 @@ class LowRiskInvestment:Investment, NSCoding{
     var investmentTerm:NSTimeInterval
     var startDate:NSDate
     var imageName: String
-    var taxes:Double
     
     
-    init(pID:Int, pName:String, pDescript:String, pInterestRates:Float, pInvestmentTerm:NSTimeInterval, pStartDate:NSDate, pInvestedValue:Double, pImageName: String, pTaxes:Double) {
+    init(pID:Int, pName:String, pDescript:String, pInterestRates:Float, pInvestmentTerm:NSTimeInterval, pStartDate:NSDate, pInvestedValue:Double, pImageName: String) {
         self.id = pID
         self.name = pName
         self.descript = pDescript
@@ -29,7 +28,6 @@ class LowRiskInvestment:Investment, NSCoding{
         self.investmentTerm = pInvestmentTerm
         self.startDate = pStartDate
         self.imageName = pImageName
-        self.taxes = pTaxes
         super.init(pInvestedValue: pInvestedValue)
     }
     
@@ -74,12 +72,8 @@ class LowRiskInvestment:Investment, NSCoding{
             decoder.decodeObjectForKey("startDate") as? NSDate
             else {return nil}
         
-        guard let dTaxes =
-            decoder.decodeObjectForKey("taxes") as? Double
-            else {return nil}
-        
     
-        self.init(pID: dID, pName: dName, pDescript:dDescript, pInterestRates:dInterestRates, pInvestmentTerm:dInvestmentTerm, pStartDate:dStartDate, pInvestedValue:0, pImageName: dImageName, pTaxes:dTaxes)
+        self.init(pID: dID, pName: dName, pDescript:dDescript, pInterestRates:dInterestRates, pInvestmentTerm:dInvestmentTerm, pStartDate:dStartDate, pInvestedValue:0, pImageName: dImageName)
         self.currentValue = dCurrentValue
         self.startingValue = dInvestedValue
     }
@@ -94,7 +88,6 @@ class LowRiskInvestment:Investment, NSCoding{
         coder.encodeObject(self.imageName, forKey: "imageName")
         coder.encodeObject(self.descript, forKey: "descript")
         coder.encodeObject(self.startDate, forKey: "startDate")
-        coder.encodeObject(self.taxes, forKey: "taxes")
     }
     
     func interestRatePerSecond()->Float{
