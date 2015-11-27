@@ -93,16 +93,19 @@
 "Saving Account" = "Poupança";
 "CDB" = "CDB";
 
+"stsReady" = "Status: PRONTO PARA RESGATE";
+"stsNotReady" = "Status: não está pronto";
+"time" = "Calma! Você precisa esperar:";
 
 /////////////Propriedades/////////////
 
 "Barraca de Fruta" = "Barraca de Fruta";
 "Barraca de Pipoca" ="Barraca de Pipoca";
-"Motorista de Transporte Alternativo" = "Motorista de Transporte Alternativo";
+"Motorista de Transporte Alternativo" = "Motorista;
 "Terreno" = "Terreno";
 "Apartamento" = "Apartamento";
 "Casa" = "Casa";
-"Hamburgueria na Zona Sul" = "Hamburgueria na Zona Sul";
+"Hamburgueria na Zona Sul" = "Hamburgueria";
 "Rede com 5 restaurantes" = "Rede com 5 restaurantes";
 "Condominio Residencial" = "Condominio Residencial";
 "Shopping Center" = "Shopping Center";

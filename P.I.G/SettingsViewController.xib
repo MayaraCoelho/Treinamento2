@@ -32,7 +32,7 @@
                         <constraint firstAttribute="width" constant="250" id="dv1-SC-YmM"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="25"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                     <variation key="default">
                         <mask key="constraints">
@@ -139,7 +139,7 @@
                                 <constraint firstAttribute="height" constant="21" id="gjP-it-h4w"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="20"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                             <variation key="default">
                                 <mask key="constraints">
@@ -289,7 +289,7 @@
                                 <constraint firstAttribute="height" constant="21" id="pej-3Z-LsK"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="20"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                             <variation key="default">
                                 <mask key="constraints">

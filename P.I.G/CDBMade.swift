@@ -23,6 +23,8 @@ class CDBMade: UIViewController {
     
     @IBOutlet weak var currentValue: UILabel!
     
+    @IBOutlet weak var aboutTimeLbl: UILabel!
+    
     var updateTimer = NSTimer()
     
     
@@ -34,6 +36,8 @@ class CDBMade: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        aboutTimeLbl.text = NSLocalizedString("time", comment: "")
         
         let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
         let deviceToken = delegate?.tabBarC
@@ -57,25 +61,25 @@ class CDBMade: UIViewController {
         let currentInterval =  now.timeIntervalSinceDate(self.lowRiskInvestment.startDate)
         
         if (currentInterval >= self.lowRiskInvestment.investmentTerm){
-            self.investmentStatus.text = "Status: Ready for rescue"
+            self.investmentStatus.text = NSLocalizedString("stsReady", comment: "")
             self.investmentStatus.backgroundColor = AppUIColors().myGreenColor
             self.rescueButton.enabled = true
                     self.timeUntilRescue.text = self.stringFromTimeInterval(0)
         } else {
-            self.investmentStatus.text = "Status: Not ready for rescue"
+            self.investmentStatus.text = NSLocalizedString("stsNotReady", comment: "")
             self.investmentStatus.backgroundColor = AppUIColors().myRedColor
             self.rescueButton.enabled = false
             let investmentEndDate = self.lowRiskInvestment.startDate.dateByAddingTimeInterval(self.lowRiskInvestment.investmentTerm)
             self.timeUntilRescue.text = self.stringFromTimeInterval(investmentEndDate.timeIntervalSinceDate(now))
         }
         
-        let investmentEndDate = self.lowRiskInvestment.startDate.dateByAddingTimeInterval(self.lowRiskInvestment.investmentTerm)
+        var investmentEndDate = self.lowRiskInvestment.startDate.dateByAddingTimeInterval(self.lowRiskInvestment.investmentTerm)
         
        // self.timeUntilRescue.text = self.stringFromTimeInterval(investmentEndDate.timeIntervalSinceDate(now))
     
         self.startingValue.text =  NSString(format: NSLocalizedString("initv", comment: "") + ": %.2f ",AppData.sharedInstance.player.lowRiskInvestments[AppData.sharedInstance.player.lowRiskInvestmentIndexByID(2)].startingValue) as String
             
-         self.currentValue.text =  NSString(format: NSLocalizedString("curv", comment: "") + ":%.2f ",AppData.sharedInstance.player.lowRiskInvestments[AppData.sharedInstance.player.lowRiskInvestmentIndexByID(2)].currentValue) as String
+         self.currentValue.text =  NSString(format: NSLocalizedString("curv", comment: "") + ": %.2f ",AppData.sharedInstance.player.lowRiskInvestments[AppData.sharedInstance.player.lowRiskInvestmentIndexByID(2)].currentValue) as String
     }
     
     

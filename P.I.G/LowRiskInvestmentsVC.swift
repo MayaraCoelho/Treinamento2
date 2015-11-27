@@ -38,7 +38,7 @@ class LowRiskInvestmentsVC: UIViewController, UITableViewDelegate, UITableViewDa
         self.popWindowView.backgroundColor = UIColor(white: 0.0, alpha: 0.0)
         self.popWindowView.opaque = false
         
-//        tableView.backgroundColor = UIColor(red:0.98, green:0.93, blue:0.85, alpha:1)
+        tableView.backgroundColor = UIColor(red:0.98, green:0.91, blue:0.81, alpha:1)
         topBarContainverView.backgroundColor = UIColor(red:0.98, green:0.93, blue:0.85, alpha:1)
      
         let delegate = UIApplication.sharedApplication().delegate as? AppDelegate

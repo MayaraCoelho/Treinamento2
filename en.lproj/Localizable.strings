@@ -94,6 +94,11 @@
 "Saving Account" = "Saving Account";
 "CDB" = "CDB";
 
+"stsReady" = "STATUS: READY FOR RESCUE";
+"stsNotReady" = "STATUS: NOT READY";
+"time" = "You still have to wait!";
+
+
 
 /////////////Propriedades/////////////
 
