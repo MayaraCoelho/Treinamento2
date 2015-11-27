@@ -4,9 +4,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="Exo2-Regular.otf">
-            <string>Exo2-Regular</string>
-            <string>Exo2-Regular</string>
+        <mutableArray key="Exo2-Bold.otf">
+            <string>Exo2-Bold</string>
+            <string>Exo2-Bold</string>
         </mutableArray>
     </customFonts>
     <objects>
@@ -27,7 +27,7 @@
                     <animations/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UOp-Jg-iBn">
-                    <rect key="frame" x="0.0" y="0.0" width="72" height="75"/>
+                    <rect key="frame" x="0.0" y="-1" width="72" height="76"/>
                     <animations/>
                     <constraints>
                         <constraint firstAttribute="width" constant="72" id="6qv-ZK-2mh"/>
@@ -40,8 +40,8 @@
                         <constraint firstAttribute="width" constant="220" id="Bgy-L4-buU"/>
                         <constraint firstAttribute="height" constant="30" id="loB-6I-Hxc"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="16"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="16"/>
+                    <color key="textColor" red="0.98431372549019602" green="0.92941176470588238" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Income: $ VALUE / Day" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzP-Np-sw7">
@@ -51,8 +51,8 @@
                         <constraint firstAttribute="width" constant="259" id="4A1-Zv-30i"/>
                         <constraint firstAttribute="height" constant="28" id="oNa-uJ-K1V"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="13"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="13"/>
+                    <color key="textColor" red="0.98431372549019602" green="0.92941176470588238" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMv-M1-tyu">
@@ -74,7 +74,7 @@
                 <constraint firstItem="l5I-un-avO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-3" id="79c-mf-ALL"/>
                 <constraint firstItem="3tI-xn-rkx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-3" id="8nH-BG-0gu"/>
                 <constraint firstItem="3tI-xn-rkx" firstAttribute="trailing" secondItem="l5I-un-avO" secondAttribute="trailing" constant="-27" id="Lgp-fg-u9c"/>
-                <constraint firstItem="UOp-Jg-iBn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QdH-0X-6Cy"/>
+                <constraint firstItem="UOp-Jg-iBn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-1" id="QdH-0X-6Cy"/>
                 <constraint firstItem="uMv-M1-tyu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Smp-tF-mT0"/>
                 <constraint firstAttribute="bottom" secondItem="UOp-Jg-iBn" secondAttribute="bottom" constant="-1" id="Uoj-DB-9dM"/>
                 <constraint firstAttribute="bottom" secondItem="KzP-Np-sw7" secondAttribute="bottom" constant="28" id="caF-4F-XTU"/>

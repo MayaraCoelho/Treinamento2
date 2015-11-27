@@ -58,9 +58,6 @@
                     <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="20"/>
                     <color key="textColor" red="0.97647058819999999" green="0.91372549020000005" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
-                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                        <rect key="frame" x="184" y="99" width="196" height="23.5"/>
-                    </variation>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dyv-LF-oRM">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -75,9 +72,6 @@
                             <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="20"/>
                             <color key="textColor" red="0.97647058819999999" green="0.91372549020000005" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
-                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                <rect key="frame" x="21" y="3.5" width="196" height="23.5"/>
-                            </variation>
                         </label>
                     </subviews>
                     <animations/>
@@ -207,7 +201,7 @@
                     <variation key="heightClass=regular-widthClass=compact" constant="58"/>
                 </constraint>
                 <constraint firstAttribute="trailing" secondItem="dyv-LF-oRM" secondAttribute="trailing" constant="-1" id="kfM-gj-ycF"/>
-                <constraint firstItem="dyv-LF-oRM" firstAttribute="top" secondItem="S76-Ua-UqD" secondAttribute="bottom" constant="15" id="lIP-Xs-C0s"/>
+                <constraint firstItem="dyv-LF-oRM" firstAttribute="top" secondItem="S76-Ua-UqD" secondAttribute="bottom" constant="20" id="lIP-Xs-C0s"/>
                 <constraint firstAttribute="trailing" secondItem="H4i-9z-6Cj" secondAttribute="trailing" constant="10" id="pNu-0O-zXa"/>
                 <constraint firstItem="S76-Ua-UqD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uxe-cx-4P4"/>
                 <constraint firstAttribute="bottom" secondItem="H4i-9z-6Cj" secondAttribute="bottom" constant="50" id="xa7-fp-GTn">

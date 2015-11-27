@@ -68,9 +68,6 @@
                             <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="20"/>
                             <color key="textColor" red="0.97647058819999999" green="0.91372549020000005" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
-                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                <rect key="frame" x="21" y="3.5" width="91.5" height="23.5"/>
-                            </variation>
                         </label>
                     </subviews>
                     <animations/>
@@ -203,7 +200,7 @@
                     <variation key="heightClass=regular-widthClass=compact" constant="22"/>
                 </constraint>
                 <constraint firstItem="jxt-0f-8q3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XZl-1c-9Hm"/>
-                <constraint firstItem="aU8-RN-S8L" firstAttribute="top" secondItem="jxt-0f-8q3" secondAttribute="bottom" constant="15" id="cjo-MI-Xtn"/>
+                <constraint firstItem="aU8-RN-S8L" firstAttribute="top" secondItem="jxt-0f-8q3" secondAttribute="bottom" constant="20" id="cjo-MI-Xtn"/>
                 <constraint firstItem="AsY-em-yCz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vOF-GS-RMD"/>
             </constraints>
             <variation key="default">
