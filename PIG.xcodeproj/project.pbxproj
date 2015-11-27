@@ -187,7 +187,7 @@
 		B0C846881BD7FD4F0092F8EC /* PropertiesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertiesVC.xib; sourceTree = "<group>"; };
 		B0DF04E71BDAABAF0022DCB9 /* ColorBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorBarViewController.swift; sourceTree = "<group>"; };
 		B0DF04E91BDAABB70022DCB9 /* ColorBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorBarViewController.xib; sourceTree = "<group>"; };
-		B0F794AE1BD6BE8000BC69ED /* P.I.G.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P.I.G.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0F794AE1BD6BE8000BC69ED /* PIG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PIG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F794B11BD6BE8000BC69ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0F794B81BD6BE8000BC69ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0F794BD1BD6BE8000BC69ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -444,7 +444,7 @@
 		B0F794AF1BD6BE8000BC69ED /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B0F794AE1BD6BE8000BC69ED /* P.I.G.app */,
+				B0F794AE1BD6BE8000BC69ED /* PIG.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -554,9 +554,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B0F794AD1BD6BE8000BC69ED /* P.I.G */ = {
+		B0F794AD1BD6BE8000BC69ED /* PIG */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B0F794C01BD6BE8000BC69ED /* Build configuration list for PBXNativeTarget "P.I.G" */;
+			buildConfigurationList = B0F794C01BD6BE8000BC69ED /* Build configuration list for PBXNativeTarget "PIG" */;
 			buildPhases = (
 				B0F794AA1BD6BE8000BC69ED /* Sources */,
 				B0F794AB1BD6BE8000BC69ED /* Frameworks */,
@@ -566,9 +566,9 @@
 			);
 			dependencies = (
 			);
-			name = P.I.G;
+			name = PIG;
 			productName = P.I.G;
-			productReference = B0F794AE1BD6BE8000BC69ED /* P.I.G.app */;
+			productReference = B0F794AE1BD6BE8000BC69ED /* PIG.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -582,11 +582,11 @@
 				TargetAttributes = {
 					B0F794AD1BD6BE8000BC69ED = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = 56F6M7MT84;
+						DevelopmentTeam = 9M8RSS5KWQ;
 					};
 				};
 			};
-			buildConfigurationList = B0F794A91BD6BE8000BC69ED /* Build configuration list for PBXProject "P.I.G" */;
+			buildConfigurationList = B0F794A91BD6BE8000BC69ED /* Build configuration list for PBXProject "PIG" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -600,7 +600,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B0F794AD1BD6BE8000BC69ED /* P.I.G */,
+				B0F794AD1BD6BE8000BC69ED /* PIG */,
 			);
 		};
 /* End PBXProject section */
@@ -845,7 +845,7 @@
 				INFOPLIST_FILE = P.I.G/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "bepid.P-I-G";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PIG;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "P.I.G/P.I.G-Bridging-Header.h";
 			};
@@ -861,7 +861,7 @@
 				INFOPLIST_FILE = P.I.G/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "bepid.P-I-G";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PIG;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "P.I.G/P.I.G-Bridging-Header.h";
 			};
@@ -870,7 +870,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B0F794A91BD6BE8000BC69ED /* Build configuration list for PBXProject "P.I.G" */ = {
+		B0F794A91BD6BE8000BC69ED /* Build configuration list for PBXProject "PIG" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B0F794BE1BD6BE8000BC69ED /* Debug */,
@@ -879,7 +879,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B0F794C01BD6BE8000BC69ED /* Build configuration list for PBXNativeTarget "P.I.G" */ = {
+		B0F794C01BD6BE8000BC69ED /* Build configuration list for PBXNativeTarget "PIG" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B0F794C11BD6BE8000BC69ED /* Debug */,

@@ -19,7 +19,7 @@ class Timer:NSObject, NSCoding {
     
     func startUpdates(){
         self.updateEnterprises()
-        NSTimer.scheduledTimerWithTimeInterval(60, target: self, selector: "updateEnterprises", userInfo: "nil", repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(15, target: self, selector: "updateEnterprises", userInfo: "nil", repeats: true)
         NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "localUpdate", userInfo: "nil", repeats: true)
     }
     
