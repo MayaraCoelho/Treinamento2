@@ -37,6 +37,7 @@ class TopBarViewController: UIViewController {
     }
     
 
+
     /*
     override func viewWillDisappear(animated: Bool) {
         self.updateTimer.invalidate()

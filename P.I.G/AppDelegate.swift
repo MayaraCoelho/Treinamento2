@@ -62,7 +62,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AppData.sharedInstance.timer.startUpdates()
         application.statusBarHidden = true
         
-        //EnterpriseValueUpdater().updateAllEnterprises()
+        AudioControler.sharedInstance.playBackgroundSong()
         
         return true
     }
@@ -78,6 +78,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PlayerDAO.sharedInstance.savePlayer()
         EnterprisesDAO.sharedInstance.saveEnterprises()
         TimerDAO.sharedInstance.saveTimer()
+        AudioControler.sharedInstance.stopBackgroundSong()
     }
 
     func applicationWillEnterForeground(application: UIApplication) {
@@ -93,6 +94,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PlayerDAO.sharedInstance.savePlayer()
         EnterprisesDAO.sharedInstance.saveEnterprises()
         TimerDAO.sharedInstance.saveTimer()
+        AudioControler.sharedInstance.stopBackgroundSong()
     }
 
 
