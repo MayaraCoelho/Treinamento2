@@ -10,7 +10,7 @@
         </mutableArray>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LowRiskInvestmentsVC" customModule="P_I_G" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LowRiskInvestmentsVC" customModule="PIG" customModuleProvider="target">
             <connections>
                 <outlet property="blurView" destination="muK-tn-nyK" id="Xdi-8a-Qd4"/>
                 <outlet property="lriLabel" destination="Yky-3F-Kl8" id="l40-uJ-A2U"/>
@@ -58,9 +58,6 @@
                     <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="20"/>
                     <color key="textColor" red="0.97647058819999999" green="0.91372549020000005" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
-                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                        <rect key="frame" x="182" y="99" width="198" height="21"/>
-                    </variation>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dyv-LF-oRM">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -75,18 +72,33 @@
                             <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="20"/>
                             <color key="textColor" red="0.97647058819999999" green="0.91372549020000005" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
+                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <rect key="frame" x="21" y="3" width="301" height="24"/>
+                            </variation>
                         </label>
                     </subviews>
                     <animations/>
                     <constraints>
-                        <constraint firstItem="Yky-3F-Kl8" firstAttribute="centerY" secondItem="dyv-LF-oRM" secondAttribute="centerY" id="2LN-DN-7h0"/>
-                        <constraint firstAttribute="trailing" secondItem="gJB-3q-2N1" secondAttribute="trailing" id="5Du-Ko-a9c"/>
+                        <constraint firstItem="Yky-3F-Kl8" firstAttribute="centerY" secondItem="dyv-LF-oRM" secondAttribute="centerY" id="2LN-DN-7h0">
+                            <variation key="heightClass=regular-widthClass=compact" constant="-5"/>
+                        </constraint>
+                        <constraint firstAttribute="trailing" secondItem="gJB-3q-2N1" secondAttribute="trailing" id="5Du-Ko-a9c">
+                            <variation key="heightClass=regular-widthClass=compact" constant="-1"/>
+                        </constraint>
                         <constraint firstAttribute="height" constant="40" id="6Gh-2v-NiS"/>
-                        <constraint firstAttribute="bottom" secondItem="gJB-3q-2N1" secondAttribute="bottom" id="JHm-S4-LPB"/>
-                        <constraint firstItem="gJB-3q-2N1" firstAttribute="top" secondItem="dyv-LF-oRM" secondAttribute="top" id="Z9v-iR-BE4"/>
-                        <constraint firstItem="Yky-3F-Kl8" firstAttribute="leading" secondItem="dyv-LF-oRM" secondAttribute="leading" constant="20" id="ZoP-Q7-iRP"/>
+                        <constraint firstAttribute="bottom" secondItem="gJB-3q-2N1" secondAttribute="bottom" id="JHm-S4-LPB">
+                            <variation key="heightClass=regular-widthClass=compact" constant="6"/>
+                        </constraint>
+                        <constraint firstItem="gJB-3q-2N1" firstAttribute="top" secondItem="dyv-LF-oRM" secondAttribute="top" id="Z9v-iR-BE4">
+                            <variation key="heightClass=regular-widthClass=compact" constant="-6"/>
+                        </constraint>
+                        <constraint firstItem="Yky-3F-Kl8" firstAttribute="leading" secondItem="dyv-LF-oRM" secondAttribute="leading" constant="20" id="ZoP-Q7-iRP">
+                            <variation key="heightClass=regular-widthClass=compact" constant="21"/>
+                        </constraint>
                         <constraint firstAttribute="width" constant="300" id="n2f-hb-SJ1"/>
-                        <constraint firstItem="gJB-3q-2N1" firstAttribute="leading" secondItem="dyv-LF-oRM" secondAttribute="leading" id="sH5-UH-2Ux"/>
+                        <constraint firstItem="gJB-3q-2N1" firstAttribute="leading" secondItem="dyv-LF-oRM" secondAttribute="leading" id="sH5-UH-2Ux">
+                            <variation key="heightClass=regular-widthClass=compact" constant="1"/>
+                        </constraint>
                     </constraints>
                     <variation key="default">
                         <mask key="subviews">
@@ -188,12 +200,16 @@
                 <constraint firstAttribute="trailing" secondItem="S76-Ua-UqD" secondAttribute="trailing" id="WD6-00-M9L"/>
                 <constraint firstAttribute="trailing" secondItem="Ktk-l9-dHx" secondAttribute="trailing" constant="20" id="aXn-rY-iQg"/>
                 <constraint firstAttribute="trailing" secondItem="muK-tn-nyK" secondAttribute="trailing" id="cPh-oC-ZMg"/>
-                <constraint firstItem="H4i-9z-6Cj" firstAttribute="top" secondItem="S76-Ua-UqD" secondAttribute="bottom" constant="70" id="eh5-BL-LJB"/>
+                <constraint firstItem="H4i-9z-6Cj" firstAttribute="top" secondItem="S76-Ua-UqD" secondAttribute="bottom" constant="70" id="eh5-BL-LJB">
+                    <variation key="heightClass=regular-widthClass=compact" constant="58"/>
+                </constraint>
                 <constraint firstAttribute="trailing" secondItem="dyv-LF-oRM" secondAttribute="trailing" constant="-1" id="kfM-gj-ycF"/>
                 <constraint firstItem="dyv-LF-oRM" firstAttribute="top" secondItem="S76-Ua-UqD" secondAttribute="bottom" constant="15" id="lIP-Xs-C0s"/>
                 <constraint firstAttribute="trailing" secondItem="H4i-9z-6Cj" secondAttribute="trailing" constant="10" id="pNu-0O-zXa"/>
                 <constraint firstItem="S76-Ua-UqD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uxe-cx-4P4"/>
-                <constraint firstAttribute="bottom" secondItem="H4i-9z-6Cj" secondAttribute="bottom" constant="50" id="xa7-fp-GTn"/>
+                <constraint firstAttribute="bottom" secondItem="H4i-9z-6Cj" secondAttribute="bottom" constant="50" id="xa7-fp-GTn">
+                    <variation key="heightClass=regular-widthClass=compact" constant="22"/>
+                </constraint>
             </constraints>
             <variation key="default">
                 <mask key="subviews">
