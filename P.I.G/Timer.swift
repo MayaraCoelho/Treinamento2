@@ -18,11 +18,21 @@ class Timer:NSObject, NSCoding {
     
     
     func startUpdates(){
+        
         self.updateEnterprises()
+        self.inflationUpdate()
+        
         NSTimer.scheduledTimerWithTimeInterval(15, target: self, selector: "updateEnterprises", userInfo: "nil", repeats: true)
+        
         NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "localUpdate", userInfo: "nil", repeats: true)
+        
+        NSTimer.scheduledTimerWithTimeInterval(15, target: self, selector: "inflationUpdate", userInfo: "nil", repeats: true)
+        
     }
     
+    func inflationUpdate(){
+        InflationUpdater().update()
+    }
     
     func updateEnterprises(){
         EnterpriseValueUpdater().updateAllEnterprises()

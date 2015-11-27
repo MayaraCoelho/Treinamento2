@@ -25,6 +25,7 @@
 		09F621EA1BFA473100B6D291 /* Exo2-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09F621E41BFA473100B6D291 /* Exo2-Medium.otf */; };
 		09F621EB1BFA473100B6D291 /* Exo2-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09F621E51BFA473100B6D291 /* Exo2-Regular.otf */; };
 		09F621EC1BFA473100B6D291 /* Exo2-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09F621E61BFA473100B6D291 /* Exo2-SemiBold.otf */; };
+		B000BE9B1C08717E002C54BF /* InflationUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000BE9A1C08717E002C54BF /* InflationUpdater.swift */; };
 		B00C165E1BF61E9C00317B43 /* buildingIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B00C16541BF61E9C00317B43 /* buildingIcon.png */; };
 		B00C165F1BF61E9C00317B43 /* burgerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B00C16551BF61E9C00317B43 /* burgerIcon.png */; };
 		B00C16601BF61E9C00317B43 /* franchiseIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B00C16561BF61E9C00317B43 /* franchiseIcon.png */; };
@@ -142,6 +143,7 @@
 		09F621E41BFA473100B6D291 /* Exo2-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exo2-Medium.otf"; path = "../Exo2-Medium.otf"; sourceTree = "<group>"; };
 		09F621E51BFA473100B6D291 /* Exo2-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exo2-Regular.otf"; path = "../Exo2-Regular.otf"; sourceTree = "<group>"; };
 		09F621E61BFA473100B6D291 /* Exo2-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exo2-SemiBold.otf"; path = "../Exo2-SemiBold.otf"; sourceTree = "<group>"; };
+		B000BE9A1C08717E002C54BF /* InflationUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InflationUpdater.swift; sourceTree = "<group>"; };
 		B00C16541BF61E9C00317B43 /* buildingIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buildingIcon.png; sourceTree = "<group>"; };
 		B00C16551BF61E9C00317B43 /* burgerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burgerIcon.png; sourceTree = "<group>"; };
 		B00C16561BF61E9C00317B43 /* franchiseIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = franchiseIcon.png; sourceTree = "<group>"; };
@@ -472,6 +474,7 @@
 				B0F794D71BD6BF5600BC69ED /* AppData.swift */,
 				B0F794D81BD6BF5600BC69ED /* Timer.swift */,
 				B0F794DE1BD6BF5600BC69ED /* Player.swift */,
+				B000BE9A1C08717E002C54BF /* InflationUpdater.swift */,
 				B05616541BD822A9004E3B7D /* DAOs */,
 				B0B766C51BEBA1CD0045528D /* Enterprise */,
 				B0B766C61BEBA2050045528D /* Investments */,
@@ -684,6 +687,7 @@
 				B0537C031BF4DB3E004AF676 /* HRInvestmentTableViewCell.swift in Sources */,
 				B0F794F01BD6BF5600BC69ED /* Tip.swift in Sources */,
 				B0F794F21BD6BF5600BC69ED /* PropertyProperties.swift in Sources */,
+				B000BE9B1C08717E002C54BF /* InflationUpdater.swift in Sources */,
 				B03FBC701BEA54B700CEEC67 /* EnterprisesDAO.swift in Sources */,
 				095F95751C0484A600E96016 /* YALFoldingTabBarController.m in Sources */,
 				B0F794F51BD6BF5600BC69ED /* HighRiskInvestment.swift in Sources */,
