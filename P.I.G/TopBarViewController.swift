@@ -37,6 +37,10 @@ class TopBarViewController: UIViewController {
     }
     
 
+    @IBAction func settingsbuttonact(sender: UIButton) {
+        self.presentViewController(SettingsViewController(), animated: true, completion: nil)
+    }
+
     /*
     override func viewWillDisappear(animated: Bool) {
         self.updateTimer.invalidate()
