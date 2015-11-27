@@ -79,7 +79,7 @@ class PropertiesDetailsVC: UIViewController {
         
         if (AppData.sharedInstance.player.balance >= ((self.property.value)*buyStepper.value)){
             buyLabel.text = NSLocalizedString("buy", comment: "")+": \(buyStepper.value)"
-            currentValueBuy++
+            currentValueBuy = Int(buyStepper.value)
             print("comprar \(currentValueBuy)")
         }
         
@@ -88,8 +88,9 @@ class PropertiesDetailsVC: UIViewController {
     @IBAction func sellStepperAct(sender: AnyObject) {
         
         if (PropertiesManager().doesPlayerHaveProperty(self.property)>0){
+            print("entrei")
             sellLabel.text = NSLocalizedString("sell", comment: "")+": \(sellStepper.value)"
-            currentValueSell++
+            currentValueSell = Int(sellStepper.value)
             print("vender \(currentValueSell)")
         }
     }
