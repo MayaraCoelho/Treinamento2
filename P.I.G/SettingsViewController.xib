@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Exo2-Regular.otf">
+            <string>Exo2-Regular</string>
+            <string>Exo2-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController" customModule="PIG" customModuleProvider="target">
+            <connections>
+                <outlet property="musicSwitch" destination="NqM-LG-7Gc" id="8b2-LW-HVD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ah-eY-3bo">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="0bW-PK-DNK"/>
+                        <constraint firstAttribute="width" constant="250" id="dv1-SC-YmM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="25"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="0bW-PK-DNK"/>
+                            <exclude reference="dv1-SC-YmM"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="0bW-PK-DNK"/>
+                            <include reference="dv1-SC-YmM"/>
+                        </mask>
+                    </variation>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41H-HF-tBv">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syb-0g-Xn4">
+                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="0BD-or-Ikd"/>
+                                <constraint firstAttribute="height" constant="21" id="gjP-it-h4w"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="20"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="0BD-or-Ikd"/>
+                                    <exclude reference="gjP-it-h4w"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=compact">
+                                <mask key="constraints">
+                                    <include reference="0BD-or-Ikd"/>
+                                    <include reference="gjP-it-h4w"/>
+                                </mask>
+                            </variation>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NqM-LG-7Gc">
+                            <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="7DA-oc-oaM"/>
+                                <constraint firstAttribute="width" constant="49" id="kwK-x9-iAd"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="7DA-oc-oaM"/>
+                                    <exclude reference="kwK-x9-iAd"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=compact">
+                                <mask key="constraints">
+                                    <include reference="7DA-oc-oaM"/>
+                                    <include reference="kwK-x9-iAd"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="musicSwitchChangedValue:" destination="-1" eventType="valueChanged" id="8c9-xb-GG4"/>
+                            </connections>
+                        </switch>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Syb-0g-Xn4" firstAttribute="centerY" secondItem="41H-HF-tBv" secondAttribute="centerY" id="5Yt-vh-2Lo"/>
+                        <constraint firstAttribute="height" constant="60" id="IVK-ZG-eEC"/>
+                        <constraint firstAttribute="trailing" secondItem="NqM-LG-7Gc" secondAttribute="trailing" constant="25" id="Qly-vL-pPO"/>
+                        <constraint firstItem="NqM-LG-7Gc" firstAttribute="centerY" secondItem="41H-HF-tBv" secondAttribute="centerY" id="iVd-YH-tg7"/>
+                        <constraint firstItem="Syb-0g-Xn4" firstAttribute="leading" secondItem="41H-HF-tBv" secondAttribute="leading" constant="8" id="iab-aj-arO"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="Syb-0g-Xn4"/>
+                            <exclude reference="NqM-LG-7Gc"/>
+                        </mask>
+                        <mask key="constraints">
+                            <exclude reference="IVK-ZG-eEC"/>
+                            <exclude reference="5Yt-vh-2Lo"/>
+                            <exclude reference="iab-aj-arO"/>
+                            <exclude reference="Qly-vL-pPO"/>
+                            <exclude reference="iVd-YH-tg7"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="subviews">
+                            <include reference="Syb-0g-Xn4"/>
+                            <include reference="NqM-LG-7Gc"/>
+                        </mask>
+                        <mask key="constraints">
+                            <include reference="IVK-ZG-eEC"/>
+                            <include reference="5Yt-vh-2Lo"/>
+                            <include reference="iab-aj-arO"/>
+                            <include reference="Qly-vL-pPO"/>
+                            <include reference="iVd-YH-tg7"/>
+                        </mask>
+                    </variation>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kS3-p6-5F6">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="MIg-yD-jyX"/>
+                        <constraint firstAttribute="width" constant="44" id="jyu-ea-5Sn"/>
+                    </constraints>
+                    <state key="normal" image="closeButton.png"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="MIg-yD-jyX"/>
+                            <exclude reference="jyu-ea-5Sn"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="MIg-yD-jyX"/>
+                            <include reference="jyu-ea-5Sn"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="closeButtonAct:" destination="-1" eventType="touchUpInside" id="YtJ-ka-x2D"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.97647058819999999" green="0.91372549020000005" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="41H-HF-tBv" firstAttribute="top" secondItem="8Ah-eY-3bo" secondAttribute="bottom" constant="22" id="4ZH-SQ-HKa"/>
+                <constraint firstItem="kS3-p6-5F6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4zU-Qv-wO1"/>
+                <constraint firstItem="8Ah-eY-3bo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9Wq-KG-QLP"/>
+                <constraint firstItem="8Ah-eY-3bo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="27" id="Ixd-NQ-eV5"/>
+                <constraint firstItem="41H-HF-tBv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Nhd-aH-DeW"/>
+                <constraint firstAttribute="trailing" secondItem="41H-HF-tBv" secondAttribute="trailing" id="j6g-Ud-2qo"/>
+                <constraint firstItem="kS3-p6-5F6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mrr-LW-Xo0"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="8Ah-eY-3bo"/>
+                    <exclude reference="41H-HF-tBv"/>
+                    <exclude reference="kS3-p6-5F6"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="4zU-Qv-wO1"/>
+                    <exclude reference="mrr-LW-Xo0"/>
+                    <exclude reference="9Wq-KG-QLP"/>
+                    <exclude reference="Ixd-NQ-eV5"/>
+                    <exclude reference="4ZH-SQ-HKa"/>
+                    <exclude reference="Nhd-aH-DeW"/>
+                    <exclude reference="j6g-Ud-2qo"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="8Ah-eY-3bo"/>
+                    <include reference="41H-HF-tBv"/>
+                    <include reference="kS3-p6-5F6"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="4zU-Qv-wO1"/>
+                    <include reference="mrr-LW-Xo0"/>
+                    <include reference="9Wq-KG-QLP"/>
+                    <include reference="Ixd-NQ-eV5"/>
+                    <include reference="4ZH-SQ-HKa"/>
+                    <include reference="Nhd-aH-DeW"/>
+                    <include reference="j6g-Ud-2qo"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="closeButton.png" width="300" height="300"/>
+    </resources>
+</document>

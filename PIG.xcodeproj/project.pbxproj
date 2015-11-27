@@ -28,6 +28,8 @@
 		B000BE9B1C08717E002C54BF /* InflationUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000BE9A1C08717E002C54BF /* InflationUpdater.swift */; };
 		B000BEA11C08836A002C54BF /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000BEA01C08836A002C54BF /* AudioController.swift */; };
 		B000BEA31C0883E6002C54BF /* song1.wav in Resources */ = {isa = PBXBuildFile; fileRef = B000BEA21C0883E6002C54BF /* song1.wav */; };
+		B000BEA61C08851B002C54BF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000BEA41C08851B002C54BF /* SettingsViewController.swift */; };
+		B000BEA71C08851B002C54BF /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B000BEA51C08851B002C54BF /* SettingsViewController.xib */; };
 		B00C165E1BF61E9C00317B43 /* buildingIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B00C16541BF61E9C00317B43 /* buildingIcon.png */; };
 		B00C165F1BF61E9C00317B43 /* burgerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B00C16551BF61E9C00317B43 /* burgerIcon.png */; };
 		B00C16601BF61E9C00317B43 /* franchiseIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B00C16561BF61E9C00317B43 /* franchiseIcon.png */; };
@@ -148,6 +150,8 @@
 		B000BE9A1C08717E002C54BF /* InflationUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InflationUpdater.swift; sourceTree = "<group>"; };
 		B000BEA01C08836A002C54BF /* AudioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
 		B000BEA21C0883E6002C54BF /* song1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = song1.wav; sourceTree = "<group>"; };
+		B000BEA41C08851B002C54BF /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B000BEA51C08851B002C54BF /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		B00C16541BF61E9C00317B43 /* buildingIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buildingIcon.png; sourceTree = "<group>"; };
 		B00C16551BF61E9C00317B43 /* burgerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burgerIcon.png; sourceTree = "<group>"; };
 		B00C16561BF61E9C00317B43 /* franchiseIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = franchiseIcon.png; sourceTree = "<group>"; };
@@ -496,6 +500,7 @@
 				B0F794CE1BD6BF4E00BC69ED /* LaunchScreen.storyboard */,
 				093B26D21BFE3F2400104BD0 /* Main.storyboard */,
 				B0C846801BD7F0B20092F8EC /* TopBarViewController.xib */,
+				B000BEA51C08851B002C54BF /* SettingsViewController.xib */,
 				B094CF6E1C06026400C933AD /* AppUIColors.swift */,
 				F37BFDDC1BF50B2A00DA188A /* Goals */,
 				B0B766CC1BEBA3D40045528D /* HighRiskInvestment */,
@@ -509,6 +514,7 @@
 			isa = PBXGroup;
 			children = (
 				B0C8467F1BD7F0B20092F8EC /* TopBarViewController.swift */,
+				B000BEA41C08851B002C54BF /* SettingsViewController.swift */,
 				F33BB7161BFE11D8002A9588 /* Goals */,
 				B0B766C91BEBA2900045528D /* HighRiskInvestment */,
 				B0B766CA1BEBA2B50045528D /* LowRiskInvestment */,
@@ -638,6 +644,7 @@
 				09D81EBE1BEBD06D00AB7719 /* PropertiesTableViewCell.xib in Resources */,
 				B00C16601BF61E9C00317B43 /* franchiseIcon.png in Resources */,
 				093B26D81BFE3FB300104BD0 /* Localizable.strings in Resources */,
+				B000BEA71C08851B002C54BF /* SettingsViewController.xib in Resources */,
 				B00C16641BF61E9C00317B43 /* landIcon.png in Resources */,
 				B00C165E1BF61E9C00317B43 /* buildingIcon.png in Resources */,
 				B0F794D31BD6BF4E00BC69ED /* LaunchScreen.storyboard in Resources */,
@@ -717,6 +724,7 @@
 				095F95761C0484A600E96016 /* YALFoldingTabBar.m in Sources */,
 				B0F794CC1BD6BF3100BC69ED /* InvestmentNotMadeVC.swift in Sources */,
 				B0C846851BD7FC610092F8EC /* LowRiskInvestmentsVC.swift in Sources */,
+				B000BEA61C08851B002C54BF /* SettingsViewController.swift in Sources */,
 				F33BB7141BFE0F98002A9588 /* GoalsCell.swift in Sources */,
 				095F95741C0484A600E96016 /* YALSpringAnimation.m in Sources */,
 				B0F794F41BD6BF5600BC69ED /* LowRiskInvestment.swift in Sources */,
