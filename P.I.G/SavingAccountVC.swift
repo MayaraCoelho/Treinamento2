@@ -23,6 +23,8 @@ class SavingAccountVC: UIViewController {
     @IBOutlet weak var rescueSlider: UISlider!
     @IBOutlet weak var rescueLabel: UILabel!
     
+    @IBOutlet weak var textView: UITextView!
+    
     var superViewController:LowRiskInvestmentsVC
     var lowRiskInvestment:LowRiskInvestment
     
@@ -50,6 +52,9 @@ class SavingAccountVC: UIViewController {
         // Do any additional setup after loading the view.
         invLbl.text = NSLocalizedString("invest", comment: "") + ":"
         rscLbl.text = NSLocalizedString("rescue", comment: "") + ":"
+        
+        textView.font = UIFont(name: "Exo 2", size: 15)
+        textView.textAlignment = .Justified
     
     }
     

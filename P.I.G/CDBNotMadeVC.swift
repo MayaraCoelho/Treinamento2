@@ -11,18 +11,13 @@ import UIKit
 class CDBNotMadeVC: UIViewController {
     
     @IBOutlet weak var investmentNameLabel: UILabel!
-    
     @IBOutlet weak var investmentDescriptionLabel: UITextView!
-    
     @IBOutlet weak var investmentValue: UILabel!
-    
     @IBOutlet weak var investmentSlider: UISlider!
-    
     @IBOutlet weak var investButton: UIButton!
-    
     @IBOutlet weak var deadlineSegControl: UISegmentedControl!
-    
     @IBOutlet weak var interestRateLabel: UILabel!
+    @IBOutlet weak var textView: UITextView!
     
     var superViewController:LowRiskInvestmentsVC
     
@@ -40,6 +35,9 @@ class CDBNotMadeVC: UIViewController {
         let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
         let deviceToken = delegate?.tabBarC
         deviceToken?.tabBarView.hidden = true
+        
+        textView.font = UIFont(name: "Exo 2", size: 15)
+        textView.textAlignment = .Justified
         
         investmentSlider.setThumbImage(UIImage(named: "sliderButton"), forState: UIControlState.Normal)
     }

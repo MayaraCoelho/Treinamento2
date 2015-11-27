@@ -74,14 +74,13 @@ class PropertiesDetailsVC: UIViewController {
     }
     
     
-    
     @IBAction func buyPlusButtonAct(sender: UIButton) {
         if (AppData.sharedInstance.player.balance >= ((self.property.value)*Double(self.currentNumberOfBuys + 1))){
             self.currentNumberOfBuys = self.currentNumberOfBuys + 1
             buyLabel.text = NSLocalizedString("buy", comment: "")+": \(self.currentNumberOfBuys)"
-        }
+            }
     }
-    
+        
     
     @IBAction func buyMinusButtonAct(sender: UIButton) {
         if (self.currentNumberOfBuys > 0){
