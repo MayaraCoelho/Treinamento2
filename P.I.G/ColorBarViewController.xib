@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ColorBarViewController" customModule="P_I_G" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ColorBarViewController" customModule="PIG" customModuleProvider="target">
             <connections>
                 <outlet property="barView" destination="dVd-kF-ClV" id="Rj0-Wt-d3U"/>
                 <outlet property="textLabel" destination="tLd-x5-hTY" id="gek-Ep-AHZ"/>

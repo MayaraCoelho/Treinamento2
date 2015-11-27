@@ -41,6 +41,7 @@ class InvestmentNotMadeVC: UIViewController {
         self.investmentValueLabel.text = NSLocalizedString("invest", comment: "")+" $ 0"
         self.investmentButton.enabled = false
         self.investmentValueSlider.value = 0
+        investmentValueSlider.setThumbImage(UIImage(named: "sliderButton"), forState: UIControlState.Normal)
         
         let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
         let deviceToken = delegate?.tabBarC

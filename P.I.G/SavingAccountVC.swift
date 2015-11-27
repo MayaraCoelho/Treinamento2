@@ -55,6 +55,9 @@ class SavingAccountVC: UIViewController {
         self.rescueButton.enabled = false
         self.investButton.enabled = false
         
+        investmentSlider.setThumbImage(UIImage(named: "sliderButton"), forState: UIControlState.Normal)
+        rescueSlider.setThumbImage(UIImage(named: "sliderButton"), forState: UIControlState.Normal)
+        
         let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
         let deviceToken = delegate?.tabBarC
         deviceToken?.tabBarView.hidden = true

@@ -40,6 +40,8 @@ class CDBNotMadeVC: UIViewController {
         let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
         let deviceToken = delegate?.tabBarC
         deviceToken?.tabBarView.hidden = true
+        
+        investmentSlider.setThumbImage(UIImage(named: "sliderButton"), forState: UIControlState.Normal)
     }
     
     @IBAction func investmentSliderValueChanged(sender: AnyObject) {

@@ -43,6 +43,9 @@ class InvestmentMadeVC: UIViewController {
         self.rescueButton.enabled = false
         self.rescueSlider.value = 0
         
+        investSlider.setThumbImage(UIImage(named: "sliderButton"), forState: UIControlState.Normal)
+        rescueSlider.setThumbImage(UIImage(named: "sliderButton"), forState: UIControlState.Normal)
+        
         let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
         let deviceToken = delegate?.tabBarC
         deviceToken?.tabBarView.hidden = true
