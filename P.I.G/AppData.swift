@@ -34,8 +34,6 @@ class AppData{
     
     func startNewGame(){
         self.player = Player()
-        self.enterprises = EnterpriseProperties.init().enterprises
-        self.timer = Timer()
     }
 
     

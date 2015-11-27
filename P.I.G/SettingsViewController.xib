@@ -7,6 +7,7 @@
         <mutableArray key="Exo2-Regular.otf">
             <string>Exo2-Regular</string>
             <string>Exo2-Regular</string>
+            <string>Exo2-Regular</string>
         </mutableArray>
     </customFonts>
     <objects>
@@ -44,6 +45,87 @@
                         </mask>
                     </variation>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kS3-p6-5F6">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="MIg-yD-jyX"/>
+                        <constraint firstAttribute="width" constant="44" id="jyu-ea-5Sn"/>
+                    </constraints>
+                    <state key="normal" image="closeButton.png"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="MIg-yD-jyX"/>
+                            <exclude reference="jyu-ea-5Sn"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="MIg-yD-jyX"/>
+                            <include reference="jyu-ea-5Sn"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="closeButtonAct:" destination="-1" eventType="touchUpInside" id="YtJ-ka-x2D"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Scv-pn-fcj">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DER-mA-t42">
+                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="156" id="h0m-gs-edN"/>
+                                <constraint firstAttribute="height" constant="30" id="rYh-t5-6oL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="22"/>
+                            <state key="normal" title="Restart Game"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="h0m-gs-edN"/>
+                                    <exclude reference="rYh-t5-6oL"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=compact">
+                                <mask key="constraints">
+                                    <include reference="h0m-gs-edN"/>
+                                    <include reference="rYh-t5-6oL"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="restartGameButtonAct:" destination="-1" eventType="touchUpInside" id="SjT-5F-DfU"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="DER-mA-t42" firstAttribute="centerY" secondItem="Scv-pn-fcj" secondAttribute="centerY" id="0QL-mZ-fTg"/>
+                        <constraint firstItem="DER-mA-t42" firstAttribute="leading" secondItem="Scv-pn-fcj" secondAttribute="leading" constant="8" id="GNV-JA-lH4"/>
+                        <constraint firstAttribute="height" constant="60" id="yG7-OC-ZNb"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="DER-mA-t42"/>
+                        </mask>
+                        <mask key="constraints">
+                            <exclude reference="yG7-OC-ZNb"/>
+                            <exclude reference="0QL-mZ-fTg"/>
+                            <exclude reference="GNV-JA-lH4"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="subviews">
+                            <include reference="DER-mA-t42"/>
+                        </mask>
+                        <mask key="constraints">
+                            <include reference="yG7-OC-ZNb"/>
+                            <include reference="0QL-mZ-fTg"/>
+                            <include reference="GNV-JA-lH4"/>
+                        </mask>
+                    </variation>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41H-HF-tBv">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                     <subviews>
@@ -130,30 +212,6 @@
                         </mask>
                     </variation>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kS3-p6-5F6">
-                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                    <animations/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="44" id="MIg-yD-jyX"/>
-                        <constraint firstAttribute="width" constant="44" id="jyu-ea-5Sn"/>
-                    </constraints>
-                    <state key="normal" image="closeButton.png"/>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="MIg-yD-jyX"/>
-                            <exclude reference="jyu-ea-5Sn"/>
-                        </mask>
-                    </variation>
-                    <variation key="heightClass=regular-widthClass=compact">
-                        <mask key="constraints">
-                            <include reference="MIg-yD-jyX"/>
-                            <include reference="jyu-ea-5Sn"/>
-                        </mask>
-                    </variation>
-                    <connections>
-                        <action selector="closeButtonAct:" destination="-1" eventType="touchUpInside" id="YtJ-ka-x2D"/>
-                    </connections>
-                </button>
             </subviews>
             <animations/>
             <color key="backgroundColor" red="0.97647058819999999" green="0.91372549020000005" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -163,14 +221,18 @@
                 <constraint firstItem="8Ah-eY-3bo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9Wq-KG-QLP"/>
                 <constraint firstItem="8Ah-eY-3bo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="27" id="Ixd-NQ-eV5"/>
                 <constraint firstItem="41H-HF-tBv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Nhd-aH-DeW"/>
+                <constraint firstItem="Scv-pn-fcj" firstAttribute="top" secondItem="41H-HF-tBv" secondAttribute="bottom" constant="60" id="UY6-2n-WDI"/>
+                <constraint firstItem="Scv-pn-fcj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cZq-8Y-tWY"/>
+                <constraint firstAttribute="trailing" secondItem="Scv-pn-fcj" secondAttribute="trailing" id="fbS-wg-7kP"/>
                 <constraint firstAttribute="trailing" secondItem="41H-HF-tBv" secondAttribute="trailing" id="j6g-Ud-2qo"/>
                 <constraint firstItem="kS3-p6-5F6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mrr-LW-Xo0"/>
             </constraints>
             <variation key="default">
                 <mask key="subviews">
                     <exclude reference="8Ah-eY-3bo"/>
-                    <exclude reference="41H-HF-tBv"/>
                     <exclude reference="kS3-p6-5F6"/>
+                    <exclude reference="Scv-pn-fcj"/>
+                    <exclude reference="41H-HF-tBv"/>
                 </mask>
                 <mask key="constraints">
                     <exclude reference="4zU-Qv-wO1"/>
@@ -180,13 +242,17 @@
                     <exclude reference="4ZH-SQ-HKa"/>
                     <exclude reference="Nhd-aH-DeW"/>
                     <exclude reference="j6g-Ud-2qo"/>
+                    <exclude reference="UY6-2n-WDI"/>
+                    <exclude reference="cZq-8Y-tWY"/>
+                    <exclude reference="fbS-wg-7kP"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="subviews">
                     <include reference="8Ah-eY-3bo"/>
-                    <include reference="41H-HF-tBv"/>
                     <include reference="kS3-p6-5F6"/>
+                    <include reference="Scv-pn-fcj"/>
+                    <include reference="41H-HF-tBv"/>
                 </mask>
                 <mask key="constraints">
                     <include reference="4zU-Qv-wO1"/>
@@ -196,6 +262,9 @@
                     <include reference="4ZH-SQ-HKa"/>
                     <include reference="Nhd-aH-DeW"/>
                     <include reference="j6g-Ud-2qo"/>
+                    <include reference="UY6-2n-WDI"/>
+                    <include reference="cZq-8Y-tWY"/>
+                    <include reference="fbS-wg-7kP"/>
                 </mask>
             </variation>
         </view>

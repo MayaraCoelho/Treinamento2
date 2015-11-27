@@ -14,6 +14,16 @@ class HighRiskInvestmentManager{
         
         if (AppData.sharedInstance.player.canRemoveFromBalance(pValue)){
         AppData.sharedInstance.player.removeFromBalance(pValue)
+            
+            if (pEnterprise.stockValue == 0){
+                let alert = UIAlertController(title: "Impossible to make investment", message: "Please, connect to internet before making High Risk Investments", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(alert, animated: true, completion: nil)
+                
+                return
+            }
+            
+            
         
         //Checks if player does already have an investment in that Enterprise
         if (AppData.sharedInstance.player.doesHaveHighRiskInvestmentInEnterprise(pEnterprise)){

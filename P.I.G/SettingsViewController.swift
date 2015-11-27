@@ -46,4 +46,30 @@ class SettingsViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 
+    @IBAction func restartGameButtonAct(sender: UIButton) {
+        
+        // Create the alert controller
+        let alertController = UIAlertController(title: "Restart Game", message: "Are you shure ?", preferredStyle: .Alert)
+        
+        // Create the actions
+        let okAction = UIAlertAction(title: "YES", style: UIAlertActionStyle.Default) {
+            UIAlertAction in
+            AppData.sharedInstance.startNewGame()
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) {
+            UIAlertAction in
+            NSLog("Cancel Pressed")
+        }
+        
+        // Add the actions
+        alertController.addAction(okAction)
+        alertController.addAction(cancelAction)
+        
+        // Present the controller
+        self.presentViewController(alertController, animated: true, completion: nil)
+        
+        
+    }
+    
+    
 }
