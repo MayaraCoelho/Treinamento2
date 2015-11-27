@@ -17,13 +17,13 @@ class PropertiesDetailsVC: UIViewController {
     @IBOutlet weak var buyButton: UIButton!
     @IBOutlet weak var sellButton: UIButton!
     @IBOutlet weak var ownedLabel: UILabel!
-    @IBOutlet weak var buyStepper: UIStepper!
-    @IBOutlet weak var sellStepper: UIStepper!
     @IBOutlet weak var buyLabel: UILabel!
     @IBOutlet weak var sellLabel: UILabel!
     
-    var currentValueBuy: Int = 0
-    var currentValueSell: Int = 0
+    var currentNumberOfBuys: Int = 0
+    var currentNumberOfSells: Int = 0
+    
+    
     let superViewController:PropertiesVC
     let property:Property
    
@@ -48,8 +48,7 @@ class PropertiesDetailsVC: UIViewController {
 //            self.buyButton.enabled = false
 //        }
         
-        buyStepper.minimumValue = 0
-        sellStepper.maximumValue = Double (PropertiesManager().doesPlayerHaveProperty(self.property))
+       
         
         let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
         let deviceToken = delegate?.tabBarC
@@ -75,28 +74,45 @@ class PropertiesDetailsVC: UIViewController {
     }
     
     
-    @IBAction func buyStepperAct(sender: AnyObject) {
-        
-        if (AppData.sharedInstance.player.balance >= ((self.property.value)*buyStepper.value)){
-            buyLabel.text = NSLocalizedString("buy", comment: "")+": \(buyStepper.value)"
-            currentValueBuy++
-            print("comprar \(currentValueBuy)")
+    
+    @IBAction func buyPlusButtonAct(sender: UIButton) {
+        if (AppData.sharedInstance.player.balance >= ((self.property.value)*Double(self.currentNumberOfBuys + 1))){
+            self.currentNumberOfBuys = self.currentNumberOfBuys + 1
+            buyLabel.text = NSLocalizedString("buy", comment: "")+": \(self.currentNumberOfBuys)"
+        }
+    }
+    
+    
+    @IBAction func buyMinusButtonAct(sender: UIButton) {
+        if (self.currentNumberOfBuys > 0){
+            self.currentNumberOfBuys = self.currentNumberOfBuys - 1
+            buyLabel.text = NSLocalizedString("buy", comment: "")+": \(self.currentNumberOfBuys)"
+        }
+    }
+    
+    
+    @IBAction func sellPlusButtonAct(sender: UIButton) {
+        let numberOfProperties = PropertiesManager().doesPlayerHaveProperty(self.property)
+        if (numberOfProperties >= self.currentNumberOfSells + 1){
+            self.currentNumberOfSells = self.currentNumberOfSells + 1
+            sellLabel.text = NSLocalizedString("sell", comment: "")+": \(self.currentNumberOfSells)"
+        }
+    }
+    
+    
+    @IBAction func sellMinusButtonAct(sender: UIButton) {
+        if (self.currentNumberOfSells > 0){
+            self.currentNumberOfSells = self.currentNumberOfSells - 1
+            sellLabel.text = NSLocalizedString("sell", comment: "")+": \(self.currentNumberOfSells)"
         }
         
     }
 
-    @IBAction func sellStepperAct(sender: AnyObject) {
-        
-        if (PropertiesManager().doesPlayerHaveProperty(self.property)>0){
-            sellLabel.text = NSLocalizedString("sell", comment: "")+": \(sellStepper.value)"
-            currentValueSell++
-            print("vender \(currentValueSell)")
-        }
-    }
+
 
     @IBAction func buyButtonAct(sender: UIButton) {
         var i: Int
-        for (i = 0; i < currentValueBuy; i++){
+        for (i = 0; i < currentNumberOfBuys; i++){
             PropertiesManager().buyProperty(self.property)
         }
         self.closeButtonAct(self.closeButton)
@@ -104,7 +120,7 @@ class PropertiesDetailsVC: UIViewController {
     
     @IBAction func sellButtonAct(sender: UIButton) {
         var i: Int
-        for (i = 0; i < currentValueSell; i++){
+        for (i = 0; i < currentNumberOfSells; i++){
             PropertiesManager().sellProperty(self.property)
         }
         self.closeButtonAct(self.closeButton)
@@ -121,14 +137,5 @@ class PropertiesDetailsVC: UIViewController {
     }
 
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

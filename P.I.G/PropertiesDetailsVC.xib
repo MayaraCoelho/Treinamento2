@@ -17,7 +17,6 @@
             <connections>
                 <outlet property="buyButton" destination="OBA-Rj-RnG" id="cW2-JY-UiO"/>
                 <outlet property="buyLabel" destination="E9v-o3-tqr" id="KEc-Uv-yCf"/>
-                <outlet property="buyStepper" destination="ibe-Qq-MH8" id="ChD-fG-CSc"/>
                 <outlet property="closeButton" destination="SfG-vt-bVR" id="MOw-zd-UXh"/>
                 <outlet property="ownedLabel" destination="4jy-Fr-sw4" id="0W9-Ke-vhQ"/>
                 <outlet property="propertyNameLabel" destination="aDt-0g-1I1" id="h0j-tW-Vnq"/>
@@ -25,7 +24,6 @@
                 <outlet property="returningValueLabel" destination="1XA-u8-2Oq" id="SsJ-T6-dP4"/>
                 <outlet property="sellButton" destination="ofK-zE-hRY" id="a92-ZZ-mhs"/>
                 <outlet property="sellLabel" destination="IGo-aD-9Wh" id="tNe-bF-MJk"/>
-                <outlet property="sellStepper" destination="PWE-Rh-vAG" id="bIH-2e-gRG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -64,48 +62,6 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" id="ibe-Qq-MH8">
-                    <rect key="frame" x="103" y="159" width="94" height="29"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <animations/>
-                    <connections>
-                        <action selector="buyStepperAct:" destination="-1" eventType="valueChanged" id="uU1-3j-Afa"/>
-                    </connections>
-                </stepper>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OBA-Rj-RnG">
-                    <rect key="frame" x="193" y="120" width="35" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <animations/>
-                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                    <state key="normal" title="Buy"/>
-                    <connections>
-                        <action selector="buyButtonAct:" destination="-1" eventType="touchUpInside" id="O5H-VQ-SOY"/>
-                    </connections>
-                </button>
-                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" id="PWE-Rh-vAG">
-                    <rect key="frame" x="103" y="269" width="94" height="29"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <animations/>
-                    <connections>
-                        <action selector="sellStepperAct:" destination="-1" eventType="valueChanged" id="JQa-9w-b9y"/>
-                    </connections>
-                </stepper>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buy: x0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="E9v-o3-tqr">
-                    <rect key="frame" x="20" y="125" width="116" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <animations/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sell: x0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IGo-aD-9Wh">
-                    <rect key="frame" x="20" y="238" width="116" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <animations/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Returning Value : $ 20 / Day" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1XA-u8-2Oq">
                     <rect key="frame" x="14" y="74" width="272" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -123,7 +79,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ofK-zE-hRY">
-                    <rect key="frame" x="194" y="234" width="33" height="30"/>
+                    <rect key="frame" x="133" y="275" width="33" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -132,10 +88,92 @@
                         <action selector="sellButtonAct:" destination="-1" eventType="touchUpInside" id="csl-9k-riq"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" id="8jh-Fd-lWc">
+                    <rect key="frame" x="8" y="217" width="284" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IGo-aD-9Wh">
+                            <rect key="frame" x="84" y="14" width="116" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Y8h-2t-hNI">
+                            <rect key="frame" x="244" y="0.0" width="40" height="49"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="+"/>
+                            <connections>
+                                <action selector="sellPlusButtonAct:" destination="-1" eventType="touchUpInside" id="dM3-R4-TLu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AwX-BO-x04">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="49"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="-"/>
+                            <connections>
+                                <action selector="sellMinusButtonAct:" destination="-1" eventType="touchUpInside" id="mBi-gv-xap"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="C4K-UG-lji">
+                    <rect key="frame" x="8" y="114" width="284" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="E9v-o3-tqr">
+                            <rect key="frame" x="84" y="15" width="116" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IxO-nD-7sV">
+                            <rect key="frame" x="244" y="0.0" width="40" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="+"/>
+                            <connections>
+                                <action selector="buyPlusButtonAct:" destination="-1" eventType="touchUpInside" id="db6-zA-Ezv"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gif-g3-pUp">
+                            <rect key="frame" x="0.0" y="0.0" width="41" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="-"/>
+                            <connections>
+                                <action selector="buyMinusButtonAct:" destination="-1" eventType="touchUpInside" id="1Sl-qy-TgH"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OBA-Rj-RnG">
+                    <rect key="frame" x="132" y="165" width="35" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="Buy"/>
+                    <connections>
+                        <action selector="buyButtonAct:" destination="-1" eventType="touchUpInside" id="O5H-VQ-SOY"/>
+                    </connections>
+                </button>
             </subviews>
             <animations/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="572" y="866"/>
+            <point key="canvasLocation" x="629" y="876"/>
         </view>
     </objects>
     <resources>
